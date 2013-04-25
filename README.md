@@ -25,7 +25,7 @@ On your `application.css`, add
 ```
 
 ChallengePost images are also available. To see which ones, take a look in
-[images](tree/master/app/assets/images)
+[images](https://github.com/challengepost/reimagine/tree/master/app/assets/images)
 
 ## Contributing
 
