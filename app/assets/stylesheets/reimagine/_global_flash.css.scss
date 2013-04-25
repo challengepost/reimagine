@@ -1,0 +1,22 @@
+.absolute_flash {
+  &.notice, &.alert {
+    font-size: .8em;
+    text-align: center;
+    padding: 6px;
+
+    color: white;
+
+    a {
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  &.notice {
+    background: #1eb268;
+  }
+
+  &.alert {
+    background: $error-background-color;
+  }
+}

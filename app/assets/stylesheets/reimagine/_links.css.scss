@@ -1,0 +1,16 @@
+@import 'reimagine/lib/definitions/colors';
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  @include fade;
+
+  &:hover {
+    color: black;
+    @include fade;
+  }
+
+  &.no-fade, &.no-fade:hover {
+    @include no-fade;
+  }
+}

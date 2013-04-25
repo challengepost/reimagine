@@ -1,0 +1,61 @@
+@import 'bourbon';
+
+#admin_bar_wrapper {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: white;
+  height: 34px;
+  line-height: 18px;
+  width: 100%;
+  padding: 4px;
+
+  #admin_bar {
+    color: #333333;
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    top: 0;
+    z-index: 1500;
+    width: 950px;
+    margin: 0 auto;
+
+    input {
+      font-size: 10px;
+      margin-bottom: 2px;
+
+      &[type="text"] {
+        background: none;
+        border: 2px inset #eeeeee;
+        color: black;
+        font-family: 'Lucida Grande';
+        font-size: 10px;
+        height: 12px;
+        margin: 0;
+        //padding: 11px 10px;
+        width: 250px;
+      }
+    }
+
+    input[type="submit"] {
+      line-height: 1px;
+    }
+
+    .admin-bar-additions {
+      margin: 0;
+
+      li {
+        float: left;
+        display: block;
+        margin-right: 10px;
+      }
+    }
+
+    a {
+      &, &:active {
+        color: #0090D9;
+      }
+      &:hover, &:focus {
+        color: #FF2828;
+      }
+    }
+  }
+}

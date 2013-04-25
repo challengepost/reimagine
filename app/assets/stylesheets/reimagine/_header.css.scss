@@ -1,0 +1,100 @@
+#global-header {
+  @include fill-parent;
+  padding: 10px 0;
+  background: white;
+
+  //override from cp-account
+  #global-nav-container {
+   width: 100%;
+  }
+
+  .cp-logo {
+    @include span-columns(3);
+    @include media($mobile) {
+      @include span-columns(4);
+      float: none;
+    }
+
+    a {
+      display: inherit;
+    }
+
+    img {
+      max-width: 197px;
+      width: 100%;
+      margin-top: 1px;
+
+      @include media($mobile) {
+        margin: 0 auto 4px auto;
+      }
+    }
+  }
+
+  .actions {
+    @include span-columns(9);
+
+    a {
+      font-size: 17px;
+      font-weight: 600;
+      color: black;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $link-color;
+      }
+    }
+
+    @include media($mobile) {
+      @include span-columns(4);
+      float: none;
+      text-align: center;
+      a {
+        font-size: 14px;
+      }
+    }
+
+    .ctas {
+      @include span-columns(6);
+      padding-top: .5em;
+
+      a {
+        margin-right: 32px;
+      }
+
+      @include media($mobile) {
+        width: inherit;
+        float: none;
+        display: inline;
+        padding-top: .4em;
+        margin-right: 0;
+
+        a {
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .user-actions {
+      @include span-columns(6);
+      text-align: right;
+
+      a.button {
+        margin-left: 32px;
+      }
+
+      @include media($mobile) {
+        width: inherit;
+        float: none;
+        display: inline;
+
+        a.button {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  @include media($mobile) {
+    @include pad;
+  }
+}
