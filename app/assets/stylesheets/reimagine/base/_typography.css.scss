@@ -1,5 +1,5 @@
-@import "/bourbon";
-@import "/neat";
+@import "bourbon";
+@import "neat";
 @import "reimagine/globals";
 
 $headline-color: $dark-text-color;
@@ -16,10 +16,10 @@ body {
   font-weight: 400;
   line-height: 21px;
 
-  // @include media($mobile) {
-  //   font-size: 14px;
-  //   line-height: 19px;
-  // }
+  @include media($mobile) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 em {

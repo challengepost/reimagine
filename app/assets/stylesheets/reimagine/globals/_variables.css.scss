@@ -1,8 +1,19 @@
+@import "neat-helpers"; // or "neat-helpers" when in Rails
+
+// Change the grid settings
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 10;
+$max-width: em(1088);
+
+// Define your breakpoints
+$mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(max-width 768px 8);
+
 // $modifier-object-variable-type
 // $light-text-color
 
 // Typography Colors
-
 $text-color: #707070;
 $light-text-color: #999;
 $dark-text-color: #222;
