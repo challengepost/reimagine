@@ -1,75 +1,75 @@
-.button {
-  // em border radius and padding so the
-  // button looks nice with any font size
-  border-radius: .4em;
-  padding: .6em 1em;
-  display: inline-block;
-  background-color: $primary-button-color;
-  color: $primary-button-font-color;
-  font-size: 17px;
-  font-weight: 600;
-  text-align: center;
-  border: none;
-  @include fade;
+// .button {
+//   // em border radius and padding so the
+//   // button looks nice with any font size
+//   border-radius: .4em;
+//   padding: .6em 1em;
+//   display: inline-block;
+//   background-color: $primary-button-color;
+//   color: $primary-button-font-color;
+//   font-size: 17px;
+//   font-weight: 600;
+//   text-align: center;
+//   border: none;
+//   @include fade;
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $primary-button-hover-color;
-    color: $primary-button-hover-font-color;
-    @include fade;
-  }
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     background-color: $primary-button-hover-color;
+//     color: $primary-button-hover-font-color;
+//     @include fade;
+//   }
 
-  @include media($mobile) {
-    font-size: 14px;
-  }
+//   @include media($mobile) {
+//     font-size: 14px;
+//   }
 
-  &.secondary {
-    background-color: $secondary-button-color;
-    color: $secondary-button-font-color;
+//   &.secondary {
+//     background-color: $secondary-button-color;
+//     color: $secondary-button-font-color;
 
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $secondary-button-hover-color;
-      color: $secondary-button-hover-font-color;
-    }
-  }
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       background-color: $secondary-button-hover-color;
+//       color: $secondary-button-hover-font-color;
+//     }
+//   }
 
-  &.tertiary {
-    background-color: $tertiary-button-color;
-    color: $tertiary-button-font-color;
+//   &.tertiary {
+//     background-color: $tertiary-button-color;
+//     color: $tertiary-button-font-color;
 
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $tertiary-button-hover-color;
-      color: $tertiary-button-hover-font-color;
-    }
-  }
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       background-color: $tertiary-button-hover-color;
+//       color: $tertiary-button-hover-font-color;
+//     }
+//   }
 
-  &.big {
-    font-size: 24px;
+//   &.big {
+//     font-size: 24px;
 
-    @include media($mobile) {
-      font-size: 17px;
-    }
-  }
+//     @include media($mobile) {
+//       font-size: 17px;
+//     }
+//   }
 
-  &.small {
-    font-size: 15px;
-    padding: .4em 0.9em;
+//   &.small {
+//     font-size: 15px;
+//     padding: .4em 0.9em;
 
-    @include media($mobile) {
-      font-size: 13px;
-    }
-  }
+//     @include media($mobile) {
+//       font-size: 13px;
+//     }
+//   }
 
-  &.faded {
-    background-color: $faded-button-color;
+//   &.faded {
+//     background-color: $faded-button-color;
 
-    &:hover {
-      background-color: $faded-button-hover-color;
-    }
-  }
-}
+//     &:hover {
+//       background-color: $faded-button-hover-color;
+//     }
+//   }
+// }

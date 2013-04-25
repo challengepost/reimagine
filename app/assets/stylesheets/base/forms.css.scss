@@ -1,86 +1,86 @@
-.field {
-  margin: 0 0 24px 0;
+// .field {
+//   margin: 0 0 24px 0;
 
-  label {
-    font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    color: black;
-    display: block;
-    margin-bottom: 2px;
+//   label {
+//     font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
+//     font-style: normal;
+//     font-weight: 600;
+//     color: black;
+//     display: block;
+//     margin-bottom: 2px;
 
-    &.sublabel {
-      font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      color: $body-text-color;
-      font-size: 12px;
-      line-height: 18px;
-      margin-bottom: 6px;
+//     &.sublabel {
+//       font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+//       font-style: normal;
+//       font-weight: 400;
+//       color: $body-text-color;
+//       font-size: 12px;
+//       line-height: 18px;
+//       margin-bottom: 6px;
 
-      @include media($mobile) {
-        font-size: 11px;
-        line-height: 16px;
-      }
-    }
+//       @include media($mobile) {
+//         font-size: 11px;
+//         line-height: 16px;
+//       }
+//     }
 
-    &.required:after {
-      content: " *";
-      color: $error-background-color;
-    }
+//     &.required:after {
+//       content: " *";
+//       color: $error-background-color;
+//     }
 
-    // for checkboxes:
-    &.inline {
-      font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      color: $body-text-color;
-      display: inline;
-    }
-  }
-}
+//     // for checkboxes:
+//     &.inline {
+//       font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+//       font-style: normal;
+//       font-weight: 400;
+//       color: $body-text-color;
+//       display: inline;
+//     }
+//   }
+// }
 
-input,
-select,
-textarea {
-  font-size: 15px;
-  line-height: 21px;
-  padding: 11px 10px 10px;
-  border: 2px solid $form-border-color;
+// input,
+// select,
+// textarea {
+//   font-size: 15px;
+//   line-height: 21px;
+//   padding: 11px 10px 10px;
+//   border: 2px solid $form-border-color;
 
-  @include media($mobile) {
-    font-size: 14px !important;
-    line-height: 19px !important;
-    padding: 9px 8px 8px;
-  }
+//   @include media($mobile) {
+//     font-size: 14px !important;
+//     line-height: 19px !important;
+//     padding: 9px 8px 8px;
+//   }
 
-  &:active,
-  &:focus {
-    border: 2px solid $link-color;
-  }
-}
+//   &:active,
+//   &:focus {
+//     border: 2px solid $link-color;
+//   }
+// }
 
-input[type="checkbox"],
-input[type="radio"] {
-  margin-right: 8px;
-}
+// input[type="checkbox"],
+// input[type="radio"] {
+//   margin-right: 8px;
+// }
 
-#{$all-text-inputs} {
-  &[disabled] {
-    background: $form-border-color;
-    color: $body-text-color;
-    font-style: italic;
-  }
-}
+// #{$all-text-inputs} {
+//   &[disabled] {
+//     background: $form-border-color;
+//     color: $body-text-color;
+//     font-style: italic;
+//   }
+// }
 
 
-.fieldWithErrors {
-  input {
-    border: 2px solid $error-background-color;
-  }
+// .fieldWithErrors {
+//   input {
+//     border: 2px solid $error-background-color;
+//   }
 
-  .errors {
-    font-size: 12px;
-    color: $error-background-color;
-  }
-}
+//   .errors {
+//     font-size: 12px;
+//     color: $error-background-color;
+//   }
+// }

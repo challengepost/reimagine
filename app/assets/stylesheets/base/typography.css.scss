@@ -1,10 +1,6 @@
 @import "../globals/all";
 
-$font-family:  "proxima-nova-n4",
-               "proxima-nova",
-               "Helvetica Neue",
-               Arial,
-               sans-serif;
+$headline-color: $dark-text-color;
 
 
 h1, h2, h3, h4, h5, h6, p {
@@ -12,16 +8,17 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
+  color: $text-color;
   font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
   line-height: 21px;
 
-  @include media($mobile) {
-    font-size: 14px;
-    line-height: 19px;
-  }
+  // @include media($mobile) {
+  //   font-size: 14px;
+  //   line-height: 19px;
+  // }
 }
 
 em {
@@ -46,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 600;
-  color: black;
+  color: $headline-color;
 }
 
 h1 {
@@ -55,19 +52,19 @@ h1 {
   font-weight: 400;
   margin-bottom: 0;
 
-  @include media($mobile) {
-    line-height: 32px;
-  }
+  // @include media($mobile) {
+  //   line-height: 32px;
+  // }
 }
 
 h2 {
   font-size: 22px;
   line-height: 28px;
 
-  @include media($mobile) {
-    font-size: 17px;
-    line-height: 22px;
-  }
+  // @include media($mobile) {
+  //   font-size: 17px;
+  //   line-height: 22px;
+  // }
 }
 
 h3 {
@@ -75,18 +72,18 @@ h3 {
   line-height: 23px;
   margin-bottom: 4px;
 
-  @include media($mobile) {
-    font-size: 16px;
-    line-height: 21px;
-  }
+  // @include media($mobile) {
+  //   font-size: 16px;
+  //   line-height: 21px;
+  // }
 }
 
 .small-text {
   font-size: 12px;
   line-height: 18px;
 
-  @include media($mobile) {
-    font-size: 11px;
-    line-height: 16px;
-  }
+  // @include media($mobile) {
+  //   font-size: 11px;
+  //   line-height: 16px;
+  // }
 }
