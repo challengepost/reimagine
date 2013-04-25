@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'reimagine/rails/version'
+require 'reimagine/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "reimagine-rails"
-  spec.version       = Reimagine::Rails::VERSION
+  spec.name          = "reimagine"
+  spec.version       = Reimagine::VERSION
   spec.authors       = ["Juan C. Müller"]
   spec.email         = ["jcmuller@gmail.com"]
   spec.description   = %q{ChallengePost assets}

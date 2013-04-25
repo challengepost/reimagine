@@ -22,4 +22,4 @@ end
 gem 'jquery-rails'
 gem 'thin'
 
-gem 'reimagine-rails', path: "../../"
+gem 'reimagine', path: "../../"
