@@ -1,4 +1,4 @@
-# Reimagine::Rails
+# Reimagine
 
 Assets used by ChallengePost applications.
 
@@ -6,7 +6,7 @@ Assets used by ChallengePost applications.
 
 Add this line to your application's Gemfile:
 
-    gem 'reimagine-rails'
+    gem 'reimagine'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install reimagine-rails
+    $ gem install reimagine
 
 ## Usage
 
