@@ -1,7 +1,8 @@
-@import "../globals/all";
+@import "/bourbon";
+@import "/neat";
+@import "reimagine/globals";
 
 $headline-color: $dark-text-color;
-
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;

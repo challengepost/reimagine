@@ -5,8 +5,9 @@ module Reimagine
     initializer :assets do |config|
       Rails.application.config.assets.precompile += %w(
         reimagine.css
-        reimagine/typography.css
-        reimagine/buttons.css
+        reimagine/base.css
+        reimagine/layout.css
+        reimagine/modules.css
       )
     end
   end
