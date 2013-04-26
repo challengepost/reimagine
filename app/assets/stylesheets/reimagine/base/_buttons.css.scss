@@ -3,14 +3,14 @@
 @import "reimagine/globals";
 
 
-$base-button-color: navy;
 $base-button-text: #eee;
 
-.button-primary { @include button($primary-color,$base-button-text);}
-.button-secondary { @include button($secondary-color,$text-color);}
-.button-tertiary { @include button($tertiary-color,$base-button-text);}
+// Standard Buttons
+.btn-primary { @include button($primary-color,$base-button-text);}
+.btn-secondary { @include button($secondary-color,$text-color);}
+.btn-tertiary { @include button($tertiary-color,$base-button-text);}
 
-.button-link {
+.btn-link {
   @include button($tertiary-color,$primary-color);
   background: none;
   text-decoration: underline;
@@ -19,10 +19,31 @@ $base-button-text: #eee;
   }
 }
 
-.button-success { @include button($success, $base-button-text); }
-.button-warning { @include button($warning, $text-color); }
-.button-error { @include button($error, $base-button-text); }
+// Button size variations
+.btn-lrg {
+  font-size: $base-font-size*1.4;
+  line-height: $base-line-height*1.2;
+  padding: $base-font-size/2 $base-font-size*1.4;
+}
 
+.btn-sm {
+  font-size: $base-font-size/1.2;
+  line-height: $base-line-height/1.2;
+  padding: $base-font-size/1.4 $base-font-size*1.2;
+}
+
+// Utility buttons
+.btn-disabled {
+  @include button(#ccc, #999);
+  &:hover, &:focus, &:active {
+    background: #ccc;
+    color: #999;
+    cursor: default;
+  }
+}
+.btn-success { @include button($success, $base-button-text); }
+.btn-warning { @include button($warning, $text-color); }
+.btn-error { @include button($error, $base-button-text); }
 
 // .button {
 //   // em border radius and padding so the
