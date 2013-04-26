@@ -2,12 +2,22 @@
 @import "neat";
 @import "reimagine/globals";
 
-
 .button {
   @include btn;
+  @include transition(all 0.1s ease-out);
+  @include typekit-helper("proxima-nova-n6", normal, 600);
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-bottom: 0;
 
   &.secondary { @include btn($secondary-color, $dark-text-color); }
+
   &.tertiary { @include btn($tertiary-color, white);}
+
   &.disabled {
    @include btn(#ccc, #999);
    background-image: none;
