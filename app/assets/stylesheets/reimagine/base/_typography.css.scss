@@ -22,6 +22,7 @@ em { @include typekit-helper("proxima-nova-i4", italic, 400); }
 strong {
   @include typekit-helper("proxima-nova-n6", normal, 600);
   color: darken($text-color, 5%);
+
   & em { @include typekit-helper("proxima-nova-i6", italic, 600); }
 }
 
