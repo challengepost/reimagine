@@ -3,88 +3,55 @@
 @import "reimagine/globals";
 
 $headline-color: $dark-text-color;
+$base-font-size: 1.1em;
+$base-line-height: 1.4em;
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
+// Paragraphs
 body {
+  @include typekit-helper("proxima-nova-n4", normal, 400);
+
   color: $text-color;
-  font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-
-  @include media($mobile) {
-    font-size: 14px;
-    line-height: 19px;
-  }
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 }
 
-em {
-  font-family: "proxima-nova-i4", "proxima-nova", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-}
+p { margin: 0 0 $base-line-height / 1.2; }
+
+em { @include typekit-helper("proxima-nova-i4", italic, 400); }
 
 strong {
-  font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  @include typekit-helper("proxima-nova-n6", normal, 600);
+  color: darken($text-color, 5%);
+  & em { @include typekit-helper("proxima-nova-i6", italic, 600); }
 }
 
-strong em {
-  font-family: "proxima-nova-i6", "proxima-nova", sans-serif;
-  font-style: italic;
-  font-weight: 600;
-}
+small { font-size: 80%; line-height: 80%; }
 
+// Headlines
 h1, h2, h3, h4, h5, h6 {
-  font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  @include typekit-helper("proxima-nova-n6", normal, 600);
   color: $headline-color;
+  line-height: $base-line-height;
+  margin: ($base-font-size / 2) 0;
+  text-rendering: optimizelegibility;
 }
 
-h1 {
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: 400;
-  margin-bottom: 0;
+h1 { font-size: $base-font-size * 2.75 }
+h2 { font-size: $base-font-size * 2.25 }
+h3 { font-size: $base-font-size * 1.75 }
+h4 { font-size: $base-font-size * 1.25 }
+h5 { font-size: $base-font-size }
+h6 { font-size: $base-font-size * 0.85 }
 
-  // @include media($mobile) {
-  //   line-height: 32px;
-  // }
-}
+// Utilities
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
 
-h2 {
-  font-size: 22px;
-  line-height: 28px;
+.text-warning { color: $warning; }
+.text-error { color: $error; }
+.text-success { color: $success; }
 
-  // @include media($mobile) {
-  //   font-size: 17px;
-  //   line-height: 22px;
-  // }
-}
+// Lists
 
-h3 {
-  font-size: 17px;
-  line-height: 23px;
-  margin-bottom: 4px;
 
-  // @include media($mobile) {
-  //   font-size: 16px;
-  //   line-height: 21px;
-  // }
-}
-
-.small-text {
-  font-size: 12px;
-  line-height: 18px;
-
-  // @include media($mobile) {
-  //   font-size: 11px;
-  //   line-height: 16px;
-  // }
-}

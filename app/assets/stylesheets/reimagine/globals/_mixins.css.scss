@@ -1,0 +1,9 @@
+@mixin typekit-helper ($variation, $style, $weight) {
+  font: {
+    family: $variation,
+            "proxima-nova",
+            sans-serif;
+    style: $style;
+    weight: $weight;
+  }
+}

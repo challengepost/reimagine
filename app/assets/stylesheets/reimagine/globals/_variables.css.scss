@@ -14,6 +14,10 @@ $tablet: new-breakpoint(max-width 768px 8);
 // $light-text-color
 
 // Typography Colors
-$text-color: #707070;
-$light-text-color: #999;
-$dark-text-color: #222;
+$text-color: #555;
+$light-text-color: lighten($text-color, 20%);
+$dark-text-color: darken($text-color, 20%);
+
+$warning: #ffd036;
+$error: #ed2918;
+$success: #1eb268;

@@ -1,0 +1,10 @@
+@import "bourbon";
+@import "neat";
+@import "reimagine/globals";
+
+$padding: 1em;
+
+.container {
+  @include outer-container;
+  @include pad($padding)
+}
