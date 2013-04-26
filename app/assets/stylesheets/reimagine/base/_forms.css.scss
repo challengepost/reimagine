@@ -38,10 +38,11 @@
 input,
 select,
 textarea {  
-  border: 2px dashed #DADADA;
+  border: 1px dashed lighten($text-color, 32%);
   padding: $base-font-size/1.4;
-  color: $dark-text-color;
+  color: $text-color;
   background: white;
+  @include transition(background-color 0.1s ease-out);
   
   /* styles for placeholder text, not sure how to do this:
   
@@ -51,13 +52,14 @@ textarea {
   */
   
   &:hover {
-    border: 2px solid lighten($primary-color, 51%);
+    border: 1px solid lighten($primary-color, 51%);
     background: lighten($primary-color, 51%);
+    @include transition(background-color 0.2s ease-in);
   }
   
   &:active,
   &:focus {
-    border: 2px solid lighten($primary-color, 3%);
+    border: 1px solid lighten($primary-color, 3%);
     background: white;
     color: $dark-text-color;
   }
