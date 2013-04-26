@@ -30,8 +30,9 @@
   }
 
   &:active, &.active {
+    @include background-image(linear-gradient(shade($button-color, 30%), shade($button-color, 20%)));
     @include transition(all 0.05s);
-    background: shade($button-color, 20%);
+    // background: shade($button-color, 20%);
     color: tint($button-color, 50%);
   }
 
