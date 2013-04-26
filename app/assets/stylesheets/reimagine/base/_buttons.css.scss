@@ -3,120 +3,58 @@
 @import "reimagine/globals";
 
 
-$base-button-text: #eee;
+.button {
+  @include btn;
 
-// Standard Buttons
-.btn-primary { @include button($primary-color,$base-button-text);}
-.btn-secondary { @include button($secondary-color,$text-color);}
-.btn-tertiary { @include button($tertiary-color,$base-button-text);}
+  &.secondary { @include btn($secondary-color, $dark-text-color); }
+  &.tertiary { @include btn($tertiary-color, white);}
+  &.disabled {
+   @include btn(#ccc, #999);
+   background-image: none;
+    &:hover, &:focus, &:active {
+      background: #ccc;
+      color: #999;
+      cursor: default;
+    }
+  }
 
-.btn-link {
-  @include button($tertiary-color,$primary-color);
-  background: none;
-  text-decoration: underline;
-  &:hover, &:focus, &:active {
+  &.link {
+    @include btn($tertiary-color, $primary-color);
     background: none;
+    &:hover, &:focus, &:active {
+      background: none;
+    }
   }
-}
 
-// Button size variations
-.btn-lrg {
-  font-size: $base-font-size*1.4;
-  line-height: $base-line-height*1.2;
-  padding: $base-font-size/2 $base-font-size*1.4;
-}
-
-.btn-sm {
-  font-size: $base-font-size/1.2;
-  line-height: $base-line-height/1.2;
-  padding: $base-font-size/1.4 $base-font-size*1.2;
-}
-
-// Utility buttons
-.btn-disabled {
-  @include button(#ccc, #999);
-  &:hover, &:focus, &:active {
-    background: #ccc;
-    color: #999;
-    cursor: default;
+  &.large {
+    font-size: $base-font-size*1.4;
+    line-height: $base-line-height*1.2;
+    padding: $base-font-size/2 $base-font-size*1.4;
   }
+
+  &.small {
+    font-size: $base-font-size/1.2;
+    line-height: $base-line-height/1.2;
+    padding: $base-font-size/1.4 $base-font-size*1.2;
+  }
+
 }
-.btn-success { @include button($success, $base-button-text); }
-.btn-warning { @include button($warning, $text-color); }
-.btn-error { @include button($error, $base-button-text); }
 
-// .button {
-//   // em border radius and padding so the
-//   // button looks nice with any font size
-//   border-radius: .4em;
-//   padding: .6em 1em;
-//   display: inline-block;
-//   background-color: $primary-button-color;
-//   color: $primary-button-font-color;
-//   font-size: 17px;
-//   font-weight: 600;
-//   text-align: center;
-//   border: none;
-//   @include fade;
 
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     background-color: $primary-button-hover-color;
-//     color: $primary-button-hover-font-color;
-//     @include fade;
-//   }
+a {
+  @include transition(color 0.1s ease-out);
 
-//   @include media($mobile) {
-//     font-size: 14px;
-//   }
+  color: lighten($primary-color, 5%);
+  text-decoration: none;
 
-//   &.secondary {
-//     background-color: $secondary-button-color;
-//     color: $secondary-button-font-color;
+  &:hover, &:focus {
+    @include transition(color 0.2s ease-in);
 
-//     &:hover,
-//     &:focus,
-//     &:active {
-//       background-color: $secondary-button-hover-color;
-//       color: $secondary-button-hover-font-color;
-//     }
-//   }
+    color: lighten($primary-color, 20%);
+  }
 
-//   &.tertiary {
-//     background-color: $tertiary-button-color;
-//     color: $tertiary-button-font-color;
+  &:active, &.active {
+    color: shade($primary-color, 50%);
+  }
 
-//     &:hover,
-//     &:focus,
-//     &:active {
-//       background-color: $tertiary-button-hover-color;
-//       color: $tertiary-button-hover-font-color;
-//     }
-//   }
-
-//   &.big {
-//     font-size: 24px;
-
-//     @include media($mobile) {
-//       font-size: 17px;
-//     }
-//   }
-
-//   &.small {
-//     font-size: 15px;
-//     padding: .4em 0.9em;
-
-//     @include media($mobile) {
-//       font-size: 13px;
-//     }
-//   }
-
-//   &.faded {
-//     background-color: $faded-button-color;
-
-//     &:hover {
-//       background-color: $faded-button-hover-color;
-//     }
-//   }
-// }
+}

@@ -1,8 +1,12 @@
+@import "reimagine/globals/variables";
+
 // Shorthand to call typekit font variations
 @mixin typekit-helper ($variation, $style, $weight) {
   font: {
     family: $variation,
             "proxima-nova",
+            "Helvetica Neue",
+            Arial,
             sans-serif;
     style: $style;
     weight: $weight;
@@ -10,11 +14,13 @@
 }
 
 // Button template
-@mixin button($button-color, $button-text) {
+
+@mixin btn($button-color: $primary-color, $button-text: white) {
   @include transition(all 0.1s ease-out);
   @include typekit-helper("proxima-nova-n6", normal, 600);
 
   background: $button-color;
+  @include background-image(linear-gradient($button-color, shade($button-color, 6%)));
   border-radius: $button-radius;
   border: 0;
   color: $button-text;
@@ -23,7 +29,7 @@
   font-size: $base-font-size;
   line-height: $base-line-height;
   margin-bottom: 0;
-  padding: $base-font-size/1.4 $base-font-size*1.6;
+  padding: $base-font-size/1.4 $base-font-size*1.4;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -35,9 +41,9 @@
   }
 
   &:active, &.active {
-    @include transition(all 0.1s);
+    @include transition(all 0.05s);
     background: shade($button-color, 20%);
-    color: shade($button-color, 50%);
+    color: tint($button-color, 50%);
   }
 
 }

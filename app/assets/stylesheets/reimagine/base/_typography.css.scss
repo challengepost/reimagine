@@ -2,8 +2,6 @@
 @import "neat";
 @import "reimagine/globals";
 
-$headline-color: $dark-text-color;
-
 // Paragraphs
 body {
   @include typekit-helper("proxima-nova-n4", normal, 400);
@@ -19,12 +17,12 @@ em { @include typekit-helper("proxima-nova-i4", italic, 400); }
 
 strong {
   @include typekit-helper("proxima-nova-n6", normal, 600);
-  color: darken($text-color, 5%);
+  color: darken($text-color, 10%);
 
   & em { @include typekit-helper("proxima-nova-i6", italic, 600); }
 }
 
-small { font-size: 80%; line-height: 80%; }
+small { line-height: $base-line-height/10; }
 
 // Headlines
 h1, h2, h3, h4, h5, h6 {
@@ -47,10 +45,14 @@ h6 { font-size: $base-font-size * 0.85 }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 
-.text-warning { color: $warning; }
 .text-error { color: $error; }
 .text-success { color: $success; }
 
 // Lists
+ol {
+
+}
+
+ul {}
 
 
