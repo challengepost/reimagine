@@ -22,7 +22,7 @@ $tertiary-color: #666666; //gray
 
 // Typography Colors
 $text-color: #707070;
-$light-text-color: lighten($text-color, 20%);
+$light-text-color: lighten($text-color, 15%);
 $dark-text-color: darken($text-color, 30%);
 
 $headline-color: $dark-text-color;

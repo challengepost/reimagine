@@ -19,17 +19,17 @@
   &.tertiary { @include btn($tertiary-color, white);}
 
   &.disabled {
-   @include btn(#ccc, #999);
+   @include btn(#bfbfbf, lighten($text-color, 5%));
    background-image: none;
     &:hover, &:focus, &:active {
-      background: #ccc;
-      color: #999;
+      background: #bfbfbf;
+      color: lighten($text-color, 5%);
       cursor: default;
     }
   }
 
   &.link {
-    @include btn($tertiary-color, $primary-color);
+    @include btn($tertiary-color, lighten($primary-color, 3%));
     background: none;
     &:hover, &:focus, &:active {
       background: none;
@@ -54,7 +54,7 @@
 a {
   @include transition(color 0.1s ease-out);
 
-  color: lighten($primary-color, 5%);
+  color: lighten($primary-color, 3%);
   text-decoration: none;
 
   &:hover, &:focus {

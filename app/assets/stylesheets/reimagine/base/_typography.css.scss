@@ -5,13 +5,12 @@
 // Paragraphs
 body {
   @include typekit-helper("proxima-nova-n4", normal, 400);
-
   color: $text-color;
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
 
-p { margin: 0 0 $base-line-height / 1.2; }
+p { margin: 0 0 $base-line-height / 1.5; }
 
 em { @include typekit-helper("proxima-nova-i4", italic, 400); }
 
@@ -22,23 +21,24 @@ strong {
   & em { @include typekit-helper("proxima-nova-i6", italic, 600); }
 }
 
-small { line-height: $base-line-height/10; }
+small { font-size: $base-font-size * 0.8125 !important }
+// use !important to override normalize for now
 
 // Headlines
 h1, h2, h3, h4, h5, h6 {
   @include typekit-helper("proxima-nova-n6", normal, 600);
   color: $headline-color;
   line-height: $base-line-height;
-  margin: ($base-font-size / 2) 0;
+  margin: 0 0 ($base-font-size / 2.5) 0;
   text-rendering: optimizelegibility;
 }
 
-h1 { font-size: $base-font-size * 2.75 }
-h2 { font-size: $base-font-size * 2.25 }
-h3 { font-size: $base-font-size * 1.75 }
-h4 { font-size: $base-font-size * 1.25 }
+h1 { font-size: $base-font-size * 2.25 }
+h2 { font-size: $base-font-size * 1.375 }
+h3 { font-size: $base-font-size * 1.125 }
+h4 { font-size: $base-font-size }
 h5 { font-size: $base-font-size }
-h6 { font-size: $base-font-size * 0.85 }
+h6 { font-size: $base-font-size }
 
 // Utilities
 .text-left { text-align: left; }

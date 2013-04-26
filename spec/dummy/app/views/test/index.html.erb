@@ -2,6 +2,51 @@
 
   <%= image_tag image_path("challengepost-logo.png") %>
 
+  <h1>Forms</h1>
+  
+  <form method="post" action="">
+    <div class="field">
+      <label for="form-element-1">Input</label>
+      <p class="sublabel">Hey look, it's a sublabel</p>
+      <input type="text" value="testing" id="form-element-1" />
+    </div>
+    
+    <div class="field">
+      <label for="form-element-2">Text area</label>
+      <textarea type="text" value="testing" id="form-element-2"></textarea>
+    </div>
+    
+    <div class="field">
+      <label for="form-element-3">Select</label>
+      <select id="form-element-3">
+        <option value="1">Kittens</option>
+        <option value="2">Puppies</option>
+        <option value="3">Bunnies</option>
+      </select>
+    </div>
+    
+    <div class="field">
+      <label for="">Checkboxes</label>
+      <input id="pet_dog" name="pet_dog" type="checkbox" value="1" />
+      <label for="pet_dog" class="inline">I own a dog</label>
+      <br/>
+      <input id="pet_cat" name="pet_cat" type="checkbox" value="1" />
+      <label for="pet_cat" class="inline">I own a cat</label>
+    </div>
+    
+    <div class="field">
+      <label for="">Radio buttons</label>
+      <input id="age_child" name="age" type="radio" value="child" />
+      <label for="age_child" class="inline">I am younger than 21</label>
+      <br/>
+      <input id="age_adult" name="age" type="radio" value="adult" />
+      <label for="age_adult" class="inline">I'm over 21</label>
+    </div>
+  </form>
+  
+  
+  
+  
   <h1>Buttons</h1>
 
   <h3>Standard Buttons</h3>
@@ -35,9 +80,6 @@
   </p>
 
   <h4>Heading 4</h4>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, sequi, ipsa, beatae dolore magnam aut temporibus maxime voluptas voluptates nemo molestiae dicta corporis expedita <strong>aliquam</strong> ratione officia necessitatibus dolores quis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quos, doloremque, cum, dolorum dolores natus inventore sint vero facilis dignissimos obcaecati odit iure delectus rem quod ducimus sapiente placeat eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, suscipit totam omnis doloremque nobis laboriosam nemo nesciunt aspernatur facere dolor voluptate at fugit eaque sed hic esse dolorum accusantium. Distinctio!
-  </p>
   <h5>Heading 5</h5>
   <h6>Heading 6</h6>
 
