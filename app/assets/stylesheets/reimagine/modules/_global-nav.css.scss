@@ -1,0 +1,38 @@
+@import "bourbon";
+@import "neat";
+@import "reimagine/globals";
+
+
+/* Requires new layout of global-nav
+
+<header id="global-nav">
+  <div class="container">
+    <nav id="global-nav-links">
+      <a href="#" id="logo"><%= image_tag image_path("challengepost-logo.png") %></a>
+      <a href="#" class="button link" data-role="discover">Find Challenges</a>
+      <a href="#" class="button link" data-role="post-challenge">Post Challenges</a>
+    </nav>
+
+    <div class="drop-down-menu signed-out" id="global-nav-account">
+      <a href="#" class="button link">Log in</a>
+      <a href="#" class="button secondary"id="signup-link">Sign up</a>
+    </div>
+  </div>
+</header>
+
+*/
+
+
+$nav-pad: 0.4em;
+
+#global-nav {
+  background: white;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  padding: $nav-pad 0;
+  position: relative;
+  z-index: 100; //so we can see the drop shadow
+
+  #logo { position: relative; top: $nav-pad; }
+  #global-nav-links {float: left;}
+  #global-nav-account {float: right;}
+}

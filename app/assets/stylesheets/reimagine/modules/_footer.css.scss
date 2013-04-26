@@ -1,0 +1,43 @@
+@import "bourbon";
+@import "neat";
+@import "reimagine/globals";
+@import "reimagine/modules/symbolset";
+
+/* Requires new footer partial
+
+<footer id="global-footer" class="container">
+  <div class="links">
+    <div class="site-map">
+      <a href="#">About</a>
+      <a href="#">Jobs</a>
+      <a href="#">Press</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="legal">
+      <p>&copy; 2013 ChallengePost</p>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </div>
+  </div>
+
+  <div class="social-media" >
+    <a href="#" class="ss-icon ss-social-circle">tumblr</a>
+    <a href="#" class="ss-icon ss-social-circle">twitter</a>
+    <a href="#" class="ss-icon ss-social-circle">facebook</a>
+  </div>
+</footer>
+
+*/
+
+#global-footer {
+  padding: 1em;
+
+  .links {
+    float: left;
+  }
+
+  .social-media {
+    float: right;
+  }
+}

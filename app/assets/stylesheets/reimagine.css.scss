@@ -1,5 +1,9 @@
-@import "reimagine/base";
+@import "bourbon";
+@import "neat";
+
 @import "reimagine/globals";
+
+@import "reimagine/base";
 @import "reimagine/layout";
 @import "reimagine/modules";
 @import "reimagine/vendor";

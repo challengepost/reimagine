@@ -1,10 +1,26 @@
-@import "bourbon";
-@import "neat";
-@import "reimagine/globals";
-
 $padding: 1em;
+
+body { background: $footer-color; }
+.page { background: $page-color; }
 
 .container {
   @include outer-container;
-  @include pad($padding)
+  // @include pad(0 $padding);
+
+  @include media($tablet) {
+    background-color: yellow !important;
+    @include span-columns(8);
+  }
+  @include media($mobile) {
+    background-color:red !important;
+    @include span-columns(4);
+  }
+
+  .full-span {
+    @include span-columns(6);
+
+    @include media($mobile) {
+      @include span-columns(4)
+    }
+  }
 }
