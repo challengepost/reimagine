@@ -1,13 +1,5 @@
 require "reimagine/version"
 
-def gem_path(gem)
-  Gem::Specification.find_by_name(gem).gem_dir
-end
-
-def stylesheets_path(gem)
-  File.join(gem_path(gem), 'app', 'assets', 'stylesheets')
-end
-
 module Reimagine
   class Engine < ::Rails::Engine
     initializer :assets do |config|
@@ -20,6 +12,17 @@ module Reimagine
         reimagine/layout.css
         reimagine/modules.css
       )
+
+    end
+
+    private
+
+    def gem_path(gem)
+      Gem::Specification.find_by_name(gem).gem_dir
+    end
+
+    def stylesheets_path(gem)
+      File.join(gem_path(gem), 'app', 'assets', 'stylesheets')
     end
   end
 end

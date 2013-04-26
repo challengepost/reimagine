@@ -1,5 +1,3 @@
-@import "reimagine/globals/variables";
-
 // Shorthand to call typekit font variations
 @mixin typekit-helper ($variation, $style, $weight) {
   font: {

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width">
+
   <title>ReimagineTest</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -8,7 +10,9 @@
 </head>
 <body>
 
-<%= yield %>
+  <%= render "layouts/global_nav" %>
+  <%= yield %>
+  <%= render "layouts/footer" %>
 
 </body>
 </html>
