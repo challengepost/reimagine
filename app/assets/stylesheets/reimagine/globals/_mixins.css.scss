@@ -1,3 +1,4 @@
+// Shorthand to call typekit font variations
 @mixin typekit-helper ($variation, $style, $weight) {
   font: {
     family: $variation,
@@ -6,4 +7,37 @@
     style: $style;
     weight: $weight;
   }
+}
+
+// Button template
+@mixin button($button-color, $button-text) {
+  @include transition(all 0.1s ease-out);
+  @include typekit-helper("proxima-nova-n6", normal, 600);
+
+  background: $button-color;
+  border-radius: $button-radius;
+  border: 0;
+  color: $button-text;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin-bottom: 0;
+  padding: $base-font-size/1.4 $base-font-size*1.6;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+
+  &:hover, &:focus {
+    @include transition(all 0.2s ease-in);
+    background: tint($button-color, 20%);
+    color: lighten($button-text, 20%);
+  }
+
+  &:active, &.active {
+    @include transition(all 0.1s);
+    background: shade($button-color, 20%);
+    color: shade($button-color, 50%);
+  }
+
 }

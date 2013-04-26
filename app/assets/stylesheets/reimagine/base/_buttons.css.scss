@@ -1,3 +1,29 @@
+@import "bourbon";
+@import "neat";
+@import "reimagine/globals";
+
+
+$base-button-color: navy;
+$base-button-text: #eee;
+
+.button-primary { @include button($primary-color,$base-button-text);}
+.button-secondary { @include button($secondary-color,$text-color);}
+.button-tertiary { @include button($tertiary-color,$base-button-text);}
+
+.button-link {
+  @include button($tertiary-color,$primary-color);
+  background: none;
+  text-decoration: underline;
+  &:hover, &:focus, &:active {
+    background: none;
+  }
+}
+
+.button-success { @include button($success, $base-button-text); }
+.button-warning { @include button($warning, $text-color); }
+.button-error { @include button($error, $base-button-text); }
+
+
 // .button {
 //   // em border radius and padding so the
 //   // button looks nice with any font size
