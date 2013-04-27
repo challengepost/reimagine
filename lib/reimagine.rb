@@ -1,28 +1,10 @@
 require "reimagine/version"
 
 module Reimagine
-  class Engine < ::Rails::Engine
-    initializer :assets do |config|
-      Sass.load_paths << stylesheets_path("bourbon")
-      Sass.load_paths << stylesheets_path("neat")
-
-      Rails.application.config.assets.precompile += %w(
-        reimagine.css
-        reimagine/base.css
-        reimagine/layout.css
-        reimagine/modules.css
-      )
-
-    end
-
-    private
-
-    def gem_path(gem)
-      Gem::Specification.find_by_name(gem).gem_dir
-    end
-
-    def stylesheets_path(gem)
-      File.join(gem_path(gem), 'app', 'assets', 'stylesheets')
-    end
+  if defined?(Rails)
+    require "reimagine/engine"
+  else
+    Sass.load_paths << File.expand_path("../app/assets/stylesheets", __FILE__)
+    Sass.load_paths << File.expand_path("../vendor/assets/stylesheets", __FILE__)
   end
 end
