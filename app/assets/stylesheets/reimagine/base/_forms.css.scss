@@ -2,59 +2,58 @@
 @import "neat";
 @import "reimagine/globals";
 
-.field {
-  margin: 0 0 24px 0;
 
-  label {
-    @include typekit-helper("proxima-nova-n6", normal, 600);
-    color: $dark-text-color;
-    font-size: $base-font-size * 1.125; // same as H3
-    display: block;
-    margin-bottom: 4px;
-   
-    &.required:after {
-      content: " *";
-      color: $error;
-    }
-   
-    // for checkboxes:
-    &.inline {
-      @include typekit-helper("proxima-nova-n4", normal, 400);
-      font-size: $base-font-size;
-      color: $text-color;
-      display: inline-block;
-    }
-  } // END label
-  
-  p.sublabel {
-    @include typekit-helper("proxima-nova-n4", normal, 400);
-    color: $text-color;
-    font-size: $base-font-size * 0.8125;
-    line-height: $base-line-height * 0.875;  
-    margin-bottom: 7px;  
+label {
+  @include typekit-helper("proxima-nova-n6", normal, 600);
+  color: $dark-text-color;
+  font-size: $base-font-size * 1.125; // same as H3
+  display: block;
+  margin-bottom: 4px;
+
+  &.required:after {
+    content: " *";
+    color: $error;
   }
-} // END .field
+
+  // for checkboxes:
+  &.inline {
+    @include typekit-helper("proxima-nova-n4", normal, 400);
+    font-size: $base-font-size;
+    color: $text-color;
+    display: inline-block;
+  }
+} // END label
+
+p.sublabel {
+  @include typekit-helper("proxima-nova-n4", normal, 400);
+  color: $text-color;
+  font-size: $base-font-size * 0.8125;
+  line-height: $base-line-height * 0.875;
+  margin-bottom: 7px;
+}
+
+.field { margin: 0 0 24px 0; }
 
 input,
 select,
-textarea {  
+textarea {
   border: 2px dashed #DADADA;
   padding: $base-font-size/1.4;
   color: $dark-text-color;
   background: white;
-  
+
   /* styles for placeholder text, not sure how to do this:
-  
+
   color: $light-text-color;
   @include typekit-helper("proxima-nova-i4", italic, 400); //italicize
-  
+
   */
-  
+
   &:hover {
     border: 2px solid lighten($primary-color, 51%);
     background: lighten($primary-color, 51%);
   }
-  
+
   &:active,
   &:focus {
     border: 2px solid lighten($primary-color, 3%);
