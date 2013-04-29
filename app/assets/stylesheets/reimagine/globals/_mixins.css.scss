@@ -17,9 +17,7 @@
   @include background-image(linear-gradient($button-color, shade($button-color, 6%)));
   border-radius: $button-radius;
   color: $button-text;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  padding: $base-font-size/1.4 $base-font-size*1.4;
+  padding: $base-font-size/2 $base-font-size*1.2;
 
   &:hover, &:focus {
     @include transition(all 0.2s ease-in);
