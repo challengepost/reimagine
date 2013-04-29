@@ -10,6 +10,7 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  font-size: $base-font-size * 1.125; //h3
   vertical-align: middle;
   margin-bottom: 0;
 
@@ -36,15 +37,15 @@
   }
 
   &.large {
-    font-size: $base-font-size*1.4;
+    font-size: $base-font-size * 1.375; //h2
     line-height: $base-line-height*1.2;
-    padding: $base-font-size/2 $base-font-size*1.4;
+    padding: $base-font-size/3.2 $base-font-size*1.2;
   }
 
   &.small {
     font-size: $base-font-size/1.2;
     line-height: $base-line-height/1.2;
-    padding: $base-font-size/1.4 $base-font-size*1.2;
+    padding: $base-font-size/1.2 $base-font-size;
   }
 
 }

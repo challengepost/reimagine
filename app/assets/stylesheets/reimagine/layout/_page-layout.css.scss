@@ -1,24 +1,24 @@
-$padding: 1em;
-
 html { background: $footer-color; }
 .page { background: $page-color; }
 
-.band-white {background: #fff;}
-.band-callout {background: $secondary-color;}
+.row {
+  padding: 2em 0;
+
+  &.light { background: #fff; }
+  &.callout { background: $secondary-color; }
+}
 
 
 
 .container {
   @include outer-container;
-  @include pad(0 $padding);
+  @include pad(0 1em);
 
   @include media($tablet) {
-    background-color: yellow !important;
     @include span-columns(8);
   }
 
   @include media($mobile) {
-    background-color:red !important;
     @include span-columns(4);
   }
 
