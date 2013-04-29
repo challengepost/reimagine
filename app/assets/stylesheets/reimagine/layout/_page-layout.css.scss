@@ -1,7 +1,13 @@
 $padding: 1em;
 
-body { background: $footer-color; }
+html { background: $footer-color; }
 .page { background: $page-color; }
+
+.band-white {background: #fff;}
+.band-callout {background: $secondary-color;}
+.ban
+
+
 
 .container {
   @include outer-container;
