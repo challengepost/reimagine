@@ -1,4 +1,5 @@
 require "reimagine/version"
+require "sass"
 
 module Reimagine
   if defined?(Rails)
