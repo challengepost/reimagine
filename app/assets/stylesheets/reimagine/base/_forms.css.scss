@@ -37,10 +37,11 @@ p.sublabel {
 input,
 select,
 textarea {
-  border: 2px dashed #DADADA;
-  padding: $base-font-size/1.4;
-  color: $dark-text-color;
   background: white;
+  border: 2px dashed #DADADA;
+  color: $dark-text-color;
+  outline: none;
+  padding: $base-font-size/1.4;
 
   /* styles for placeholder text, not sure how to do this:
 
