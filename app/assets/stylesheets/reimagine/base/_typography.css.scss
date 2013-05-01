@@ -1,3 +1,5 @@
+@import 'reimagine/globals';
+
 // Paragraphs
 body {
   @include typekit-helper("proxima-nova-n4", normal, 400);
