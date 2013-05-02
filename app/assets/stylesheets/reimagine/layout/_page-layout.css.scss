@@ -8,8 +8,6 @@ html { background: $footer-color; }
   &.callout { background: $secondary-color; }
 }
 
-
-
 .container {
   @include outer-container;
   @include pad(0 1em);
