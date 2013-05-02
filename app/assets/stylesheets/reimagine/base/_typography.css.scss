@@ -1,4 +1,4 @@
-@import 'reimagine/globals';
+@import "reimagine/globals";
 
 // Paragraphs
 body {
@@ -47,8 +47,5 @@ h6 { font-size: $base-font-size } //Do we need these?
 .text-success { color: $success; }
 
 // Lists
-ol {
-
-}
-
+ol {}
 ul {}
