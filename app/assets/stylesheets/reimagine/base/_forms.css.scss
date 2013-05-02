@@ -75,6 +75,75 @@ input[type="radio"] {
 }
 
 
+// Switch style checkbox
+
+// <div class="switch">
+//   <input type="checkbox" name="switch" id="myswitch">
+//   <label class="ss-icon" for="myswitch">
+//     <div class="inner"></div>
+//     <div class="nib"></div>
+//   </label>
+//  </div>
+
+.switch {
+
+  $switch-radius: 6em;
+
+  @include user-select(none);
+  position: relative;
+  width: 2.8em;
+
+  input[type='checkbox'] { display: none; }
+  input[type='checkbox']:checked + label .inner { margin-left: 0; }
+  input[type='checkbox']:checked + label .nib { right: 0; }
+
+  label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: $switch-radius;
+
+    .inner {
+      margin-left: -100%;
+      width: 200%;
+
+      &:before, &:after {
+        @include box-sizing(border-box);
+        color: white;
+        float: left;
+        font-size: 0.6em;
+        line-height: 1.8em;
+        padding: 0.2em 0 0;
+        width: 50%;
+      }
+
+      &:before {
+        background-color: #26BA6B;
+        color: #1C7C48;
+        content: "check";
+        padding-left: 1em;
+      }
+
+      &:after {
+        background-color: #C5C5C5;
+        color: #8E8E8E;
+        content: "close";
+        padding-right: 1em;
+        text-align: right;
+      }
+    }
+
+    .nib {
+      background: #FFFFFF;
+      border-radius: $switch-radius;
+      bottom: 0;
+      margin: 0.2em;
+      position: absolute;
+      top: 0;
+      width: 0.8em;
+    }
+  }
+}
 
 // input,
 // select,
