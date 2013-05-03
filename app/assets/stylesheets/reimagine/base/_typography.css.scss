@@ -8,7 +8,7 @@ body {
   line-height: $base-line-height;
 }
 
-p { margin: 0 0 $base-line-height / 1.5; }
+p { margin: 0 0 1em 0; }
 
 em { @include typekit-helper("proxima-nova-i4", italic, 400); }
 
@@ -26,12 +26,15 @@ small { font-size: $base-font-size * 0.8125 !important }
 h1, h2, h3, h4, h5, h6 {
   @include typekit-helper("proxima-nova-n6", normal, 600);
   color: $headline-color;
-  line-height: $base-line-height * 0.858;
+  line-height: $base-line-height;
   margin: 0 0 ($base-font-size / 2.5) 0;
   text-rendering: optimizelegibility;
 }
 
-h1 { font-size: $base-font-size * 2.25 }
+h1 { 
+  font-size: $base-font-size * 2.25;
+  line-height: $base-line-height * 0.85714286; // 1.2em
+}
 h2 { font-size: $base-font-size * 1.375 }
 h3 { font-size: $base-font-size * 1.125 }
 h4 { font-size: $base-font-size }
@@ -47,5 +50,8 @@ h6 { font-size: $base-font-size } //Do we need these?
 .text-success { color: $success; }
 
 // Lists
-ol {}
-ul {}
+ul, ol {
+  list-style-position: outside;
+  padding: 0 0 0 1em;
+  margin: 0 0 1em 0;
+}
