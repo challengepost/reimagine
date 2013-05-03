@@ -15,7 +15,7 @@
     </div>
 
     <div class="legal">
-      <p>&copy; 2013 ChallengePost</p>
+      <span class="copyright">&copy; 2013 ChallengePost</p></span>
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>
     </div>
@@ -31,13 +31,55 @@
 */
 
 #global-footer {
-  padding: 1em;
+  padding: 1.5em 1em;
 
   .links {
     float: left;
-  }
+    
+    .site-map {
+      margin-bottom: 0.25em;
+      
+      a {
+        @include typekit-helper("proxima-nova-n6", normal, 600);
+        font-size: $base-font-size * 0.875; // 0.875em or 14px
+        line-height: $base-font-size * 0.875; // 0.875em or 14px
+        letter-spacing: 0.14285714em; // 2px
+        text-transform: uppercase;
+        color: lighten($text-color, 24%);
+        margin-right: 1.5em;
+        
+        &:hover, &:focus {
+          color: white;
+        }
+      }  
+    }
+    
+    .legal {
+      .copyright { float: left; margin-right: 1.5em;}
+      
+      a {
+        margin-right: 1.5em;
+        color: $text-color;
+        
+        &:hover, &:focus {
+          color: white;
+        }
+      }
+    }
+  } // END .links
 
   .social-media {
     float: right;
+    
+    a {
+      font-size: 2em;
+      line-height: 1.5em;
+      margin-right: 0.4em;
+      color: lighten($text-color, 5%);
+      
+      &:hover, &:focus {
+        color: white;
+      }
+    }
   }
 }
