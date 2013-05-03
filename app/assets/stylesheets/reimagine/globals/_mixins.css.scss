@@ -14,21 +14,19 @@
 // Button template
 @mixin btn($button-color: $primary-color, $button-text: white) {
   background: $button-color;
-  @include background-image(linear-gradient($button-color, shade($button-color, 6%)));
+  @include background-image(linear-gradient(lighten($button-color, 4%), darken($button-color, 7%)));
   border-radius: $button-radius;
   color: $button-text;
-  padding: $base-font-size/2 $base-font-size*1.2;
+  padding: $base-font-size/2 $base-font-size;
 
   &:hover, &:focus {
-    @include transition(all 0.2s ease-in);
-    background: tint($button-color, 20%);
-    color: lighten($button-text, 20%);
+    @include background-image(linear-gradient(lighten($button-color, 14%), $button-color));
+    color: lighten($button-text, 10%);
   }
 
   &:active, &.active {
     @include background-image(linear-gradient(shade($button-color, 30%), shade($button-color, 20%)));
     @include transition(all 0.05s);
-    // background: shade($button-color, 20%);
-    color: tint($button-color, 50%);
+    color: tint($button-color, 55%);
   }
 }
