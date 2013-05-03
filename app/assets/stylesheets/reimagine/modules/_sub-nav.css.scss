@@ -1,0 +1,43 @@
+@import "bourbon";
+@import "neat";
+@import "reimagine/globals";
+
+/* 
+
+<nav class="subnav">
+  <ul>
+    <li><a class="current" href="#">Current Subnav Item</a></li>
+    <li><a href="#">Another Item</a></li>
+    <li><a href="#">Another Item</a></li>
+  </ul>
+</nav>
+
+*/
+
+.subnav {
+  @include clearfix;
+  margin: 0 0 1.75em 0;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+    li {
+      float: left;
+      margin-right: 2.5em;
+      
+      a {
+        color: $secondary-color;
+        font-size: $base-font-size * 1.125; //h3
+        
+        &:hover { color: white; }
+        
+        &.current {
+          color: white;
+          border-bottom: 3px solid $secondary-color;
+        }
+      }
+    }
+  }
+}
