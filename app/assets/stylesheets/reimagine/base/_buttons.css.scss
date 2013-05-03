@@ -1,9 +1,23 @@
 @import "reimagine/globals/mixins";
 @import "reimagine/globals/variables";
 
+a {
+  @include transition(all 0.2s ease);
+  color: lighten($primary-color, 3%);
+  text-decoration: none;
+
+  &:hover, &:focus {
+    @include transition(all 0.2s ease);
+    color: lighten($primary-color, 20%);
+  }
+
+  &:active, &.active {
+    color: shade($primary-color, 50%);
+  }
+}
+
 .button {
   @include btn;
-  @include transition(all 0.1s ease-out);
   @include typekit-helper("proxima-nova-n6", normal, 600);
   border: 0;
   cursor: pointer;
@@ -39,32 +53,13 @@
   &.large {
     font-size: $base-font-size * 1.375; //h2
     line-height: $base-line-height*1.2;
-    padding: $base-font-size/3.2 $base-font-size*1.2;
+    padding: $base-font-size/3.2 $base-font-size;
   }
 
   &.small {
     font-size: $base-font-size/1.2;
     line-height: $base-line-height/1.2;
     padding: $base-font-size/1.2 $base-font-size;
-  }
-
-}
-
-
-a {
-  @include transition(color 0.1s ease-out);
-
-  color: lighten($primary-color, 3%);
-  text-decoration: none;
-
-  &:hover, &:focus {
-    @include transition(color 0.2s ease-in);
-
-    color: lighten($primary-color, 20%);
-  }
-
-  &:active, &.active {
-    color: shade($primary-color, 50%);
   }
 
 }
