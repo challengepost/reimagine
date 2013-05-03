@@ -46,24 +46,20 @@
         letter-spacing: 0.14285714em; // 2px
         text-transform: uppercase;
         color: lighten($text-color, 24%);
-        margin-right: 1.5em;
+        margin-right: 1.75em;
         
-        &:hover, &:focus {
-          color: white;
-        }
+        &:hover, &:focus { color: white; }
       }  
     }
     
     .legal {
-      .copyright { float: left; margin-right: 1.5em;}
+      .copyright { float: left; margin-right: 2em;}
       
       a {
-        margin-right: 1.5em;
+        margin-right: 2em;
         color: $text-color;
         
-        &:hover, &:focus {
-          color: white;
-        }
+        &:hover, &:focus { color: white; }
       }
     }
   } // END .links
@@ -77,9 +73,9 @@
       margin-right: 0.4em;
       color: lighten($text-color, 5%);
       
-      &:hover, &:focus {
-        color: white;
-      }
+      &:hover, &:focus { color: white; }
+      
+      &:last-of-type { margin-right: 0; }
     }
   }
 }
