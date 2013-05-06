@@ -18,6 +18,10 @@
   @include clearfix;
   margin: 0 0 1.75em 0;
   
+  @include media($mobile) {
+    margin: 0 0 1em 0;
+  }
+  
   ul {
     margin: 0;
     padding: 0;
@@ -26,6 +30,11 @@
     li {
       float: left;
       margin-right: 2.5em;
+      
+      @include media($mobile) {
+        margin-right: 0;
+        float: none;
+      }
       
       a {
         color: $secondary-color;
@@ -36,7 +45,20 @@
         &.current {
           color: white;
           border-bottom: 3px solid $secondary-color;
+          
+          @include media($mobile) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          }
         }
+        
+        @include media($mobile) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          text-align: center;
+          display: block;
+          width: 100%;
+          padding: 0.5em;
+        }
+        
       }
     }
   }
