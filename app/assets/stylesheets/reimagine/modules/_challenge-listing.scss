@@ -48,9 +48,7 @@
         margin: 0 0 0.3em 0;
       }
       
-      p.challenge-description {
-        margin: 0;
-      }
+      p.challenge-description { margin: 0; }
     }
     
     .stats {
@@ -61,9 +59,7 @@
         margin-bottom: 1.3em;
       }
       
-      .submission-time {
-        @include clearfix;
-      }
+      .submission-time { @include clearfix; }
       
       .symbol {
         width: 20%;
@@ -126,14 +122,10 @@
       } 
       
       .prizes,
-      .submission-time {
-        margin-bottom: 1em;
-      }
+      .submission-time { margin-bottom: 1em; }
       
       .value,
-      .action {
-        display: inline-block;
-      }
+      .action { display: inline-block; }
     }
   } // END &.hackathon a
   
@@ -153,9 +145,7 @@
         .challenge-logo {
           @include span-columns(1);
           
-          img {
-            margin-bottom: 0.2em;
-          }
+          img { margin-bottom: 0.2em; }
         }
           
         h2 {
@@ -164,21 +154,15 @@
         }
         
         p.posted-by,
-        p.challenge-description {
-          width: 100%;
-        } 
+        p.challenge-description { width: 100%; } 
         
-        p.challenge-description {
-          margin: 0 0 0.5em 0;
-        }
+        p.challenge-description { margin: 0 0 0.5em 0; }
       }
       
       .stats {
           @include span-columns(4);
               
-          .prizes {
-            margin-bottom: 0.5em;
-          }
+          .prizes { margin-bottom: 0.5em; }
           
           .symbol {
             width: auto;
@@ -191,24 +175,13 @@
             font-size: 1.0625em; // 17px, slightly smaller for clock icon
           }
         
-          .text {
-            width: auto;
-          }
+          .text { width: auto; }
           
-          .value {
-            display: inline-block;
-          }
-      
-          .action {
-            display: inline-block;
-            
-          }
+          .value, .action { display: inline-block; }
+
         } // END .stats
       
-      &:hover {
-        @include box-shadow(none);
-        border: none;
-      }
+      &:hover { @include box-shadow(none); border: none; }
     }
     
     &.hackathon a{
@@ -225,9 +198,7 @@
         }
         
         .prizes,
-        .submission-time {
-          margin-bottom: 0.5em;
-        }
+        .submission-time { margin-bottom: 0.5em; }
       }
     } // END &.hackathon a
     
