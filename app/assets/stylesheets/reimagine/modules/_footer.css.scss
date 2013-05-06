@@ -48,6 +48,8 @@
         color: lighten($text-color, 24%);
         margin-right: 1.75em;
         
+        &:last-of-type { margin-right: 0; }
+        
         &:hover, &:focus { color: white; }
       }  
     }
@@ -58,6 +60,8 @@
       a {
         margin-right: 2em;
         color: $text-color;
+        
+        &:last-of-type { margin-right: 0; }
         
         &:hover, &:focus { color: white; }
       }
@@ -77,5 +81,18 @@
       
       &:last-of-type { margin-right: 0; }
     }
+  }
+  
+  @include media($mobile) {
+    text-align: center;
+    
+    .links,
+    .legal,
+    .social-media { float: none; }
+    
+    .site-map a { margin-right: 1.5em; }
+    
+    .legal { margin-bottom: 0.5em; }
+    
   }
 }
