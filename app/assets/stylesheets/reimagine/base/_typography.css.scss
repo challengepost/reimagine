@@ -39,7 +39,12 @@ h1 {
   font-size: $base-font-size * 2.25; // 36px
   line-height: $base-line-height * 0.85714286; // 1.2em
 }
-h2 { font-size: $base-font-size * 1.375 } // 22px
+
+h2 { 
+  font-size: $base-font-size * 1.375; // 22px
+  line-height: $base-line-height * 0.92857143; // 1.3em
+} 
+
 h3 { font-size: $base-font-size * 1.125 } // 18px
 h4 { font-size: $base-font-size }
 h5 { font-size: $base-font-size }

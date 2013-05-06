@@ -2,12 +2,12 @@
 @import "reimagine/globals/variables";
 
 a {
-  @include transition(all 0.2s ease);
+  @include fade;
   color: lighten($primary-color, 3%);
   text-decoration: none;
 
   &:hover, &:focus {
-    @include transition(all 0.2s ease);
+    @include fade;
     color: lighten($primary-color, 20%);
   }
 

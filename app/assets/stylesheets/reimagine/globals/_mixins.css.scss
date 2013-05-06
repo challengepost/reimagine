@@ -30,3 +30,12 @@
     color: tint($button-color, 55%);
   }
 }
+
+// Fade mixin for fade in/fade out link/button/etc colors on hover
+@mixin fade() {
+  @include transition (all 0.2s ease);
+}
+
+@mixin no-fade() {
+  @include transition (none);
+}
