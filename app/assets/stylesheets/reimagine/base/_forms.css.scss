@@ -41,6 +41,8 @@ select,
 textarea {
   background: white;
   border: 2px solid #DADADA;
+  border-radius: 0;
+  box-shadow: none;
   color: $dark-text-color;
   outline: none;
   padding: $base-font-size/1.4;

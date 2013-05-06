@@ -17,11 +17,20 @@
       border-right: 2px dotted darken($page-color, 5%);
       padding-right: 1.25em;
       
-      .challenge-logo img {
+      .challenge-logo {
         float: left;
-        max-width: 6.25em;
-        margin-right: 1.25em;
+        max-width: 13.605442%; // 100px
+        margin-right: 2.7210884%; // 20px
+        
+        img {
+          width: 100%;
+        }
       }
+      
+      .content {
+        float: left;
+        width: 83.6734696%;
+      } 
       
       h2 {
         margin: 0 0 0.2em 0;
@@ -84,7 +93,7 @@
         display: block;
         
       }
-    } // END .challenge-stats
+    } // END .stats
     
     &:hover {
       @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.4));
@@ -122,6 +131,67 @@
         display: inline-block;
       }
     }
-  } 
+  }
   
+  /* MOBILE STYLES */
+  
+  @include media($mobile) {
+    a {
+      border: none;
+      padding: 1em;
+      margin-bottom: 0.4em;
+      
+      .challenge-synopsis {
+        @include span-columns(4);
+        border-right: none;
+        padding-right: 0;
+        
+        .challenge-logo {
+          @include span-columns(1);
+        }
+        
+        .content {
+          @include span-columns(3);
+        }
+        
+        p.challenge-description {
+          margin: 0 0 0.4em 0;
+        }
+      }
+      
+      .stats {
+          @include span-columns(4);
+              
+          .prizes {
+            margin-bottom: 0.5em;
+          }
+          
+          .symbol {
+            width: auto;
+            font-size: 1.125em; // 18px
+            padding-top: 0.2em;
+            margin-right: 0.5em;
+          }
+        
+          .text {
+            width: auto;
+          }
+          
+          .value {
+            display: inline-block;
+          }
+      
+          .action {
+            display: inline-block;
+            
+          }
+        } // END .stats
+      
+      &:hover {
+        @include box-shadow(none);
+        border: none;
+      }
+    }
+  } // END mobile styles
+
 } // END .challenge-listing
