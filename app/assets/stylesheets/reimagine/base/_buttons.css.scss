@@ -63,6 +63,25 @@ button {
     font-size: $base-font-size/1.2;
     line-height: $base-line-height/1.2;
     padding: $base-font-size/1.2 $base-font-size;
+  }  
+  
+  &.facebook-login { @include btn(#34569E, white); }
+  
+  &.github-login { @include btn(#525252, white); }
+  
+  &.facebook-login, 
+  &.github-login {
+    text-align: left;
+    width: 100%;
+    padding: 0.5em 1em 0.5em 0.8em;
+    
+    .ss-icon {
+      display: inline-block;
+      font-size: 22px;
+      margin: 0 0.5em 0 0;
+      opacity: 0.5;
+      vertical-align: middle;
+    }
   }
 
 }
