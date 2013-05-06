@@ -1,0 +1,127 @@
+@import "bourbon";
+@import "neat";
+@import "reimagine/globals";
+
+.challenge-listing {
+  a {
+    @include clearfix;
+    background: white;
+    color: $text-color;
+    display: block;
+    border: 6px solid white;
+    padding: 0.875em;
+    margin-bottom: 1em;
+    
+    .challenge-synopsis {
+      @include span-columns(9);
+      border-right: 2px dotted darken($page-color, 5%);
+      padding-right: 1.25em;
+      
+      .challenge-logo img {
+        float: left;
+        max-width: 6.25em;
+        margin-right: 1.25em;
+      }
+      
+      h2 {
+        margin: 0 0 0.2em 0;
+        color: $primary-color;
+        @include fade;
+      }
+      
+      p.posted-by {
+        color: $light-text-color;
+        font-style: italic;
+        margin: 0 0 0.3em 0;
+      }
+      
+      p.challenge-description {
+        margin: 0;
+      }
+    }
+    
+    .stats {
+      @include span-columns(3);
+          
+      .prizes {
+        @include clearfix;
+        margin-bottom: 1.3em;
+      }
+      
+      .submission-time {
+        @include clearfix;
+      }
+      
+      .symbol {
+        width: 20%;
+        color: $secondary-color;
+        float: left;
+        font-size: 2em;
+        line-height: 1em;
+        padding-top: 0.25em;
+        color: $secondary-color;
+      }
+    
+      .text {
+        float: left;
+        width: 80%;
+      }
+      
+      .value {
+        @include typekit-helper("proxima-nova-n6", normal, 600);
+        color: $dark-text-color;
+        font-size: $base-font-size * 1.125; // same as H3
+        display: block;
+      }
+  
+      .action {
+        @include typekit-helper("proxima-nova-n6", normal, 600);
+        color: $light-text-color;
+        font-size: $base-font-size * 0.75; // 12px
+        line-height: 1.6em;
+        letter-spacing: 0.083333333em; // 1px
+        text-transform: uppercase;
+        display: block;
+        
+      }
+    } // END .challenge-stats
+    
+    &:hover {
+      @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.4));
+      border: 6px solid lighten($primary-color, 3%);
+      @include fade;
+      
+      h2 {
+        color: $dark-text-color;
+        @include fade;
+      }
+    } // END &:hover
+    
+  } // END a
+  
+  &.hackathon a{
+    .stats {
+      .symbol {
+        font-size: 1.375em; // 22px
+        line-height: 1em;
+        padding: 0.1em 0 0 0.3em;
+      }
+      
+      .submission-time .symbol { 
+        font-size: 1.25em; // 20px 
+        padding: 0.2em 0 0 0.4em;
+      } 
+      
+      .prizes,
+      .submission-time {
+        margin-bottom: 1em;
+      }
+      
+      .value,
+      .action {
+        display: inline-block;
+      }
+    }
+  } 
+  
+} // END .challenge-listing
