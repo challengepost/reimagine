@@ -9,7 +9,7 @@
     color: $text-color;
     display: block;
     border: 6px solid white;
-    padding: 0.875em;
+    padding: 0.5em 0.875em 0.875em 0.875em;
     margin-bottom: 1em;
     
     .challenge-synopsis {
@@ -21,13 +21,17 @@
         float: left;
         max-width: 13.605442%; // 100px
         margin-right: 2.7210884%; // 20px
+        margin-top: 0.375em;
         
         img {
           width: 100%;
+          display: block;
         }
       }
       
-      .content {
+      h2,
+      p.posted-by,
+      p.challenge-description {
         float: left;
         width: 83.6734696%;
       } 
@@ -131,7 +135,7 @@
         display: inline-block;
       }
     }
-  }
+  } // END &.hackathon a
   
   /* MOBILE STYLES */
   
@@ -148,14 +152,24 @@
         
         .challenge-logo {
           @include span-columns(1);
+          
+          img {
+            margin-bottom: 0.2em;
+          }
+        }
+          
+        h2 {
+          @include span-columns(3);
+          margin-right: 0;
         }
         
-        .content {
-          @include span-columns(3);
-        }
+        p.posted-by,
+        p.challenge-description {
+          width: 100%;
+        } 
         
         p.challenge-description {
-          margin: 0 0 0.4em 0;
+          margin: 0 0 0.5em 0;
         }
       }
       
@@ -171,6 +185,10 @@
             font-size: 1.125em; // 18px
             padding-top: 0.2em;
             margin-right: 0.5em;
+          }
+          
+          .submission-time .symbol {
+            font-size: 1.0625em; // 17px, slightly smaller for clock icon
           }
         
           .text {
@@ -192,6 +210,27 @@
         border: none;
       }
     }
+    
+    &.hackathon a{
+      .stats {
+        .symbol,
+        .submission-time .symbol {          
+          font-size: 1.125em; // 18px
+          padding: 0.2em 0 0 0;
+          margin-right: 0.5em;
+        }
+        
+        .submission-time .symbol {
+          font-size: 1.0625em; // 17px, slightly smaller for clock icon
+        }
+        
+        .prizes,
+        .submission-time {
+          margin-bottom: 0.5em;
+        }
+      }
+    } // END &.hackathon a
+    
   } // END mobile styles
 
 } // END .challenge-listing

@@ -26,6 +26,10 @@ $dark-page-header-color: $footer-color;
     font-size: $base-font-size * 1.375; // 22px, same as H2
     line-height: $base-line-height * 0.92857143; // 1.3em, same as H2
     margin: ($base-font-size / 2.5) 0 $base-font-size 0;
+    
+    @include media($mobile) {
+      font-size: $base-font-size * 1.25; // 20px
+    }
   }
 
   &.dark { background: $dark-page-header-color; }

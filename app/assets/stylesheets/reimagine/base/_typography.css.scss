@@ -38,11 +38,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 { 
   font-size: $base-font-size * 2.25; // 36px
   line-height: $base-line-height * 0.85714286; // 1.2em
+  
+  @include media($mobile) {
+    font-size: $base-font-size * 1.75; // 28px
+  }
 }
 
 h2 { 
   font-size: $base-font-size * 1.375; // 22px
   line-height: $base-line-height * 0.92857143; // 1.3em
+  
+  @include media($mobile) {
+    font-size: $base-font-size * 1.25; // 20px
+  }
 } 
 
 h3 { font-size: $base-font-size * 1.125 } // 18px
