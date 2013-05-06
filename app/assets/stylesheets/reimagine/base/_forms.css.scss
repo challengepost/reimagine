@@ -2,13 +2,17 @@
 @import "neat";
 @import "reimagine/globals";
 
+.field { 
+  margin: 0 0 24px 0;
+  @include clearfix;
+}
 
 label {
   @include typekit-helper("proxima-nova-n6", normal, 600);
   color: $dark-text-color;
   font-size: $base-font-size * 1.125; // same as H3
   display: block;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
 
   &.required:after {
     content: " *";
@@ -32,16 +36,15 @@ p.sublabel {
   margin-bottom: 7px;
 }
 
-.field { margin: 0 0 24px 0; }
-
 input,
 select,
 textarea {
   background: white;
-  border: 2px dashed #DADADA;
+  border: 2px solid #DADADA;
   color: $dark-text-color;
   outline: none;
   padding: $base-font-size/1.4;
+  @include transition(all 0.2s ease);
 
   /* styles for placeholder text, not sure how to do this:
 
@@ -51,8 +54,9 @@ textarea {
   */
 
   &:hover {
-    border: 2px solid lighten($primary-color, 51%);
-    background: lighten($primary-color, 51%);
+    border: 2px solid lighten($primary-color, 50%);
+    background: lighten($primary-color, 50%);
+    @include transition(all 0.2s ease);
   }
 
   &:active,
@@ -60,6 +64,7 @@ textarea {
     border: 2px solid lighten($primary-color, 3%);
     background: white;
     color: $dark-text-color;
+    @include transition(all 0.2s ease);
   }
 }
 
@@ -70,7 +75,7 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  margin-right: 4px;
+  margin-right: 0.4em;
   width: auto;
 }
 
@@ -92,6 +97,8 @@ input[type="radio"] {
   @include user-select(none);
   position: relative;
   width: 2.8em;
+  float: left;
+  margin: 0.2em 0.6em 0 0;
 
   input[type='checkbox'] { display: none; }
   input[type='checkbox']:checked + label .inner { margin-left: 0; }
@@ -102,6 +109,7 @@ input[type="radio"] {
     overflow: hidden;
     cursor: pointer;
     border-radius: $switch-radius;
+    padding: 0;
 
     .inner {
       margin-left: -100%;
@@ -143,6 +151,11 @@ input[type="radio"] {
       width: 0.8em;
     }
   }
+}
+
+p.switch-label {
+  float: left;
+  margin: 0.175em 0 0 0;
 }
 
 // input,
