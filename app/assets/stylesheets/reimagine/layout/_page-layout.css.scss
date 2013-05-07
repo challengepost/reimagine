@@ -20,6 +20,10 @@ html { background: $footer-color; }
 
   @include media($tablet) {
     @include span-columns(8);
+    
+    &.no-side-padding {
+      @include pad(0);
+    }
   }
 
   @include media($mobile) {

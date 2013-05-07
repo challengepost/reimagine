@@ -127,6 +127,17 @@
     }
   } // END &.hackathon a
     
+  
+  /* TABLET STYLES */
+  
+  @include media($tablet) {
+    a {
+      .challenge-synopsis { width: 70.8%; }
+      
+      .stats { width: 27%; }
+    }
+  }
+  
   /* MOBILE STYLES */
   
   @include media($mobile) {
@@ -158,27 +169,27 @@
       }
       
       .stats {
-          @include span-columns(4);
-              
-          .prizes { margin-bottom: 0.5em; }
-          
-          .symbol {
-            width: auto;
-            font-size: 1.125em; // 18px
-            padding-top: 0.2em;
-            margin-right: 0.5em;
-          }
-          
-          .submission-time .symbol {
-            font-size: 1.0625em; // 17px, slightly smaller for clock icon
-            padding-top: 0.3em;
-          }
+        @include span-columns(4);
+            
+        .prizes { margin-bottom: 0.5em; }
         
-          .text { width: auto; }
-          
-          .value, .action { display: inline-block; }
+        .symbol {
+          width: auto;
+          font-size: 1.125em; // 18px
+          padding-top: 0.2em;
+          margin-right: 0.5em;
+        }
+        
+        .submission-time .symbol {
+          font-size: 1.0625em; // 17px, slightly smaller for clock icon
+          padding-top: 0.3em;
+        }
+      
+        .text { width: auto; }
+        
+        .value, .action { display: inline-block; }
 
-        } // END .stats
+      } // END .stats
       
       &:hover { @include box-shadow(none); border: none; }
     }
