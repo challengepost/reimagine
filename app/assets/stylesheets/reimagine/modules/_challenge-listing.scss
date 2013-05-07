@@ -94,7 +94,7 @@
     } // END .stats
     
     &:hover {
-      @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.4));
+      box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.4);
       border: 6px solid lighten($primary-color, 3%);
       @include fade;
       
@@ -113,9 +113,9 @@
         line-height: 1em;
         padding: 0.1em 0 0 0.3em;
       }
-      
-      .submission-time .symbol { 
-        font-size: 1.25em; // 20px 
+
+      .submission-time .symbol {
+        font-size: 1.25em; // 20px
         padding: 0.2em 0 0 0.4em;
       } 
       
@@ -190,8 +190,11 @@
         .value, .action { display: inline-block; }
 
       } // END .stats
-      
-      &:hover { @include box-shadow(none); border: none; }
+
+      &:hover {
+        box-shadow: none;
+        border: none;
+      }
     }
     
     &.hackathon a{
