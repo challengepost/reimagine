@@ -11,56 +11,56 @@
     border: 6px solid white;
     padding: 0.5em 0.875em 0.875em 0.875em;
     margin-bottom: 1em;
-    
+
     .challenge-synopsis {
       @include span-columns(9);
       border-right: 2px dotted darken($page-color, 5%);
       padding-right: 1.25em;
-      
+
       .challenge-logo {
         float: left;
         max-width: 13.605442%; // 100px
         margin-right: 2.7210884%; // 20px
         margin-top: 0.375em;
-        
+
         img {
           width: 100%;
           display: block;
         }
       }
-      
+
       h2,
       p.posted-by,
       p.challenge-description {
         float: left;
         width: 83.6734696%;
-      } 
-      
+      }
+
       h2 {
         margin: 0 0 0.2em 0;
         color: $primary-color;
         @include fade;
       }
-      
+
       p.posted-by {
         color: $light-text-color;
         font-style: italic;
         margin: 0 0 0.3em 0;
       }
-      
+
       p.challenge-description { margin: 0; }
     }
-    
+
     .stats {
       @include span-columns(3);
-          
+
       .prizes {
         @include clearfix;
         margin-bottom: 1.3em;
       }
-      
+
       .submission-time { @include clearfix; }
-      
+
       .symbol {
         width: 20%;
         color: $secondary-color;
@@ -70,17 +70,17 @@
         padding-top: 0.25em;
         color: $secondary-color;
       }
-    
+
       .text {
         float: left;
         width: 80%;
       }
-      
+
       .value {
         @include h3;
         display: block;
       }
-  
+
       .action {
         @include typekit-helper("proxima-nova-n6", normal, 600);
         color: $light-text-color;
@@ -89,23 +89,23 @@
         letter-spacing: 0.083333333em; // 1px
         text-transform: uppercase;
         display: block;
-        
+
       }
     } // END .stats
-    
+
     &:hover {
       box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.4);
       border: 6px solid lighten($primary-color, 3%);
       @include fade;
-      
+
       h2 {
         color: $dark-text-color;
         @include fade;
       }
     } // END &:hover
-    
+
   } // END a
-  
+
   &.hackathon a{
     .stats {
       .symbol {
@@ -117,76 +117,76 @@
       .submission-time .symbol {
         font-size: 1.25em; // 20px
         padding: 0.2em 0 0 0.4em;
-      } 
-      
+      }
+
       .prizes,
       .submission-time { margin-bottom: 1em; }
-      
+
       .value,
       .action { display: inline-block; }
     }
   } // END &.hackathon a
-    
-  
+
+
   /* TABLET STYLES */
-  
+
   @include media($tablet) {
     a {
       .challenge-synopsis { width: 70.8%; }
-      
+
       .stats { width: 27%; }
     }
   }
-  
+
   /* MOBILE STYLES */
-  
+
   @include media($mobile) {
     a {
       border: none;
       padding: 1em;
       margin-bottom: 0.4em;
-      
+
       .challenge-synopsis {
         @include span-columns(4);
         border-right: none;
         padding-right: 0;
-        
+
         .challenge-logo {
           @include span-columns(1);
-          
+
           img { margin-bottom: 0.2em; }
         }
-          
+
         h2 {
           @include span-columns(3);
           margin-right: 0;
         }
-        
+
         p.posted-by,
-        p.challenge-description { width: 100%; } 
-        
+        p.challenge-description { width: 100%; }
+
         p.challenge-description { margin: 0 0 0.5em 0; }
       }
-      
+
       .stats {
         @include span-columns(4);
-            
+
         .prizes { margin-bottom: 0.5em; }
-        
+
         .symbol {
           width: auto;
           font-size: 1.125em; // 18px
           padding-top: 0.2em;
           margin-right: 0.5em;
         }
-        
+
         .submission-time .symbol {
           font-size: 1.0625em; // 17px, slightly smaller for clock icon
           padding-top: 0.3em;
         }
-      
+
         .text { width: auto; }
-        
+
         .value, .action { display: inline-block; }
 
       } // END .stats
@@ -196,31 +196,31 @@
         border: none;
       }
     }
-    
+
     &.hackathon a{
       .stats {
         .symbol,
-        .submission-time .symbol {          
+        .submission-time .symbol {
           font-size: 1.125em; // 18px
           padding: 0.2em 0 0 0;
           margin-right: 0.5em;
         }
-        
+
         .submission-time .symbol {
           font-size: 1.0625em; // 17px, slightly smaller for clock icon
         }
-        
+
         .prizes,
         .submission-time { margin-bottom: 0.5em; }
       }
     } // END &.hackathon a
-    
+
   } // END mobile styles
-  
+
   // remove these styles after location is implemented:
   &.hackathon-no-location .stats .submission-time .value {
     padding-top: 0.45em;
-    
+
     @include media($mobile) { padding-top: 0; }
   }
 
