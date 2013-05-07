@@ -79,6 +79,14 @@ input[type="radio"] {
   width: auto;
 }
 
+.checkbox label {
+  @include typekit-helper("proxima-nova-n4", normal, 400);
+  color: $text-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  display: inline-block;
+}
+
 
 // Switch style checkbox
 
@@ -89,6 +97,8 @@ input[type="radio"] {
 //     <div class="nib"></div>
 //   </label>
 //  </div>
+
+.fancy-checkbox { margin-bottom: 0.4em; }
 
 .switch {
 
@@ -154,7 +164,7 @@ input[type="radio"] {
 }
 
 p.switch-label {
-  float: left;
+  display: inline-block;
   margin: 0.175em 0 0 0;
 }
 
