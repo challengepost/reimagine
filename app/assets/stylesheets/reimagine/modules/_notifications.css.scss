@@ -1,0 +1,55 @@
+@import "bourbon";
+@import "neat";
+@import "reimagine/globals";
+
+.notification {
+  margin-bottom: 1em;
+  
+  p {
+    padding: 0.7em;
+    margin: 0;
+    color: white;
+    
+    &.alert { background: $error; }
+    
+    &.notice { background: $warning; color: black; }
+    
+    &.success { background: $success; }
+    
+    a { text-decoration: underline; }
+    
+    &.alert a,
+    &.success a {
+      color: $warning;
+      
+      &:hover, &:focus {
+        @include fade;
+        color: lighten($warning, 20%);
+      }
+    }
+  }
+}
+
+p.absolute_flash {
+  padding: 0.7em;
+  margin: 0;
+  color: white;
+  
+  &.alert { background: $error; }
+  
+  &.notice { background: $warning; color: black; }
+  
+  &.success { background: $success; }
+  
+  a { text-decoration: underline; }
+  
+  &.alert a,
+  &.success a {
+    color: $warning;
+    
+    &:hover, &:focus {
+      @include fade;
+      color: lighten($warning, 20%);
+    }
+  }
+}

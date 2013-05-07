@@ -33,9 +33,9 @@ $dark-text-color: darken($text-color, 35%);
 
 $headline-color: $dark-text-color;
 
-$warning: #ffd036;
-$error: #ed2918;
-$success: #1eb268;
+$warning: #ffd333; // yellow, same as $secondary-color
+$error: #ed2918; // red
+$success: #1eb268; // green
 
 // Typography Sizes
 $base-font-size: 1em;
