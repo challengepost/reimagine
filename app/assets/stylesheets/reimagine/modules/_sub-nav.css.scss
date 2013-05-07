@@ -37,8 +37,10 @@
       }
       
       a {
+        @include h3;
+        @include typekit-helper("proxima-nova-n4", normal, 400);
         color: $secondary-color;
-        font-size: $base-font-size * 1.125; //h3
+        padding-bottom: 0.1em;
         
         &:hover { color: white; }
         

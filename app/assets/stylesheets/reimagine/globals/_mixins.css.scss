@@ -13,11 +13,13 @@
 
 // Button template
 @mixin btn($button-color: $primary-color, $button-text: white) {
+  @include h3;
   background: $button-color;
   @include background-image(linear-gradient(lighten($button-color, 4%), darken($button-color, 7%)));
   border-radius: $button-radius;
   color: $button-text;
   padding: $base-font-size/2 $base-font-size;
+  margin: 0;
 
   &:hover, &:focus {
     @include background-image(linear-gradient(lighten($button-color, 14%), $button-color));
@@ -38,4 +40,40 @@
 
 @mixin no-fade() {
   @include transition (none);
+}
+
+// Headline typography 
+// because we reuse these styles on other elements to maintain consistency
+// e.g., form labels = H3 styles
+
+@mixin headline-styles {
+  @include typekit-helper("proxima-nova-n6", normal, 600);
+  color: $headline-color;
+  text-rendering: optimizelegibility;
+}
+
+@mixin h1 {
+  @include headline-styles;
+  font-size: $base-font-size * 2.25; // 36px
+  line-height: $base-line-height * 0.85714286; // 1.2em
+  
+  @include media($mobile) {
+    font-size: $base-font-size * 1.75; // 28px
+  }
+}
+
+@mixin h2 {
+  @include headline-styles;
+  font-size: $base-font-size * 1.375; // 22px
+  line-height: $base-line-height * 0.92857143; // 1.3em
+  
+  @include media($mobile) {
+    font-size: $base-font-size * 1.25; // 20px
+  }
+}
+
+@mixin h3 {
+  @include headline-styles;
+  font-size: $base-font-size * 1.125; // 18px 
+  line-height: $base-line-height * 0.92857143; // 1.3em
 }

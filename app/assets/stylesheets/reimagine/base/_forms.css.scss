@@ -8,9 +8,7 @@
 }
 
 label {
-  @include typekit-helper("proxima-nova-n6", normal, 600);
-  color: $dark-text-color;
-  font-size: $base-font-size * 1.125; // same as H3
+  @include h3;
   display: block;
   padding-bottom: 4px;
 

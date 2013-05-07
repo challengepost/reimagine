@@ -19,15 +19,12 @@ a {
 .button,
 button {
   @include btn;
-  @include typekit-helper("proxima-nova-n6", normal, 600);
   border: 0;
   cursor: pointer;
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-size: $base-font-size * 1.125; //h3
   vertical-align: middle;
-  margin-bottom: 0;
 
   &.secondary { @include btn($secondary-color, $dark-text-color); }
 
