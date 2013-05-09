@@ -1,11 +1,14 @@
 <div class="page">
-  
+
   <div class="row light">
     <div class="container">
       <h3>Subnav example:</h3>
+      <pre>
+        .row.page-header
+      </pre>
     </div>
   </div>
-  
+
   <div class="row page-header">
     <div class="container">
       <nav class="subnav">
@@ -18,18 +21,20 @@
       <h1>Lorem ipsum dolor sit amet</h1>
     </div>
   </div>
-  
+
   <div class="row light">
     <div class="container">
       <h3>Page Header:</h1>
     </div>
-  </div>    
-  
+  </div>
+
   <div class="row page-header">
     <div class="container">
       <h1>Lorem ipsum dolor sit amet</h1>
       <p>
-        Consectetur adipisicing elit. Adipisci, voluptatem, error, deserunt, provident a quis vero perferendis dolorum quas minima tempore iste blanditiis quod consequuntur sunt unde nisi vitae tempora.
+        Consectetur adipisicing elit. Adipisci, voluptatem, error, deserunt, provident a quis
+        vero perferendis dolorum quas minima tempore iste blanditiis quod consequuntur sunt
+        unde nisi vitae tempora.
       </p>
 
       <a href="#" class="button secondary large">Click me</a>
@@ -42,6 +47,14 @@
       <h1>Forms</h1>
 
       <form method="post" action="">
+
+        <div class="field">
+          <div id="search" class="neat-last-column">
+            <input id="challenge-search" name="search" placeholder="Search challenges" title="Search" type="text" value="">
+            <button class="ss-icon" id="search-button" title="Search" type="submit">search</button>
+          </div>
+        </div>
+
         <div class="field">
           <label for="form-element-1">Input</label>
           <p class="sublabel">Hey look, it's a sublabel</p>
@@ -61,18 +74,18 @@
             <option value="3">Bunnies</option>
           </select>
         </div>
-        
+
         <div class="field">
           <label for="">Regular 'Ol Checkboxes</label>
           <div class="checkbox">
             <input type="checkbox" name="checkbox1" id="checkbox1">
             <label for="checkbox1">Pandas</label>
           </div>
-          <div class="checkbox">  
+          <div class="checkbox">
             <input type="checkbox" name="checkbox2" id="checkbox2">
             <label for="checkbox2">More Pandas</label>
           </div>
-          <div class="checkbox">  
+          <div class="checkbox">
             <input type="checkbox" name="checkbox3" id="checkbox3">
             <label for="checkbox3">All the pandas!</label>
           </div>
@@ -130,7 +143,7 @@
       <a href="#" class="button large">Large button</a>
       <a href="#" class="button small">Small button</a>
       <br/><br/>
-      
+
       <h3>Standard Buttons using <code>&lt;button&gt;</code> tag</h3>
       <button>Primary button</button>
       <button class="secondary">Secondary button</button>
@@ -143,7 +156,7 @@
       <button class="large">Large button</button>
       <button class="small">Small button</button>
       <br/><br/>
-      
+
       <h3>Button with icon</h3>
       <a class="button github-login"><span class="ss-icon ss-social">octocat</span>Github</a>
       <br/><br/>
@@ -184,34 +197,34 @@
 
       <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, dicta, repudiandae, tenetur fugiat eius iure quibusdam placeat adipisci ea beatae accusamus totam illum repellat. Ex placeat molestiae omnis molestias suscipit!</small>
       <br/><br/>
-      
+
       <ul>
         <li>Cupcake cheesecake jelly-o cotton candy macaroon cheesecake</li>
         <li>Tart donut tart caramels. Dragée candy danish carrot cake bonbon. Chupa chups pie lollipop cake halvah tiramisu. Donut marzipan jelly beans powder oat cake icing. Macaroon tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.</li>
         <li>Gingerbread dessert croissant lemon drops cupcake bear claw</li>
         <li>Fruitcake brownie wypas cheesecake marshmallow ice cream</li>
       </ul>
-      
+
       <ol>
         <li>Cupcake cheesecake jelly-o cotton candy macaroon cheesecake</li>
         <li>Tart donut tart caramels. Dragée candy danish carrot cake bonbon. Chupa chups pie lollipop cake halvah tiramisu. Donut marzipan jelly beans powder oat cake icing. Macaroon tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.</li>
         <li>Gingerbread dessert croissant lemon drops cupcake bear claw</li>
         <li>Fruitcake brownie wypas cheesecake marshmallow ice cream</li>
       </ol>
-      
+
     </div>
   </div>
-  
+
   <div class="row">
     <div class="container no-side-padding">
-  
+
       <article class="challenge-listing">
         <a data-role="featured_challenge" href="#">
           <section class="challenge-synopsis">
             <figure class="challenge-logo">
               <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
             </figure>
-      
+
             <div class="content">
               <h2>
                 Challenge Title Goes Here
@@ -220,11 +233,11 @@
                 <small>Online challenge posted by Creator Name</small>
               </p>
               <p class="challenge-description">
-                Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.        
+                Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
               </p>
             </div>
           </section>
-      
+
           <section class="stats">
             <div class="prizes">
               <span class="ss-icon symbol">star</span>
@@ -232,24 +245,24 @@
                 <span class="value">$50,000</span> <span class="action">in prizes</span>
               </div>
             </div>
-            
+
             <div class="submission-time">
               <span class="ss-icon symbol">clock</span>
               <div class="text">
                 <time datetime="2013-06-15T05:00:00-04:00" class="value timeago" title="Jun 15, 2013 05:00 AM EDT">40 days</time> <span class="action"> to submit</span>
               </div>
             </div>
-          </section>      
+          </section>
         </a>
       </article>
-      
+
       <article class="challenge-listing hackathon-no-location">
         <a data-role="featured_challenge" href="#">
           <section class="challenge-synopsis">
             <figure class="challenge-logo">
               <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
             </figure>
-      
+
             <div class="content">
               <h2>
                 Hackathon Title: NO location data
@@ -258,11 +271,11 @@
                 <small>In-person hackathon posted by Creator Name</small>
               </p>
               <p class="challenge-description">
-                Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.        
+                Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
               </p>
             </div>
           </section>
-      
+
           <section class="stats">
             <div class="prizes">
               <span class="ss-icon symbol">star</span>
@@ -270,24 +283,24 @@
                 <span class="value">$50,000</span> <span class="action">in prizes</span>
               </div>
             </div>
-            
+
             <div class="submission-time">
               <span class="ss-icon symbol">clock</span>
               <div class="text">
                 <time class="value timeago">November 15–17</time>
               </div>
             </div>
-          </section>      
+          </section>
         </a>
       </article>
-      
+
       <article class="challenge-listing hackathon">
         <a data-role="featured_challenge" href="#">
           <section class="challenge-synopsis">
             <figure class="challenge-logo">
               <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
             </figure>
-      
+
             <div class="content">
               <h2>
                 Hackathon Title Goes Here
@@ -296,11 +309,11 @@
                 <small>In-person hackathon posted by Creator Name</small>
               </p>
               <p class="challenge-description">
-                Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.        
+                Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
               </p>
             </div>
           </section>
-      
+
           <section class="stats">
             <div class="prizes">
               <span class="ss-icon symbol">star</span>
@@ -308,43 +321,43 @@
                 <span class="value">$100,000</span> <span class="action">in prizes</span>
               </div>
             </div>
-            
+
             <div class="submission-time">
               <span class="ss-icon symbol">clock</span>
               <div class="text">
                 <time class="value timeago">November 15–17</time>
               </div>
             </div>
-            
+
             <div class="location">
               <span class="ss-icon symbol">location</span>
               <div class="text">
                 <span class="value">Brooklyn, NY</span>
               </div>
             </div>
-          </section>      
+          </section>
         </a>
       </article>
 
     </div>
   </div>
-  
+
   <div class="row light">
     <div class="container">
       <h1>Notification banners</h1>
-      
+
       <div class="notification">
         <p tabindex="0" class="alert">Error message goes here. <a href="#">A link</a></p>
       </div>
-      
+
       <div class="notification">
         <p tabindex="0" class="notice">Status message goes here. <a href="#">A link</a></p>
       </div>
-      
+
       <div class="notification">
         <p tabindex="0" class="success">Success message goes here. <a href="#">A link</a></p>
       </div>
     </div>
-  </div>    
-  
+  </div>
+
 </div>

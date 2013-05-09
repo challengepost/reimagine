@@ -16,6 +16,8 @@ a {
   }
 }
 
+input[type="button"],
+input[type="submit"],
 .button,
 button {
   @include btn;
@@ -31,7 +33,7 @@ button {
   &.tertiary { @include btn($tertiary-color, white);}
 
   &.disabled,
-  &[disabled=disabled], 
+  &[disabled=disabled],
   &:disabled {
    @include btn(#bfbfbf, lighten($text-color, 5%));
    background-image: none;
@@ -60,18 +62,18 @@ button {
     font-size: $base-font-size/1.2;
     line-height: $base-line-height/1.2;
     padding: $base-font-size/1.2 $base-font-size;
-  }  
-  
+  }
+
   &.facebook-login { @include btn(#34569E, white); }
-  
+
   &.github-login { @include btn(#525252, white); }
-  
-  &.facebook-login, 
+
+  &.facebook-login,
   &.github-login {
     text-align: left;
     width: 100%;
     padding: 0.5em 1em 0.5em 0.8em;
-    
+
     .ss-icon {
       display: inline-block;
       font-size: 22px;

@@ -2,7 +2,7 @@
 @import "neat";
 @import "reimagine/globals";
 
-.field { 
+.field {
   margin: 0 0 24px 0;
   @include clearfix;
 }
@@ -38,7 +38,7 @@ input,
 select,
 textarea {
   background: white;
-  border: 2px solid #DADADA;
+  border: 2px solid $form-border;
   border-radius: 0;
   box-shadow: none;
   color: $dark-text-color;
@@ -73,8 +73,10 @@ textarea {
   width: 100%;
 }
 
+input[type="button"],
 input[type="checkbox"],
-input[type="radio"] {
+input[type="radio"],
+input[type="submit"] {
   margin-right: 0.4em;
   width: auto;
 }
@@ -101,7 +103,6 @@ input[type="radio"] {
 .fancy-checkbox { margin-bottom: 0.4em; }
 
 .switch {
-
   $switch-radius: 6em;
 
   @include user-select(none);
@@ -212,3 +213,42 @@ p.switch-label {
 //     color: $error-background-color;
 //   }
 // }
+
+
+#search {
+  @include span-columns(3);
+  position: relative;
+
+  input[type="text"] {
+    @include span-columns(3 of 3);
+    border-radius: 4px;
+    padding: 0 32px 0 10px;
+
+    &::-webkit-input-placeholder {
+      font-style: italic;
+    }
+
+    &:-moz-placeholder {
+      font-style: italic;
+    }
+  }
+
+  #search-button {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border: 0;
+    color: #a8a8a8;
+
+    &:hover, &:focus {
+      color: #333;
+    }
+  }
+
+  @include media($mobile) {
+    @include span-columns(12 of 12);
+  }
+}
+
