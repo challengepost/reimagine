@@ -8,10 +8,10 @@
 <footer id="global-footer" class="container">
   <div class="links">
     <div class="site-map">
-      <a href="#">About</a>
-      <a href="#">Jobs</a>
-      <a href="#">Press</a>
-      <a href="#">Help</a>
+      <a href="/about">About</a>
+      <a href="/jobs">Jobs</a>
+      <a href="/press">Press</a>
+      <a href="http://help.challengepost.com/">Help</a>
     </div>
 
     <div class="legal">
@@ -22,9 +22,9 @@
   </div>
 
   <div class="social-media" >
-    <a href="#" class="ss-icon ss-social-circle">tumblr</a>
-    <a href="#" class="ss-icon ss-social-circle">twitter</a>
-    <a href="#" class="ss-icon ss-social-circle">facebook</a>
+    <a href="http://blog.challengepost.com/" class="ss-icon ss-social-circle">tumblr</a>
+    <a href="http://twitter.com/challengepost" target="_blank" class="ss-icon ss-social-circle">twitter</a>
+    <a href="http://challengepost.com/challengepost" target="_blank" class="ss-icon ss-social-circle">facebook</a>
   </div>
 </footer>
 
@@ -35,10 +35,10 @@
 
   .links {
     float: left;
-    
+
     .site-map {
       margin-bottom: 0.25em;
-      
+
       a {
         @include typekit-helper("proxima-nova-n6", normal, 600);
         font-size: $base-font-size * 0.875; // 0.875em or 14px
@@ -47,22 +47,22 @@
         text-transform: uppercase;
         color: lighten($text-color, 24%);
         margin-right: 1.75em;
-        
+
         &:last-of-type { margin-right: 0; }
-        
+
         &:hover, &:focus { color: white; }
-      }  
+      }
     }
-    
+
     .legal {
       .copyright { float: left; margin-right: 2em;}
-      
+
       a {
         margin-right: 2em;
         color: $text-color;
-        
+
         &:last-of-type { margin-right: 0; }
-        
+
         &:hover, &:focus { color: white; }
       }
     }
@@ -70,28 +70,28 @@
 
   .social-media {
     float: right;
-    
+
     a {
       font-size: 2em;
       line-height: 1.5em;
       margin-right: 0.4em;
       color: lighten($text-color, 5%);
-      
+
       &:hover, &:focus { color: white; }
-      
+
       &:last-of-type { margin-right: 0; }
     }
   }
-  
+
   @include media($mobile) {
     text-align: center;
-    
+
     .links,
     .legal,
     .social-media { float: none; }
-    
+
     .links .site-map a { margin-right: 1.5em; }
-    
+
     .legal { margin-bottom: 0.5em; }
   }
 }

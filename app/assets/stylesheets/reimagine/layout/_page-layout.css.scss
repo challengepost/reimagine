@@ -4,11 +4,11 @@ html { background: $footer-color; }
 .row {
   @include clearfix;
   padding: 2em 0;
-  
+
   @include media($mobile) {
     padding: 1em 0;
   }
-  
+
 
   &.light { background: #fff; }
   &.callout { background: $secondary-color; }
@@ -20,7 +20,7 @@ html { background: $footer-color; }
 
   @include media($tablet) {
     @include span-columns(8);
-    
+
     &.no-side-padding {
       @include pad(0);
     }
@@ -28,7 +28,7 @@ html { background: $footer-color; }
 
   @include media($mobile) {
     @include span-columns(4);
-    
+
     &.no-side-padding {
       @include pad(0);
     }
