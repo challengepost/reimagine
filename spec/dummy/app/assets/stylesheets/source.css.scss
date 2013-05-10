@@ -1,0 +1,18 @@
+.source-container {
+  .highlight {
+    border: #333 1px solid;
+
+    code, pre { font-family: 'Ubuntu Mono', sans-serif; }
+    display: none;
+  }
+
+  a {
+    text-align: right;
+    display: block;
+    cursor: pointer;
+    margin: 5px auto;
+    padding: 5px;
+
+    div { color: inherit; }
+  }
+}

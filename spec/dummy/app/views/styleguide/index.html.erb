@@ -1,45 +1,34 @@
 <div class="page">
 
-  <div class="row light">
-    <div class="container">
-      <h3>Subnav example:</h3>
-      <pre>
-        .row.page-header
-      </pre>
+  <%= stylesheet_section "Subnav example" do %>
+    <div class="row page-header">
+      <div class="container">
+        <nav class="subnav">
+          <ul>
+            <li><a class="current" href="#">Current Subnav Item</a></li>
+            <li><a href="/about">Another Item</a></li>
+            <li><a href="#">Another Item</a></li>
+          </ul>
+        </nav>
+        <h1>Lorem ipsum dolor sit amet</h1>
+      </div>
     </div>
-  </div>
+  <% end %>
 
-  <div class="row page-header">
-    <div class="container">
-      <nav class="subnav">
-        <ul>
-          <li><a class="current" href="#">Current Subnav Item</a></li>
-          <li><a href="#">Another Item</a></li>
-          <li><a href="#">Another Item</a></li>
-        </ul>
-      </nav>
-      <h1>Lorem ipsum dolor sit amet</h1>
+  <%= stylesheet_section "Page header" do %>
+    <div class="row page-header">
+      <div class="container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>
+          Consectetur adipisicing elit. Adipisci, voluptatem, error, deserunt, provident a quis
+          vero perferendis dolorum quas minima tempore iste blanditiis quod consequuntur sunt
+          unde nisi vitae tempora.
+        </p>
+
+        <a href="#" class="button secondary large">Click me</a>
+      </div>
     </div>
-  </div>
-
-  <div class="row light">
-    <div class="container">
-      <h3>Page Header:</h1>
-    </div>
-  </div>
-
-  <div class="row page-header">
-    <div class="container">
-      <h1>Lorem ipsum dolor sit amet</h1>
-      <p>
-        Consectetur adipisicing elit. Adipisci, voluptatem, error, deserunt, provident a quis
-        vero perferendis dolorum quas minima tempore iste blanditiis quod consequuntur sunt
-        unde nisi vitae tempora.
-      </p>
-
-      <a href="#" class="button secondary large">Click me</a>
-    </div>
-  </div>
+  <% end %>
 
 
   <div class="row light">
@@ -131,13 +120,13 @@
     <div class="container">
       <h1>Buttons</h1>
 
-      <h3>Standard Buttons using <code>&lt;a&gt;</code> tag </h3>
-      <a href="#" class="button">Primary button</a>
-      <a href="#" class="button secondary">Secondary button</a>
-      <a href="#" class="button tertiary">Tertiary button</a>
-      <a href="#" class="button disabled">Disabled button</a>
-      <a href="#" class="button link">Link button</a>
-      <br/><br/>
+      <%= stylesheet_section "Standard buttons using <a> tag" do %>
+        <a href="#" class="button">Primary button</a>
+        <a href="#" class="button secondary">Secondary button</a>
+        <a href="#" class="button tertiary">Tertiary button</a>
+        <a href="#" class="button disabled">Disabled button</a>
+        <a href="#" class="button link">Link button</a>
+      <% end %>
 
       <h3>Size variations using <code>&lt;a&gt;</code> tag</h3>
       <a href="#" class="button large">Large button</a>
@@ -215,47 +204,53 @@
     </div>
   </div>
 
+  <h2>Challenges</h2>
+  <%= stylesheet_section "Normal" do %>
+    <div class="row">
+      <div class="container no-side-padding">
+        <article class="challenge-listing">
+          <a data-role="featured_challenge" href="#">
+            <section class="challenge-synopsis">
+              <figure class="challenge-logo">
+                <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
+              </figure>
+
+              <div class="content">
+                <h2>
+                  Challenge Title Goes Here
+                </h2>
+                <p class="posted-by">
+                  <small>Online challenge posted by Creator Name</small>
+                </p>
+                <p class="challenge-description">
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                </p>
+              </div>
+            </section>
+
+            <section class="stats">
+              <div class="prizes">
+                <span class="ss-icon symbol">star</span>
+                <div class="text">
+                  <span class="value">$50,000</span> <span class="action">in prizes</span>
+                </div>
+              </div>
+
+              <div class="submission-time">
+                <span class="ss-icon symbol">clock</span>
+                <div class="text">
+                  <time datetime="2013-06-15T05:00:00-04:00" class="value timeago" title="Jun 15, 2013 05:00 AM EDT">40 days</time> <span class="action"> to submit</span>
+                </div>
+              </div>
+            </section>
+          </a>
+        </article>
+      </div>
+    </div>
+  <% end %>
+
   <div class="row">
     <div class="container no-side-padding">
-
-      <article class="challenge-listing">
-        <a data-role="featured_challenge" href="#">
-          <section class="challenge-synopsis">
-            <figure class="challenge-logo">
-              <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
-            </figure>
-
-            <div class="content">
-              <h2>
-                Challenge Title Goes Here
-              </h2>
-              <p class="posted-by">
-                <small>Online challenge posted by Creator Name</small>
-              </p>
-              <p class="challenge-description">
-                Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
-              </p>
-            </div>
-          </section>
-
-          <section class="stats">
-            <div class="prizes">
-              <span class="ss-icon symbol">star</span>
-              <div class="text">
-                <span class="value">$50,000</span> <span class="action">in prizes</span>
-              </div>
-            </div>
-
-            <div class="submission-time">
-              <span class="ss-icon symbol">clock</span>
-              <div class="text">
-                <time datetime="2013-06-15T05:00:00-04:00" class="value timeago" title="Jun 15, 2013 05:00 AM EDT">40 days</time> <span class="action"> to submit</span>
-              </div>
-            </div>
-          </section>
-        </a>
-      </article>
-
       <article class="challenge-listing hackathon-no-location">
         <a data-role="featured_challenge" href="#">
           <section class="challenge-synopsis">
@@ -344,19 +339,22 @@
 
   <div class="row light">
     <div class="container">
-      <h1>Notification banners</h1>
+      <h1>Banners</h1>
 
-      <div class="notification">
-        <p tabindex="0" class="alert">Error message goes here. <a href="#">A link</a></p>
-      </div>
+      <%= stylesheet_section "Notifications" do %>
+        <div class="notification">
+          <p tabindex="0" class="alert">Error message goes here. <a href="#">A link</a></p>
+        </div>
 
-      <div class="notification">
-        <p tabindex="0" class="notice">Status message goes here. <a href="#">A link</a></p>
-      </div>
+        <div class="notification">
+          <p tabindex="0" class="notice">Status message goes here. <a href="#">A link</a></p>
+        </div>
 
-      <div class="notification">
-        <p tabindex="0" class="success">Success message goes here. <a href="#">A link</a></p>
-      </div>
+        <div class="notification">
+          <p tabindex="0" class="success">Success message goes here. <a href="#">A link</a></p>
+        </div>
+      <% end %>
+
     </div>
   </div>
 

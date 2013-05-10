@@ -23,3 +23,8 @@ gem 'jquery-rails'
 gem 'thin'
 
 gem 'reimagine', path: "../../"
+gem 'pygments.rb'
+
+group :development do
+  gem 'pry-debugger'
+end
