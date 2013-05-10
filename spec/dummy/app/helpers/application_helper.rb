@@ -2,24 +2,23 @@ module ApplicationHelper
 
   def stylesheet_section(title)
     source = capture { yield }
-    concat title_for title
-    concat source
-    concat source_as_source source
-    "<hr/>".html_safe
-  end
-
-  def title_for(title)
-    content_tag(:div, class: %w(row light)) do
-      content_tag(:div, class: %w(container)) do
-        content_tag(:h3, "#{title}:")
-      end
+    content_tag :section, class: "stylesheet" do
+      concat title_and_source title, source
+      concat source
     end
   end
 
-  def source_as_source(source)
+  def title_and_source(title, source)
     content_tag(:div, class: "source-container") do
-      concat content_tag(:a, "<div>show source</div>".html_safe, class: "toggle-source")
+      concat title_and_link title
       concat Pygments.highlight(source).html_safe
+    end
+  end
+
+  def title_and_link(title)
+    content_tag :p do
+      concat title
+      concat content_tag(:a, "show source", class: "toggle-source").html_safe
     end
   end
 
