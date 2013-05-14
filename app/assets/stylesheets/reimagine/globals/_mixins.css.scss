@@ -101,3 +101,15 @@
     }
   }
 }
+
+@mixin row {
+  @include clearfix;
+  padding: 2em 0;
+
+  @include media($mobile) {
+    padding: 1em 0;
+  }
+
+  &.light { background: #fff; }
+  &.callout { background: $secondary-color; }
+}

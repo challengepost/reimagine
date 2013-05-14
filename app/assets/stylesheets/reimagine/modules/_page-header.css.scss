@@ -2,6 +2,7 @@ $page-header-color: $primary-color;
 $dark-page-header-color: $footer-color;
 
 .page-header {
+  @include row;
   background: $page-header-color;
 
   h1 {
