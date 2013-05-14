@@ -63,10 +63,14 @@
     text-align: center;
 
     .links,
-    .legal,
     .social-media { float: none; }
 
-    .links .site-map a { margin-right: 1.5em; }
+    .links .legal .copyright,
+    .links .legal a,
+    .links .sitemap a {
+      float: none;
+      margin-right: 1em;
+    }
 
     .legal { margin-bottom: 0.5em; }
   }
