@@ -45,7 +45,7 @@ textarea {
   outline: none;
   padding: $base-font-size/1.4;
   @include fade;
-  
+
   @include placeholder {
     color: $text-color;
     @include typekit-helper("proxima-nova-i4", italic, 400); //italicize
@@ -89,14 +89,6 @@ input[type="submit"] {
 
 
 // Switch style checkbox
-
-// <div class="switch">
-//   <input type="checkbox" name="switch" id="myswitch">
-//   <label class="ss-icon" for="myswitch">
-//     <div class="inner"></div>
-//     <div class="nib"></div>
-//   </label>
-//  </div>
 
 .fancy-checkbox { margin-bottom: 0.4em; }
 
@@ -230,4 +222,3 @@ p.switch-label {
     }
   }
 }
-

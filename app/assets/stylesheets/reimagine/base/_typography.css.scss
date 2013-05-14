@@ -21,33 +21,40 @@ strong {
   & em { @include typekit-helper("proxima-nova-i6", italic, 600); }
 }
 
-small { 
+small {
   font-size: $base-font-size * 0.8125 !important; // 13px
   // use !important to override normalize for now
   line-height: 1.5em;
   display: inline-block; // to make line-height work
-}  
+}
 
 // Headlines
 
 h1 { @include h1; margin: 0 0 ($base-font-size / 2.5) 0; }
 
-h2 { @include h2; margin: 0 0 ($base-font-size / 2.5) 0; } 
-
-h3 { @include h3; margin: 0 0 ($base-font-size / 2.5) 0; } 
-
-// not using these yet: 
-h4, h5, h6 { 
-  @include headline-styles; 
-  font-size: $base-font-size; 
-  line-height: $base-line-height;
-  margin: 0 0 ($base-font-size / 2.5) 0; 
+    @include media($mobile) {
+      font-size: $base-font-size * 1.75; // 28px
+    }
+  }
 }
 
-// Utilities
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
+h2 {
+  @include h2;
+  margin: 0 0 ($base-font-size / 2.5) 0;
+}
+
+h3 {
+  @include h3;
+  margin: 0 0 ($base-font-size / 2.5) 0;
+}
+
+// not using these yet:
+h4, h5, h6 {
+  @include headline-styles;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: 0 0 ($base-font-size / 2.5) 0;
+}
 
 .text-error { color: $error; }
 .text-success { color: $success; }

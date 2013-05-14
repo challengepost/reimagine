@@ -62,13 +62,12 @@
       .submission-time { @include clearfix; }
 
       .symbol {
-        width: 20%;
         color: $secondary-color;
         float: left;
         font-size: 2em;
         line-height: 1em;
         padding-top: 0.25em;
-        color: $secondary-color;
+        width: 20%;
       }
 
       .text {

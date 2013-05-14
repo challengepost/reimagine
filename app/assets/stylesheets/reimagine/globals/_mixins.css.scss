@@ -78,22 +78,6 @@
   line-height: $base-line-height * 0.92857143; // 1.3em
 }
 
-@mixin symbol($color: #ffd333) {
-  font-size: 32px;
-  line-height: 32px;
-  padding-top: 6px;
-  color: $color;
-
-  @include media($mobile) {
-    border: 0;
-
-    .symbol {
-      font-size: 1em;
-      margin-right: 6px;
-    }
-  }
-}
-
 @mixin container {
   @include outer-container;
   @include pad(0 1em);

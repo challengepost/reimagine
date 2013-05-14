@@ -3,33 +3,6 @@
 @import "reimagine/globals";
 @import "reimagine/modules/symbolset";
 
-/* Requires new footer partial
-
-<footer id="global-footer" class="container">
-  <div class="links">
-    <div class="site-map">
-      <a href="/about">About</a>
-      <a href="/jobs">Jobs</a>
-      <a href="/press">Press</a>
-      <a href="http://help.challengepost.com/">Help</a>
-    </div>
-
-    <div class="legal">
-      <span class="copyright">&copy; 2013 ChallengePost</p></span>
-      <a href="/privacy">Privacy</a>
-      <a href="/terms">Terms</a>
-    </div>
-  </div>
-
-  <div class="social-media" >
-    <a href="http://blog.challengepost.com/" class="ss-icon ss-social-circle">tumblr</a>
-    <a href="http://twitter.com/challengepost" target="_blank" class="ss-icon ss-social-circle">twitter</a>
-    <a href="http://challengepost.com/challengepost" target="_blank" class="ss-icon ss-social-circle">facebook</a>
-  </div>
-</footer>
-
-*/
-
 #global-footer {
   padding: 1.5em 1em;
 
@@ -50,19 +23,22 @@
 
         &:last-of-type { margin-right: 0; }
 
-        &:hover, &:focus { color: white; }
+        &:hover,
+        &:focus { color: white; }
       }
     }
 
     .legal {
-      .copyright { float: left; margin-right: 2em;}
+      .copyright {
+        float: left;
+        margin-right: 2em;
+      }
 
       a {
         margin-right: 2em;
         color: $text-color;
 
         &:last-of-type { margin-right: 0; }
-
         &:hover, &:focus { color: white; }
       }
     }
