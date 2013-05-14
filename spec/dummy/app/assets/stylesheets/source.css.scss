@@ -1,6 +1,5 @@
-@import "reimagine/globals";
-
 .source-container {
+  @include container;
 
   .highlight {
     code, pre { font-family: 'Ubuntu Mono', sans-serif; }
@@ -22,5 +21,12 @@
     display: inline;
     text-align: right;
     cursor: pointer;
+    font-size: 0.75em;
+  }
+}
+
+.row { 
+  .source-container {
+    padding: 0;
   }
 }

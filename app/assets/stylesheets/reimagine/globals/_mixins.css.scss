@@ -93,3 +93,24 @@
     }
   }
 }
+
+@mixin container {
+  @include outer-container;
+  @include pad(0 1em);
+
+  @include media($tablet) {
+    @include span-columns(8);
+
+    &.no-side-padding {
+      @include pad(0);
+    }
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+
+    &.no-side-padding {
+      @include pad(0);
+    }
+  }
+}

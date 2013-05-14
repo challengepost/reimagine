@@ -27,4 +27,6 @@ gem 'pygments.rb'
 
 group :development do
   gem 'pry-debugger'
+  gem 'rack-livereload'
+  gem 'guard-livereload'
 end
