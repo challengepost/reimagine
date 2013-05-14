@@ -21,3 +21,8 @@ html { background: $footer-color; }
 .hidden { 
   display:none;
 }
+
+// Utilities
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center { text-align: center; }

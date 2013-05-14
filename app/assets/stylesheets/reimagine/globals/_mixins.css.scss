@@ -57,8 +57,11 @@
   font-size: $base-font-size * 2.25; // 36px
   line-height: $base-line-height * 0.85714286; // 1.2em
 
-  @include media($mobile) {
-    font-size: $base-font-size * 1.75; // 28px
+  &,
+  &.big {
+    @include media($mobile) {
+      font-size: $base-font-size * 1.75; // 28px
+    }
   }
 }
 

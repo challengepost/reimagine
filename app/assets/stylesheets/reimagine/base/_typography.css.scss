@@ -29,8 +29,12 @@ small {
 }
 
 // Headlines
+h1 {
+  @include h1;
+  margin: 0 0 ($base-font-size / 2.5) 0;
 
-h1 { @include h1; margin: 0 0 ($base-font-size / 2.5) 0; }
+  &.big {
+    font-size: $base-font-size * 3; // 48px
 
     @include media($mobile) {
       font-size: $base-font-size * 1.75; // 28px
