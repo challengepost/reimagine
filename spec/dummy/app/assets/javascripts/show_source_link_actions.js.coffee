@@ -1,4 +1,4 @@
-class window.DoSomething
+class ShowSourceLinkActions
   constructor: ->
     @links = $ '.source-container a'
     @setup()
@@ -30,4 +30,4 @@ class window.DoSomething
 
 
 $ ->
-  new DoSomething()
+  new ShowSourceLinkActions()

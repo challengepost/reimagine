@@ -45,13 +45,11 @@ textarea {
   outline: none;
   padding: $base-font-size/1.4;
   @include fade;
-
-  /* styles for placeholder text, not sure how to do this:
-
-  color: $light-text-color;
-  @include typekit-helper("proxima-nova-i4", italic, 400); //italicize
-
-  */
+  
+  @include placeholder {
+    color: $text-color;
+    @include typekit-helper("proxima-nova-i4", italic, 400); //italicize
+  }
 
   &:hover {
     border: 2px solid lighten($primary-color, 50%);
@@ -219,36 +217,17 @@ p.switch-label {
   @include span-columns(3);
   position: relative;
 
-  input[type="text"] {
-    @include span-columns(3 of 3);
-    border-radius: 4px;
-    padding: 0 32px 0 10px;
-
-    &::-webkit-input-placeholder {
-      font-style: italic;
-    }
-
-    &:-moz-placeholder {
-      font-style: italic;
-    }
-  }
-
-  #search-button {
-    height: 32px;
-    width: 32px;
+  button#search-button {
+    background: none;
+    color: $light-text-color;
+    padding: 0.5em;
     position: absolute;
-    top: 2px;
-    right: 2px;
-    border: 0;
-    color: #a8a8a8;
+    top: 4px;
+    right: 4px;
 
     &:hover, &:focus {
-      color: #333;
+      color: $dark-text-color;
     }
-  }
-
-  @include media($mobile) {
-    @include span-columns(12 of 12);
   }
 }
 
