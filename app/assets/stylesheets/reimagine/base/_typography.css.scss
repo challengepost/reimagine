@@ -33,7 +33,7 @@ h1 {
   @include h1;
   margin: 0 0 ($base-font-size / 2.5) 0;
 
-  &.big {
+  &.large {
     font-size: $base-font-size * 3; // 48px
 
     @include media($mobile) {

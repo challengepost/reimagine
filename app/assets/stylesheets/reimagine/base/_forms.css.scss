@@ -64,12 +64,24 @@ textarea {
     color: $dark-text-color;
     @include fade;
   }
+
+  &[disabled],
+  &[disabled]:active,
+  &[disabled]:focus,
+  &[disabled]:hover {
+    color: $text-color;
+    @include typekit-helper("proxima-nova-i4", italic, 400); //italicize
+    background: $form-border;
+    border-color: $form-border;
+  }
 }
 
 input,
 textarea {
   width: 100%;
 }
+
+textarea { min-height: 12em; }
 
 input[type="button"],
 input[type="checkbox"],
@@ -86,7 +98,6 @@ input[type="submit"] {
   line-height: $base-line-height;
   display: inline-block;
 }
-
 
 // Switch style checkbox
 
@@ -158,40 +169,6 @@ p.switch-label {
   display: inline-block;
   margin: 0.175em 0 0 0;
 }
-
-// input,
-// select,
-// textarea {
-//   font-size: 15px;
-//   line-height: 21px;
-//   padding: 11px 10px 10px;
-//   border: 2px solid $form-border-color;
-
-//   @include media($mobile) {
-//     font-size: 14px !important;
-//     line-height: 19px !important;
-//     padding: 9px 8px 8px;
-//   }
-
-//   &:active,
-//   &:focus {
-//     border: 2px solid $link-color;
-//   }
-// }
-
-// input[type="checkbox"],
-// input[type="radio"] {
-//   margin-right: 8px;
-// }
-
-// #{$all-text-inputs} {
-//   &[disabled] {
-//     background: $form-border-color;
-//     color: $body-text-color;
-//     font-style: italic;
-//   }
-// }
-
 
 .fieldWithErrors {
   input {

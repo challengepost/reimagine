@@ -1,6 +1,13 @@
-@import "reimagine/modules/global-nav";
-@import "reimagine/modules/sub-nav";
-@import "reimagine/modules/footer";
-@import "reimagine/modules/page-header";
+@import "reimagine/modules/admin_bar";
+@import "reimagine/modules/ajax_loading_bar";
 @import "reimagine/modules/challenge-listing";
+@import "reimagine/modules/error_page";
+@import "reimagine/modules/footer";
+@import "reimagine/modules/header";
+@import "reimagine/modules/global-nav";
 @import "reimagine/modules/notifications";
+@import "reimagine/modules/page-header";
+@import "reimagine/modules/persistent_message";
+@import "reimagine/modules/sub-nav";
+
+@import "reimagine/modules/ie";

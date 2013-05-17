@@ -1,0 +1,27 @@
+/* Unverfied user message */
+.persistent_message {
+  position: relative;
+  z-index: 1;
+  background-color: #f8c622;
+  background-image: -moz-linear-gradient(top, rgba(255, 211, 66, 1), rgba(245, 193, 22, 1)) !important;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 211, 66, 1)), to(rgba(245, 193, 22, 1))) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd342,endColorstr=#f5c116);
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+
+  p {
+    color: #333333 !important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 12px !important;
+    text-align: center;
+    line-height: 31px;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  a {
+    color: #017ace;
+  }
+}

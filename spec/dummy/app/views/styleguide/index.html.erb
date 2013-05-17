@@ -50,18 +50,32 @@
           <div class="field">
             <label for="form-element-1">I'm a label</label>
             <p class="sublabel">Hey look, it's a sublabel</p>
-            <input type="text" value="testing" id="form-element-1" />
+            <input value="testing" id="form-element-1" />
             <br/><br/>
-            <input type="text" placeholder="testing" id="form-element-1" />
+            <input placeholder="testing" />
+            <br/><br/>
+            <input disabled="disabled" value="This is a disabled input!" />
           </div>
         <% end %>
 
         <%= stylesheet_section "Text area" do %>
           <div class="field">
-            <textarea type="text" value="testing" id="form-element-2"></textarea>
+            <textarea>
+Oat cake oat cake sweet danish gummi bears gummi bears ice cream. Sweet roll gingerbread fruitcake sugar plum dragée marzipan sugar plum faworki carrot cake.  Icing croissant pudding marzipan topping caramels sesame snaps brownie. Oat cake gummies applicake candy canes cake.  Cotton candy candy canes candy lemon drops wypas cotton candy candy cheesecake. Icing marzipan pie dragée candy marshmallow jelly liquorice sugar plum.
+
+Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops faworki. Dragée candy lemon drops liquorice faworki oat cake cupcake candy canes.  Tootsie roll dragée dessert gummi bears
+            </textarea>
+          </div>
+          <br/><br/>
+          <div class="field">
+            <label for="disabled-textarea">Disabled text area</label>
+            <textarea id="disabled-textarea" disabled>
+Oat cake oat cake sweet danish gummi bears gummi bears ice cream. Sweet roll gingerbread fruitcake sugar plum dragée marzipan sugar plum faworki carrot cake.  Icing croissant pudding marzipan topping caramels sesame snaps brownie. Oat cake gummies applicake candy canes cake.  Cotton candy candy canes candy lemon drops wypas cotton candy candy cheesecake. Icing marzipan pie dragée candy marshmallow jelly liquorice sugar plum.
+
+Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops faworki. Dragée candy lemon drops liquorice faworki oat cake cupcake candy canes.  Tootsie roll dragée dessert gummi bears
+            </textarea>
           </div>
         <% end %>
-
 
         <%= stylesheet_section "Select boxes" do %>
           <div class="field">
