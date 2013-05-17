@@ -193,16 +193,16 @@ p.switch-label {
 // }
 
 
-// .fieldWithErrors {
-//   input {
-//     border: 2px solid $error-background-color;
-//   }
+.fieldWithErrors {
+  input {
+    border: 2px solid $error;
+  }
 
-//   .errors {
-//     font-size: 12px;
-//     color: $error-background-color;
-//   }
-// }
+  .errors {
+    font-size: 12px;
+    color: $error;
+  }
+}
 
 
 #search {
