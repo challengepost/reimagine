@@ -126,17 +126,6 @@
     }
   } // END &.hackathon a
 
-
-  /* TABLET STYLES */
-
-  @include media($tablet) {
-    a {
-      .challenge-synopsis { width: 70.8%; }
-
-      .stats { width: 27%; }
-    }
-  }
-
   /* MOBILE STYLES */
 
   @include media($mobile) {
