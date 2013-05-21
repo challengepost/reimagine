@@ -1,7 +1,3 @@
-@import "bourbon";
-@import "neat";
-@import "reimagine/globals";
-
 .field {
   margin: 0 0 24px 0;
   @include clearfix;
@@ -180,7 +176,6 @@ p.switch-label {
     color: $error;
   }
 }
-
 
 #search {
   @include span-columns(3);
