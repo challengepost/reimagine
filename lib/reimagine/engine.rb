@@ -3,6 +3,8 @@ module Reimagine
     initializer :assets do |config|
       Sass.load_paths << stylesheets_path("bourbon")
       Sass.load_paths << stylesheets_path("neat")
+
+      Rails.application.config.assets.precompile += %w(reimagine.css)
     end
 
     private
