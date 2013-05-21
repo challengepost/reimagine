@@ -176,21 +176,3 @@ p.switch-label {
     color: $error;
   }
 }
-
-#search {
-  @include span-columns(3);
-  position: relative;
-
-  button#search-button {
-    background: none;
-    color: $light-text-color;
-    padding: 0.5em;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-
-    &:hover, &:focus {
-      color: $dark-text-color;
-    }
-  }
-}
