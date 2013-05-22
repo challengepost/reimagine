@@ -1,16 +1,15 @@
-.lt-ie9 {
+.neat-last-column {
+  margin-right: 0 !important;
+}
 
+.neat-first-column {
+  clear: left;
+}
+
+.lt-ie9 {
   //otherwise dots in the password are not displayes properly
   input {
     font-family: Arial;
-  }
-
-  .neat-last-column {
-    margin-right: 0 !important;
-  }
-
-  .neat-first-column {
-    clear: left;
   }
 
   .cp-logo {
@@ -29,7 +28,7 @@
   }
 
   .global-nav {
-    group-logo {
+    .group-logo {
       img {
         height: 31px;
         width: 197px;
