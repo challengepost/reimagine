@@ -5,8 +5,7 @@ html { background: $footer-color; }
   @include row;
 }
 
-.layout-container,
-.container {
+.layout-container {
   @include container;
 }
 
