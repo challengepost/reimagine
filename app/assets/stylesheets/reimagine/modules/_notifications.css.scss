@@ -4,14 +4,16 @@
 
 .notification, .absolute_flash {
   .alert, .notice, .success {
-    &, p {
+    color: red !important;
+    padding: 0.7em;
+
+    p {
       font-size: 1em;
       color: white;
-      padding: 0.7em;
       margin: 0;
     }
 
-    &, a {
+    a {
       text-decoration: underline;
       color: $warning;
 
