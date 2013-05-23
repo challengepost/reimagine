@@ -22,6 +22,16 @@
       }
     }
   }
+
+  .session-page & {
+    .alert, .notice, .success {
+      p {
+        background: $warning;
+        color: black;
+        margin: 0;
+      }
+    }
+  }
 }
 
 .alert { background: $error; }
@@ -30,11 +40,4 @@
 
 .absolute_flash {
   text-align: center;
-}
-
-.session-page {
-  .alert, .notice {
-    background: $warning;
-    color: black;
-  }
 }
