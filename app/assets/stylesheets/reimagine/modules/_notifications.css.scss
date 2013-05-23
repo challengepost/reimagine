@@ -4,22 +4,26 @@
 
 .notification,
 .absolute_flash {
-  color: white;
 
-  p, & {
-    padding: 0.7em;
-    margin: 0;
-  }
-
-  a {
-    text-decoration: underline;
-    color: $warning;
-
-    &:hover, &:focus {
-      @include fade;
-      color: lighten($warning, 20%);
+  .alert, .warning, .success {
+    &, p {
+      color: white;
+      padding: 0.7em;
+      margin: 0;
     }
+
+    &, a {
+      text-decoration: underline;
+      color: $warning;
+
+      &:hover, &:focus {
+        @include fade;
+        color: lighten($warning, 20%);
+      }
+    }
+
   }
+
 }
 
 .alert { background: $error; }
