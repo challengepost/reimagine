@@ -5,6 +5,7 @@
 .notification, .absolute_flash {
   .alert, .warning, .success {
     &, p {
+      font-size: 1em;
       color: white;
       padding: 0.7em;
       margin: 0;
