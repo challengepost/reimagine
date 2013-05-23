@@ -21,17 +21,17 @@
         color: lighten($warning, 20%);
       }
     }
-  }
 
-  .session-page & {
-    .alert, .notice, .success {
+    .session-page & {
+      background: $warning;
+
       p {
-        background: $warning;
         color: black;
         margin: 0;
       }
     }
   }
+
 }
 
 .alert { background: $error; }
