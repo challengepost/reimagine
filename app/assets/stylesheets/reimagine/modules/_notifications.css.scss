@@ -1,8 +1,6 @@
 .notification {
   margin-bottom: 1em;
-}
 
-.notification, .absolute_flash {
   .alert, .notice, .success {
     padding: 0.7em;
 
@@ -40,4 +38,5 @@
 
 .absolute_flash {
   text-align: center;
+  margin-bottom: 0
 }
