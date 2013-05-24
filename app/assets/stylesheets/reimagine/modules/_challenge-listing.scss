@@ -50,12 +50,9 @@
     .stats {
       @include span-columns(3);
 
-      .prizes {
+      .prizes, .submission-time {
         @include clearfix;
-        margin-bottom: 1.3em;
       }
-
-      .submission-time { @include clearfix; }
 
       .symbol {
         color: $secondary-color;
