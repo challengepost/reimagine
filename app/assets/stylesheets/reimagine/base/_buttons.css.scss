@@ -75,6 +75,12 @@ button {
     font-size: $base-font-size * 1.375; //h2
     line-height: $base-line-height*1.2;
     padding: $base-font-size/3.2 $base-font-size;
+
+    @include media($mobile) {
+      font-size: $base-font-size;
+      line-height: $base-line-height;
+      padding: $base-font-size/2 $base-font-size;
+    }
   }
 
   &.small {
