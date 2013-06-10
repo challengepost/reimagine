@@ -71,6 +71,10 @@
       .value {
         @include h3;
         display: block;
+
+        @include media($mobile) {
+          margin-right: .5em;
+        }
       }
 
       .action {
