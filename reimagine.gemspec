@@ -23,6 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "railties"
 
   spec.add_dependency "sass"
-  spec.add_dependency "bourbon"
+  spec.add_dependency "bourbon", "3.1.6"
   spec.add_dependency "neat"
 end
