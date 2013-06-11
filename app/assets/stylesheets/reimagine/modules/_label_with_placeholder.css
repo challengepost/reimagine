@@ -1,0 +1,7 @@
+.label-with-placeholder {
+  display: none;
+}
+
+.no-placeholder .label-with-placeholder {
+    display: inline-block;
+}
