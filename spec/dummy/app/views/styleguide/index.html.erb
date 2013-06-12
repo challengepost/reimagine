@@ -314,7 +314,7 @@ Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops fawo
                   Challenge Title Goes Here
                 </h2>
                 <p class="posted-by">
-                  <small>Online challenge posted by Creator Name</small>
+                  Online challenge
                 </p>
                 <p class="challenge-description">
                   Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
@@ -343,10 +343,10 @@ Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops fawo
     </div>
   <% end %>
 
-  <%= stylesheet_section "Hackathon without location" do %>
+  <%= stylesheet_section "Challenge with no prizes" do %>
     <div class="row">
       <div class="layout-container no-side-padding">
-        <article class="challenge-listing hackathon-no-location">
+        <article class="challenge-listing">
           <a data-role="featured_challenge" href="#">
             <section class="challenge-synopsis">
               <figure class="challenge-logo">
@@ -355,10 +355,10 @@ Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops fawo
 
               <div class="content">
                 <h2>
-                  Hackathon Title: NO location data
+                  Challenge Title Goes Here
                 </h2>
                 <p class="posted-by">
-                  <small>In-person hackathon posted by Creator Name</small>
+                  Online challenge
                 </p>
                 <p class="challenge-description">
                   Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
@@ -370,14 +370,14 @@ Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops fawo
               <div class="prizes">
                 <span class="ss-icon symbol">star</span>
                 <div class="text">
-                  <span class="value">$50,000</span> <span class="action">in prizes</span>
+                  <span class="action">Non-monetary prizes</span>
                 </div>
               </div>
 
               <div class="submission-time">
                 <span class="ss-icon symbol">clock</span>
                 <div class="text">
-                  <time class="value timeago">November 15–17</time>
+                  <time datetime="2013-06-15T05:00:00-04:00" class="value timeago" title="Jun 15, 2013 05:00 AM EDT">40 days</time> <span class="action"> to submit</span>
                 </div>
               </div>
             </section>
@@ -390,7 +390,7 @@ Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops fawo
   <%= stylesheet_section "Hackathon with location" do %>
     <div class="row">
       <div class="layout-container no-side-padding">
-        <article class="challenge-listing hackathon">
+        <article class="challenge-listing">
           <a data-role="featured_challenge" href="#">
             <section class="challenge-synopsis">
               <figure class="challenge-logo">
@@ -402,7 +402,7 @@ Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops fawo
                   Hackathon Title Goes Here
                 </h2>
                 <p class="posted-by">
-                  <small>In-person hackathon posted by Creator Name</small>
+                  Hackathon in Brooklyn, New York, United States
                 </p>
                 <p class="challenge-description">
                   Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
@@ -421,20 +421,57 @@ Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops fawo
               <div class="submission-time">
                 <span class="ss-icon symbol">clock</span>
                 <div class="text">
-                  <time class="value timeago">November 15–17</time>
-                </div>
-              </div>
-
-              <div class="location">
-                <span class="ss-icon symbol">location</span>
-                <div class="text">
-                  <span class="value">Brooklyn, NY</span>
+                  <time class="value timespan timeago">Jan 5&ndash;7</time>
                 </div>
               </div>
             </section>
           </a>
         </article>
 
+      </div>
+    </div>
+  <% end %>
+
+  <%= stylesheet_section "Hackathon without location" do %>
+    <div class="row">
+      <div class="layout-container no-side-padding">
+        <article class="challenge-listing">
+          <a data-role="featured_challenge" href="#">
+            <section class="challenge-synopsis">
+              <figure class="challenge-logo">
+                <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
+              </figure>
+
+              <div class="content">
+                <h2>
+                  Hackathon Title: NO location data
+                </h2>
+                <p class="posted-by">
+                  Hackathon
+                </p>
+                <p class="challenge-description">
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                </p>
+              </div>
+            </section>
+
+            <section class="stats">
+              <div class="prizes">
+                <span class="ss-icon symbol">star</span>
+                <div class="text">
+                  <span class="value">$50,000</span> <span class="action">in prizes</span>
+                </div>
+              </div>
+
+              <div class="submission-time">
+                <span class="ss-icon symbol">clock</span>
+                <div class="text">
+                  <time class="value timespan timeago">Jun 3 &ndash; Aug 18</time>
+                </div>
+              </div>
+            </section>
+          </a>
+        </article>
       </div>
     </div>
   <% end %>
