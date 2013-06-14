@@ -33,9 +33,10 @@
   .notice {
     a {
       color: $primary-color;
-    }
-    &:hover, &:focus {
-      color: lighten($primary-color, 20%);
+
+      &:hover, &:focus {
+        color: lighten($primary-color, 20%);
+      }
     }
   }
 
