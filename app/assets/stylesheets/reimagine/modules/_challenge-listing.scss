@@ -82,7 +82,6 @@
 
       .value {
         @include h3;
-        display: block;
 
         @include media($mobile) {
           margin-right: 0.1em;
@@ -97,7 +96,6 @@
         letter-spacing: 0.083333333em; // 1px
         text-transform: uppercase;
         display: block;
-
       }
     } // END .stats
 
