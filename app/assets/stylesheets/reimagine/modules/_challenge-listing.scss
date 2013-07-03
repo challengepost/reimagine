@@ -59,11 +59,8 @@
       .submission-time {
         @include clearfix;
 
-        .value {
-          margin-top: -0.4em;
-          &.date-range {
-            margin-top: 0;
-          }
+        .date-range {
+          margin-top: 0;
         }
       }
 
@@ -71,7 +68,7 @@
         color: $secondary-color;
         float: left;
         font-size: 2em;
-        line-height: 1em;
+        line-height: 1.4em;
         width: 20%;
       }
 
