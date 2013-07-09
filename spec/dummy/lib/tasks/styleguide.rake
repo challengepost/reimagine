@@ -1,7 +1,7 @@
 require 'open-uri'
 
 namespace :styleguide do
-  repo_url = 'git@github.com:midu/reimagine.git'
+  repo_url = 'git@github.com:challengepost/reimagine.git'
   desc 'setup github pages'
   task :setup_deploy do
     FileUtils.mkdir_p '_deploy'
