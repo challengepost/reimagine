@@ -16,3 +16,6 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+_deploy
+spec/dummy/public/*.html
+spec/dummy/public/*.gz

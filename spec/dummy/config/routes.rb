@@ -1,3 +1,3 @@
 ReimagineTest::Application.routes.draw do
-  root :to => 'styleguide#index'
+  root :to => 'styleguides#show'
 end
