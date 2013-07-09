@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+
+  <title>ReimagineTest</title>
+  <link href="/reimagine/assets/application.css" media="all" rel="stylesheet" type="text/css" />
+  <style type="text/css">.highlight .hll { background-color: #49483e }
+.highlight  { background: #272822; color: #f8f8f2 }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: #66d9ef } /* Keyword */
+.highlight .l { color: #ae81ff } /* Literal */
+.highlight .n { color: #f8f8f2 } /* Name */
+.highlight .o { color: #f92672 } /* Operator */
+.highlight .p { color: #f8f8f2 } /* Punctuation */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .kc { color: #66d9ef } /* Keyword.Constant */
+.highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+.highlight .kn { color: #f92672 } /* Keyword.Namespace */
+.highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+.highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+.highlight .kt { color: #66d9ef } /* Keyword.Type */
+.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .m { color: #ae81ff } /* Literal.Number */
+.highlight .s { color: #e6db74 } /* Literal.String */
+.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+.highlight .nc { color: #a6e22e } /* Name.Class */
+.highlight .no { color: #66d9ef } /* Name.Constant */
+.highlight .nd { color: #a6e22e } /* Name.Decorator */
+.highlight .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight .ne { color: #a6e22e } /* Name.Exception */
+.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nl { color: #f8f8f2 } /* Name.Label */
+.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .py { color: #f8f8f2 } /* Name.Property */
+.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nv { color: #f8f8f2 } /* Name.Variable */
+.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+.highlight .sb { color: #e6db74 } /* Literal.String.Backtick */
+.highlight .sc { color: #e6db74 } /* Literal.String.Char */
+.highlight .sd { color: #e6db74 } /* Literal.String.Doc */
+.highlight .s2 { color: #e6db74 } /* Literal.String.Double */
+.highlight .se { color: #ae81ff } /* Literal.String.Escape */
+.highlight .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.highlight .si { color: #e6db74 } /* Literal.String.Interpol */
+.highlight .sx { color: #e6db74 } /* Literal.String.Other */
+.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
+.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
+.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */</style>
+  <script src="/reimagine/assets/application.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="OS/Kv7NuhNt0Kncodo93OBnW809aqZBcUre4/EbBImU=" name="csrf-token" />
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <section class="stylesheet"><div class="source-container"><p>Global Nav<a class="toggle-source">show source</a></p><div class="highlight"><pre>  <span class="nt">&lt;header</span> <span class="na">id=</span><span class="s">&quot;global-nav&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">&quot;global-nav-links&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">id=</span><span class="s">&quot;logo&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">alt=</span><span class="s">&quot;Challengepost-logo&quot;</span> <span class="na">src=</span><span class="s">&quot;/reimagine/assets/challengepost-logo.png&quot;</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button link&quot;</span> <span class="na">data-role=</span><span class="s">&quot;discover&quot;</span><span class="nt">&gt;</span>Find Challenges<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button link&quot;</span> <span class="na">data-role=</span><span class="s">&quot;post-challenge&quot;</span><span class="nt">&gt;</span>Post Challenges<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/nav&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;drop-down-menu signed-out&quot;</span> <span class="na">id=</span><span class="s">&quot;global-nav-account&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button link&quot;</span><span class="nt">&gt;</span>Log in<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button secondary&quot;</span><span class="na">id=</span><span class="s">&quot;signup-link&quot;</span><span class="nt">&gt;</span>Sign up<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+</pre></div></div>
+  <header id="global-nav">
+    <div class="container">
+      <nav id="global-nav-links">
+        <a href="#" id="logo"><img alt="Challengepost-logo" src="/reimagine/assets/challengepost-logo.png" /></a>
+        <a href="#" class="button link" data-role="discover">Find Challenges</a>
+        <a href="#" class="button link" data-role="post-challenge">Post Challenges</a>
+      </nav>
+
+      <div class="drop-down-menu signed-out" id="global-nav-account">
+        <a href="#" class="button link">Log in</a>
+        <a href="#" class="button secondary"id="signup-link">Sign up</a>
+      </div>
+    </div>
+  </header>
+</section>
+  <div class="page">
+
+  <section class="stylesheet"><div class="source-container"><p>Subnav example<a class="toggle-source">show source</a></p><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;page-header&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-container&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;subnav&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;current&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Current Subnav Item<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/about&quot;</span><span class="nt">&gt;</span>Another Item<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Another Item<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/nav&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+    <div class="page-header">
+      <div class="layout-container">
+        <nav class="subnav">
+          <ul>
+            <li><a class="current" href="#">Current Subnav Item</a></li>
+            <li><a href="/about">Another Item</a></li>
+            <li><a href="#">Another Item</a></li>
+          </ul>
+        </nav>
+        <h1>Lorem ipsum dolor sit amet</h1>
+      </div>
+    </div>
+</section>
+  <section class="stylesheet"><div class="source-container"><p>Page header<a class="toggle-source">show source</a></p><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;page-header&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-container&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;h2&gt;</span>
+          Consectetur adipisicing elit. Adipisci, voluptatem, error, deserunt,
+          provident a quis vero perferendis dolorum quas minima tempore iste
+          <span class="nt">&lt;a&gt;</span>I&#39;m just a link. In your text.<span class="nt">&lt;/a&gt;</span>
+          blanditiis quod consequuntur sunt unde nisi vitae tempora.
+        <span class="nt">&lt;/h2&gt;</span>
+
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button secondary large&quot;</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+    <div class="page-header">
+      <div class="layout-container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <h2>
+          Consectetur adipisicing elit. Adipisci, voluptatem, error, deserunt,
+          provident a quis vero perferendis dolorum quas minima tempore iste
+          <a>I'm just a link. In your text.</a>
+          blanditiis quod consequuntur sunt unde nisi vitae tempora.
+        </h2>
+
+        <a href="#" class="button secondary large">Click me</a>
+      </div>
+    </div>
+</section>
+  <div class="row light">
+    <div class="layout-container">
+      <h1>Forms</h1>
+
+      <form method="post" action="">
+
+        <section class="stylesheet"><div class="source-container"><p>Search box<a class="toggle-source">show source</a></p><div class="highlight"><pre>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;search&quot;</span> <span class="na">class=</span><span class="s">&quot;neat-last-column&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;challenge-search&quot;</span> <span class="na">name=</span><span class="s">&quot;search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Search challenges&quot;</span> <span class="na">title=</span><span class="s">&quot;Search&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;ss-icon&quot;</span> <span class="na">id=</span><span class="s">&quot;search-button&quot;</span> <span class="na">title=</span><span class="s">&quot;Search&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>search<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+          <div class="field">
+            <div id="search" class="neat-last-column">
+              <input id="challenge-search" name="search" placeholder="Search challenges" title="Search" type="text" value="">
+              <button class="ss-icon" id="search-button" title="Search" type="submit">search</button>
+            </div>
+          </div>
+</section>
+        <section class="stylesheet"><div class="source-container"><p>Input boxes<a class="toggle-source">show source</a></p><div class="highlight"><pre>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;form-element-1&quot;</span><span class="nt">&gt;</span>I&#39;m a label<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;sublabel&quot;</span><span class="nt">&gt;</span>Hey look, it&#39;s a sublabel<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">value=</span><span class="s">&quot;testing&quot;</span> <span class="na">id=</span><span class="s">&quot;form-element-1&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">&quot;testing&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">disabled=</span><span class="s">&quot;disabled&quot;</span> <span class="na">value=</span><span class="s">&quot;This is a disabled input!&quot;</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+          <div class="field">
+            <label for="form-element-1">I'm a label</label>
+            <p class="sublabel">Hey look, it's a sublabel</p>
+            <input value="testing" id="form-element-1" />
+            <br/><br/>
+            <input placeholder="testing" />
+            <br/><br/>
+            <input disabled="disabled" value="This is a disabled input!" />
+          </div>
+</section>
+        <section class="stylesheet"><div class="source-container"><p>Text area<a class="toggle-source">show source</a></p><div class="highlight"><pre>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;textarea&gt;</span>
+Oat cake oat cake sweet danish gummi bears gummi bears ice cream. Sweet roll gingerbread fruitcake sugar plum dragée marzipan sugar plum faworki carrot cake.  Icing croissant pudding marzipan topping caramels sesame snaps brownie. Oat cake gummies applicake candy canes cake.  Cotton candy candy canes candy lemon drops wypas cotton candy candy cheesecake. Icing marzipan pie dragée candy marshmallow jelly liquorice sugar plum.
+
+Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops faworki. Dragée candy lemon drops liquorice faworki oat cake cupcake candy canes.  Tootsie roll dragée dessert gummi bears
+            <span class="nt">&lt;/textarea&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;disabled-textarea&quot;</span><span class="nt">&gt;</span>Disabled text area<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;disabled-textarea&quot;</span> <span class="err">disabled</span><span class="nt">&gt;</span>
+Oat cake oat cake sweet danish gummi bears gummi bears ice cream. Sweet roll gingerbread fruitcake sugar plum dragée marzipan sugar plum faworki carrot cake.  Icing croissant pudding marzipan topping caramels sesame snaps brownie. Oat cake gummies applicake candy canes cake.  Cotton candy candy canes candy lemon drops wypas cotton candy candy cheesecake. Icing marzipan pie dragée candy marshmallow jelly liquorice sugar plum.
+
+Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops faworki. Dragée candy lemon drops liquorice faworki oat cake cupcake candy canes.  Tootsie roll dragée dessert gummi bears
+            <span class="nt">&lt;/textarea&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+          <div class="field">
+            <textarea>
+Oat cake oat cake sweet danish gummi bears gummi bears ice cream. Sweet roll gingerbread fruitcake sugar plum dragée marzipan sugar plum faworki carrot cake.  Icing croissant pudding marzipan topping caramels sesame snaps brownie. Oat cake gummies applicake candy canes cake.  Cotton candy candy canes candy lemon drops wypas cotton candy candy cheesecake. Icing marzipan pie dragée candy marshmallow jelly liquorice sugar plum.
+
+Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops faworki. Dragée candy lemon drops liquorice faworki oat cake cupcake candy canes.  Tootsie roll dragée dessert gummi bears
+            </textarea>
+          </div>
+          <br/><br/>
+          <div class="field">
+            <label for="disabled-textarea">Disabled text area</label>
+            <textarea id="disabled-textarea" disabled>
+Oat cake oat cake sweet danish gummi bears gummi bears ice cream. Sweet roll gingerbread fruitcake sugar plum dragée marzipan sugar plum faworki carrot cake.  Icing croissant pudding marzipan topping caramels sesame snaps brownie. Oat cake gummies applicake candy canes cake.  Cotton candy candy canes candy lemon drops wypas cotton candy candy cheesecake. Icing marzipan pie dragée candy marshmallow jelly liquorice sugar plum.
+
+Cupcake chupa chups jelly beans fruitcake candy canes liquorice lemon drops faworki. Dragée candy lemon drops liquorice faworki oat cake cupcake candy canes.  Tootsie roll dragée dessert gummi bears
+            </textarea>
+          </div>
+</section>
+        <section class="stylesheet"><div class="source-container"><p>Select boxes<a class="toggle-source">show source</a></p><div class="highlight"><pre>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;form-element-3&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>Kittens<span class="nt">&lt;/option&gt;</span>
+              <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>Puppies<span class="nt">&lt;/option&gt;</span>
+              <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>Bunnies<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;/select&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+          <div class="field">
+            <select id="form-element-3">
+              <option value="1">Kittens</option>
+              <option value="2">Puppies</option>
+              <option value="3">Bunnies</option>
+            </select>
+          </div>
+</section>
+        <section class="stylesheet"><div class="source-container"><p>Regular &#x27;Ol Checkboxes<a class="toggle-source">show source</a></p><div class="highlight"><pre>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox1&quot;</span> <span class="na">id=</span><span class="s">&quot;checkbox1&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox1&quot;</span><span class="nt">&gt;</span>Pandas<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox2&quot;</span> <span class="na">id=</span><span class="s">&quot;checkbox2&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox2&quot;</span><span class="nt">&gt;</span>More pandas<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox3&quot;</span> <span class="na">id=</span><span class="s">&quot;checkbox3&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox3&quot;</span><span class="nt">&gt;</span>All the pandas!<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+          <div class="field">
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox1" id="checkbox1">
+              <label for="checkbox1">Pandas</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox2" id="checkbox2">
+              <label for="checkbox2">More pandas</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox3" id="checkbox3">
+              <label for="checkbox3">All the pandas!</label>
+            </div>
+          </div>
+</section>
+        <section class="stylesheet"><div class="source-container"><p>Fancy checkboxes<a class="toggle-source">show source</a></p><div class="highlight"><pre>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;fancy-checkbox&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;switch&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;switch&quot;</span> <span class="na">id=</span><span class="s">&quot;myswitch&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;ss-icon&quot;</span> <span class="na">for=</span><span class="s">&quot;myswitch&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inner&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;nib&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;switch-label&quot;</span><span class="nt">&gt;</span>Rainbows<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;fancy-checkbox&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;switch&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;switch&quot;</span> <span class="na">id=</span><span class="s">&quot;myswitch2&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;ss-icon&quot;</span> <span class="na">for=</span><span class="s">&quot;myswitch2&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inner&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;nib&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;switch-label&quot;</span><span class="nt">&gt;</span>Unicorns<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+          <div class="field">
+
+            <div class="fancy-checkbox">
+              <div class="switch">
+                <input type="checkbox" name="switch" id="myswitch">
+                <label class="ss-icon" for="myswitch">
+                  <div class="inner"></div>
+                  <div class="nib"></div>
+                </label>
+              </div>
+              <p class="switch-label">Rainbows</p>
+            </div>
+
+            <div class="fancy-checkbox">
+              <div class="switch">
+                <input type="checkbox" name="switch" id="myswitch2">
+                <label class="ss-icon" for="myswitch2">
+                  <div class="inner"></div>
+                  <div class="nib"></div>
+                </label>
+              </div>
+              <p class="switch-label">Unicorns</p>
+            </div>
+          </div>
+</section>
+        <section class="stylesheet"><div class="source-container"><p>Radio buttons<a class="toggle-source">show source</a></p><div class="highlight"><pre>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;age_child&quot;</span> <span class="na">name=</span><span class="s">&quot;age&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">value=</span><span class="s">&quot;child&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;age_child&quot;</span> <span class="na">class=</span><span class="s">&quot;inline&quot;</span><span class="nt">&gt;</span>I am younger than 21<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;br/&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;age_adult&quot;</span> <span class="na">name=</span><span class="s">&quot;age&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">value=</span><span class="s">&quot;adult&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;age_adult&quot;</span> <span class="na">class=</span><span class="s">&quot;inline&quot;</span><span class="nt">&gt;</span>I&#39;m over 21<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+          <div class="field">
+            <input id="age_child" name="age" type="radio" value="child" />
+            <label for="age_child" class="inline">I am younger than 21</label>
+            <br/>
+            <input id="age_adult" name="age" type="radio" value="adult" />
+            <label for="age_adult" class="inline">I'm over 21</label>
+          </div>
+</section>      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="layout-container">
+      <h1>Buttons</h1>
+
+      <section class="stylesheet"><div class="source-container"><p>Standard buttons using &lt;a&gt; tag<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button secondary&quot;</span><span class="nt">&gt;</span>Secondary button<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button tertiary&quot;</span><span class="nt">&gt;</span>Tertiary button<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button disabled&quot;</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button link&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+</pre></div></div>
+        <a class="button">Primary button</a>
+        <a class="button secondary">Secondary button</a>
+        <a class="button tertiary">Tertiary button</a>
+        <a class="button disabled">Disabled button</a>
+        <a class="button link">Link button</a>
+</section>
+      <section class="stylesheet"><div class="source-container"><p>Size variations using &lt;a&gt; tag<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button large&quot;</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button small&quot;</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/a&gt;</span>
+</pre></div></div>
+        <a class="button large">Large button</a>
+        <a class="button small">Small button</a>
+</section>
+      <section class="stylesheet"><div class="source-container"><p>Standard Buttons using &lt;button&gt; tag<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;button&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;secondary&quot;</span><span class="nt">&gt;</span>Secondary button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;tertiary&quot;</span><span class="nt">&gt;</span>Tertiary button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">&quot;disabled&quot;</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;link&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/button&gt;</span>
+</pre></div></div>
+        <button>Primary button</button>
+        <button class="secondary">Secondary button</button>
+        <button class="tertiary">Tertiary button</button>
+        <button disabled="disabled">Disabled button</button>
+        <button class="link">Link button</button>
+</section>
+      <section class="stylesheet"><div class="source-container"><p>Size variations using &lt;button&gt; tag<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;large&quot;</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;small&quot;</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+</pre></div></div>
+        <button class="large">Large button</button>
+        <button class="small">Small button</button>
+</section>
+      <section class="stylesheet"><div class="source-container"><p>Button with icon<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button github-login&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon ss-social&quot;</span><span class="nt">&gt;</span>octocat<span class="nt">&lt;/span&gt;</span>
+          Github
+        <span class="nt">&lt;/a&gt;</span>
+</pre></div></div>
+        <a class="button github-login">
+          <span class="ss-icon ss-social">octocat</span>
+          Github
+        </a>
+</section>
+      <section class="stylesheet"><div class="source-container"><p>Button with icon<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button facebook-login&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon ss-social&quot;</span><span class="nt">&gt;</span>facebook<span class="nt">&lt;/span&gt;</span>
+          Facebook
+        <span class="nt">&lt;/a&gt;</span>
+</pre></div></div>
+        <a class="button facebook-login">
+          <span class="ss-icon ss-social">facebook</span>
+          Facebook
+        </a>
+</section>    </div>
+  </div>
+
+  <div class="row light">
+    <div class="layout-container">
+      <h1>Typography</h1>
+
+      <h1>
+        Heading 1 &mdash; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, sequi, ipsa,
+        beatae dolore magnam aut temporibus maxime voluptas voluptates nemo molestiae dicta
+        corporis expedita
+      </h1>
+      <p>
+        p &mdash; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, sequi, ipsa, beatae
+        dolore magnam aut temporibus maxime voluptas voluptates nemo molestiae dicta corporis
+        expedita <strong>aliquam</strong> ratione officia necessitatibus dolores quis? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quos, doloremque, cum,
+        dolorum dolores natus inventore sint vero facilis dignissimos obcaecati odit iure
+        delectus rem quod ducimus sapiente placeat eum. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Temporibus, suscipit totam omnis doloremque nobis <a
+          href="#">laboriosam nemo</a> nesciunt aspernatur facere dolor voluptate at fugit
+        eaque sed hic esse dolorum accusantium. Distinctio!
+      </p>
+
+      <h2>
+        Heading 2 &mdash; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, sequi,
+        ipsa, beatae dolore magnam aut temporibus maxime voluptas voluptates nemo molestiae
+        dicta corporis expedita
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, sequi, ipsa, beatae
+        dolore magnam aut temporibus maxime voluptas voluptates nemo molestiae dicta corporis
+        expedita <strong>strong. aliquam</strong> ratione officia necessitatibus dolores quis? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quos, doloremque, cum,
+        dolorum dolores natus inventore sint vero facilis dignissimos obcaecati odit iure
+        delectus rem quod ducimus sapiente placeat eum. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Temporibus, suscipit totam omnis doloremque nobis laboriosam nemo
+        nesciunt aspernatur facere dolor voluptate at fugit eaque sed hic esse dolorum
+        accusantium. Distinctio!
+      </p>
+
+      <h3>
+        Heading 3 &mdash; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, sequi, ipsa,
+        beatae dolore magnam aut temporibus maxime voluptas voluptates nemo molestiae dicta
+        corporis expedita
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, sequi, ipsa, beatae
+        dolore magnam aut temporibus maxime voluptas voluptates nemo molestiae dicta corporis
+        expedita <strong>aliquam</strong> ratione officia necessitatibus dolores quis? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quos, doloremque, cum,
+        dolorum dolores natus inventore sint vero facilis dignissimos obcaecati odit iure
+        delectus rem quod ducimus sapiente placeat eum. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Temporibus, suscipit totam omnis doloremque nobis laboriosam nemo
+        nesciunt aspernatur facere dolor voluptate at fugit eaque sed hic esse dolorum
+        accusantium. Distinctio!
+      </p>
+
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+      <section class="stylesheet"><div class="source-container"><p>Classes of messages<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;p&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;text-error&quot;</span><span class="nt">&gt;</span>Error text<span class="nt">&lt;/span&gt;</span> dolor sit amet, consectetur adipisicing
+          elit. Enim, sequi, ipsa, beatae dolore warning text aut temporibus maxime voluptas
+          voluptates nemo molestiae dicta corporis expedita <span class="nt">&lt;strong&gt;</span>strong<span class="nt">&lt;/strong&gt;</span> ratione
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;text-success&quot;</span><span class="nt">&gt;</span>successful text<span class="nt">&lt;/span&gt;</span> dolores quis?
+        <span class="nt">&lt;/p&gt;</span>
+
+        <span class="nt">&lt;p&gt;</span>
+          Lorem ipsum dolor sit amet, <span class="nt">&lt;em&gt;</span>emphatic<span class="nt">&lt;/em&gt;</span> elit. Enim, sequi, ipsa, beatae dolore
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.youtube.com/watch?v=UNJU-5vCrJc&quot;</span><span class="nt">&gt;</span>liquid hot magma<span class="nt">&lt;/a&gt;</span> aut
+          temporibus maxime voluptas voluptates nemo molestiae dicta <span class="nt">&lt;strong&gt;&lt;em&gt;</span>strongly
+              emphatic<span class="nt">&lt;/em&gt;&lt;/strong&gt;</span> expedita aliquam ratione officia necessitatibus dolores
+          quis?
+        <span class="nt">&lt;/p&gt;</span>
+</pre></div></div>
+        <p>
+          <span class="text-error">Error text</span> dolor sit amet, consectetur adipisicing
+          elit. Enim, sequi, ipsa, beatae dolore warning text aut temporibus maxime voluptas
+          voluptates nemo molestiae dicta corporis expedita <strong>strong</strong> ratione
+          <span class="text-success">successful text</span> dolores quis?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, <em>emphatic</em> elit. Enim, sequi, ipsa, beatae dolore
+          <a href="http://www.youtube.com/watch?v=UNJU-5vCrJc">liquid hot magma</a> aut
+          temporibus maxime voluptas voluptates nemo molestiae dicta <strong><em>strongly
+              emphatic</em></strong> expedita aliquam ratione officia necessitatibus dolores
+          quis?
+        </p>
+</section>
+      <section class="stylesheet"><div class="source-container"><p>Small text<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;small&gt;</span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, dicta, repudiandae,
+          tenetur fugiat eius iure quibusdam placeat adipisci ea beatae accusamus
+          totam illum repellat. Ex placeat molestiae omnis molestias suscipit!
+        <span class="nt">&lt;/small&gt;</span>
+</pre></div></div>
+        <small>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, dicta, repudiandae,
+          tenetur fugiat eius iure quibusdam placeat adipisci ea beatae accusamus
+          totam illum repellat. Ex placeat molestiae omnis molestias suscipit!
+        </small>
+</section>
+      <h3>ul</h3>
+      <ul>
+        <li>Cupcake cheesecake jelly-o cotton candy macaroon cheesecake</li>
+        <li>Tart donut tart caramels. Dragée candy danish carrot cake bonbon. Chupa chups pie lollipop cake halvah tiramisu. Donut marzipan jelly beans powder oat cake icing. Macaroon tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.</li>
+        <li>Gingerbread dessert croissant lemon drops cupcake bear claw</li>
+        <li>Fruitcake brownie wypas cheesecake marshmallow ice cream</li>
+      </ul>
+
+      <h3>ol</h3>
+      <ol>
+        <li>Cupcake cheesecake jelly-o cotton candy macaroon cheesecake</li>
+        <li>Tart donut tart caramels. Dragée candy danish carrot cake bonbon. Chupa chups pie lollipop cake halvah tiramisu. Donut marzipan jelly beans powder oat cake icing. Macaroon tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.</li>
+        <li>Gingerbread dessert croissant lemon drops cupcake bear claw</li>
+        <li>Fruitcake brownie wypas cheesecake marshmallow ice cream</li>
+      </ol>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="layout-container">
+      <h1>Challenge Listings</h1>
+    </div>
+  </div>
+
+  <section class="stylesheet"><div class="source-container"><p>Normal<a class="toggle-source">show source</a></p><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-container no-side-padding&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;challenge-listing&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">data-role=</span><span class="s">&quot;featured_challenge&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;challenge-synopsis&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;challenge-logo&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892&quot;</span> <span class="na">class=</span><span class="s">&quot;photo_image_tag image-replacement&quot;</span> <span class="na">alt=</span><span class="s">&quot;image&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/figure&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2&gt;</span>
+                  Challenge Title Goes Here
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;posted-by&quot;</span><span class="nt">&gt;</span>
+                  Online challenge
+                <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;challenge-description&quot;</span><span class="nt">&gt;</span>
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                <span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;stats&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;prizes&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon symbol&quot;</span><span class="nt">&gt;</span>star<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>$50,000<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action&quot;</span><span class="nt">&gt;</span>in prizes<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;submission-time&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon symbol&quot;</span><span class="nt">&gt;</span>clock<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">&quot;2013-06-15T05:00:00-04:00&quot;</span> <span class="na">class=</span><span class="s">&quot;value timeago&quot;</span> <span class="na">title=</span><span class="s">&quot;Jun 15, 2013 05:00 AM EDT&quot;</span><span class="nt">&gt;</span>40 days<span class="nt">&lt;/time&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action&quot;</span><span class="nt">&gt;</span> to submit<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/article&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+    <div class="row">
+      <div class="layout-container no-side-padding">
+        <article class="challenge-listing">
+          <a data-role="featured_challenge" href="#">
+            <section class="challenge-synopsis">
+              <figure class="challenge-logo">
+                <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
+              </figure>
+
+              <div class="content">
+                <h2>
+                  Challenge Title Goes Here
+                </h2>
+                <p class="posted-by">
+                  Online challenge
+                </p>
+                <p class="challenge-description">
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                </p>
+              </div>
+            </section>
+
+            <section class="stats">
+              <div class="prizes">
+                <span class="ss-icon symbol">star</span>
+                <div class="text">
+                  <span class="value">$50,000</span> <span class="action">in prizes</span>
+                </div>
+              </div>
+
+              <div class="submission-time">
+                <span class="ss-icon symbol">clock</span>
+                <div class="text">
+                  <time datetime="2013-06-15T05:00:00-04:00" class="value timeago" title="Jun 15, 2013 05:00 AM EDT">40 days</time> <span class="action"> to submit</span>
+                </div>
+              </div>
+            </section>
+          </a>
+        </article>
+      </div>
+    </div>
+</section>
+  <section class="stylesheet"><div class="source-container"><p>Challenge with no prizes<a class="toggle-source">show source</a></p><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-container no-side-padding&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;challenge-listing&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">data-role=</span><span class="s">&quot;featured_challenge&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;challenge-synopsis&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;challenge-logo&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892&quot;</span> <span class="na">class=</span><span class="s">&quot;photo_image_tag image-replacement&quot;</span> <span class="na">alt=</span><span class="s">&quot;image&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/figure&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2&gt;</span>
+                  Challenge Title Goes Here
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;posted-by&quot;</span><span class="nt">&gt;</span>
+                  Online challenge
+                <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;challenge-description&quot;</span><span class="nt">&gt;</span>
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                <span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;stats&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;prizes&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon symbol&quot;</span><span class="nt">&gt;</span>star<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action&quot;</span><span class="nt">&gt;</span>Non-monetary prizes<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;submission-time&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon symbol&quot;</span><span class="nt">&gt;</span>clock<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">&quot;2013-06-15T05:00:00-04:00&quot;</span> <span class="na">class=</span><span class="s">&quot;value timeago&quot;</span> <span class="na">title=</span><span class="s">&quot;Jun 15, 2013 05:00 AM EDT&quot;</span><span class="nt">&gt;</span>40 days<span class="nt">&lt;/time&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action&quot;</span><span class="nt">&gt;</span> to submit<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/article&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+    <div class="row">
+      <div class="layout-container no-side-padding">
+        <article class="challenge-listing">
+          <a data-role="featured_challenge" href="#">
+            <section class="challenge-synopsis">
+              <figure class="challenge-logo">
+                <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
+              </figure>
+
+              <div class="content">
+                <h2>
+                  Challenge Title Goes Here
+                </h2>
+                <p class="posted-by">
+                  Online challenge
+                </p>
+                <p class="challenge-description">
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                </p>
+              </div>
+            </section>
+
+            <section class="stats">
+              <div class="prizes">
+                <span class="ss-icon symbol">star</span>
+                <div class="text">
+                  <span class="action">Non-monetary prizes</span>
+                </div>
+              </div>
+
+              <div class="submission-time">
+                <span class="ss-icon symbol">clock</span>
+                <div class="text">
+                  <time datetime="2013-06-15T05:00:00-04:00" class="value timeago" title="Jun 15, 2013 05:00 AM EDT">40 days</time> <span class="action"> to submit</span>
+                </div>
+              </div>
+            </section>
+          </a>
+        </article>
+      </div>
+    </div>
+</section>
+  <section class="stylesheet"><div class="source-container"><p>Hackathon with location<a class="toggle-source">show source</a></p><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-container no-side-padding&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;challenge-listing&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">data-role=</span><span class="s">&quot;featured_challenge&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;challenge-synopsis&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;challenge-logo&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892&quot;</span> <span class="na">class=</span><span class="s">&quot;photo_image_tag image-replacement&quot;</span> <span class="na">alt=</span><span class="s">&quot;image&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/figure&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2&gt;</span>
+                  Hackathon Title Goes Here
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;posted-by&quot;</span><span class="nt">&gt;</span>
+                  Hackathon in Brooklyn, New York, United States
+                <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;challenge-description&quot;</span><span class="nt">&gt;</span>
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                <span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;stats&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;prizes&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon symbol&quot;</span><span class="nt">&gt;</span>star<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>$100,000<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action&quot;</span><span class="nt">&gt;</span>in prizes<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;submission-time&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon symbol&quot;</span><span class="nt">&gt;</span>clock<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">&quot;value date-range timeago&quot;</span><span class="nt">&gt;</span>Jan 5<span class="ni">&amp;ndash;</span>7<span class="nt">&lt;/time&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/article&gt;</span>
+
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+    <div class="row">
+      <div class="layout-container no-side-padding">
+        <article class="challenge-listing">
+          <a data-role="featured_challenge" href="#">
+            <section class="challenge-synopsis">
+              <figure class="challenge-logo">
+                <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
+              </figure>
+
+              <div class="content">
+                <h2>
+                  Hackathon Title Goes Here
+                </h2>
+                <p class="posted-by">
+                  Hackathon in Brooklyn, New York, United States
+                </p>
+                <p class="challenge-description">
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake  tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                </p>
+              </div>
+            </section>
+
+            <section class="stats">
+              <div class="prizes">
+                <span class="ss-icon symbol">star</span>
+                <div class="text">
+                  <span class="value">$100,000</span> <span class="action">in prizes</span>
+                </div>
+              </div>
+
+              <div class="submission-time">
+                <span class="ss-icon symbol">clock</span>
+                <div class="text">
+                  <time class="value date-range timeago">Jan 5&ndash;7</time>
+                </div>
+              </div>
+            </section>
+          </a>
+        </article>
+
+      </div>
+    </div>
+</section>
+  <section class="stylesheet"><div class="source-container"><p>Hackathon without location<a class="toggle-source">show source</a></p><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-container no-side-padding&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;challenge-listing&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">data-role=</span><span class="s">&quot;featured_challenge&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;challenge-synopsis&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;challenge-logo&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892&quot;</span> <span class="na">class=</span><span class="s">&quot;photo_image_tag image-replacement&quot;</span> <span class="na">alt=</span><span class="s">&quot;image&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/figure&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2&gt;</span>
+                  Hackathon Title: NO location data
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;posted-by&quot;</span><span class="nt">&gt;</span>
+                  Hackathon
+                <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;challenge-description&quot;</span><span class="nt">&gt;</span>
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                <span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;stats&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;prizes&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon symbol&quot;</span><span class="nt">&gt;</span>star<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>$50,000<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action&quot;</span><span class="nt">&gt;</span>in prizes<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;submission-time&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ss-icon symbol&quot;</span><span class="nt">&gt;</span>clock<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">&quot;value date-range timeago&quot;</span><span class="nt">&gt;</span>Jun 3 <span class="ni">&amp;ndash;</span> Aug 18<span class="nt">&lt;/time&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/article&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+    <div class="row">
+      <div class="layout-container no-side-padding">
+        <article class="challenge-listing">
+          <a data-role="featured_challenge" href="#">
+            <section class="challenge-synopsis">
+              <figure class="challenge-logo">
+                <img src="//s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/055/715/datas/medium_square.gif?1366224892" class="photo_image_tag image-replacement" alt="image">
+              </figure>
+
+              <div class="content">
+                <h2>
+                  Hackathon Title: NO location data
+                </h2>
+                <p class="posted-by">
+                  Hackathon
+                </p>
+                <p class="challenge-description">
+                  Cupcake cheesecake jelly-o cotton candy macaroon cheesecake tootsie roll pie oat cake biscuit caramels apple pie ice cream pie.
+                </p>
+              </div>
+            </section>
+
+            <section class="stats">
+              <div class="prizes">
+                <span class="ss-icon symbol">star</span>
+                <div class="text">
+                  <span class="value">$50,000</span> <span class="action">in prizes</span>
+                </div>
+              </div>
+
+              <div class="submission-time">
+                <span class="ss-icon symbol">clock</span>
+                <div class="text">
+                  <time class="value date-range timeago">Jun 3 &ndash; Aug 18</time>
+                </div>
+              </div>
+            </section>
+          </a>
+        </article>
+      </div>
+    </div>
+</section>
+  <div class="row light">
+    <div class="layout-container">
+      <h1>Banners</h1>
+
+      <section class="stylesheet"><div class="source-container"><p>Notifications<a class="toggle-source">show source</a></p><div class="highlight"><pre>        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;notification&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">tabindex=</span><span class="s">&quot;0&quot;</span> <span class="na">class=</span><span class="s">&quot;alert&quot;</span><span class="nt">&gt;</span>Error message goes here. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>A link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;notification&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">tabindex=</span><span class="s">&quot;0&quot;</span> <span class="na">class=</span><span class="s">&quot;notice&quot;</span><span class="nt">&gt;</span>Status message goes here. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>A link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;notification&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">tabindex=</span><span class="s">&quot;0&quot;</span> <span class="na">class=</span><span class="s">&quot;success&quot;</span><span class="nt">&gt;</span>Success message goes here. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>A link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+</pre></div></div>
+        <div class="notification">
+          <p tabindex="0" class="alert">Error message goes here. <a href="#">A link</a></p>
+        </div>
+
+        <div class="notification">
+          <p tabindex="0" class="notice">Status message goes here. <a href="#">A link</a></p>
+        </div>
+
+        <div class="notification">
+          <p tabindex="0" class="success">Success message goes here. <a href="#">A link</a></p>
+        </div>
+</section>
+    </div>
+  </div>
+
+</div>
+
+  <section class="stylesheet"><div class="source-container"><p>Footer<a class="toggle-source">show source</a></p><div class="highlight"><pre>  <span class="nt">&lt;footer</span> <span class="na">id=</span><span class="s">&quot;global-footer&quot;</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;links&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;site-map&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Jobs<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Press<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;legal&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;small&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;copyright&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;copy;</span> 2013 ChallengePost<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/privacy&quot;</span><span class="nt">&gt;</span>Privacy<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/terms&quot;</span><span class="nt">&gt;</span>Terms<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/small&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;social-media&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;ss-icon ss-social-circle&quot;</span><span class="nt">&gt;</span>tumblr<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;ss-icon ss-social-circle&quot;</span><span class="nt">&gt;</span>twitter<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;ss-icon ss-social-circle&quot;</span><span class="nt">&gt;</span>facebook<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/footer&gt;</span>
+</pre></div></div>
+  <footer id="global-footer" class="container">
+    <div class="links">
+      <div class="site-map">
+        <a href="#">About</a>
+        <a href="#">Jobs</a>
+        <a href="#">Press</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="legal">
+        <small>
+          <span class="copyright">&copy; 2013 ChallengePost</span>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </small>
+      </div>
+    </div>
+
+    <div class="social-media" >
+      <a href="#" class="ss-icon ss-social-circle">tumblr</a>
+      <a href="#" class="ss-icon ss-social-circle">twitter</a>
+      <a href="#" class="ss-icon ss-social-circle">facebook</a>
+    </div>
+  </footer>
+</section>
+
+</body>
+</html>
