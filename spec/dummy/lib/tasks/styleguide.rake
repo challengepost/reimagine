@@ -17,10 +17,9 @@ namespace :styleguide do
 
   desc 'generate a static styleguide'
   task :generate => %w[environment assets:precompile] do
-    # ENV['RAILS_RELATIVE_URL_ROOT'] = 'kikou'
     site = '_deploy'
 
-    server = spawn( { 'BUILDING_STYLEGUIDE' => 'true' }, 'bundle exec rails s thin -p 3001' )
+    server = spawn( { 'BUILDING_STYLEGUIDE' => 'true', 'RAILS_ENV' => 'production' }, 'bundle exec rails s thin -p 3001' )
 
     cd 'public' do
       system 'rm -rf *.html'
