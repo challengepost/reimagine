@@ -60,6 +60,7 @@
         @include clearfix;
 
         .date-range {
+          line-height: 2em;
           margin-top: 0;
         }
       }
@@ -93,6 +94,10 @@
         letter-spacing: 0.083333333em; // 1px
         text-transform: uppercase;
         display: block;
+
+        &.non-monetary-prizes {
+          line-height: 3em;
+        }
       }
     } // END .stats
 
@@ -143,12 +148,17 @@
         margin-top: 0;
         @include span-columns(4);
 
-        .prizes { margin-bottom: 0.5em; }
+        .prizes {
+          margin-bottom: 0.5em;
+
+          .action.non-monetary-prizes {
+            line-height: 1.4em;
+          }
+        }
 
         .symbol {
           width: auto;
           font-size: 1.125em; // 18px
-          padding-top: 0.2em;
           margin-right: 0.5em;
         }
 
