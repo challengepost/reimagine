@@ -95,7 +95,7 @@
         text-transform: uppercase;
         display: block;
 
-        &.non-monetary-prizes {
+        &.one-line {
           line-height: 3em;
         }
       }
@@ -151,7 +151,7 @@
         .prizes {
           margin-bottom: 0.5em;
 
-          .action.non-monetary-prizes {
+          .action.one-line {
             line-height: 1.4em;
           }
         }
