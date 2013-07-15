@@ -52,18 +52,16 @@
       @include span-columns(3);
 
       .prizes {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
       }
 
       .prizes,
       .submission-time {
         @include clearfix;
 
-        .value {
-          margin-top: -0.4em;
-          &.date-range {
-            margin-top: 0;
-          }
+        .date-range {
+          line-height: 2em;
+          margin-top: 0;
         }
       }
 
@@ -71,7 +69,7 @@
         color: $secondary-color;
         float: left;
         font-size: 2em;
-        line-height: 1em;
+        line-height: 1.4em;
         width: 20%;
       }
 
@@ -82,7 +80,6 @@
 
       .value {
         @include h3;
-        display: block;
 
         @include media($mobile) {
           margin-right: 0.1em;
@@ -98,6 +95,9 @@
         text-transform: uppercase;
         display: block;
 
+        &.one-line {
+          line-height: 3em;
+        }
       }
     } // END .stats
 
@@ -148,12 +148,17 @@
         margin-top: 0;
         @include span-columns(4);
 
-        .prizes { margin-bottom: 0.5em; }
+        .prizes {
+          margin-bottom: 0.5em;
+
+          .action.one-line {
+            line-height: 1.4em;
+          }
+        }
 
         .symbol {
           width: auto;
           font-size: 1.125em; // 18px
-          padding-top: 0.2em;
           margin-right: 0.5em;
         }
 
