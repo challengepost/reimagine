@@ -1,0 +1,11 @@
+//*
+//
+// Browsers and framework usually define colors to links that apply
+// with more priority than the main text color.
+// This ensures links use the text color of whichever elements they are
+// a child, regardless of the link state.
+//
+
+.block-wrapper-link
+  &, &:hover, &:active, &:visited, &:focus
+    color: inherit
