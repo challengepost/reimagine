@@ -13,6 +13,8 @@ html { background: $footer-color; }
   display:none;
 }
 
+.clearfix { @include clearfix; }
+
 // Utilities
 .text-left   { text-align: left; }
 .text-right  { text-align: right; }
