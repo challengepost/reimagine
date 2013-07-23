@@ -10,13 +10,13 @@
 ```bash
 . # Gemfile, Guardfile, README, configs...
 └── reimagine
-    ├── assets # assets, not processed.
-    │   ├── javascripts # Handles .js and .coffee
-    │   └── stylesheets # Handles sass, scss and css
-    │       ├── application # temp: used to simulate working with reimagine in a different app
-    │       └── reimagine # The reimagine.css
-    ├── javascripts # processed js files go here (automatic)
-    └── stylesheets # processed css files go here (automatic)
+  ├── assets # assets, not processed.
+  │ ├── javascripts # Handles .js and .coffee
+  │ └── stylesheets # Handles sass, scss and css
+  │ ├── application # temp: used to simulate working with reimagine in a different app
+  │ └── reimagine # The reimagine.css
+  ├── javascripts # processed js files go here (automatic)
+  └── stylesheets # processed css files go here (automatic)
 ```
 
 # Adding files
