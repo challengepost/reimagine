@@ -856,8 +856,8 @@ $default-float: left;
 // We use these for the pagination anchor links
 
 // $pagination-link-pad: emCalc(1, 7, 1);
-// $pagination-link-font-color: #999;
-// $pagination-link-active-bg: darken(#fff, 10%);
+$pagination-link-font-color: #1194d5;
+$pagination-link-active-bg: white;
 
 // We use these for disabled anchor links
 
@@ -867,11 +867,12 @@ $default-float: left;
 
 // We use these for currently selected anchor links
 
-// $pagination-link-current-background: $primary-color;
-// $pagination-link-current-font-color: #fff;
-// $pagination-link-current-font-weight: bold;
-// $pagination-link-current-cursor: default;
-// $pagination-link-current-active-bg: $primary-color;
+$primary-color: white;
+$pagination-link-current-background: $primary-color;
+$pagination-link-current-font-color: black;
+$pagination-link-current-font-weight: bold;
+$pagination-link-current-cursor: default;
+$pagination-link-current-active-bg: $primary-color;
 
 //
 // Panel Variables
