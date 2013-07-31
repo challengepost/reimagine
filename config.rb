@@ -4,10 +4,10 @@ require 'zurb-foundation'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "stylesheets"
-sass_dir = "assets/stylesheets"
-images_dir = "images"
-javascripts_dir = "javascripts"
+css_dir = "reimagine/stylesheets"
+sass_dir = "reimagine/assets/stylesheets"
+images_dir = "reimagine/images"
+javascripts_dir = "reimagine/javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
