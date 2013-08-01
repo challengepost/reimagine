@@ -17,7 +17,7 @@
 
 # guard 'compass', :project_path => 'not_current_dir', :configuration_file => 'path/to/my/compass_config.rb'
 
-guard :compass, project_path: 'reimagine', configuration_file: 'reimagine/config.rb'
+guard :compass, project_path: '.', configuration_file: 'config.rb'
 
 
 guard 'livereload' do
