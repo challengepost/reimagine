@@ -1,3 +1,5 @@
+@import "reimagine/config"
+
 // reimagine includes:
 // - normalize.css
 // - bourbon typography
@@ -6,12 +8,17 @@
 // imports normalize
 //   http://necolas.github.io/normalize.css/
 @import "reimagine-foundation"
+@import "reimagine/foundation-overrides"
+
 
 // imports bourbon typography
 //   http://compass-style.org/reference/compass/typography/
 @import "reimagine/typography"
 
 // imports reimagine custom CSS helpers
-@import "reimagine/config"
 @import "reimagine/helpers"
 @import "reimagine/components"
+
+
+@import 'reimagine/ie'
+

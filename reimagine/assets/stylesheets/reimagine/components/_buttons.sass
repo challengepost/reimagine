@@ -1,3 +1,17 @@
 .cgov-button
-   @include button($bg: #1c7eda)
-   @include background(linear-gradient(#1c7eda, #1065b5))
+  @include button($bg: #1c7eda)
+  @include background(linear-gradient(#1c7eda, #1065b5))
+  box-shadow: none
+  text-align: center
+
+  &:active, &:focus, &:hover
+    @include background(linear-gradient(darken(#1c7eda, $button-function-factor), darken(#1065b5, $button-function-factor)))
+
+  &.prefix, &.postfix
+    @include prefix-postfix-base
+
+  &.inline-prefix,
+  &.inline-postfix
+    @include button-size
+    @include prefix-postfix-base
+    width: auto
