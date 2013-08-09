@@ -110,15 +110,7 @@
   &.callout { background: $secondary-color; }
 }
 
-@mixin link-box {
-  @include clearfix;
-  background: white;
-  color: $text-color;
-  display: block;
-  border: 6px solid white;
-  padding: 0.5em 0.875em 0.875em 0.875em;
-  margin-bottom: 1em;
-
+@mixin link-box-hover {
   &:hover {
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.4);
     border: 6px solid lighten($primary-color, 3%);
@@ -129,4 +121,16 @@
       @include fade;
     }
   } // END &:hover
+}
+
+@mixin link-box {
+  @include clearfix;
+  background: white;
+  color: $text-color;
+  display: block;
+  border: 6px solid white;
+  padding: 0.5em 0.875em 0.875em 0.875em;
+  margin-bottom: 1em;
+
+  @include link-box-hover;
 }
