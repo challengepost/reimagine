@@ -120,7 +120,15 @@
       color: $dark-text-color;
       @include fade;
     }
-  } // END &:hover
+  }
+}
+
+@mixin link-box-no-hover {
+  &:hover {
+    box-shadow: none;
+    border: 6px solid white;
+    @include fade;
+  }
 }
 
 @mixin link-box {
