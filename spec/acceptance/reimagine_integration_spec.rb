@@ -10,6 +10,6 @@ feature 'Assets' do
   scenario 'it servers reimagine.js' do
     visit '/assets/reimagine.js'
 
-    page.text.should include 'Reimagine = {}'
+    page.text.should include 'var Reimagine;'
   end
 end
