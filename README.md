@@ -23,7 +23,7 @@
 
 We can write our assets using preprocessors like SASS and CoffeeScript. They should be placed under `reimagine/assets`.
 
-Compass and CoffeeScript will watch those directories and compile files as they are updated. 
+Compass and CoffeeScript will watch those directories and compile files as they are updated.
 
 They are placed under `reimagine/stylesheets` and `reimagine/javascripts`. They keep the same file name (changing the extension to `.js` or `.css`) and the same tree structure.
 

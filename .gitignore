@@ -1,3 +1,10 @@
+.bundle/
+log/*.log
+pkg/
+spec/dummy/db/*.sqlite3
+spec/dummy/log/*.log
+spec/dummy/tmp/
+spec/dummy/.sass-cache
 *.gem
 *.rbc
 .bundle
@@ -18,7 +25,4 @@ test/version_tmp
 tmp
 .DS_Store
 .sass-cache
-
-# compiled assets
-reimagine/javascripts/*
-reimagine/stylesheets/*
+build/

@@ -1,0 +1,7 @@
+$include-html-grid-classes: false
+@import "foundation/components/grid"
+$include-html-grid-classes: true
+
+@for $i from 1 through $total-columns
+  .large#{-$i}
+    @include grid-column($columns:$i,$collapse:null,$float:false)
