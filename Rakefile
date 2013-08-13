@@ -1,4 +1,6 @@
 #!/usr/bin/env rake
+
+
 begin
   require 'bundler/setup'
 rescue LoadError
@@ -22,19 +24,19 @@ end
 
 Bundler::GemHelper.install_tasks
 
+task deploy: [:spec, :build] do
+  require 'reimagine/version'
+  # bump version first
+  system "fury push pkg/reimagine-#{Reimagine::VERSION}.gem"
+end
+
 task :publish do
-  # noop
-  # we do not want to publish the gem to rubygems
+  # Do not want to publish to rubygems!
+  raise 'USE rake deploy'
 end
 
-require 'rake/testtask'
+require 'rspec/core/rake_task'
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.libs << 'test'
-  t.pattern = 'spec/**/*_spec.rb'
-  t.verbose = false
-end
+RSpec::Core::RakeTask.new(:spec)
 
-
-task :default => :test
+task :default => :spec

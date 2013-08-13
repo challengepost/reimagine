@@ -1,30 +1,34 @@
+# coding: utf-8
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
 require "reimagine/version"
 
 # Describe your gem and declare its dependencies:
-Gem::Specification.new do |s|
-  s.name        = "reimagine"
-  s.version     = Reimagine::VERSION
-  s.authors     = ["ChallengePost, Inc."]
-  s.email       = ["tech@challengepost.com"]
-  s.homepage    = "http://challengepost.com"
-  s.summary     = "An assets gem"
-  s.description = "Shared assets, in a gem."
+Gem::Specification.new do |spec|
+  spec.name        = "reimagine"
+  spec.version     = Reimagine::VERSION
+  spec.authors     = ["ChallengePost, Inc."]
+  spec.email       = ["tech@challengepost.com"]
+  spec.homepage    = "http://challengepost.com"
+  spec.summary     = "An assets gem"
+  spec.description = "Shared assets, in a gem."
 
-  s.files = Dir["{app,config,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["spec/**/*"]
+  spec.files         = `git ls-files`.split($/)
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ["lib"]
 
-  s.add_dependency "rails"
-  s.add_dependency "sass-rails"
-  s.add_dependency "compass-rails", "~> 2.0.alpha.0"
-  s.add_dependency "coffee-rails"
-  s.add_dependency "zurb-foundation", "~> 4"
+  spec.add_dependency "rails"
+  spec.add_dependency "sass-rails"
+  spec.add_dependency "compass-rails", "~> 2.0.alpha.0"
+  spec.add_dependency "coffee-rails"
+  spec.add_dependency "zurb-foundation", "~> 4"
 
-  s.add_development_dependency "rspec-rails", '~> 2.0'
-  s.add_development_dependency "steak"
-  s.add_development_dependency "launchy"
-  s.add_development_dependency "pry"
-  s.add_development_dependency "pry-debugger"
+  spec.add_development_dependency "rspec-rails", '~> 2.0'
+  spec.add_development_dependency "steak"
+  spec.add_development_dependency "launchy"
+  spec.add_development_dependency "pry"
+  spec.add_development_dependency "pry-debugger"
+  spec.add_development_dependency "gemfury"
 end
