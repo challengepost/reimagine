@@ -20,17 +20,19 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-
-
-
 Bundler::GemHelper.install_tasks
+
+task :publish do
+  # noop
+  # we do not want to publish the gem to rubygems
+end
 
 require 'rake/testtask'
 
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
+  t.pattern = 'spec/**/*_spec.rb'
   t.verbose = false
 end
 

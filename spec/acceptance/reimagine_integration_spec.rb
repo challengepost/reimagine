@@ -17,5 +17,6 @@ feature 'Assets' do
     visit '/assets/reimagine.js'
 
     page.text.should include 'var Reimagine;'
+    page.text.should include 'Foundation.libs.forms'
   end
 end
