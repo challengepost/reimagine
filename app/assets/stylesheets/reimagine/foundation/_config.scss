@@ -285,7 +285,7 @@ $row-width: emCalc(1088); // width matches neat's
 // $form-label-pointer: pointer;
 // $form-label-font-size: emCalc(14);
 // $form-label-font-weight: 500;
-$form-label-font-color: $cgov-body-color;
+// $form-label-font-color: lighten(#000, 30%);
 // $form-label-bottom-margin: emCalc(3);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
@@ -789,7 +789,7 @@ $form-label-font-color: $cgov-body-color;
 
 // $label-font-sizing: emCalc(14);
 // $label-font-weight: bold;
-$label-font-color: red;
+// $label-font-color: #333;
 // $label-font-color-alt: #fff;
 
 //
