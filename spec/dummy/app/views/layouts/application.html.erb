@@ -1,14 +1,244 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
 <head>
-  <title>Dummy</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Reimagine 2</title>
+
+  <%= stylesheet_link_tag 'reimagine' %>
+  <link rel="stylesheet" href="stylesheets/application.css">
+
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
 </head>
-<body>
+<body class="foundation-grid">
 
-<%= yield %>
+  <nav id="masthead">
+    <section class="row">
+      <p>
+        <a href="/" class="header-logo hide-text" id="challenge-gov-logo">Challenge.gov</a>
+        <span id="challenge-gov-powered-by">powered by</span>
+        <a href="http://challengepost.com" class="header-logo hide-text" id="challengepost-com-logo">ChallengePost.com</a>
+      </p>
+    </section>
+  </nav>
 
-</body>
+  <header id="main-header" class="row">
+    <h1>The public and government can solve problems together.</h1>
+  </header>
+
+  <div id="main" class="row">
+
+ <form accept-charset="UTF-8" action="/listings" class="custom" id="search-filters" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+    <section id="basic-search-section" class="row">
+      <div class="large-3 columns">
+        <div class="row collapse">
+          <div class="large-10 small-11 columns">
+            <input id="search-field" name="q" placeholder="Search" type="search" value="">
+          </div>
+          <div class="large-2 small-1 columns">
+            <input class="button postfix cgov-button ss-icon ss-search" id="basic-search-submit" name="commit" type="submit" value="Search">
+          </div>
+        </div>
+      </div>
+
+      <div class="large-3 columns push-3">
+        <label class="inline all-caps-bold" for="search-sort" id="sort-by-label">Sort by:</label>
+      </div>
+
+      <div class="large-3 columns push-3">
+        <select class="dropdown hidden-field" id="search-sort" name="sort" data-id="1375483538076-deR0I"><option value="recent" selected="selected">Most recent</option>
+<option value="deadline">Deadline</option>
+<option value="prizes">Prizes</option></select><div class="custom dropdown" data-id="1375483538076-deR0I"><a href="#" class="current">Most recent</a><a href="#" class="selector"></a><ul><li class="selected">Most recent</li><li class="">Deadline</li><li class="">Prizes</li></ul></div>
+      </div>
+
+      <div class="large-3 columns pull-6">
+        <label class="inline" id="show-advanced-search" style="display: none;">Advanced search</label>
+        <label class="inline hide" id="hide-advanced-search" style="display: block;">Close advanced search</label>
+      </div>
+    </section>
+
+    <section class="hide row" id="advanced-search-section" style="display: block;">
+      <div class="large-12 columns">
+        <label id="filter-results-hint" class="all-caps-bold subheader">
+          Filter results by:
+        </label>
+      </div>
+
+      <div class="large-3 columns">
+        <label class="hide-for-medium-up" for="search-formats">Format</label>
+        <select class="dropdown hidden-field" id="search-formats" name="type" data-id="1375483538083-hKXYW"><option value="">All formats</option><option value="Application">Application</option>
+<option value="Idea">Idea</option>
+<option value="Video">Video</option>
+<option value="Other">Other</option></select><div class="custom dropdown" data-id="1375483538083-hKXYW"><a href="#" class="current">All formats</a><a href="#" class="selector"></a><ul><li class="selected">All formats</li><li class="">Application</li><li class="">Idea</li><li class="">Video</li><li class="">Other</li></ul></div>
+      </div>
+
+      <div class="large-4 columns">
+        <label class="hide-for-medium-up" for="search-agencies">Agency</label>
+        <select class="dropdown hidden-field" id="search-agencies" name="agency" data-id="1375483538090-JQTP5"><option value="">All Agencies</option><option value="USAID">Agency for International Development (USAID)</option>
+<option value="USDA">Department of Agriculture (USDA)</option>
+<option value="DOC">Department of Commerce (DOC)</option>
+<option value="DOD">Department of Defense (DOD)</option>
+<option value="ED">Department of Education (ED)</option>
+<option value="DOE">Department of Energy (DOE)</option>
+<option value="HHS">Department of Health and Human Services (HHS)</option>
+<option value="DHS">Department of Homeland Security (DHS)</option>
+<option value="HUD">Department of Housing and Urban Development (HUD)</option>
+<option value="USDOJ">Department of Justice (USDOJ)</option>
+<option value="DOL">Department of Labor (DOL)</option>
+<option value="STATE">Department of State (STATE)</option>
+<option value="DOT">Department of Transportation (DOT)</option>
+<option value="VA">Department of Veterans Affairs (VA)</option>
+<option value="DOI">Department of the Interior (DOI)</option>
+<option value="TREASURY">Department of the Treasury (TREASURY)</option>
+<option value="EPA">Environmental Protection Agency (EPA)</option>
+<option value="GSA">General Services Administration (GSA)</option>
+<option value="NASA">National Aeronautics and Space Administration (NASA)</option>
+<option value="NSF">National Science Foundation (NSF)</option>
+<option value="NRC">Nuclear Regulatory Commission (NRC)</option>
+<option value="OPM">Office of Personnel Management (OPM)</option>
+<option value="SBA">Small Business Administration (SBA)</option>
+<option value="SSA">Social Security Administration (SSA)</option>
+<option value="USDA">United States Department of Agriculture (USDA)</option></select><div class="custom dropdown" data-id="1375483538090-JQTP5"><a href="#" class="current">All Agencies</a><a href="#" class="selector"></a><ul><li class="selected">All Agencies</li><li class="">Agency for International Development (USAID)</li><li class="">Department of Agriculture (USDA)</li><li class="">Department of Commerce (DOC)</li><li class="">Department of Defense (DOD)</li><li class="">Department of Education (ED)</li><li class="">Department of Energy (DOE)</li><li class="">Department of Health and Human Services (HHS)</li><li class="">Department of Homeland Security (DHS)</li><li class="">Department of Housing and Urban Development (HUD)</li><li class="">Department of Justice (USDOJ)</li><li class="">Department of Labor (DOL)</li><li class="">Department of State (STATE)</li><li class="">Department of Transportation (DOT)</li><li class="">Department of Veterans Affairs (VA)</li><li class="">Department of the Interior (DOI)</li><li class="">Department of the Treasury (TREASURY)</li><li class="">Environmental Protection Agency (EPA)</li><li class="">General Services Administration (GSA)</li><li class="">National Aeronautics and Space Administration (NASA)</li><li class="">National Science Foundation (NSF)</li><li class="">Nuclear Regulatory Commission (NRC)</li><li class="">Office of Personnel Management (OPM)</li><li class="">Small Business Administration (SBA)</li><li class="">Social Security Administration (SSA)</li><li class="">United States Department of Agriculture (USDA)</li></ul></div>
+      </div>
+
+      <div class="large-2 pull-3 columns">
+        <input class="button inline-postfix cgov-button" name="commit" type="submit" value="Search">
+      </div>
+</section></form>
+
+    <section id="listings" class="listings challenge-listings">
+
+      <article class="listing row">
+        <a href="#" class="block-wrapper-link clearfix">
+          <figure class="large-3 small-3 columns">
+            <img src="https://cgov-staging.herokuapp.com/images/challenge-logo.gif">
+          </figure>
+
+          <section class="challenge-listing-information large-6 small-9 columns">
+            <p>
+              lol
+            </p>
+
+          </section>
+
+          <aside class="challenge-listing-mutable-data large-3 small-12 columns">
+            <p class="challenge-listing-prize large-12 small-6 columns">
+              Non monetary value
+            </p>
+
+            <p class="challenge-listing-date large-12 small-6 columns">
+              Ended on<br>
+              May 29, 2013
+            </p>
+          </aside>
+        </a>
+      </article>
+
+      <article class="listing row">
+        <a href="#" class="block-wrapper-link clearfix">
+          <figure class="large-3 small-3 columns">
+            <img src="https://cgov-staging.herokuapp.com/images/challenge-logo.gif">
+          </figure>
+
+          <section class="challenge-listing-information large-6 small-9 columns">
+            <p>
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+            </p>
+
+          </section>
+
+          <aside class="challenge-listing-mutable-data large-3 small-12 columns">
+            <p class="challenge-listing-prize large-12 small-6 columns">
+              Non monetary value
+            </p>
+
+            <p class="challenge-listing-date large-12 small-6 columns">
+              Ended on<br>
+              May 29, 2013
+            </p>
+          </aside>
+        </a>
+      </article>
+
+      <article class="listing row">
+        <a href="#" class="block-wrapper-link clearfix">
+          <figure class="large-3 small-3 columns">
+            <img src="https://cgov-staging.herokuapp.com/images/challenge-logo.gif">
+          </figure>
+
+          <section class="challenge-listing-information large-6 small-9 columns">
+            <p>
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+            </p>
+
+          </section>
+
+          <aside class="challenge-listing-mutable-data large-3 small-12 columns">
+            <p class="challenge-listing-prize large-12 small-6 columns">
+              Non monetary value
+            </p>
+
+            <p class="challenge-listing-date large-12 small-6 columns">
+              Ended on<br>
+              May 29, 2013
+            </p>
+          </aside>
+        </a>
+      </article>
+
+      <article class="listing row">
+        <a href="#" class="block-wrapper-link clearfix">
+          <figure class="large-3 small-3 columns">
+            <img src="https://cgov-staging.herokuapp.com/images/challenge-logo.gif">
+          </figure>
+
+          <section class="challenge-listing-information large-6 small-9 columns">
+            <p>
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah
+            </p>
+
+          </section>
+
+          <aside class="challenge-listing-mutable-data large-3 small-12 columns">
+            <p class="challenge-listing-prize large-12 small-6 columns">
+              Non monetary value
+            </p>
+
+            <p class="challenge-listing-date large-12 small-6 columns">
+              Ended on<br>
+              May 29, 2013
+            </p>
+          </aside>
+        </a>
+      </article>
+
+
+      <ul class="pagination-centered"><ul class="pagination"><li class="arrow"><a class="previous_page" rel="prev start" href="/listings?page=1">«</a></li> <li><a rel="prev start" href="/listings?page=1">1</a></li> <li class="current"><a href="">2</a></li> <li><a rel="next" href="/listings?page=3">3</a></li> <li><a href="/listings?page=4">4</a></li> <li><a href="/listings?page=5">5</a></li> <li><a href="/listings?page=6">6</a></li> <li><a href="/listings?page=7">7</a></li> <li><a href="/listings?page=8">8</a></li> <li><a href="/listings?page=9">9</a></li> <li class="unavailable"><a href="#"><span class="gap">…</span></a></li> <li><a href="/listings?page=31">31</a></li> <li><a href="/listings?page=32">32</a></li> <li class="arrow"><a class="next_page" rel="next" href="/listings?page=3">»</a></li></ul></ul>
+
+    </section>
+  </div>
+
+  <footer class="row">footer</footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':7891/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+  <script src="assets/javascripts/vendor/foundation/foundation.js"></script>
+  <script src="assets/javascripts/vendor/foundation/foundation.forms.js"></script>
+  <script src="javascripts/main.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </html>
