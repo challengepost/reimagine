@@ -27,7 +27,7 @@ Bundler::GemHelper.install_tasks
 task deploy: [:spec, :build] do
   require 'reimagine2/version'
   # bump version first
-  system "fury push pkg/reimagine2-#{reimagine2::VERSION}.gem"
+  system "fury push pkg/reimagine2-#{Reimagine2::VERSION}.gem"
 end
 
 task :publish do
