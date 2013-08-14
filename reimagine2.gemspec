@@ -2,12 +2,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "reimagine/version"
+require "reimagine2/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "reimagine"
-  spec.version     = Reimagine::VERSION
+  spec.name        = "reimagine2"
+  spec.version     = Reimagine2::VERSION
   spec.authors     = ["ChallengePost, Inc."]
   spec.email       = ["tech@challengepost.com"]
   spec.homepage    = "http://challengepost.com"
