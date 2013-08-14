@@ -16,7 +16,7 @@ end
 
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'Reimagine'
+  rdoc.title    = 'reimagine2'
   rdoc.options << '--line-numbers'
   rdoc.rdoc_files.include('README.rdoc')
   rdoc.rdoc_files.include('lib/**/*.rb')
@@ -25,9 +25,9 @@ end
 Bundler::GemHelper.install_tasks
 
 task deploy: [:spec, :build] do
-  require 'reimagine/version'
+  require 'reimagine2/version'
   # bump version first
-  system "fury push pkg/reimagine-#{Reimagine::VERSION}.gem"
+  system "fury push pkg/reimagine2-#{Reimagine2::VERSION}.gem"
 end
 
 task :publish do

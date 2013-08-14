@@ -6,7 +6,7 @@ require "sprockets/railtie"
 require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "reimagine"
+require "reimagine2"
 
 module Dummy
   class Application < Rails::Application
