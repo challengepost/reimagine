@@ -52,7 +52,7 @@ $em-base: 16 !default;
 $default-float: left;
 
 // $body-bg: #fff;
-// $body-font-color: #222;
+$body-font-color: #262626;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -67,7 +67,7 @@ $default-float: left;
 
 // Colors
 
-// $primary-color: #2ba6cb;
+$primary-color: #108ac7;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -224,7 +224,7 @@ $row-width: emCalc(1088); // width matches neat's
 
 // Style lists
 
-// $list-style-position: outside;
+$list-style-position: inside;
 // $list-side-margin: 0;
 // $list-nested-margin: emCalc(20);
 // $definition-list-header-weight: bold;
@@ -867,8 +867,7 @@ $pagination-link-active-bg: white;
 
 // We use these for currently selected anchor links
 
-$primary-color: white;
-$pagination-link-current-background: $primary-color;
+$pagination-link-current-background: white;
 $pagination-link-current-font-color: black;
 $pagination-link-current-font-weight: bold;
 $pagination-link-current-cursor: default;
