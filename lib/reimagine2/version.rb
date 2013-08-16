@@ -1,3 +1,3 @@
 module Reimagine2
-  VERSION = "2.0.1p1"
+  VERSION = "2.0.2"
 end
