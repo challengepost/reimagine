@@ -1,15 +1,19 @@
-.cgov-button
-  @include button($bg: #1c7eda)
-  @include background(linear-gradient(#1c7eda, #1065b5))
+// Customization of foundation's buttons.
+// They can not be done directly with configuration variables.
+// Instead of a flag background color, we use a sublte gradient
+// The colors are based on the $primary-color
+$light-primary: lighten($primary-color, $button-function-factor)
+$dark-primary: darken($primary-color, $button-function-factor)
+
+button, .button
+  @include background(linear-gradient($light-primary, $primary-color))
   box-shadow: none
-  text-align: center
 
   &:active, &:focus, &:hover
-    @include background(linear-gradient(darken(#1c7eda, $button-function-factor), darken(#1065b5, $button-function-factor)))
+    @include background(linear-gradient($primary-color, $dark-primary))
 
-  &.prefix, &.postfix
-    @include prefix-postfix-base
-
+  // custom mix of inline and pre/post fix classes so the button
+  // does not take full width but still has the same height as form elements
   &.inline-prefix,
   &.inline-postfix
     @include button-size

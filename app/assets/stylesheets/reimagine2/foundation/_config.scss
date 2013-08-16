@@ -74,7 +74,7 @@ $primary-color: #108ac7;
 
 // Make sure border radius matches unless we want it different.
 
-// $global-radius: 3px;
+$global-radius: .3em;
 // $global-rounded: 1000px;
 
 // Inset shadow shiny edges and depressions.
@@ -224,8 +224,8 @@ $row-width: emCalc(1088); // width matches neat's
 
 // Style lists
 
-$list-style-position: inside;
-// $list-side-margin: 0;
+// $list-style-position: outside;
+$list-side-margin: 1.1em;
 // $list-nested-margin: emCalc(20);
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
