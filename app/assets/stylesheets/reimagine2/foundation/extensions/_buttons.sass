@@ -6,11 +6,11 @@ $light-primary: lighten($primary-color, $button-function-factor)
 $dark-primary: darken($primary-color, $button-function-factor)
 
 button, .button
-  @include background(linear-gradient($light-primary, $primary-color))
+  @include background(linear-gradient($primary-color, $dark-primary))
   box-shadow: none
 
   &:active, &:focus, &:hover
-    @include background(linear-gradient($primary-color, $dark-primary))
+    @include background(linear-gradient($light-primary, $primary-color))
 
   // custom mix of inline and pre/post fix classes so the button
   // does not take full width but still has the same height as form elements

@@ -1,6 +1,7 @@
 class Reimagine2
   constructor: ->
-    if !$('html').hasClass('lt-ie9')
+    unless $('html').hasClass('lt-ie9')
+      console.log 'init'
       $(document).foundation()
 
 @Reimagine2 = Reimagine2
