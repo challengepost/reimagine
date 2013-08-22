@@ -189,7 +189,7 @@ $header-font-color: #1f1f1e;
 
 // A general <small> styling
 
-$small-font-size: 90%;
+$small-font-size: emCalc(14);
 // $small-font-color: lighten($header-font-color, 30%);
 
 // Style paragraphs
