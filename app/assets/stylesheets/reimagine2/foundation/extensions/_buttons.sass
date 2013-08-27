@@ -19,3 +19,9 @@ button, .button
     @include button-size
     @include prefix-postfix-base
     width: auto
+
+  &:disabled,
+  &.disabled,
+  &[disabled=disabled]
+    background-image: none
+    @include button-style(#bfbfbf, $disabled:true)
