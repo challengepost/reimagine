@@ -1,0 +1,23 @@
+<%
+  # Nice to have (if/when needed):
+  # add an optional "form_builder" option to
+  # and either create a `select_tag` or
+  # a `form_builder.select`
+
+  html_options = {
+  }.merge(html_options || {})
+
+  current_value ||= nil
+%>
+
+<%= content_tag :div do %>
+  <div class="accessible-dropdown">
+    <p class="accessible-dropdown-label hide">
+      <span href="#" class="current accessible-dropdown-value"></span>
+      <span href="#" class="selector"></span>
+    </p>
+    <%= select_tag select_field,
+      options_for_select(collection, current_value),
+      html_options %>
+  </div>
+<% end %>
