@@ -1,0 +1,12 @@
+// sometimes we need non-labels to look
+// like form labels
+// eg: element that looks actionable in a form
+// but is not directly linked to a form element
+// like the "Advanced search" in cgov listing
+// filters
+.form-label
+  +form-label()
+
+  &.inline
+    +form-label(inline, false)
+    line-height: 1em
