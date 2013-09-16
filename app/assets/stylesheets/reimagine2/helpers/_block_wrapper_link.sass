@@ -6,5 +6,11 @@
 // a child, regardless of the link state.
 //
 a.block-wrapper-link
+  display: block
   &, &:hover, &:active, &:visited, &:focus
     color: inherit
+
+a.fancy-hover
+  &:hover, &:active, &:focus
+    position: relative
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .4), inset 0 0 0 5px $primary-color
