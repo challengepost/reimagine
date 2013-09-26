@@ -69,8 +69,8 @@ $body-font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helveti
 
 $primary-color: #108ac7;
 $secondary-color: #ffd333;
-$alert-color: #c60f13;
-$success-color: #5da423;
+$alert-color: #ed2918;
+$success-color: #1eb268;
 
 // Make sure border radius matches unless we want it different.
 
@@ -487,8 +487,8 @@ $button-border-width: 0;
 
 // We use these to control text style.
 
-// $alert-font-weight: bold;
-// $alert-font-size: emCalc(14);
+$alert-font-weight: normal;
+$alert-font-size: emCalc(16);
 // $alert-font-color: #fff;
 // $alert-font-color-alt: darken($secondary-color, 60%);
 
@@ -501,7 +501,7 @@ $button-border-width: 0;
 // $alert-border-style: solid;
 // $alert-border-width: 1px;
 // $alert-border-color: darken($primary-color, $alert-function-factor);
-// $alert-bottom-margin: emCalc(20);
+$alert-bottom-margin: 0;
 
 // We use these to style the close buttons
 
