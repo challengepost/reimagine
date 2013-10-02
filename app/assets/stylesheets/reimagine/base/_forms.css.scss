@@ -32,7 +32,10 @@ p.sublabel {
 
 input,
 select,
-textarea {
+textarea,
+input.text,
+select.text,
+textarea.text {
   background: white;
   border: 2px solid $form-border;
   border-radius: 0;
