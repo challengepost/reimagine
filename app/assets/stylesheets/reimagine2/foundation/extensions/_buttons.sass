@@ -4,6 +4,8 @@
 // The colors are based on the $primary-color
 $light-primary: lighten($primary-color, $button-function-factor)
 $dark-primary: darken($primary-color, $button-function-factor)
+$light-secondary: lighten($secondary-color, $button-function-factor)
+$dark-secondary: darken($secondary-color, $button-function-factor)
 
 button, .button
   @include background(linear-gradient($primary-color, $dark-primary))
@@ -25,3 +27,13 @@ button, .button
   &[disabled=disabled]
     background-image: none
     @include button-style(#bfbfbf, $disabled:true)
+
+  &.secondary
+    @include background(linear-gradient($secondary-color, $dark-secondary))
+
+    &, &.disabled
+      color: #171717
+
+    &:active, &:focus, &:hover
+      color: #171717
+      @include background(linear-gradient($light-secondary, $secondary-color))
