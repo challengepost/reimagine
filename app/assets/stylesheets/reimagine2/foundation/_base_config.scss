@@ -1236,7 +1236,7 @@ $panel-border-size: 0;
 
 // Background color for the top bar
 
-// $topbar-bg: #111;
+$topbar-bg: white;
 
 // Height and margin
 
@@ -1254,23 +1254,23 @@ $panel-border-size: 0;
 
 // Style the top bar dropdown elements
 
-// $topbar-dropdown-bg: #222;
-// $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: lighten($topbar-bg, 5%);
+$topbar-dropdown-bg: white;
+$topbar-dropdown-link-color: $body-font-color;
+$topbar-dropdown-link-bg: white;
 // $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
-// $topbar-dropdown-toggle-alpha: 0.5;
+$topbar-dropdown-toggle-color: $body-font-color;
+$topbar-dropdown-toggle-alpha: 1;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
-// $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13);
-// $topbar-link-hover-lightness: -30%; // Darken by 30%
-// $topbar-link-bg-hover: darken($topbar-bg, 3%);
-// $topbar-link-bg-active: darken($topbar-bg, 3%);
+$topbar-link-color: $body-font-color;
+$topbar-link-color-hover: white;
+$topbar-link-color-active: white;
+$topbar-link-weight: bold;
+$topbar-link-font-size: 1em;
+$topbar-link-hover-lightness: $body-font-color;
+$topbar-link-bg-hover: $primary-color;
+$topbar-link-bg-active: $body-font-color;
 
 // $topbar-dropdown-label-color: #555;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1280,12 +1280,12 @@ $panel-border-size: 0;
 // Top menu icon styles
 
 // $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: emCalc(13);
+$topbar-menu-link-font-size: 1em;
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
-// $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-icon-color: $body-font-color;
+$topbar-menu-link-color-toggled: $body-font-color;
+$topbar-menu-icon-color-toggled: $body-font-color;
 
 // Transitions and breakpoint styles
 
