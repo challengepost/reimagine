@@ -4,4 +4,5 @@ class ApplicationController < ActionController::Base
   def show;  end
   def buttons; end
   def type; end
+  def forms; end
 end
