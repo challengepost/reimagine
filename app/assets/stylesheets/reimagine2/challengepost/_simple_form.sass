@@ -15,3 +15,12 @@ form .input
   input[type="radio"]
     margin-bottom: emCalc(10)
 
+.fieldWithErrors
+  input, textarea
+    border-color: $error-color
+
+    &:hover, &:focus
+      border-color: $error-color
+
+  .errors
+    color: $error-color
