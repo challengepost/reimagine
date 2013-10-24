@@ -1,8 +1,16 @@
 input[type="checkbox"]
   margin-right: 0.5em
 
-label.checkbox
-  font-weight: normal
+label
+  color: $header-font-color
+
+  &.checkbox
+    color: $body-font-color
+    font-weight: normal
+
+  abbr[title]
+    color: $error-color
+    border-bottom: 0
 
 form .input
   margin-bottom: emCalc(24)
