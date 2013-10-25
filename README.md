@@ -13,7 +13,7 @@ In order to make the guide easily accessible, it needs to be deployed to Heroku
 
 ### Update confituration
 
-    git remote add heroku git@heroku.com:peaceful-refuge-6546.git
+    git remote add heroku git@heroku.com:cpstyleguide.git
 
 ### Push to "production"
 
@@ -21,7 +21,7 @@ In order to make the guide easily accessible, it needs to be deployed to Heroku
 
 ### Access the styleguide at
 
-    http://peaceful-refuge-6546.herokuapp.com
+    http://cpstyleguide.challengepost.com
 
 ### Local environment
 
