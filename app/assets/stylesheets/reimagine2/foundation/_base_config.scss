@@ -162,13 +162,13 @@ $column-gutter: emCalc(30);
 
 $header-font-family: "proxima-nova-n6", "proxima-nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 
-// $header-font-weight: bold;
+$header-font-weight: bold;
 // $header-font-style: normal;
 $header-font-color: #1f1f1e;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
 
@@ -907,7 +907,7 @@ $panel-border-size: 0;
 
 // We use this to control the border color
 
-// $price-table-border: solid 1px #ddd;
+$price-table-border: none;
 
 // We use this to control the bottom margin of the pricing table
 
@@ -915,7 +915,7 @@ $panel-border-size: 0;
 
 // We use these to control the title styles
 
-// $price-title-bg: #ddd;
+$price-title-bg: white;
 // $price-title-padding: emCalc(15, 20);
 // $price-title-align: center;
 // $price-title-color: #333;
@@ -937,7 +937,7 @@ $panel-border-size: 0;
 // $price-desc-color: #777;
 // $price-desc-padding: emCalc(15);
 // $price-desc-align: center;
-// $price-desc-font-size: emCalc(12);
+$price-desc-font-size: 1em;
 // $price-desc-weight: normal;
 // $price-desc-line-height: 1.4;
 // $price-desc-bottom-border: dotted 1px #ddd;
@@ -947,13 +947,13 @@ $panel-border-size: 0;
 // $price-item-color: #333;
 // $price-item-padding: emCalc(15);
 // $price-item-align: center;
-// $price-item-font-size: emCalc(14);
+$price-item-font-size: 1em;
 // $price-item-weight: normal;
 // $price-item-bottom-border: dotted 1px #ddd;
 
 // We use these to control the CTA area styles
 
-// $price-cta-bg: #f5f5f5;
+$price-cta-bg: white;
 // $price-cta-align: center;
 // $price-cta-padding: emCalc(20, 20, 0);
 
@@ -1172,7 +1172,7 @@ $panel-border-size: 0;
 // These control the table head styles
 
 // $table-head-bg: #f5f5f5;
-// $table-head-font-size: emCalc(14);
+$table-head-font-size: 1em;
 // $table-head-font-color: #222;
 // $table-head-font-weight: bold;
 // $table-head-padding: emCalc(8, 10, 10);
@@ -1180,7 +1180,7 @@ $panel-border-size: 0;
 // These control the row padding and font styles
 
 // $table-row-padding: emCalc(9, 10);
-// $table-row-font-size: emCalc(14);
+$table-row-font-size: 1em;
 // $table-row-font-color: #222;
 // $table-line-height: emCalc(18);
 
