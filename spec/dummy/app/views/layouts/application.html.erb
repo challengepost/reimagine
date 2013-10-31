@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+  <!DOCTYPE html>
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -22,24 +21,20 @@
           <a href="http://challengepost.com" class="header-logo hide-text" id="challengepost-com-logo">ChallengePost.com</a>
         </p>
       </section>
-
-      <section class="row">
-        <p>
-          <a href="/buttons">Buttons</a>
-          <a href="/forms">Forms</a>
-          <a href="/type">Typography</a>
-        </p>
-      </section>
     </nav>
+    <section class="row">
+      <ul class="no-bullet inline-list">
+        <li class="button secondary"><a href="/buttons">Buttons</a></li>
+        <li class="button secondary"><a href="/forms">Forms</a></li>
+        <li class="button secondary"><a href="/type">Typography</a></li>
+        <li class="button secondary"><a href="/doc1" target="_blank">SS Standard</a></li>
+        <li class="button secondary"><a href="/doc2" target="_blank">SS Social</a></li>
+      </ul>
+    </section>
 
     <%= yield %>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':7891/livereload.js?snipver=1"></' + 'script>')</script>
-    </body>
-    <script src="assets/javascripts/vendor/foundation/foundation.js"></script>
-    <script src="assets/javascripts/vendor/foundation/foundation.forms.js"></script>
     <script src="javascripts/main.js"></script>
     <script>
       $(document).foundation();

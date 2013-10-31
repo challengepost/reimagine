@@ -3,9 +3,9 @@
     <div class="large-9 columns">
       <nav>
         <ul id="site-footer-sitemap" class="inline-list all-caps bold">
-          <li><a href="http://challengepost.com/post">Post challenges</a></li>
-          <li><a href="http://challengepost.com/jobs">Jobs</a></li>
-          <li><a href="http://challengepost.com/press">Press</a></li>
+          <li><a href="http://challengepost.com/post?ref=post">Post challenges</a></li>
+          <li><a href="http://challengepost.com/jobs?ref=jobs">Jobs</a></li>
+          <li><a href="http://challengepost.com/press?ref=press">Press</a></li>
           <li><a href="http://blog.challengepost.com/" target="_blank">Blog</a></li>
           <li><a href="http://help.challengepost.com/" target="_blank">Help</a></li>
         </ul>
@@ -13,7 +13,14 @@
 
       <nav>
         <ul id="site-footer-legal" class="inline-list">
-          <li><span class="copyright">&copy; <%= Time.current.year %> <a href="http://challengepost.com/">ChallengePost</a></span></li>
+          <li>
+            <a href="http://challengepost.com/">
+              <span class="copyright">
+                &copy; <%= Time.current.year %>
+                ChallengePost
+              </span>
+            </a>
+          </li>
           <li><a href="http://challengepost.com/privacy">Privacy</a></li>
           <li><a href="http://challengepost.com/terms">Terms</a></li>
           <li><a href="http://nytm.org/made">Made in NYC</a></li>
