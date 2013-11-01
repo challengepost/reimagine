@@ -1,3 +1,5 @@
+@import 'reimagine2/mixins/bold'
+
 // in our foundation build we set margin-left on lists
 // (see $list-side-margin)
 // We usually won't want that margin if we are not
@@ -8,13 +10,9 @@ ul.no-bullet
   &.inline-list
     margin-#{$default-float}: $inline-list-default-float-margin
 
-
 // do not change font-size line-height etc.
 strong, b, .bold
-  font-family: $header-font-family
-  color: $header-font-color
-  font-weight: $header-font-weight
-  text-rendering: $header-text-rendering
+  +bold
 
 h5, h6
   line-height: $header-line-height
