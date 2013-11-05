@@ -1,4 +1,5 @@
 $include-html-tab-nav-classes: $include-html-classes !default
+
 $tab-nav-spacing: emCalc(8) !default
 $tab-nav-padding: emCalc(0 8) !default
 $tab-nav-bg: darken(#fff, 5%) !default
@@ -51,5 +52,6 @@ $tab-nav-extra-negative-spacing: 0 !default
     color: $tab-nav-active-color
     background: $tab-nav-active-bg
 
-.tab-nav
-  +tab-nav
+@if $include-html-tab-nav-classes != false
+  .tab-nav
+    +tab-nav
