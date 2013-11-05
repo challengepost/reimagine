@@ -1,31 +1,34 @@
-@mixin tabs
-  $inline-list-top-margin: 0
-  $inline-list-opposite-margin: 0
-  $inline-list-bottom-margin: 0
-  $inline-list-default-float-margin: em-calc(-10)
-  $inline-list-padding: 0
+$include-html-tab-nav-classes: $include-html-classes !default
+$tab-nav-spacing: emCalc(8) !default
+$tab-nav-padding: emCalc(0 8) !default
+$tab-nav-bg: darken(#fff, 5%) !default
+$tab-nav-border-color: darken($tab-nav-bg, 10%) !default
+$tab-nav-border-width: emCalc(1) !default
 
-  // We use this to control the overflow of the inline list.
-  $inline-list-overflow: hidden
+$tab-nav-active-bg: white !default
+$tab-nav-active-border-color: $primary-color !default
+$tab-nav-active-border-width: emCacl(3) !default
+$tab-nav-active-color: $header-font-color !default
 
-  // We use this to control the list items
-  $inline-list-display: block
+$tab-nav-extra-negative-spacing: 0 !default
 
-  // We use this to control any elments within list items
-  $inline-list-children-display: block
+@mixin tab-nav
+  margin-left: -($tab-nav-spacing + $tab-nav-extra-negative-spacing)
+  margin-bottom: 0
+  border-bottom: $tab-nav-border-width solid $tab-nav-border-color
 
-  +inline-list
+  li, a
+    display: block
+
+  @media #{$small}
+    border-bottom: none
+
+    li, a
+      display: inline-block
 
   li
-    border-top: 2px solid transparent
-    margin-#{$default-float}: -$inline-list-default-float-margin
-
-  .active
-    border-top: none
-
-    a
-      border: none
-      border-top: 3px solid $topbar-link-color-hover
+    list-style: none
+    margin-left: $tab-nav-spacing
 
   .active, li:hover, li:focus
     a
@@ -33,12 +36,20 @@
       background-color: white
 
   a
-    background-color: $panel-bg
-    border: 1px solid $panel-border-color
-    border-bottom: none
-    color: $topbar-link-color-hover
-    font-weight: bold
-    padding: 0 0.7em
+    padding: $tab-nav-padding
+    border: $tab-nav-border-width solid $tab-nav-border-color
+    border-bottom: 0
+    background: $tab-nav-bg
 
-.tabs
-  +tabs
+  .active a
+    cursor: default
+    border: none
+    border-top: 3px solid $tab-nav-active-border-color
+    margin-top: $tab-nav-active-border-width - $tab-nav-border-width
+
+  .active a, a:hover, a:focus
+    color: $tab-nav-active-color
+    background: $tab-nav-active-bg
+
+.tab-nav
+  +tab-nav
