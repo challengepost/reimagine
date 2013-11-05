@@ -1,4 +1,3 @@
-
 ## Install
 
 **TBD**
@@ -17,7 +16,7 @@ In order to make the guide easily accessible, it needs to be deployed to Heroku
 
 ### Push to "production"
 
-    git push heroku style_guide:master
+    git push heroku master
 
 ### Access the styleguide at
 
