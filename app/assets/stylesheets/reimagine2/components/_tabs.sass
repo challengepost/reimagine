@@ -1,0 +1,57 @@
+$include-html-tab-nav-classes: $include-html-classes !default
+
+$tab-nav-spacing: emCalc(4) !default
+$tab-nav-padding: emCalc(6 12) !default
+$tab-nav-bg: darken(#fff, 5%) !default
+$tab-nav-border-color: darken($tab-nav-bg, 10%) !default
+$tab-nav-border-width: emCalc(1) !default
+
+$tab-nav-active-bg: white !default
+$tab-nav-active-border-color: $primary-color !default
+$tab-nav-active-border-width: emCacl(3) !default
+$tab-nav-active-color: $header-font-color !default
+
+$tab-nav-extra-negative-spacing: 0 !default
+
+@mixin tab-nav
+  margin-left: -($tab-nav-spacing + $tab-nav-extra-negative-spacing)
+  margin-bottom: 0
+  border-bottom: $tab-nav-border-width solid $tab-nav-border-color
+
+  li, a
+    display: block
+
+  @media #{$small}
+    border-bottom: none
+
+    li, a
+      display: inline-block
+
+  li
+    list-style: none
+    margin-left: $tab-nav-spacing
+
+  .active, li:hover, li:focus
+    a
+      color: $header-font-color
+      background-color: white
+
+  a
+    padding: $tab-nav-padding
+    border: $tab-nav-border-width solid $tab-nav-border-color
+    border-bottom: 0
+    background: $tab-nav-bg
+
+  .active a
+    cursor: default
+    border: none
+    border-top: 3px solid $tab-nav-active-border-color
+    margin-top: $tab-nav-active-border-width - $tab-nav-border-width
+
+  .active a, a:hover, a:focus
+    color: $tab-nav-active-color
+    background: $tab-nav-active-bg
+
+@if $include-html-tab-nav-classes != false
+  .tab-nav
+    +tab-nav
