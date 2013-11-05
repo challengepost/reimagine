@@ -1,34 +1,42 @@
-<!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+  <!DOCTYPE html>
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Reimagine2</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Reimagine2</title>
+    <%= stylesheet_link_tag 'reimagine2' %>
+    <link rel="stylesheet" href="stylesheets/application.css">
 
-  <%= stylesheet_link_tag 'reimagine2' %>
-  <link rel="stylesheet" href="stylesheets/application.css">
+    <script src="javascripts/vendor/custom.modernizr.js"></script>
+  </head>
+  <body class="foundation-grid">
 
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
-</head>
-<body class="foundation-grid">
-
-  <nav id="masthead">
+    <nav id="masthead">
+      <section class="row">
+        <p>
+          <a href="/" class="header-logo hide-text" id="challenge-gov-logo">Challenge.gov</a>
+          <span id="challenge-gov-powered-by">powered by</span>
+          <a href="http://challengepost.com" class="header-logo hide-text" id="challengepost-com-logo">ChallengePost.com</a>
+        </p>
+      </section>
+    </nav>
     <section class="row">
-      <p>
-        <a href="/" class="header-logo hide-text" id="challenge-gov-logo">Challenge.gov</a>
-        <span id="challenge-gov-powered-by">powered by</span>
-        <a href="http://challengepost.com" class="header-logo hide-text" id="challengepost-com-logo">ChallengePost.com</a>
-      </p>
+      <ul class="no-bullet inline-list">
+        <li class="button secondary"><a href="/buttons">Buttons</a></li>
+        <li class="button secondary"><a href="/forms">Forms</a></li>
+        <li class="button secondary"><a href="/type">Typography</a></li>
+        <li class="button secondary"><a href="/doc1" target="_blank">SS Standard</a></li>
+        <li class="button secondary"><a href="/doc2" target="_blank">SS Social</a></li>
+      </ul>
     </section>
-  </nav>
 
-  <%= yield %>
+    <%= yield %>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="javascripts/main.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-</html>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </html>

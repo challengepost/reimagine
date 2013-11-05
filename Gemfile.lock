@@ -63,6 +63,7 @@ GEM
       sass (~> 3.1)
     compass-rails (2.0.alpha.0)
       compass (>= 0.12.2, < 0.14)
+    daemons (1.1.9)
     debugger (1.6.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -70,12 +71,17 @@ GEM
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.3)
     diff-lcs (1.2.4)
+    dotenv (0.9.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (2.0.2)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
+    foreman (0.63.0)
+      dotenv (>= 0.7)
+      thor (>= 0.13.6)
     fssm (0.2.10)
     gemfury (0.4.17)
       faraday (>= 0.7.4, < 0.9)
@@ -161,6 +167,10 @@ GEM
     steak (2.0.0)
       capybara (>= 1.0.0)
       rspec-rails (>= 2.5.0)
+    thin (1.5.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.18.1)
     tilt (1.4.1)
     treetop (1.4.14)
@@ -176,6 +186,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  foreman
   gemfury
   jquery-rails
   launchy
@@ -185,3 +196,4 @@ DEPENDENCIES
   reimagine2!
   rspec-rails (~> 2.0)
   steak
+  thin
