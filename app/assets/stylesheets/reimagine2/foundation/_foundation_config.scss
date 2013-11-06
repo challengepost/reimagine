@@ -880,14 +880,14 @@ $pagination-link-current-active-bg: $primary-color;
 
 // We use these to control the background and border styles
 
-$panel-bg: #f5f9fa;
+$panel-bg: #f2f2f2;
 $panel-border-style: solid;
 $panel-border-size: emCalc(1);
 
 // We use this % to control how much we darken things on hover
 
 $panel-function-factor: 10%;
-$panel-border-color: darken($panel-bg, $panel-function-factor);
+$panel-border-color: #dddddd;
 
 // We use these to set default inner padding and bottom margin
 
