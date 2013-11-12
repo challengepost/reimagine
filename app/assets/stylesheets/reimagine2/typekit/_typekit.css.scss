@@ -1,0 +1,62 @@
+/* @license
+ * MyFonts Webfont Build ID 2687000, 2013-11-12T11:24:51-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the font-urls below.
+ *
+ * Webfont: Proxima Nova Italic by Mark Simonson
+ * font-url: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+ *
+ * Webfont: Proxima Nova Bold Italic by Mark Simonson
+ * font-url: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+ *
+ * Webfont: Proxima Nova Regular by Mark Simonson
+ * font-url: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ *
+ * Webfont: Proxima Nova Bold by Mark Simonson
+ * font-url: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2687000
+ * Licensed pageviews: 1,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ *
+ * © 2013 MyFonts Inc
+ */
+@font-face {
+  font-family: 'ProximaNova-RegularIt';
+  src: font-url('webfonts/proximanova-regularit.eot');
+  src: font-url('webfonts/proximanova-regularit.eot?#iefix') format('embedded-opentype'),
+       font-url('webfonts/proximanova-regularit.woff') format('woff'),
+       font-url('webfonts/proximanova-boldit.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova-BoldIt';
+  src: font-url('webfonts/proximanova-boldit.eot');
+  src: font-url('webfonts/proximanova-boldit?#iefix') format('embedded-opentype'),
+       font-url('webfonts/proximanova-boldit.woff') format('woff'),
+       font-url('webfonts/proximanova-boldit.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: font-url('reimagine2/typekit/proximanova-regular.eot');
+  src: font-url('webfonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+       font-url('webfonts/proximanova-regular.woff') format('woff'),
+       font-url('webfonts/proximanova-regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: font-url('webfonts/proximanova-bold.eot');
+  src: font-url('webfonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+       font-url('webfonts/proximanova-bold.woff') format('woff'),
+       font-url('webfonts/proximanova-bold.ttf') format('truetype');
+}
+
