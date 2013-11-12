@@ -27,24 +27,9 @@
  * © 2013 MyFonts Inc
  */
 @font-face {
-  font-family: 'ProximaNova-RegularIt';
-  src: font-url('webfonts/proximanova-regularit.eot');
-  src: font-url('webfonts/proximanova-regularit.eot?#iefix') format('embedded-opentype'),
-       font-url('webfonts/proximanova-regularit.woff') format('woff'),
-       font-url('webfonts/proximanova-boldit.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'ProximaNova-BoldIt';
-  src: font-url('webfonts/proximanova-boldit.eot');
-  src: font-url('webfonts/proximanova-boldit?#iefix') format('embedded-opentype'),
-       font-url('webfonts/proximanova-boldit.woff') format('woff'),
-       font-url('webfonts/proximanova-boldit.ttf') format('truetype');
-}
-
-
-@font-face {
-  font-family: 'ProximaNova-Regular';
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 400;
   src: font-url('reimagine2/typekit/proximanova-regular.eot');
   src: font-url('webfonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
        font-url('webfonts/proximanova-regular.woff') format('woff'),
@@ -53,10 +38,32 @@
 
 
 @font-face {
-  font-family: 'ProximaNova-Bold';
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 600;
   src: font-url('webfonts/proximanova-bold.eot');
   src: font-url('webfonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
        font-url('webfonts/proximanova-bold.woff') format('woff'),
        font-url('webfonts/proximanova-bold.ttf') format('truetype');
 }
 
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: italic;
+  font-weight: 400;
+  src: font-url('webfonts/proximanova-regularit.eot');
+  src: font-url('webfonts/proximanova-regularit.eot?#iefix') format('embedded-opentype'),
+       font-url('webfonts/proximanova-regularit.woff') format('woff'),
+       font-url('webfonts/proximanova-boldit.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: italic;
+  font-weight: 600;
+  src: font-url('webfonts/proximanova-boldit.eot');
+  src: font-url('webfonts/proximanova-boldit?#iefix') format('embedded-opentype'),
+       font-url('webfonts/proximanova-boldit.woff') format('woff'),
+       font-url('webfonts/proximanova-boldit.ttf') format('truetype');
+}
