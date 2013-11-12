@@ -1,3 +1,11 @@
+@mixin typekit-helper ($style, $weight) {
+  font: {
+    family: ProximaNova, sans-serif;
+    style: $style;
+    weight: $weight;
+  }
+}
+
 // Button template
 @mixin btn($button-color: $primary-color, $button-text: white) {
   @include h3;
@@ -34,7 +42,7 @@
 // e.g., form labels = H3 styles
 
 @mixin headline-styles {
-  @include typekit-helper("proxima-nova-n6", normal, 600);
+  @include typekit-helper(normal, 600);
   color: $headline-color;
   text-rendering: optimizelegibility;
 }

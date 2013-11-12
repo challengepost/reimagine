@@ -8,7 +8,7 @@
       margin-bottom: 0.25em;
 
       a {
-        @include typekit-helper("proxima-nova-n6", normal, 600);
+        @include typekit-helper(normal, 600);
         font-size: $base-font-size * 0.875; // 0.875em or 14px
         line-height: $base-font-size * 0.875; // 0.875em or 14px
         letter-spacing: 0.14285714em; // 2px
