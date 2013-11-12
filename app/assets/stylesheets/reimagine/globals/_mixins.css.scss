@@ -1,16 +1,3 @@
-// Shorthand to call typekit font variations
-@mixin typekit-helper ($variation, $style, $weight) {
-  font: {
-    family: $variation,
-    "proxima-nova",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
-    style: $style;
-    weight: $weight;
-  }
-}
-
 // Button template
 @mixin btn($button-color: $primary-color, $button-text: white) {
   @include h3;
