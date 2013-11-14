@@ -3,7 +3,7 @@
  *
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are
- * explicitly restricted from using the Licensed reimagine2/typekit(s).
+ * explicitly restricted from using the Licensed reimagine2/proxima(s).
  *
  * You may obtain a valid license at the font-urls below.
  *
@@ -22,7 +22,7 @@
  *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2687000
  * Licensed pageviews: 1,000,000
- * reimagine2/typekit copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * reimagine2/proxima copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
  *
  * © 2013 MyFonts Inc
  */
@@ -30,10 +30,8 @@
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: 400;
-  src: font-url('reimagine2/typekit/proximanova-regular.eot');
-  src: font-url('reimagine2/typekit/proximanova-regular.eot?#iefix') format('embedded-opentype'),
-       font-url('reimagine2/typekit/proximanova-regular.woff') format('woff'),
-       font-url('reimagine2/typekit/proximanova-regular.ttf') format('truetype');
+  src: font-url('reimagine2/proxima/proximanova-regular.woff') format('woff'),
+       font-url('reimagine2/proxima/proximanova-regular.ttf') format('truetype');
 }
 
 
@@ -41,10 +39,8 @@
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: 600;
-  src: font-url('reimagine2/typekit/proximanova-bold.eot');
-  src: font-url('reimagine2/typekit/proximanova-bold.eot?#iefix') format('embedded-opentype'),
-       font-url('reimagine2/typekit/proximanova-bold.woff') format('woff'),
-       font-url('reimagine2/typekit/proximanova-bold.ttf') format('truetype');
+  src: font-url('reimagine2/proxima/proximanova-bold.woff') format('woff'),
+       font-url('reimagine2/proxima/proximanova-bold.ttf') format('truetype');
 }
 
 
@@ -52,18 +48,14 @@
   font-family: 'ProximaNova';
   font-style: italic;
   font-weight: 400;
-  src: font-url('reimagine2/typekit/proximanova-regularit.eot');
-  src: font-url('reimagine2/typekit/proximanova-regularit.eot?#iefix') format('embedded-opentype'),
-       font-url('reimagine2/typekit/proximanova-regularit.woff') format('woff'),
-       font-url('reimagine2/typekit/proximanova-boldit.ttf') format('truetype');
+  src: font-url('reimagine2/proxima/proximanova-regularit.woff') format('woff'),
+       font-url('reimagine2/proxima/proximanova-boldit.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ProximaNova';
   font-style: italic;
   font-weight: 600;
-  src: font-url('reimagine2/typekit/proximanova-boldit.eot');
-  src: font-url('reimagine2/typekit/proximanova-boldit?#iefix') format('embedded-opentype'),
-       font-url('reimagine2/typekit/proximanova-boldit.woff') format('woff'),
-       font-url('reimagine2/typekit/proximanova-boldit.ttf') format('truetype');
+  src: font-url('reimagine2/proxima/proximanova-boldit.woff') format('woff'),
+       font-url('reimagine2/proxima/proximanova-boldit.ttf') format('truetype');
 }
