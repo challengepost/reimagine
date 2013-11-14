@@ -1,11 +1,6 @@
-// Shorthand to call typekit font variations
-@mixin typekit-helper ($variation, $style, $weight) {
+@mixin typekit-helper ($style, $weight) {
   font: {
-    family: $variation,
-    "proxima-nova",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+    family: ProximaNova, sans-serif;
     style: $style;
     weight: $weight;
   }
@@ -47,7 +42,7 @@
 // e.g., form labels = H3 styles
 
 @mixin headline-styles {
-  @include typekit-helper("proxima-nova-n6", normal, 600);
+  @include typekit-helper(normal, 600);
   color: $headline-color;
   text-rendering: optimizelegibility;
 }

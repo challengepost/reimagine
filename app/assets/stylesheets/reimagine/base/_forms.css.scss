@@ -15,7 +15,11 @@ label {
 
   // for checkboxes:
   &.inline {
-    @include typekit-helper("proxima-nova-n4", normal, 400);
+    font: {
+      family: "ProximaNova", "Helvetica Neue";
+      style: normal;
+      weight: 400;
+    }
     font-size: $base-font-size;
     color: $text-color;
     display: inline-block;
@@ -23,7 +27,11 @@ label {
 } // END label
 
 p.sublabel {
-  @include typekit-helper("proxima-nova-n4", normal, 400);
+  font: {
+    family: ProximaNova, sans-serif;
+    style: normal;
+    weight: 400;
+  }
   color: $text-color;
   font-size: $base-font-size * 0.8125;
   line-height: $base-line-height * 0.875;
@@ -47,7 +55,7 @@ textarea.text {
 
   @include placeholder {
     color: $text-color;
-    @include typekit-helper("proxima-nova-i4", italic, 400); //italicize
+    @include typekit-helper(italic, 400); //italicize
   }
 
   &:hover {
@@ -69,7 +77,7 @@ textarea.text {
   &[disabled]:focus,
   &[disabled]:hover {
     color: $text-color;
-    @include typekit-helper("proxima-nova-i4", italic, 400); //italicize
+    @include typekit-helper(italic, 400); //italicize
     background: $form-border;
     border-color: $form-border;
   }
@@ -91,7 +99,7 @@ input[type="submit"] {
 }
 
 .checkbox label {
-  @include typekit-helper("proxima-nova-n4", normal, 400);
+  @include typekit-helper(normal, 400);
   color: $text-color;
   font-size: $base-font-size;
   line-height: $base-line-height;

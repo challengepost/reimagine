@@ -1,6 +1,6 @@
 // Paragraphs
 body {
-  @include typekit-helper("proxima-nova-n4", normal, 400);
+  @include typekit-helper(normal, 400);
   color: $text-color;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -8,13 +8,13 @@ body {
 
 p { margin: 0 0 1em 0; }
 
-em { @include typekit-helper("proxima-nova-i4", italic, 400); }
+em { @include typekit-helper(italic, 400); }
 
 strong {
-  @include typekit-helper("proxima-nova-n6", normal, 600);
+  @include typekit-helper(normal, 600);
   color: darken($text-color, 10%);
 
-  & em { @include typekit-helper("proxima-nova-i6", italic, 600); }
+  & em { @include typekit-helper(italic, 600); }
 }
 
 small {

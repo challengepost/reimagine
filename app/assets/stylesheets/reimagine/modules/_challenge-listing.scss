@@ -81,7 +81,7 @@
       }
 
       .action {
-        @include typekit-helper("proxima-nova-n6", normal, 600);
+        @include typekit-helper(normal, 600);
         color: $light-text-color;
         font-size: $base-font-size * 0.75; // 12px
         line-height: 1.5em;
