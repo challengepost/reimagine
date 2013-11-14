@@ -1,0 +1,61 @@
+/* @license
+ * MyFonts Webfont Build ID 2687000, 2013-11-12T11:24:51-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed reimagine2/proxima(s).
+ *
+ * You may obtain a valid license at the font-urls below.
+ *
+ * Webfont: Proxima Nova Italic by Mark Simonson
+ * font-url: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+ *
+ * Webfont: Proxima Nova Bold Italic by Mark Simonson
+ * font-url: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+ *
+ * Webfont: Proxima Nova Regular by Mark Simonson
+ * font-url: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ *
+ * Webfont: Proxima Nova Bold by Mark Simonson
+ * font-url: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2687000
+ * Licensed pageviews: 1,000,000
+ * reimagine2/proxima copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ *
+ * © 2013 MyFonts Inc
+ */
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 400;
+  src: font-url('reimagine2/proxima/proximanova-regular.woff') format('woff'),
+       font-url('reimagine2/proxima/proximanova-regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 600;
+  src: font-url('reimagine2/proxima/proximanova-bold.woff') format('woff'),
+       font-url('reimagine2/proxima/proximanova-bold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: italic;
+  font-weight: 400;
+  src: font-url('reimagine2/proxima/proximanova-regularit.woff') format('woff'),
+       font-url('reimagine2/proxima/proximanova-boldit.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: italic;
+  font-weight: 600;
+  src: font-url('reimagine2/proxima/proximanova-boldit.woff') format('woff'),
+       font-url('reimagine2/proxima/proximanova-boldit.ttf') format('truetype');
+}
