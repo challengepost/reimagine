@@ -18,6 +18,16 @@ In order to make the guide easily accessible, it needs to be deployed to Heroku
 
     git push heroku master
 
+#### Update gem
+
+* Update the version file
+
+  `lib/reimagine2/vesion.rb`
+
+* Deploy to Gemfury
+
+  `rake deploy`
+
 ### Access the styleguide at
 
     http://cpstyleguide.challengepost.com
