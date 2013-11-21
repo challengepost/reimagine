@@ -2,10 +2,6 @@
 
 **TBD**
 
-## Tree
-
-**TBD**
-
 ## Styleguide
 
 In order to make the guide easily accessible, it needs to be deployed to Heroku
