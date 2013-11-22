@@ -172,10 +172,10 @@ $header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
 
-$h1-font-size: emCalc(44);
-$h2-font-size: emCalc(37);
-$h3-font-size: emCalc(27);
-$h4-font-size: emCalc(23);
+$h1-font-size: emCalc(38);
+$h2-font-size: emCalc(26);
+$h3-font-size: emCalc(22);
+$h4-font-size: emCalc(18);
 $h5-font-size: emCalc(18);
 $h6-font-size: 1em;
 
@@ -197,7 +197,7 @@ $small-font-size: emCalc(14);
 // $paragraph-font-family: inherit;
 $paragraph-font-weight: inherit;
 // $paragraph-font-size: 1em;
-$paragraph-line-height: 1.5;
+$paragraph-line-height: 1.4;
 // $paragraph-margin-bottom: emCalc(20);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -360,10 +360,10 @@ $button-lrg: emCalc(10);
 // $button-font-family: inherit;
 // $button-font-color: #fff;
 // $button-font-color-alt: #333;
-$button-font-med: emCalc(18);
-$button-font-tny: emCalc(14);
-$button-font-sml: emCalc(16);
-$button-font-lrg: emCalc(22);
+$button-font-tny: emCalc(12);
+$button-font-sml: emCalc(14);
+$button-font-med: emCalc(16);
+$button-font-lrg: emCalc(18);
 // $button-font-weight: bold;
 // $button-font-align: center;
 
@@ -945,7 +945,7 @@ $price-desc-bottom-border: solid 1px #ddd;
 // We use these to control the list item styles
 
 $price-item-color: inherit;
-// $price-item-padding: emCalc(15);
+$price-item-padding: emCalc(12);
 // $price-item-align: center;
 $price-item-font-size: 1em;
 // $price-item-weight: normal;

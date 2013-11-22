@@ -2,21 +2,35 @@
   background-color: $challengepost-footer-background-color
   color: $challengepost-footer-font-color
 
-  .inline-list
-    margin-left: -(emCalc(22))
-
-    li
-      margin-left: emCalc(22)
-
   a
     +link-colors($challengepost-footer-font-color, $hover: white, $active: white, $focus: white)
+    display: inline
 
   ul
     margin-bottom: 0
+    list-style: none
+    margin-left: -(emCalc(22))
 
-#site-footer-social a
-  font-size: 2em
+    li
+      display: inline-block
+      margin-left: emCalc(22)
+
+#site-footer-social
+  a
+    font-size: 2em
+
+  margin-top: 1em
+
+  @media #{$small}
+    float: right
+    margin-top: 0
+
 
 #site-footer-legal
   &, a
     color: darken($challengepost-footer-font-color, 10%)
+
+  margin-top: 1em
+
+  @media #{$small}
+    margin-top: .4em
