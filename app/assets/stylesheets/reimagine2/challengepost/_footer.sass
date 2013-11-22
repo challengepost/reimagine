@@ -10,18 +10,27 @@
     margin-bottom: 0
     list-style: none
     margin-left: -(emCalc(22))
-    text-align: center
 
     li
       display: inline-block
       margin-left: emCalc(22)
 
-    @media #{$small}
-      text-align: left
+#site-footer-social
+  a
+    font-size: 2em
 
-#site-footer-social a
-  font-size: 2em
+  margin-top: 1em
+
+  @media #{$small}
+    float: right
+    margin-top: 0
+
 
 #site-footer-legal
   &, a
     color: darken($challengepost-footer-font-color, 10%)
+
+  margin-top: 1em
+
+  @media #{$small}
+    margin-top: .4em
