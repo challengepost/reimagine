@@ -1,0 +1,16 @@
+<%= paginator.render do -%>
+  <nav class="pagination-centered">
+    <p class="visually-hidden" id="pagination-label">Pagination</p>
+    <ul role="navigation" aria-labelledby="paginglabel" class="pagination">
+      <%= prev_page_tag %>
+      <% each_relevant_page do |page| -%>
+        <% if page.left_outer? || page.right_outer? || page.inside_window? -%>
+          <%= page_tag page %>
+        <% elsif !page.was_truncated? -%>
+          <%= gap_tag %>
+        <% end -%>
+      <% end -%>
+      <%= next_page_tag %>
+    </ul>
+  </div>
+<% end -%>

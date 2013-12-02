@@ -4,6 +4,7 @@ Dummy::Application.routes.draw do
   match '/type', to: 'application#type'
   match '/forms', to: 'application#forms'
   match '/tabs', to: 'application#tabs'
+  match '/pagination', to: 'application#pagination'
 
   root to: 'application#show'
 end
