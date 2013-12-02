@@ -1,0 +1,9 @@
+<% if current_page.first? %>
+  <li class="first arrow unavailable">
+    <%= raw(t 'views.pagination.first') %>
+  </li>
+<% else %>
+  <li class="first arrow">
+    <%= link_to raw(t 'views.pagination.first'), url, :remote => remote %>
+  </li>
+<% end %>
