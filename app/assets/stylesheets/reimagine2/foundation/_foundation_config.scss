@@ -498,7 +498,7 @@ $alert-font-size: emCalc(16);
 
 // We use these to control border styles.
 
-// $alert-border-style: solid;
+$alert-border-style: none;
 // $alert-border-width: 1px;
 // $alert-border-color: darken($primary-color, $alert-function-factor);
 $alert-bottom-margin: 0;
