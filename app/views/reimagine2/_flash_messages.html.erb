@@ -1,0 +1,17 @@
+<% if flash.key?(:alert) %>
+<div class="alert-box alert">
+  <%= flash[:alert] %>
+</div>
+<% end %>
+
+<% if flash.key?(:notice) %>
+<div class="alert-box notice">
+  <%= flash[:notice] %>
+</div>
+<% end %>
+
+<% if flash.key?(:success) %>
+<div class="alert-box success">
+  <%= flash[:success] %>
+</div>
+<% end %>
