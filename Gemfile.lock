@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    reimagine2 (2.0.33)
+    reimagine2 (2.0.34)
       coffee-rails
-      compass-rails (~> 2.0.alpha.0)
+      compass-rails
       rails
       sass-rails
       zurb-foundation (~> 4)
@@ -61,8 +61,8 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-rails (2.0.alpha.0)
-      compass (>= 0.12.2, < 0.14)
+    compass-rails (1.1.2)
+      compass (>= 0.12.2)
     daemons (1.1.9)
     debugger (1.6.1)
       columnize (>= 0.3.1)
