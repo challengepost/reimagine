@@ -26,7 +26,7 @@ In order to make the guide easily accessible, it needs to be deployed to Heroku
 
 ### Access the styleguide at
 
-    http://cpstyleguide.challengepost.com
+    http://styleguide.challengepost.com
 
 ### Local environment
 
