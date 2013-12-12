@@ -1,14 +1,37 @@
-<section class="large-3 pull-9 columns" id="navigation">
+<section class="large-2 pull-10 columns" id="navigation">
+  <a href="/">
+    <img src="http://f.cl.ly/items/0p190p3o242e322t2820/bearlien.png">
+  </a>
+
   <ul class="no-bullet">
-    <li><a href="/typography">Typography</a></li>
-    <li><a href="/colors">Colors</a></li>
-    <li><a href="/forms">Forms</a></li>
-    <li><a href="/buttons">Buttons</a></li>
-    <li><a href="/tabs">Tabs</a></li>
-    <li><a href="/pagination">Pagination</a></li>
-    <li><a href="/lists">Lists</a></li>
-    <li><a href="/alerts">Alerts</a></li>
-    <li><a href="/logos">Logos</a></li>
+    <li>
+      <%= link_to "Typography", typography_path, class: ("active" if current_page?(typography_path)) %>
+    </li>
+    <li>
+      <%= link_to "Colors", colors_path, class: ("active" if current_page?(colors_path)) %>
+    </li>
+    <li>
+      <%= link_to "Forms", forms_path, class: ("active" if current_page?(forms_path)) %>
+    </li>
+    <li>
+      <%= link_to "Buttons", buttons_path, class: ("active" if current_page?(buttons_path)) %>
+    </li>
+    <li>
+      <%= link_to "Tabs", tabs_path, class: ("active" if current_page?(tabs_path)) %>
+    </li>
+    <li>
+      <%= link_to "Pagination", pagination_path, class: ("active" if current_page?(pagination_path)) %>
+    </li>
+    <li>
+      <%= link_to "Lists", lists_path, class: ("active" if current_page?(lists_path)) %>
+    </li>
+    <li>
+      <%= link_to "Alerts", alerts_path, class: ("active" if current_page?(alerts_path)) %>
+    </li>
+    <li>
+      <%= link_to "Logos", logos_path, class: ("active" if current_page?(logos_path)) %>
+    </li>
+
     <li><a href="/doc1" target="_blank">SS Standard</a></li>
     <li><a href="/doc2" target="_blank">SS Social</a></li>
     <li><a href="http://foundation.zurb.com/docs/" target="_blank">Zurb Foundation</a></li>

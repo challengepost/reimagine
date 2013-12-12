@@ -1,1 +1,22 @@
-<h1>Colors (TODO)</h1>
+<%
+  colors = {
+    "primary-color" => "#108ac7",
+    "secondary-color" => "#ffd333",
+    "alert-color" => "#ed2918",
+    "success-color" => "#1eb268",
+    "header-font-color" => "#1f1f1e",
+    "panel-bg" => "#f2f2f2",
+    "panel-border-color" => "#dddddd",
+    "input-border-color" => "#dadada",
+    "topbar-link-color-hover" => "#1194d5"
+  }
+%>
+
+<h1>Colors</h1>
+
+<% colors.each do |color_name, color_code| %>
+  <div class="color">
+    <div class="couleur-couleur" style="background-color: <%= color_code %>;"></div>
+    <p class="color-name"><%= color_name %></p>
+  </div>
+<% end %>
