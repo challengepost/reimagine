@@ -5,7 +5,7 @@
 
   <ul class="no-bullet">
     <li>
-      <%= link_to "Typography", typography_path, class: ("active" if current_page?(typography_path)) %>
+      <%= link_to "Typography", typography_path, class: ("active" if current_page?(typography_path) || current_page?(root_path)) %>
     </li>
     <li>
       <%= link_to "Colors", colors_path, class: ("active" if current_page?(colors_path)) %>
