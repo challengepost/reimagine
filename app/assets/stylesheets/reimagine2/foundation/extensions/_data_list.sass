@@ -1,0 +1,14 @@
+.data-list
+  +no-bullet
+
+  & > li
+    border-bottom: 1px solid $panel-border-color
+    margin-bottom: 0
+    padding: 1em 10px
+
+    &:last-of-type
+      border-bottom: none
+
+  &.zebra > li
+    &:nth-child(even)
+      background-color: $panel-bg
