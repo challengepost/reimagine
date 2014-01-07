@@ -12,3 +12,11 @@
   &.zebra > li
     &:nth-child(even)
       background-color: $panel-bg
+
+  &.border-top
+    li:first-of-type
+      border-top: 1px solid $panel-border-color
+
+  &.border-bottom
+    li:last-of-type
+      border-bottom: 1px solid $panel-border-color
