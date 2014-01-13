@@ -1,0 +1,30 @@
+$include-html-data-list-classes: $include-html-classes !default
+
+$data-list-background-color: $panel-bg !default
+$data-list-border-color: $panel-border-color !default
+
+@mixin data-list
+  +no-bullet
+
+  & > li
+    border-bottom: 1px solid $data-list-border-color
+    margin-bottom: 0
+
+    &:last-of-type
+      border-bottom: none
+
+  &.zebra > li
+    &:nth-child(even)
+      background-color: $data-list-background-color
+
+  &.border-top
+    li:first-of-type
+      border-top: 1px solid $data-list-border-color
+
+  &.border-bottom
+    li:last-of-type
+      border-bottom: 1px solid $data-list-border-color
+
+@if $include-html-data-list-classes != false
+  .data-list
+    +data-list
