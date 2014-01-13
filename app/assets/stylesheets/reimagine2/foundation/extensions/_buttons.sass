@@ -49,8 +49,8 @@ button, .button
       @include background(linear-gradient($light-secondary, $secondary-color))
 
   &.link
-    +link-colors($anchor-font-color, $hover: $anchor-font-color-hover, $active: $anchor-font-color-hover, $focus: $anchor-font-color-hover)
-    background: inherit
+    @include link-colors($anchor-font-color, $hover: $anchor-font-color-hover, $active: $anchor-font-color-hover, $focus: $anchor-font-color-hover)
+    @include background(transparent)
     font-weight: inherit
     padding: 0
     text-decoration: $anchor-text-decoration
