@@ -1,6 +1,9 @@
 .all-caps
   +all-caps
 
+  &.small
+    letter-spacing: 1px
+
 .text-content li
   margin-bottom: 1em
 
@@ -19,3 +22,7 @@
 // the line height doesn't look strange on longer text
 p.small
   font-size: $small-font-size
+
+small, .small
+  &.ss-icon, .ss-icon
+    font-size: 0.8em
