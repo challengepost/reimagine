@@ -284,13 +284,13 @@ $list-side-margin: 1.1em;
 // We use these to style the labels in different ways
 
 // $form-label-pointer: pointer;
-$form-label-font-size: emCalc(18);
+$form-label-font-size: emCalc(16);
 $form-label-font-weight: bold;
 // $form-label-font-color: lighten(#000, 30%);
 $form-label-bottom-margin: emCalc(4);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-$input-font-size: 1em;
+$input-font-size: emCalc(16);
 // $input-bg-color: #fff;
 $input-focus-bg-color: white;
 $input-border-color: #dadada;
