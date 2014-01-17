@@ -31,26 +31,24 @@ $tab-nav-extra-negative-spacing: 0 !default
     list-style: none
     margin-left: $tab-nav-spacing
 
-  .active, li:hover, li:focus
+    &.active a, a:hover, a:focus
+      background: $tab-nav-active-bg
+      color: $tab-nav-active-color
+
+    &.active a
+      border: none
+      border-top: 3px solid $tab-nav-active-border-color
+      margin-top: $tab-nav-active-border-width - $tab-nav-border-width
+
     a
-      color: $header-font-color
-      background-color: white
+      background: $tab-nav-bg
+      border: $tab-nav-border-width solid $tab-nav-border-color
+      border-bottom: 0
+      padding: $tab-nav-padding
+      outline: 0
 
-  a
-    padding: $tab-nav-padding
-    border: $tab-nav-border-width solid $tab-nav-border-color
-    border-bottom: 0
-    background: $tab-nav-bg
-
-  .active a
-    cursor: default
-    border: none
-    border-top: 3px solid $tab-nav-active-border-color
-    margin-top: $tab-nav-active-border-width - $tab-nav-border-width
-
-  .active a, a:hover, a:focus
-    color: $tab-nav-active-color
-    background: $tab-nav-active-bg
+      &:active
+        background: $tab-nav-bg
 
 @if $include-html-tab-nav-classes != false
   .tab-nav
