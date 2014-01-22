@@ -13,7 +13,6 @@
   @import "foundation/components/grid";
 }
 
-
 //
 // Use this grid if you want to start using the new Foundation 5 grid early.
 // It will change breakpoints to min-width: 640px and 1024px.
@@ -33,7 +32,7 @@
 @import "foundation/components/flex-video";
 // @import "foundation/components/section";
 @import "foundation/components/top-bar";  // *requires components/grid
-// @import "foundation/components/orbit";
+@import "foundation/components/orbit";
 @import "foundation/components/reveal";
 // @import "foundation/components/joyride";
 // @import "foundation/components/clearing";
