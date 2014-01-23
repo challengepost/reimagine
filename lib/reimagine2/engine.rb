@@ -1,6 +1,6 @@
 require 'sass-rails'
+require 'foundation-rails'
 require 'compass-rails'
-require 'zurb-foundation'
 
 module Reimagine2
   class Engine < ::Rails::Engine
