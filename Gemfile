@@ -16,5 +16,9 @@ gem 'thin'
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-# To use debugger
-# gem 'debugger'
+group :development, :test do
+  gem "pry"
+  gem "pry-debugger"
+  gem "pry-remote"
+
+end
