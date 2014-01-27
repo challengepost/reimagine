@@ -4,7 +4,7 @@ PATH
     reimagine2 (2.0.55)
       coffee-rails
       compass-rails
-      foundation-rails (~> 5)
+      foundation-rails (>= 5)
       rails
       sass-rails
 
