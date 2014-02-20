@@ -23,7 +23,6 @@ feature 'Assets' do
     visit '/assets/reimagine2.js'
 
     page.text.should include 'var Reimagine2;'
-    page.text.should include 'AccessibleCustomDrowpDownBuilder'
   end
 
 end
