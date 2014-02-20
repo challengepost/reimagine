@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sass-rails"
   spec.add_dependency "compass-rails"
   spec.add_dependency "coffee-rails"
-  spec.add_dependency "foundation-rails", ">= 5"
+  spec.add_dependency "foundation-rails", ">= 5.1"
 
   spec.add_development_dependency "rspec-rails", '~> 2.0'
   spec.add_development_dependency "steak"
