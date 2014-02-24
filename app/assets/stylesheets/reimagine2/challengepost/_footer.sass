@@ -1,10 +1,15 @@
 #challengepost-footer
   background-color: $challengepost-dark-grey-background
   color: $challengepost-grey-on-dark-background
+  text-align: center
+
+  @media #{$small}
+    text-align: left
 
   a
     +link-colors($challengepost-grey-on-dark-background, $hover: white, $active: white, $focus: white)
     display: inline
+    white-space: nowrap
 
   ul
     margin-bottom: 0
