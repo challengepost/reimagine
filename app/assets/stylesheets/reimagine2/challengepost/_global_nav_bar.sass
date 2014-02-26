@@ -9,17 +9,6 @@ $darker-primary-color: darken($primary-color, 10%)
     border-top-color: transparent
     border-left-color: $challengepost-grey-on-dark-background
 
-  .divider
-    border-color: $panel-bg
-    border-width: 1px 0 0 1px
-
-  #logo,
-  .menu-icon
-    a:hover,
-    a:active,
-    a:focus
-      background: none
-
   #logo
     padding-top: 0.7em
 
@@ -28,20 +17,15 @@ $darker-primary-color: darken($primary-color, 10%)
 
   a
     font-weight: normal
-    color: $primary-color
     line-height: 1.3em
 
     &:hover,
     &:active,
     &:focus
-      color: $body-font-color
-      background-color: $panel-bg
-
       strong
         color: $darker-primary-color
 
     img.user-avatar
-      display: none
       max-width: 25px
       max-height: 25px
 
@@ -121,7 +105,7 @@ $darker-primary-color: darken($primary-color, 10%)
         padding: 1em 1em 0.6em 1em
 
       img.user-avatar
-        display: inline-block
+        display: inline-block !important
         margin-right: 0.6em
         position: relative
         top: -3px

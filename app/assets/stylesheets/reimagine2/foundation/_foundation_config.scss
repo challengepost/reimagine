@@ -516,7 +516,6 @@ $alert-close-padding: 11px 6px 4px;
 
 // $alert-radius: $global-radius;
 
-
 //
 // Breadcrumb Variables
 //
@@ -1255,22 +1254,22 @@ $topbar-height: 51px;
 // Style the top bar dropdown elements
 
 $topbar-dropdown-bg: white;
-$topbar-dropdown-link-color: $body-font-color;
+$topbar-dropdown-link-color: $primary-color;
 $topbar-dropdown-link-bg: white;
-// $topbar-dropdown-toggle-size: 5px;
+$topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: $body-font-color;
 $topbar-dropdown-toggle-alpha: 1;
 
 // Set the link colors and styles for top-level nav
 
-$topbar-link-color: black;
-$topbar-link-color-hover: #1194d5;
-$topbar-link-color-active: #1194d5;
-$topbar-link-weight: bold;
+$topbar-link-color: $primary-color;
+$topbar-link-color-hover: $body-font-color;
+$topbar-link-color-active: $body-font-color;
+$topbar-link-weight: normal;
 $topbar-link-font-size: 1em;
 $topbar-link-hover-lightness: $body-font-color;
-$topbar-link-bg-hover: white;
-$topbar-link-bg-active: white;
+$topbar-link-bg-hover: $panel-bg;
+$topbar-link-bg-active: $panel-bg;
 
 // $topbar-dropdown-label-color: #555;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1282,10 +1281,10 @@ $topbar-link-bg-active: white;
 // $topbar-menu-link-transform: uppercase;
 $topbar-menu-link-font-size: 1em;
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
+$topbar-menu-link-color: $primary-color;
 $topbar-menu-icon-color: $body-font-color;
-$topbar-menu-link-color-toggled: $body-font-color;
-$topbar-menu-icon-color-toggled: $body-font-color;
+$topbar-menu-link-color-toggled: $primary-color;
+$topbar-menu-icon-color-toggled: $primary-color;
 
 // Transitions and breakpoint styles
 
@@ -1295,8 +1294,8 @@ $topbar-menu-icon-color-toggled: $body-font-color;
 
 // Divider Styles
 
-// $topbar-divider-border-bottom: solid 1px lighten($topbar-bg, 10%);
-// $topbar-divider-border-top: solid 1px darken($topbar-bg, 10%);
+$topbar-divider-border-bottom: solid 1px $panel-bg;
+$topbar-divider-border-top: none;
 
 // Sticky Class
 
