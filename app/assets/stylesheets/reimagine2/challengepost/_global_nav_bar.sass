@@ -1,0 +1,153 @@
+$darker-primary-color: darken($primary-color, 10%)
+
+#global-nav-bar
+  background: white
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
+  position: relative
+
+  .top-bar-section .has-dropdown > a:after
+    border-top-color: transparent
+    border-left-color: $challengepost-grey-on-dark-background
+
+  .top-bar
+    max-width: $row-width
+    margin: auto
+
+  .divider
+    border-color: $panel-bg
+    border-width: 1px 0 0 1px
+
+  #logo,
+  .menu-icon
+    a:hover,
+    a:active,
+    a:focus
+      background: none
+
+  #logo
+    padding-top: 0.7em
+
+    a
+      padding: 0 1em
+
+  a
+    font-weight: normal
+    color: $primary-color
+    line-height: 1.3em
+
+    &:hover,
+    &:active,
+    &:focus
+      color: $body-font-color
+      background-color: $panel-bg
+
+      strong
+        color: $darker-primary-color
+
+    img.user-avatar
+      display: none
+      max-width: 25px
+      max-height: 25px
+
+    strong
+      color: $primary-color
+
+    &.main-link
+      color: $body-font-color
+
+      &:hover,
+      &:active,
+      &:focus
+        color: $header-font-color
+
+      strong
+        display: inline
+
+  // Back button on mobile
+  h5
+    font-size: 0.9em
+    color: $darker-primary-color
+    text-transform: uppercase
+    letter-spacing: 1px
+    margin-top: 0
+
+    &:hover,
+    &:active,
+    &:focus
+      background-color: $panel-bg
+
+    a
+      padding-left: 2.5em
+
+      &:before
+        content: ""
+        border: inset 5px
+        border-color: transparent $challengepost-grey-on-dark-background transparent transparent
+        position: absolute
+        top: 9px
+        left: 15px
+
+  .tiny
+    position: absolute
+    font-size: 0.7em
+    bottom: 15px
+    right: 38px
+
+  .logged-out,
+  .dropdown
+    a
+      font-size: 0.9em
+
+  .dropdown
+    background: white
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
+
+  @media #{$small}
+    .top-bar-section .has-dropdown > a:after
+      border-top-color: $challengepost-grey-on-dark-background
+      border-left-color: transparent
+
+    .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after
+      content: ""
+      border: inset 5px
+      border-color: transparent transparent transparent $challengepost-grey-on-dark-background
+      border-left-style: solid
+      top: 18px
+      right: 0
+
+    .tiny
+      bottom: -15px
+
+    a
+      padding: 0.55em 1em 0.5em 1em
+
+      &.user
+        padding: 1em 1em 0.6em 1em
+
+      img.user-avatar
+        display: inline-block
+        margin-right: 0.6em
+        position: relative
+        top: -3px
+
+      strong
+        font-size: 1.25em
+
+        &.user
+          font-size: 1.15em
+
+      &.main-link
+        font-size: 0.9em
+
+        strong
+          display: block
+
+    #masqueradee
+      margin: 12px 0
+      top: 0
+
+    .logged-out a
+      padding: 1.15em 1em
+
+.ui-autocomplete
+  max-width: 300px
