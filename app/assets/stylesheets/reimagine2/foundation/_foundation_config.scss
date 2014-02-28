@@ -71,6 +71,7 @@ $primary-color: #108ac7;
 $secondary-color: #ffd333;
 $alert-color: #ed2918;
 $success-color: #1eb268;
+$darker-primary-color: darken($primary-color, 10%);
 
 // Make sure border radius matches unless we want it different.
 
@@ -1257,17 +1258,17 @@ $topbar-dropdown-bg: white;
 $topbar-dropdown-link-color: $primary-color;
 $topbar-dropdown-link-bg: white;
 $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: $body-font-color;
+$topbar-dropdown-toggle-color: $darker-primary-color;
 $topbar-dropdown-toggle-alpha: 1;
 
 // Set the link colors and styles for top-level nav
 
 $topbar-link-color: $primary-color;
-$topbar-link-color-hover: $body-font-color;
-$topbar-link-color-active: $body-font-color;
+$topbar-link-color-hover: $darker-primary-color;
+$topbar-link-color-active: $darker-primary-color;
 $topbar-link-weight: normal;
 $topbar-link-font-size: 1em;
-$topbar-link-hover-lightness: $body-font-color;
+$topbar-link-hover-lightness: $darker-primary-color;
 $topbar-link-bg-hover: $panel-bg;
 $topbar-link-bg-active: $panel-bg;
 
@@ -1282,7 +1283,7 @@ $topbar-link-bg-active: $panel-bg;
 $topbar-menu-link-font-size: 1em;
 // $topbar-menu-link-weight: bold;
 $topbar-menu-link-color: $primary-color;
-$topbar-menu-icon-color: $body-font-color;
+$topbar-menu-icon-color: $darker-primary-color;
 $topbar-menu-link-color-toggled: $primary-color;
 $topbar-menu-icon-color-toggled: $primary-color;
 
