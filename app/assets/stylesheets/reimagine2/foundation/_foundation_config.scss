@@ -72,6 +72,8 @@ $secondary-color: #ffd333;
 $alert-color: #ed2918;
 $success-color: #1eb268;
 $darker-primary-color: darken($primary-color, 10%);
+$light-grey-background: #f2f2f2;
+
 
 // Make sure border radius matches unless we want it different.
 
@@ -880,7 +882,7 @@ $pagination-link-current-active-bg: $primary-color;
 
 // We use these to control the background and border styles
 
-$panel-bg: #f2f2f2;
+$panel-bg: $light-grey-background;
 $panel-border-style: none;
 $panel-border-size: 0;
 
@@ -1269,8 +1271,8 @@ $topbar-link-color-active: $darker-primary-color;
 $topbar-link-weight: normal;
 $topbar-link-font-size: 1em;
 $topbar-link-hover-lightness: $darker-primary-color;
-$topbar-link-bg-hover: $panel-bg;
-$topbar-link-bg-active: $panel-bg;
+$topbar-link-bg-hover: $light-grey-background;
+$topbar-link-bg-active: $light-grey-background;
 
 // $topbar-dropdown-label-color: #555;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1295,7 +1297,7 @@ $topbar-menu-icon-color-toggled: $primary-color;
 
 // Divider Styles
 
-$topbar-divider-border-bottom: solid 1px $panel-bg;
+$topbar-divider-border-bottom: solid 1px $light-grey-background;
 $topbar-divider-border-top: none;
 
 // Sticky Class
