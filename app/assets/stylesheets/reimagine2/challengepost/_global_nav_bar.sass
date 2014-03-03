@@ -92,9 +92,14 @@
     margin-right: 1em
 
   @media #{$small}
-    .top-bar-section .has-dropdown > a:after
-      border-top-color: $challengepost-grey-on-dark-background
-      border-left-color: transparent
+    .top-bar-section .has-dropdown
+
+      &.hover .user
+        color: $darker-primary-color
+
+      & > a:after
+        border-top-color: $challengepost-grey-on-dark-background
+        border-left-color: transparent
 
     .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after
       content: ""
