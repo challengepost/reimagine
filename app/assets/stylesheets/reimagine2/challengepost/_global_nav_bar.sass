@@ -1,0 +1,149 @@
+#global-nav
+  background: white
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
+  position: relative
+
+  .top-bar-section .has-dropdown > a:after
+    border-top-color: transparent
+    border-left-color: $challengepost-grey-on-dark-background
+
+  #logo
+    padding-top: 0.7em
+
+    img
+      width: 200px
+      height: 30px
+
+    a
+      padding: 0 1em
+
+      @media #{$small}
+        padding: 0 1em 0 0
+
+  a
+    font-weight: normal
+    line-height: 1.2em
+
+    &:hover,
+    &:active,
+    &:focus
+      strong
+        color: $darker-primary-color
+
+    img.user-avatar
+      max-width: 25px
+      max-height: 25px
+
+    strong
+      color: $primary-color
+
+    &.main-link
+      color: $body-font-color
+
+      &:hover,
+      &:active,
+      &:focus
+        color: $header-font-color
+
+      strong
+        display: inline
+
+  // Back button on mobile
+  h5
+    font-size: 0.9em
+    color: $darker-primary-color
+    text-transform: uppercase
+    letter-spacing: 1px
+    margin-top: 0
+
+    &:hover,
+    &:active,
+    &:focus
+      background-color: $light-grey-background
+
+    a
+      padding-left: 2.5em
+
+      &:before
+        content: ""
+        border: inset 5px
+        border-color: transparent $challengepost-grey-on-dark-background transparent transparent
+        position: absolute
+        top: 9px
+        left: 15px
+
+  .tiny
+    position: absolute
+    font-size: 0.7em
+    bottom: 15px
+    right: 38px
+
+  .logged-out,
+  .dropdown
+    a
+      font-size: 0.9em
+
+  .dropdown
+    background: white
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
+
+  .label.small
+    float: left
+    margin-right: 1em
+
+  @media #{$small}
+    .top-bar-section .has-dropdown
+
+      &.hover .user
+        color: $darker-primary-color
+
+      & > a:after
+        border-top-color: $challengepost-grey-on-dark-background
+        border-left-color: transparent
+
+    .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after
+      content: ""
+      border: inset 5px
+      border-color: transparent transparent transparent $challengepost-grey-on-dark-background
+      border-left-style: solid
+      top: 18px
+      right: 0
+
+    .tiny
+      bottom: -15px
+
+    a
+      padding: 0.61em 1em
+
+      &.user
+        padding: 1.16em 1em 0.75em 1em
+
+
+      img.user-avatar
+        display: inline-block !important
+        margin-right: 0.6em
+        position: relative
+        top: -3px
+
+      strong
+        font-size: 1.25em
+        line-height: 1.2em
+
+        &.user
+          font-size: 1.15em
+
+      &.main-link
+        font-size: 0.9em
+
+        strong
+          display: block
+
+    #masqueradee
+      margin: 12px 0
+      top: 0
+
+    .logged-out a
+      padding: 1.35em 1em
+
+.ui-autocomplete
+  max-width: 300px
