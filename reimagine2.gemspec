@@ -20,9 +20,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rails"
-  spec.add_dependency "sass-rails"
+  spec.add_dependency "sass-rails", '>= 4'
   spec.add_dependency "compass-rails"
-  spec.add_dependency "coffee-rails"
+  spec.add_dependency "coffee-rails", '>= 4'
   spec.add_dependency "foundation-rails", ">= 5.1"
 
   spec.add_development_dependency "rspec-rails", '~> 2.0'
