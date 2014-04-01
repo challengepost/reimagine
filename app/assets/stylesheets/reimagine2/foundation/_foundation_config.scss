@@ -52,7 +52,7 @@ $em-base: 16 !default;
 $default-float: left;
 
 // $body-bg: #fff;
-$body-font-color: #606060;
+$body-font-color: $grey-5;
 $body-font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -166,7 +166,7 @@ $header-font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Arial, sans-s
 
 $header-font-weight: bold;
 // $header-font-style: normal;
-$header-font-color: #1f1f1e;
+$header-font-color: $grey-6;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -295,7 +295,7 @@ $form-label-bottom-margin: emCalc(4);
 $input-font-size: emCalc(16);
 // $input-bg-color: #fff;
 $input-focus-bg-color: white;
-$input-border-color: #dadada;
+$input-border-color: $grey-2;
 $input-focus-border-color: $primary-color;
 // $input-border-style: solid;
 $input-border-width: 2px;
@@ -881,14 +881,14 @@ $pagination-link-current-active-bg: $primary-color;
 
 // We use these to control the background and border styles
 
-$panel-bg: $light-grey-background;
+$panel-bg: $grey-1;
 $panel-border-style: none;
 $panel-border-size: 0;
 
 // We use this % to control how much we darken things on hover
 
 $panel-function-factor: 10%;
-$panel-border-color: #dddddd;
+$panel-border-color: $grey-2;
 
 // We use these to set default inner padding and bottom margin
 
@@ -1270,8 +1270,8 @@ $topbar-link-color-active: $darker-primary-color;
 $topbar-link-weight: normal;
 $topbar-link-font-size: 1em;
 $topbar-link-hover-lightness: $darker-primary-color;
-$topbar-link-bg-hover: $light-grey-background;
-$topbar-link-bg-active: $light-grey-background;
+$topbar-link-bg-hover: $grey-1;
+$topbar-link-bg-active: $grey-1;
 
 // $topbar-dropdown-label-color: #555;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1296,7 +1296,7 @@ $topbar-menu-icon-color-toggled: $primary-color;
 
 // Divider Styles
 
-$topbar-divider-border-bottom: solid 1px $light-grey-background;
+$topbar-divider-border-bottom: solid 1px $grey-1;
 $topbar-divider-border-top: none;
 
 // Sticky Class
