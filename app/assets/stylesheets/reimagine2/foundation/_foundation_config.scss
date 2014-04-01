@@ -67,12 +67,15 @@ $body-font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Arial, sans-ser
 
 // Colors
 
-$primary-color: #108ac7;
+$primary-color: #0088cc;
 $secondary-color: #ffd333;
-$alert-color: #ed2918;
+$alert-color: $error-color;
 $success-color: #1eb268;
-$darker-primary-color: darken($primary-color, 10%);
-
+$light-primary: lighten($primary-color, 10%);
+$dark-primary: darken($primary-color, 10%);
+$light-secondary: lighten($secondary-color, 10%);
+$dark-secondary: darken($secondary-color, 10%);
+$darker-primary-color: $dark-primary; // legacy
 
 // Make sure border radius matches unless we want it different.
 
@@ -1259,17 +1262,17 @@ $topbar-dropdown-bg: white;
 $topbar-dropdown-link-color: $primary-color;
 $topbar-dropdown-link-bg: white;
 $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: $darker-primary-color;
+$topbar-dropdown-toggle-color: $dark-primary;
 $topbar-dropdown-toggle-alpha: 1;
 
 // Set the link colors and styles for top-level nav
 
 $topbar-link-color: $primary-color;
-$topbar-link-color-hover: $darker-primary-color;
-$topbar-link-color-active: $darker-primary-color;
+$topbar-link-color-hover: $dark-primary;
+$topbar-link-color-active: $dark-primary;
 $topbar-link-weight: normal;
 $topbar-link-font-size: 1em;
-$topbar-link-hover-lightness: $darker-primary-color;
+$topbar-link-hover-lightness: $dark-primary;
 $topbar-link-bg-hover: $grey-1;
 $topbar-link-bg-active: $grey-1;
 
@@ -1284,7 +1287,7 @@ $topbar-link-bg-active: $grey-1;
 $topbar-menu-link-font-size: 1em;
 // $topbar-menu-link-weight: bold;
 $topbar-menu-link-color: $primary-color;
-$topbar-menu-icon-color: $darker-primary-color;
+$topbar-menu-icon-color: $dark-primary;
 $topbar-menu-link-color-toggled: $primary-color;
 $topbar-menu-icon-color-toggled: $primary-color;
 

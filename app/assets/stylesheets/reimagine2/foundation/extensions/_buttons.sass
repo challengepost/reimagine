@@ -2,10 +2,6 @@
 // They can not be done directly with configuration variables.
 // Instead of a flag background color, we use a sublte gradient
 // The colors are based on the $primary-color
-$light-primary: lighten($primary-color, $button-function-factor)
-$dark-primary: darken($primary-color, $button-function-factor)
-$light-secondary: lighten($secondary-color, $button-function-factor)
-$dark-secondary: darken($secondary-color, $button-function-factor)
 
 button, .button
   @include background(linear-gradient($primary-color, $dark-primary))
