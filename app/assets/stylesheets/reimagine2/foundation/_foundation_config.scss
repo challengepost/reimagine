@@ -71,11 +71,11 @@ $primary-color: #0088cc;
 $secondary-color: #ffd333;
 $alert-color: $error-color;
 $success-color: #1eb268;
+
 $light-primary: lighten($primary-color, 10%);
 $dark-primary: darken($primary-color, 10%);
 $light-secondary: lighten($secondary-color, 10%);
 $dark-secondary: darken($secondary-color, 10%);
-$darker-primary-color: $dark-primary; // legacy
 
 // Make sure border radius matches unless we want it different.
 
