@@ -1069,20 +1069,20 @@ $price-cta-bg: white;
 
 // We use this to control padding.
 
-// $side-nav-padding: emCalc(14, 0);
+$side-nav-padding: 0;
 
 // We use these to control list styles.
 
 // $side-nav-list-type: none;
 // $side-nav-list-position: inside;
-// $side-nav-list-margin: emCalc(0, 0, 7, 0);
+$side-nav-list-margin: 0;
 
 // We use these to control link styles.
 
-// $side-nav-link-color: $primary-color;
-// $side-nav-link-color-active: lighten(#000, 30%);
-// $side-nav-font-size: emCalc(14);
-// $side-nav-font-weight: bold;
+$side-nav-link-color: $primary-color;
+$side-nav-link-color-active: #000;
+$side-nav-font-size: 1em;
+$side-nav-font-weight: bold;
 
 // We use these to control border styles
 
