@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    reimagine2 (2.0.48)
+    reimagine2 (2.0.49)
       coffee-rails
       compass-rails
       rails
