@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    reimagine2 (2.0.50)
+    reimagine2 (2.0.51)
       coffee-rails
       compass-rails
       rails
@@ -57,7 +57,7 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     columnize (0.3.6)
-    compass (0.12.5)
+    compass (0.12.6)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.19)
