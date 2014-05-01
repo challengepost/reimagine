@@ -1219,7 +1219,9 @@ $has-tip-border-bottom: none;
 // $has-tip-font-color: #333;
 $has-tip-border-bottom-hover: none;
 // $has-tip-font-color-hover: $primary-color;
-// $has-tip-cursor-type: help;
+
+// /!\ intentionally invalid value!
+$has-tip-cursor-type: nope;
 
 // $tooltip-padding: emCalc(8);
 // $tooltip-bg: #000;
