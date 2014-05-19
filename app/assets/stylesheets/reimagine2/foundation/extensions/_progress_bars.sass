@@ -1,6 +1,13 @@
 .progress
   position: relative
 
+  &.radius
+    // foundation bug, they use $global-radius
+    border-radius: $progress-bar-border-radius
+
+    .meter
+      border-radius: $progress-bar-border-radius - emCalc(1)
+
   .percentage
     position: absolute
     width: 100%
@@ -10,4 +17,3 @@
     line-height: $progress-bar-height
     color: white
     text-shadow: 0 0 2px #000
-    font-size: 0.875em
