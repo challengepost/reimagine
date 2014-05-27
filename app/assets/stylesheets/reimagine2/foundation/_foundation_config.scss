@@ -968,11 +968,11 @@ $price-cta-bg: white;
 // We use this to se the prog bar height
 
 // $progress-bar-height: emCalc(25);
-$progress-bar-color: #DFDFDF;
+$progress-bar-color: $grey-6;
 
 // We use these to control the border styles
 
-$progress-bar-border-color: #A3A3A3;
+$progress-bar-border-color: $grey-6;
 // $progress-bar-border-size: 1px;
 // $progress-bar-border-style: solid;
 $progress-bar-border-radius: emCalc(3);
