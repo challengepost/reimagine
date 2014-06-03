@@ -7,6 +7,17 @@ button, .button
   @include background(linear-gradient($primary-color, $dark-primary))
   box-shadow: none
 
+  &.grey
+    $light-grey: lighten($grey-5, $button-function-factor)
+    $dark-grey: darken($grey-5, $button-function-factor)
+
+    background-color: $grey-5
+    @include background(linear-gradient($grey-5, $dark-grey))
+
+    &:active, &:focus, &:hover
+      background-color: $light-grey
+      @include background(linear-gradient($light-grey, $grey-5))
+
   @media #{$small}
     &.tiny
       font-size: $button-font-tny + emCalc(2)
