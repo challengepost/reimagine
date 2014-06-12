@@ -16,7 +16,7 @@ feature 'Assets' do
   scenario 'it prioritizes the main app overrides file over the dummy one in the engine' do
     visit '/assets/reimagine2.css'
 
-    page.text.should include 'color: #bada55'
+    page.text.should include 'color:#bada55'
   end
 
   scenario 'it serves reimagine2.js' do
