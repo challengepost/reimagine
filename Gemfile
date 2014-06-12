@@ -8,7 +8,7 @@ gemspec
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
 
-gem 'rails', '~> 3.2'
+gem 'rails', '~> 4.0'
 gem 'foreman'
 gem 'thin'
 # Declare any dependencies that are still in development here instead of in
@@ -20,5 +20,4 @@ group :development, :test do
   gem "pry"
   gem "pry-debugger"
   gem "pry-remote"
-
 end
