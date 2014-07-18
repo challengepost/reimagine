@@ -1,5 +1,13 @@
 html
   background: $grey-6
 
+// fixes issue introduced with foundation 5
+// where html and body get a 100% height
+// but their default overflow value is "visible"
+// so the content goes "outside" of the body
+html, body
+  height: auto
+  min-height: 100%
+
 a:focus, a:active
   outline: auto

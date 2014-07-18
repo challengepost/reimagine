@@ -20,13 +20,13 @@ button, .button
 
   @media #{$small}
     &.tiny
-      font-size: $button-font-tny + emCalc(2)
+      font-size: $button-font-tny + rem-calc(2)
     &.small
-      font-size: $button-font-sml + emCalc(2)
+      font-size: $button-font-sml + rem-calc(2)
     &.medium
-      font-size: $button-font-med + emCalc(2)
+      font-size: $button-font-med + rem-calc(2)
     &.large
-      font-size: $button-font-lrg + emCalc(2)
+      font-size: $button-font-lrg + rem-calc(2)
 
   &:active, &:focus, &:hover
     @include background(linear-gradient($light-primary, $primary-color))
