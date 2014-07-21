@@ -1,0 +1,9 @@
+Description
+    Copy the Reimagine2 views to your app/views directory
+
+Example:
+    rails generate reimagine2:views
+
+    This will create:
+        app/views/reimagine2
+

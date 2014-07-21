@@ -1,8 +1,8 @@
-Description:
-    Explain the generator
+Descriptionk
+    Generates the Reimagine2 initializer
 
 Example:
-    rails generate install Thing
+    rails generate reimagine2:install
 
     This will create:
-        what/will/it/create
+        config/initializers/satellite.rb
