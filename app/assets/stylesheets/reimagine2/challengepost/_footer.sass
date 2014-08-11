@@ -1,41 +1,49 @@
+$line-height: 1.75rem
+
 #challengepost-footer
   background-color: $grey-6
-  color: $grey-3
   text-align: center
+  font-size: 1rem
+  text-align: left
 
-  @media #{$small}
-    text-align: left
+  h5
+    margin: 0
+    color: white
+    line-height: $line-height
 
   a
-    +link-colors($grey-3, $hover: white, $active: white, $focus: white)
+    +link-colors($grey-4, $hover: white, $active: white, $focus: white)
+    +hover-link
     display: inline
     white-space: nowrap
 
   ul
     margin-bottom: 0
     list-style: none
-    margin-left: -(emCalc(22))
+    margin: 0
 
     li
-      display: inline-block
-      margin-left: emCalc(22)
+      margin: 0
+      display: block
+      line-height: $line-height
 
-#site-footer-social
-  a
-    font-size: 2em
+      &.has-icons
+        margin-top: 1rem
 
-  margin-top: 1em
+  a.ss-icon
+    font-size: 2.25rem
+    margin-right: 0.75rem
+    &:hover
+      text-decoration: none
 
-  @media #{$small}
-    float: right
-    margin-top: 0
-
+#site-footer-secondary-group
+  background-color: $grey-7
 
 #site-footer-legal
-  &, a
-    color: darken($grey-3, 10%)
+  padding: 1em 0
 
-  margin-top: 1em
-
-  @media #{$small}
-    margin-top: .4em
+  ul
+    li
+      @media #{$small}
+        display: inline-block
+        margin-right: 2em
