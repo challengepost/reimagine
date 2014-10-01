@@ -18,16 +18,6 @@ button, .button
       background-color: $light-grey
       @include background(linear-gradient($light-grey, $grey-5))
 
-  @media #{$small}
-    &.tiny
-      font-size: $button-font-tny + emCalc(2)
-    &.small
-      font-size: $button-font-sml + emCalc(2)
-    &.medium
-      font-size: $button-font-med + emCalc(2)
-    &.large
-      font-size: $button-font-lrg + emCalc(2)
-
   &:active, &:focus, &:hover
     @include background(linear-gradient($light-primary, $primary-color))
 
