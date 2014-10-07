@@ -90,7 +90,7 @@ $global-rounded: 1000px;
 
 // Control whether or not CSS classes come through in the CSS files.
 
-$include-html-classes: true;
+// $include-html-classes: true;
 // $include-print-styles: true;
 // $include-html-global-classes: $include-html-classes;
 // $include-html-inline-list-classes: $include-html-classes;
@@ -1309,7 +1309,6 @@ $topbar-divider-border-top: none;
 // $topbar-sticky-class: ".sticky";
 
 // $include-html-joyride-classes: $include-html-classes;
-$include-html-joyride-classes: $include-html-classes;
 
 // /* Controlling default Joyride styles */
 // $joyride-tip-bg: rgb(0,0,0);
