@@ -724,16 +724,16 @@ $inline-list-default-float-margin: emCalc(-8);
 
 // Controlling default Joyride styles
 
-// $joyride-tip-bg: rgb(0,0,0);
+$joyride-tip-bg: $light-secondary;
 // $joyride-tip-default-width: 300px;
-// $joyride-tip-padding: emCalc(18, 20, 24);
-// $joyride-tip-border: solid 1px #555;
-// $joyride-tip-radius: 4px;
+// $joyride-tip-padding: em-calc(18 20 24);
+$joyride-tip-border: solid 1px #555;
+$joyride-tip-radius: .3em;
 // $joyride-tip-position-offset: 22px;
 
 // Here, we're setting the tip dont styles
 
-// $joyride-tip-font-color: #fff;
+$joyride-tip-font-color: $grey-5;
 // $joyride-tip-font-size: emCalc(14);
 // $joyride-tip-header-weight: bold;
 
@@ -749,13 +749,13 @@ $inline-list-default-float-margin: emCalc(-8);
 
 // This changes up the styles for the close button
 
-// $joyride-tip-close-color: #777;
-// $joyride-tip-close-size: 30px;
-// $joyride-tip-close-weight: normal;
+$joyride-tip-close-color: darken($joyride-tip-bg, 25%);
+$joyride-tip-close-size: 25px;
+$joyride-tip-close-weight: lighter;
 
 // When Joyride is filling the screen, we use this style for the bg
 
-// $joyride-screenfill: rgba(0,0,0,0.5);
+$joyride-screenfill: rgba(0,0,0,0.5);
 
 //
 // Keystroke Variables
@@ -1307,3 +1307,4 @@ $topbar-divider-border-top: none;
 // Sticky Class
 
 // $topbar-sticky-class: ".sticky";
+
