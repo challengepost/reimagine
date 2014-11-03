@@ -7,3 +7,4 @@
 //= require foundation/foundation.reveal
 //= require foundation/foundation.topbar
 //= require foundation/foundation.tooltips
+//= require foundation/foundation.dropdown
