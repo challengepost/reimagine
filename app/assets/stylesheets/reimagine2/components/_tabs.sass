@@ -11,25 +11,32 @@ $tab-nav-active-border-color: $primary-color !default
 $tab-nav-active-border-width: emCalc(3) !default
 $tab-nav-active-color: $header-font-color !default
 
-$tab-nav-extra-negative-spacing: 0 !default
-
 @mixin tab-nav
-  margin-left: -($tab-nav-spacing + $tab-nav-extra-negative-spacing)
+  margin: 0
   margin-bottom: 0
-  border-bottom: $tab-nav-border-width solid $tab-nav-border-color
+  border-bottom: none
 
-  li, a
-    display: block
+  white-space: nowrap
+
+  overflow: auto
 
   @media #{$small}
-    border-bottom: none
+    box-shadow: none
 
-    li, a
-      display: inline-block
+  li, a
+    display: inline-block
 
   li
+    overflow: hidden
     list-style: none
-    margin-left: $tab-nav-spacing
+    margin-left: $tab-nav-spacing / 2
+    margin-right: $tab-nav-spacing / 2
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
 
     &.active a, a:hover, a:focus
       background: $tab-nav-active-bg
