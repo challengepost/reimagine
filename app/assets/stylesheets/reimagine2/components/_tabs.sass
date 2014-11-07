@@ -32,6 +32,12 @@ $tab-nav-active-color: $header-font-color !default
     margin-left: $tab-nav-spacing / 2
     margin-right: $tab-nav-spacing / 2
 
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
     &.active a, a:hover, a:focus
       background: $tab-nav-active-bg
       color: $tab-nav-active-color
