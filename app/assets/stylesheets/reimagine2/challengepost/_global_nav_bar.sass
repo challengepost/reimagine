@@ -35,16 +35,14 @@
       max-width: 25px
       max-height: 25px
 
-    strong
-      color: $primary-color
-
     &.main-link
-      color: $body-font-color
+      font-size: 1em
+      padding: 1.16em 1em 1.16em 1em
 
       &:hover,
       &:active,
       &:focus
-        color: $header-font-color
+        color: $dark-primary
 
       strong
         display: inline
@@ -99,6 +97,10 @@
     float: left
     margin-right: 1em
 
+  a
+    &.user
+      padding: 1.16em 1em 1.16em 1em
+
   @media #{$small}
     .top-bar-section .has-dropdown
 
@@ -126,7 +128,6 @@
       &.user
         padding: 1.16em 1em 0.75em 1em
 
-
       img.user-avatar
         display: inline-block !important
         margin-right: 0.6em
@@ -139,12 +140,6 @@
 
         &.user
           font-size: 1.15em
-
-      &.main-link
-        font-size: 0.9em
-
-        strong
-          display: block
 
     #masqueradee
       margin: 12px 0
