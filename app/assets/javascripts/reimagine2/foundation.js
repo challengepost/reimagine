@@ -8,3 +8,4 @@
 //= require foundation/foundation.topbar
 //= require foundation/foundation.tooltips
 //= require foundation/foundation.dropdown
+//= require foundation/foundation.section
