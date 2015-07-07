@@ -8,9 +8,9 @@ require "reimagine2/version"
 Gem::Specification.new do |spec|
   spec.name        = "reimagine2"
   spec.version     = Reimagine2::VERSION
-  spec.authors     = ["ChallengePost, Inc."]
-  spec.email       = ["tech@challengepost.com"]
-  spec.homepage    = "http://challengepost.com"
+  spec.authors     = ["DevPost, Inc."]
+  spec.email       = ["tech@devpost.com"]
+  spec.homepage    = "http://devpost.com"
   spec.summary     = "An assets gem"
   spec.description = "Shared assets, in a gem."
 
