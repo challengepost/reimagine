@@ -365,7 +365,7 @@ $input-prefix-border-size: 0;
 $button-tny: emCalc(6);
 $button-sml: emCalc(8);
 $button-med: emCalc(9); // emCalc(12);
-$button-lrg: emCalc(10);
+$button-lrg: emCalc(14);
 
 // We use this to control the display property.
 
@@ -1258,7 +1258,7 @@ $topbar-bg: white;
 
 // Height and margin
 
-$topbar-height: 56px;
+$topbar-height: 66px;
 // $topbar-margin-bottom: emCalc(30);
 
 // Control Input height for top bar
