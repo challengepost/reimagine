@@ -4,22 +4,20 @@
 // The colors are based on the $primary-color
 
 button, .button
-  @include background(linear-gradient($primary-color, $dark-primary))
+  background: $primary-color
+  border-bottom:
   box-shadow: none
 
   &.grey
     $light-grey: lighten($grey-5, $button-function-factor)
-    $dark-grey: darken($grey-5, $button-function-factor)
 
     background-color: $grey-5
-    @include background(linear-gradient($grey-5, $dark-grey))
 
     &:active, &:focus, &:hover
       background-color: $light-grey
-      @include background(linear-gradient($light-grey, $grey-5))
 
   &:active, &:focus, &:hover
-    @include background(linear-gradient($light-primary, $primary-color))
+    background: $primary-3
 
   // custom mix of inline and pre/post fix classes so the button
   // does not take full width but still has the same height as form elements
@@ -36,14 +34,14 @@ button, .button
     @include button-style(#bfbfbf, $disabled:true)
 
   &.secondary
-    @include background(linear-gradient($secondary-color, $dark-secondary))
+    @include $secondary-color
 
     &, &.disabled
       color: #171717
 
     &:active, &:focus, &:hover
       color: #171717
-      @include background(linear-gradient($light-secondary, $secondary-color))
+      background: $secondary-3
 
   &.link
     @include link-colors($anchor-font-color, $hover: $anchor-font-color-hover, $active: $anchor-font-color-hover, $focus: $anchor-font-color-hover)
