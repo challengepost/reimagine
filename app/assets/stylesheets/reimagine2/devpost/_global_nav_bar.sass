@@ -9,11 +9,10 @@
     border-left-color: $grey-3
 
   #logo
-    padding-top: 0.7em
 
     img
       width: 200px
-      height: 30px
+      height: 35px
 
     a
       padding: 0 1em
@@ -23,7 +22,7 @@
 
   a
     font-weight: normal
-    line-height: 1.2em
+    line-height: $topbar-height
 
     &:hover,
     &:active,
@@ -37,7 +36,7 @@
 
     &.main-link
       font-size: 1em
-      padding: 1.16em 1em 1.16em 1em
+      padding: 0 1em
 
       &:hover,
       &:active,
@@ -97,37 +96,36 @@
     float: left
     margin-right: 1em
 
-  a
-    &.user
-      padding: 1.16em 1em 1.16em 1em
-
   @media #{$small}
-    .top-bar-section .has-dropdown
+    .top-bar-section
+      .has-dropdown
 
-      &.hover .user
-        color: $dark-primary
+        &.hover .user
+          color: $dark-primary
 
-      & > a:after
-        border-top-color: $grey-3
-        border-left-color: transparent
+        & > a:after
+          border-top-color: $grey-3
+          border-left-color: transparent
 
-    .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after
-      content: ""
-      border: inset 5px
-      border-color: transparent transparent transparent $grey-3
-      border-left-style: solid
-      top: 18px
-      right: 0
+      .dropdown
+        li
+          a
+            line-height: 1.2
+
+          &.has-dropdown > a:after
+            content: ""
+            border: inset 5px
+            border-color: transparent transparent transparent $grey-3
+            border-left-style: solid
+            top: 18px
+            right: 0
+
+
 
     .tiny
       bottom: -15px
 
     a
-      padding: 0.61em 1em
-
-      &.user
-        padding: 1.16em 1em 0.75em 1em
-
       img.user-avatar
         display: inline-block !important
         margin-right: 0.6em
@@ -144,9 +142,6 @@
     #masqueradee
       margin: 12px 0
       top: 0
-
-    .logged-out a
-      padding: 1.35em 1em
 
 .ui-autocomplete
   max-width: 300px
