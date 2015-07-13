@@ -67,15 +67,27 @@ $body-font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Arial, sans-ser
 
 // Colors
 
-$primary-color: #0088cc;
-$secondary-color: #ffd333;
+$primary-1: #30acc2;
+$primary-2: #247f8f;
+$primary-3: #2a95a8;
+$primary-4: #1d6875;
+$primary-5: #baeef7;
+
+$secondary-1 : #77ad39;
+$secondary-2 : #547a28;
+$secondary-3 : #669431;
+$secondary-4 : #436120;
+$secondary-5 : #daf7ba;
+
+$primary-color: $primary-1;
+$secondary-color: $secondary-1;
 $alert-color: $error-color;
 $success-color: #1eb268;
 
-$light-primary: lighten($primary-color, 10%);
-$dark-primary: darken($primary-color, 10%);
-$light-secondary: lighten($secondary-color, 10%);
-$dark-secondary: darken($secondary-color, 10%);
+$light-primary: $primary-5;
+$dark-primary: $primary-4;
+$light-secondary: $secondary-5;
+$dark-secondary: $secondary-4;
 
 // Make sure border radius matches unless we want it different.
 
@@ -178,7 +190,7 @@ $header-text-rendering: optimizeLegibility;
 // Control header font sizes
 
 $h1-font-size: emCalc(38);
-$h2-font-size: emCalc(26);
+$h2-font-size: emCalc(30);
 $h3-font-size: emCalc(22);
 $h4-font-size: emCalc(18);
 $h5-font-size: emCalc(18);
@@ -378,13 +390,13 @@ $button-function-factor: 10%;
 
 // We use these to control button border styles.
 
-$button-border-width: 0;
+$button-border-width: 0 0 3px;
 // $button-border-style: solid;
-// $button-border-color: darken($primary-color, $button-function-factor);
+$button-border-color: $primary-2;
 
 // We use this to set the default radius used throughout the core.
 
-// $button-radius: $global-radius;
+$button-radius: 0;
 // $button-round: $global-rounded;
 
 // We use this to set default opacity for disabled buttons.
