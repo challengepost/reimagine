@@ -67,15 +67,29 @@ $body-font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Arial, sans-ser
 
 // Colors
 
-$primary-color: #0088cc;
-$secondary-color: #ffd333;
+$dark: #003e54;
+
+$primary-1: #30acc2;
+$primary-2: #247f8f;
+$primary-3: #2a95a8;
+$primary-4: #1d6875;
+$primary-5: #baeef7;
+
+$secondary-1 : #77ad39;
+$secondary-2 : #547a28;
+$secondary-3 : #669431;
+$secondary-4 : #436120;
+$secondary-5 : #daf7ba;
+
+$primary-color: $primary-1;
+$secondary-color: $secondary-1;
 $alert-color: $error-color;
 $success-color: #1eb268;
 
-$light-primary: lighten($primary-color, 10%);
-$dark-primary: darken($primary-color, 10%);
-$light-secondary: lighten($secondary-color, 10%);
-$dark-secondary: darken($secondary-color, 10%);
+$light-primary: $primary-5;
+$dark-primary: $primary-4;
+$light-secondary: $secondary-5;
+$dark-secondary: $secondary-4;
 
 // Make sure border radius matches unless we want it different.
 
@@ -169,7 +183,7 @@ $header-font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Arial, sans-s
 
 $header-font-weight: bold;
 // $header-font-style: normal;
-$header-font-color: $grey-6;
+$header-font-color: $dark;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -178,7 +192,7 @@ $header-text-rendering: optimizeLegibility;
 // Control header font sizes
 
 $h1-font-size: emCalc(38);
-$h2-font-size: emCalc(26);
+$h2-font-size: emCalc(30);
 $h3-font-size: emCalc(22);
 $h4-font-size: emCalc(18);
 $h5-font-size: emCalc(18);
@@ -203,7 +217,7 @@ $small-font-size: emCalc(14);
 $paragraph-font-weight: inherit;
 // $paragraph-font-size: 1em;
 $paragraph-line-height: 1.4;
-// $paragraph-margin-bottom: emCalc(20);
+$paragraph-margin-bottom: emCalc(20);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
@@ -353,7 +367,7 @@ $input-prefix-border-size: 0;
 $button-tny: emCalc(6);
 $button-sml: emCalc(8);
 $button-med: emCalc(9); // emCalc(12);
-$button-lrg: emCalc(10);
+$button-lrg: emCalc(14);
 
 // We use this to control the display property.
 
@@ -378,13 +392,13 @@ $button-function-factor: 10%;
 
 // We use these to control button border styles.
 
-$button-border-width: 0;
+$button-border-width: 0 0 3px;
 // $button-border-style: solid;
-// $button-border-color: darken($primary-color, $button-function-factor);
+$button-border-color: $primary-2;
 
 // We use this to set the default radius used throughout the core.
 
-// $button-radius: $global-radius;
+$button-radius: 0;
 // $button-round: $global-rounded;
 
 // We use this to set default opacity for disabled buttons.
@@ -1246,7 +1260,7 @@ $topbar-bg: white;
 
 // Height and margin
 
-$topbar-height: 56px;
+$topbar-height: 66px;
 // $topbar-margin-bottom: emCalc(30);
 
 // Control Input height for top bar
@@ -1269,7 +1283,7 @@ $topbar-dropdown-toggle-alpha: 1;
 
 // Set the link colors and styles for top-level nav
 
-$topbar-link-color: $primary-color;
+$topbar-link-color: $dark;
 $topbar-link-color-hover: $dark-primary;
 $topbar-link-color-active: $dark-primary;
 $topbar-link-weight: normal;
