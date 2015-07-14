@@ -67,6 +67,8 @@ $body-font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Arial, sans-ser
 
 // Colors
 
+$dark: #003e54;
+
 $primary-1: #30acc2;
 $primary-2: #247f8f;
 $primary-3: #2a95a8;
@@ -181,7 +183,7 @@ $header-font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Arial, sans-s
 
 $header-font-weight: bold;
 // $header-font-style: normal;
-$header-font-color: $grey-6;
+$header-font-color: $dark;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -215,7 +217,7 @@ $small-font-size: emCalc(14);
 $paragraph-font-weight: inherit;
 // $paragraph-font-size: 1em;
 $paragraph-line-height: 1.4;
-// $paragraph-margin-bottom: emCalc(20);
+$paragraph-margin-bottom: emCalc(20);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
@@ -1281,7 +1283,7 @@ $topbar-dropdown-toggle-alpha: 1;
 
 // Set the link colors and styles for top-level nav
 
-$topbar-link-color: $primary-color;
+$topbar-link-color: $dark;
 $topbar-link-color-hover: $dark-primary;
 $topbar-link-color-active: $dark-primary;
 $topbar-link-weight: normal;
