@@ -67,24 +67,10 @@ $body-font-family: "Helvetica Neue", sans-serif;
 
 // Colors
 
-$dark: #003e54;
-
-$primary-1: #30acc2;
-$primary-2: #247f8f;
-$primary-3: #2a95a8;
-$primary-4: #1d6875;
-$primary-5: #baeef7;
-
-$secondary-1 : #77ad39;
-$secondary-2 : #547a28;
-$secondary-3 : #669431;
-$secondary-4 : #436120;
-$secondary-5 : #daf7ba;
-
 $primary-color: $primary-1;
 $secondary-color: $secondary-1;
 $alert-color: $error-color;
-$success-color: #1eb268;
+$success-color: $primary-5;
 
 $light-primary: $primary-5;
 $dark-primary: $primary-4;
