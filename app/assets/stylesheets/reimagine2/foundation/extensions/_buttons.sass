@@ -11,14 +11,6 @@ button, .button
   background: $primary-color
   box-shadow: none
 
-  &.grey
-    $light-grey: lighten($grey-5, $button-function-factor)
-
-    background-color: $grey-5
-
-    &:active, &:focus, &:hover
-      background-color: $light-grey
-
   &:active, &:focus, &:hover
     background: $primary-3
     border-color: $primary-4
@@ -26,6 +18,29 @@ button, .button
   &:active
     border-bottom-width: 0
     border-top-width: 3px
+
+  &.secondary
+    background: $secondary-color
+    color: white
+
+    &.disabled
+      color: #171717
+
+    &:active, &:focus, &:hover
+      color: white
+      background: $secondary-3
+      border-color: $secondary-4
+
+  &.small, &.tiny
+    border-bottom-width: 2px
+
+  &.grey
+    $light-grey: lighten($grey-5, $button-function-factor)
+
+    background-color: $grey-5
+
+    &:active, &:focus, &:hover
+      background-color: $light-grey
 
   // custom mix of inline and pre/post fix classes so the button
   // does not take full width but still has the same height as form elements
@@ -40,18 +55,6 @@ button, .button
   &[disabled=disabled]
     background-image: none
     @include button-style(#bfbfbf, $disabled:true)
-
-  &.secondary
-    background: $secondary-color
-    color: white
-
-    &.disabled
-      color: #171717
-
-    &:active, &:focus, &:hover
-      color: white
-      background: $secondary-3
-      border-color: $secondary-4
 
   &.link
     @include link-colors($anchor-font-color, $hover: $anchor-font-color-hover, $active: $anchor-font-color-hover, $focus: $anchor-font-color-hover)
