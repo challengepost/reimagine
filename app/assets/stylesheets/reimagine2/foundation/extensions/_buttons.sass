@@ -3,10 +3,13 @@
 // Instead of a flag background color, we use a sublte gradient
 // The colors are based on the $primary-color
 
+@media only screen
+  button, .button
+    @include single-transition(none, 0, 0)
+
 button, .button
   background: $primary-color
   box-shadow: none
-  @include transition(border-color 0.3s, background-color 0.3s)
 
   &.grey
     $light-grey: lighten($grey-5, $button-function-factor)
