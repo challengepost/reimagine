@@ -30,11 +30,14 @@ button, .button
       background: $secondary-3
       border-color: $secondary-4
 
-  &.small, &.tiny
+  &.small
     border-bottom-width: 2px
 
     &:active
       border-width: 2px 0 0
+
+  &.tiny, &.tiny &:active
+    border: 0
 
   &.grey
     $light-grey: lighten($grey-5, $button-function-factor)
