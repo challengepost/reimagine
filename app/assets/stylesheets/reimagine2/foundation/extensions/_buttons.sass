@@ -16,8 +16,7 @@ button, .button
     border-color: $primary-4
 
   &:active
-    border-bottom-width: 0
-    border-top-width: 3px
+    border-width: 3px 0 0
 
   &.secondary
     background: $secondary-color
@@ -33,6 +32,9 @@ button, .button
 
   &.small, &.tiny
     border-bottom-width: 2px
+
+    &:active
+      border-width: 2px 0 0
 
   &.grey
     $light-grey: lighten($grey-5, $button-function-factor)
