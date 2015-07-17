@@ -52,7 +52,7 @@ $em-base: 16 !default;
 $default-float: left;
 
 $sans-serif-font-family: "Helvetica Neue", sans-serif;
-$serif-font-family: "ClearSans", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
+$custom-font-family: "ClearSans", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
 
 // $body-bg: #fff;
 $body-font-color: $grey-5;
@@ -168,7 +168,7 @@ $column-gutter: emCalc(30);
 
 // Control header font styles
 
-$header-font-family: $serif-font-family;
+$header-font-family: $custom-font-family;
 
 $header-font-weight: bold;
 // $header-font-style: normal;
@@ -365,7 +365,7 @@ $button-lrg: emCalc(14);
 
 // We use these to control button text styles.
 
-$button-font-family: $sans-serif-font-family;
+$button-font-family: $custom-font-family;
 // $button-font-color: #fff;
 // $button-font-color-alt: #333;
 $button-font-tny: emCalc(12);
