@@ -4,12 +4,17 @@
   position: relative
   padding: 1px 0
 
-  .top-bar-section .has-dropdown > a:after
-    border-top-color: transparent
-    border-left-color: $grey-3
+  .top-bar-section
+    .has-dropdown > a:after
+      border-top-color: transparent
+      border-left-color: $grey-3
+
+    ul li > a
+      padding:
+        top: 0
+        bottom: 0
 
   #logo
-
     img
       height: 40px
       width: 206px
@@ -17,11 +22,15 @@
       top: -2px
 
     a
+      line-height: $topbar-height
       padding: 0 1em
 
   a
     font-weight: normal
-    line-height: $topbar-height
+    line-height: $topbar-height * 2/3
+
+    @media #{$small}
+      line-height: $topbar-height
 
     &:hover,
     &:active,
@@ -66,7 +75,7 @@
         border: inset 5px
         border-color: transparent $grey-3 transparent transparent
         position: absolute
-        top: 9px
+        top: 16px
         left: 15px
 
   .tiny
@@ -84,6 +93,13 @@
     background: white
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
 
+    li a
+      line-height: $topbar-height * 2/3
+
+      padding:
+        top: 0
+        bottom: 0
+
     .label
       margin-left: 0.5em
 
@@ -97,6 +113,9 @@
 
   @media #{$small}
     .top-bar-section
+      & > ul > .divider
+        border-color: transparent
+
       .has-dropdown
 
         &.hover .user
@@ -108,9 +127,6 @@
 
       .dropdown
         li
-          a
-            line-height: 1.2
-
           &.has-dropdown > a:after
             content: ""
             border: inset 5px
