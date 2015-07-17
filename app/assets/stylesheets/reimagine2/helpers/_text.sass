@@ -29,7 +29,8 @@ p
     font-size: $small-font-size
 
   &.large
-    font-size: emCalc(22px)
+    @media #{$small}
+      font-size: emCalc(22px)
 
 small, .small
   &.ss-icon, .ss-icon
