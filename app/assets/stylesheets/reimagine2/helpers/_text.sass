@@ -24,8 +24,13 @@
 
 // equivalent to <small> but to use on a <p> so
 // the line height doesn't look strange on longer text
-p.small
-  font-size: $small-font-size
+p
+  &.small
+    font-size: $small-font-size
+
+  &.large
+    @media #{$small}
+      font-size: emCalc(22px)
 
 small, .small
   &.ss-icon, .ss-icon
