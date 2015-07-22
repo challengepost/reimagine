@@ -75,6 +75,13 @@ $secondary-color: $secondary-1;
 $alert-color: $error-color;
 $success-color: $primary-5;
 
+$success-background-color: $secondary-5;
+$success-font-color: $secondary-4;
+$notice-background-color: $primary-5;
+$notice-font-color: $primary-4;
+$alert-background-color: $error-3;
+$alert-font-color: $error-2;
+
 $light-primary: $primary-5;
 $dark-primary: $primary-4;
 $light-secondary: $secondary-5;
@@ -1310,4 +1317,3 @@ $topbar-divider-border-top: none;
 // Sticky Class
 
 // $topbar-sticky-class: ".sticky";
-
