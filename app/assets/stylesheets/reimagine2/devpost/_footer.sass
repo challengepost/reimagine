@@ -1,15 +1,12 @@
-#challengepost-footer
-  background-color: $grey-6
+#devpost-footer
+  background-color: $grey-2
   text-align: center
   font-size: 1rem
   text-align: left
-
-  h5
-    margin: 0
-    color: white
+  padding: 2em 0
 
   a
-    +link-colors($grey-4, $hover: white, $active: white, $focus: white)
+    +link-colors($dark)
     +hover-link
     display: inline
 
@@ -19,31 +16,43 @@
     margin: 0
 
     li
-      margin: 0 0 0.3rem
-      display: block
+      margin: 0 2.5em 0 0
 
-      &.has-icons
-        margin-top: 1rem
-        margin: 0
+      @media #{$small}
+        display: inline-block
+
+  .social-links
+    float: right
+    text-align: right
+
+    li
+      margin: 0 0 0 1em
+      display: inline-block
+
+    a
+      +link-colors($grey-4)
+      opacity: 0.6
+      @include single-transition(opacity, 200ms)
+
+      &:hover, &:focus
+        opacity: 1
 
   a.ss-icon
     font-size: 2.25rem
-    margin-right: 0.75rem
+
     &:hover
       text-decoration: none
 
-#site-footer-primary-group
-  background-color: $grey-6
-  padding: 2em 0
+  .ss-heart
+    color: $red-1
 
-#site-footer-secondary-group
-  background-color: $page-background
+#site-footer-primary-nav
+  margin-bottom: 0.7em
 
 #site-footer-legal
-  padding: 1em 0
-
   ul
     li
-      @media #{$small}
-        display: inline-block
-        margin-right: 2em
+      margin-right: 2em
+
+      a
+        +link-colors($grey-4)
