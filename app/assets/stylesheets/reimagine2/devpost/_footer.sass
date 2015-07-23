@@ -1,0 +1,58 @@
+#devpost-footer
+  background-color: $grey-2
+  text-align: center
+  font-size: 1rem
+  text-align: left
+  padding: 2em 0
+
+  a
+    +link-colors($dark)
+    +hover-link
+    display: inline
+
+  ul
+    margin-bottom: 0
+    list-style: none
+    margin: 0
+
+    li
+      margin: 0 2.5em 0 0
+
+      @media #{$small}
+        display: inline-block
+
+  .social-links
+    float: right
+    text-align: right
+
+    li
+      margin: 0 0 0 1em
+      display: inline-block
+
+    a
+      +link-colors($grey-4)
+      opacity: 0.6
+      @include single-transition(opacity, 200ms)
+
+      &:hover, &:focus
+        opacity: 1
+
+  a.ss-icon
+    font-size: 2.25rem
+
+    &:hover
+      text-decoration: none
+
+  .ss-heart
+    color: $red-1
+
+#site-footer-primary-nav
+  margin-bottom: 0.7em
+
+#site-footer-legal
+  ul
+    li
+      margin-right: 2em
+
+      a
+        +link-colors($grey-4)
