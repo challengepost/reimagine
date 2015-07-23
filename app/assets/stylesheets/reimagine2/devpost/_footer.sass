@@ -8,11 +8,6 @@
   a
     +link-colors($dark)
     display: inline
-    border-bottom: 1px solid transparent
-    transition: border-bottom-color 0.5s ease
-
-    &:hover
-      border-bottom: 1px solid $dark
 
   ul
     margin-bottom: 0
@@ -52,6 +47,13 @@
 
 #site-footer-primary-nav
   margin-bottom: 0.7em
+
+  a
+    border-bottom: 1px solid transparent
+    transition: border-bottom-color 0.5s ease
+
+    &:hover
+      border-bottom: 1px solid $dark
 
 #site-footer-legal
   ul
