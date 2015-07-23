@@ -7,8 +7,11 @@
 
   a
     +link-colors($dark)
-    +hover-link
     display: inline
+    transition: border-bottom-color 0.5 ease
+
+    &:hover
+      border-bottom: 1px solid $dark
 
   ul
     margin-bottom: 0
@@ -56,3 +59,7 @@
 
       a
         +link-colors($grey-4)
+        transition: border-bottom-color 0.5 ease
+
+        &:hover
+          border-bottom: 1px solid $grey-4
