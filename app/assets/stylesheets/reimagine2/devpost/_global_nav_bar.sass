@@ -4,26 +4,34 @@
   position: relative
   padding: 1px 0
 
-  .top-bar-section .has-dropdown > a:after
-    border-top-color: transparent
-    border-left-color: $grey-3
+  .top-bar-section
+    .has-dropdown > a:after
+      border-top-color: transparent
+      border-left-color: $grey-3
+
+    ul li > a
+      padding:
+        top: 0
+        bottom: 0
+      transition: background-color 0.5s ease
 
   #logo
-    padding-top: 0.7em
-
     img
-      width: 200px
-      height: 30px
+      height: 40px
+      width: 206px
+      position: relative
+      top: -2px
 
     a
-      padding: 0 1em
-
-      @media #{$small}
-        padding: 0 1em 0 0
+      line-height: $topbar-height
+      padding: 0 0.5em 0 1em
 
   a
     font-weight: normal
-    line-height: 1.2em
+    line-height: $topbar-height * 2/3
+
+    @media #{$small}
+      line-height: $topbar-height
 
     &:hover,
     &:active,
@@ -37,7 +45,7 @@
 
     &.main-link
       font-size: 1em
-      padding: 1.16em 1em 1.16em 1em
+      padding: 0 1.5em
 
       &:hover,
       &:active,
@@ -68,14 +76,28 @@
         border: inset 5px
         border-color: transparent $grey-3 transparent transparent
         position: absolute
-        top: 9px
+        top: 16px
         left: 15px
 
+  #formerly-cp
+    vertical-align: text-top
+    display: none
+    padding-right: 1.5em
+
+    a
+      line-height: inherit
+      color: $grey-5
+
+    img
+      width: 100px
+      position: relative
+      top: -1px
+
+    @media #{$small}
+      display: inline
+
   .tiny
-    position: absolute
     font-size: 0.7em
-    bottom: 15px
-    right: 38px
 
   .logged-out,
   .dropdown
@@ -85,6 +107,13 @@
   .dropdown
     background: white
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
+
+    li a
+      line-height: $topbar-height * 2/3
+
+      padding:
+        top: 0
+        bottom: 0
 
     .label
       margin-left: 0.5em
@@ -97,37 +126,36 @@
     float: left
     margin-right: 1em
 
-  a
-    &.user
-      padding: 1.16em 1em 1.16em 1em
-
   @media #{$small}
-    .top-bar-section .has-dropdown
+    .top-bar-section
+      & > ul > .divider
+        border-color: transparent
 
-      &.hover .user
-        color: $dark-primary
+      .has-dropdown
 
-      & > a:after
-        border-top-color: $grey-3
-        border-left-color: transparent
+        &.hover .user
+          color: $dark-primary
 
-    .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after
-      content: ""
-      border: inset 5px
-      border-color: transparent transparent transparent $grey-3
-      border-left-style: solid
-      top: 18px
-      right: 0
+        & > a:after
+          border-top-color: $grey-3
+          border-left-color: transparent
+
+      .dropdown
+        li
+          &.has-dropdown > a:after
+            content: ""
+            border: inset 5px
+            border-color: transparent transparent transparent $grey-3
+            border-left-style: solid
+            top: 18px
+            right: 0
+
+
 
     .tiny
       bottom: -15px
 
     a
-      padding: 0.61em 1em
-
-      &.user
-        padding: 1.16em 1em 0.75em 1em
-
       img.user-avatar
         display: inline-block !important
         margin-right: 0.6em
@@ -144,9 +172,6 @@
     #masqueradee
       margin: 12px 0
       top: 0
-
-    .logged-out a
-      padding: 1.35em 1em
 
 .ui-autocomplete
   max-width: 300px
