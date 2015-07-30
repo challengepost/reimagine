@@ -1,0 +1,17 @@
+// Headings only
+
+@font-face {
+  font-family: 'ClearSans';
+  font-style: normal;
+  font-weight: 600;
+  src: font-url('reimagine2/clearsans/ClearSans-Bold.woff') format('woff'),
+       font-url('reimagine2/clearsans/ClearSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ClearSans';
+  font-style: italic;
+  font-weight: 600;
+  src: font-url('reimagine2/clearsans/ClearSans-BoldItalic.woff') format('woff'),
+       font-url('reimagine2/clearsans/ClearSans-BoldItalic.ttf') format('truetype');
+}
