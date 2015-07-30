@@ -871,22 +871,22 @@ $pagination-li-font-size: emCalc(16);
 // We use these for the pagination anchor links
 
 // $pagination-link-pad: emCalc(1, 7, 1);
-$pagination-link-font-color: #1194d5;
-$pagination-link-active-bg: white;
+$pagination-link-font-color: $anchor-font-color;
+$pagination-link-active-bg: transparent;
 
 // We use these for disabled anchor links
 
 // $pagination-link-unavailable-cursor: default;
-// $pagination-link-unavailable-font-color: #999;
+$pagination-link-unavailable-font-color: $grey-4;
 // $pagination-link-unavailable-bg-active: transparent;
 
 // We use these for currently selected anchor links
 
-$pagination-link-current-background: white;
+$pagination-link-current-background: transparent;
 $pagination-link-current-font-color: black;
 $pagination-link-current-font-weight: bold;
 $pagination-link-current-cursor: default;
-$pagination-link-current-active-bg: $primary-color;
+$pagination-link-current-active-bg: transparent;
 
 //
 // Panel Variables
