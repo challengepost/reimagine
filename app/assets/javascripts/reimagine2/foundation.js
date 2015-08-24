@@ -9,3 +9,4 @@
 //= require foundation/foundation.tooltips
 //= require foundation/foundation.dropdown
 //= require foundation/foundation.section
+//= require foundation/foundation.clearing
