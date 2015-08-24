@@ -128,12 +128,13 @@ $global-rounded: 1000px;
 
 // Media Queries
 
-$small-screen: 768px;
+$small-screen: 768;
 $medium-screen: 1280px;
 $large-screen: 1440px;
 
 $screen: "only screen";
-$small: "only screen and (min-width: #{$small-screen})";
+$below-small: "only screen and (max-width: #{$small-screen - 1}px)";
+$small: "only screen and (min-width: #{$small-screen}px)";
 $medium: "only screen and (min-width: #{$medium-screen})";
 $large: "only screen and (min-width: #{$large-screen})";
 $landscape: "only screen and (orientation: landscape)";
