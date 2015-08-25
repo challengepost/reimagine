@@ -1,0 +1,62 @@
+@import 'reimagine2/mixins/flex'
+
+.align-bottom
+  +align-bottom
+
+.align-center
+  +align-center
+
+.align-baseline
+  +align-baseline
+
+.align-stretch
+  +align-stretch
+
+.align-bottom-small
+  @media #{$small}
+    +align-bottom
+
+.align-center-small
+  @media #{$small}
+    +align-center
+
+.align-baseline-small
+  @media #{$small}
+    +align-baseline
+
+.align-stretch-small
+  @media #{$small}
+    +align-stretch
+
+.flex-column
+  -ms-flex-direction: column
+  -webkit-flex-direction: column
+  flex-direction: column
+
+.justify-center
+  -ms-flex-pack: center
+  -webkit-justify-content: center
+  justify-content: center
+
+.stretch-input
+  @media #{$small}
+    +display-flex
+
+    label
+      -ms-flex: 0 0 auto
+      -webkit-flex: 0 0 auto
+      flex: 0 0 auto
+
+  .inline-input
+    margin: 0
+
+    @media #{$small}
+      -ms-flex: 1
+      -webkit-flex: 1
+      flex: 1
+
+      margin: 0 0 0 1em
+
+.right-small
+  @media #{$small}
+    float: right

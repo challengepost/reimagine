@@ -1,0 +1,38 @@
+=display-flex
+  display: -ms-flexbox !important
+  display: -webkit-flex !important
+  display: flex !important
+
+=align-bottom
+  +display-flex
+  -ms-flex-align: end !important
+  -webkit-align-items: flex-end !important
+  align-items: flex-end !important
+
+  .button
+    margin-bottom: 0 !important
+
+=align-center
+  +display-flex
+  -ms-flex-align: center !important
+  -webkit-align-items: center !important
+  align-items: center !important
+
+=align-baseline
+  +display-flex
+  -ms-flex-align: baseline !important
+  -webkit-align-items: baseline !important
+  align-items: baseline !important
+
+=align-stretch
+  &, & .columns
+    +display-flex
+
+    -ms-flex-align: stretch !important
+    -webkit-align-items: stretch !important
+    align-items: stretch !important
+
+    & > *
+      height: auto !important
+      margin-top: 0 !important
+      margin-bottom: 0 !important

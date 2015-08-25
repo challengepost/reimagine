@@ -3,6 +3,8 @@
 // Instead of a flag background color, we use a sublte gradient
 // The colors are based on the $primary-color
 
+@import 'reimagine2/mixins/flex'
+
 @media only screen
   button, .button
     @include single-transition(all, 200ms)
@@ -71,6 +73,32 @@ button, .button
     padding: 0
     text-decoration: $anchor-text-decoration
     border: 0
+
+  &.flat
+    border-bottom: 0
+
+    &:active
+      border-top: 0
+
+.attachable
+  width: 100%
+  +display-flex
+
+  .attachable-base
+    -ms-flex: 1
+    -webkit-flex: 1
+    flex: 1
+
+  .attach-on-right
+    -ms-flex: 0 1 auto
+    -webkit-flex: 0 1 auto
+    flex: 0 1 auto
+
+  button.attach-on-right
+    margin-left: -2px
+    margin-bottom: 0
+    padding-top: 0.5em
+    padding-bottom: 0.5em
 
 .button-size
   @include button-size
