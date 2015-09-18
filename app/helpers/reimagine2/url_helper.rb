@@ -19,6 +19,5 @@ module Reimagine2
     def reimagine_post_url(opts = {})
       reimagine_url(opts.merge(host: Reimagine2.configuration.post_host))
     end
-
   end
 end
