@@ -126,13 +126,14 @@
     float: left
     margin-right: 1em
 
-  @media #{$small}
+  @media #{$medium}
     .top-bar-section
       & > ul > .divider
         border-color: transparent
 
+  @media #{$small}
+    .top-bar-section
       .has-dropdown
-
         &.hover .user
           color: $dark-primary
 
