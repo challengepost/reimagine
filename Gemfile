@@ -11,6 +11,12 @@ gem "jquery-rails"
 gem 'rails', '~> 3.2'
 gem 'foreman'
 gem 'thin'
+
+group :development, :test do
+  gem 'pry-debugger', :platform => :ruby_19
+  gem 'pry-byebug', :platform => :ruby_21
+end
+
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
 # Git. Remember to move these dependencies to your gemspec before releasing
