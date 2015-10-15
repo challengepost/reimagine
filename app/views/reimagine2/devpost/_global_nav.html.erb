@@ -1,29 +1,5 @@
 <header id="global-nav">
-  <div class="contain-to-grid">
-    <nav class="top-bar" data-options="is_hover:false" data-topbar>
-      <ul class="title-area">
-        <li class="name">
-          <span id="logo">
-            <%= link_to reimagine_root_url do %>
-              <%= image_tag "reimagine2/devpost_logo.svg", alt: "Devpost" %>
-            <% end %>
-          </span>
-
-          <%= render "reimagine2/devpost/global_nav/formerly_cp" %>
-        </li>
-
-        <li class="toggle-topbar menu-icon" tabindex="0">
-          <a href="#" aria-labelledby="global-nav-toggle-user-menu">
-            <span></span>
-            <span class="visually-hidden" id="global-nav-toggle-user-menu">Toggles the global navigation menu</span>
-          </a>
-        </li>
-      </ul>
-
-      <section class="top-bar-section">
-        <%= render 'reimagine2/devpost/global_nav/world' %>
-        <%= render 'reimagine2/devpost/global_nav/account' %>
-      </section>
-    </nav>
-  </div>
+  <%= render "reimagine2/devpost/global_nav_mobile" %>
+  <%= render "reimagine2/devpost/global_nav_desktop" %>
 </header>
+
