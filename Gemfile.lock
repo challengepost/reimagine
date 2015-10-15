@@ -181,7 +181,7 @@ DEPENDENCIES
   launchy
   pry
   pry-byebug
-  pry-remote
+  pry-debugger
   rails (~> 3.2)
   reimagine2!
   rspec-rails (~> 2.0)
