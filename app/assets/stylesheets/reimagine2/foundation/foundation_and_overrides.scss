@@ -87,7 +87,8 @@ $column-gutter: rem-calc(30);
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: "Helvetica Neue", sans-serif;
+$custom-font-family-sans-serif: "ClearSans", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -125,8 +126,8 @@ $secondary-color: #e7e7e7;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-font-color: $grey-5;
+$body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -210,7 +211,7 @@ $secondary-color: #e7e7e7;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: $custom-font-family-sans-serif;
 $header-font-weight: $font-weight-bold;
 // $header-font-style: normal;
 $header-font-color: $dark;
@@ -450,7 +451,7 @@ $button-lrg: rem-calc(14);
 // $button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
-// $button-font-family: $body-font-family;
+$button-font-family: $custom-font-family-sans-serif;
 // $button-font-color: $white;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
