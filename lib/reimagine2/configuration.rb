@@ -3,15 +3,15 @@ module Reimagine2
     attr_accessor :root_host, :post_host, :help_host
 
     def root_host
-      @root_host || 'challengepost.com'
+      @root_host || 'devpost.com'
     end
 
     def post_host
-      @post_host || 'post.challengepost.com'
+      @post_host || 'post.devpost.com'
     end
 
     def help_host
-      @help_host || 'help.challengepost.com'
+      @help_host || 'help.devpost.com'
     end
 
   end
