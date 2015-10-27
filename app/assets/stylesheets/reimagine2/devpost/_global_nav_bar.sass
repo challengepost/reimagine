@@ -1,3 +1,5 @@
+$topbar-height-small: 50px
+
 #global-nav
   background: white
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
@@ -27,8 +29,8 @@
       top: -2px
 
     a
-      line-height: $topbar-height
-      padding: 0 0.5em 0 1em
+      display: inline
+      padding-right: $column-gutter / 3
 
   a
     font-weight: normal
@@ -174,28 +176,30 @@
   & > .hide-for-large-up
     a
       font-size: 0.875em
-      line-height: 50px
+      line-height: $topbar-height-small
       padding: 0 0.5em
 
     .name
-      height: 50px
       float: left
+      height: $topbar-height-small
 
     .top-bar
-      height: 50px
-      line-height: 50px
+      height: $topbar-height-small
+      line-height: $topbar-height-small
 
       &.expanded
         height: auto
 
     #logo
+      line-height: $topbar-height-small
+
       a
         padding: 0 0.4em
-        height: 50px
-        line-height: 50px
+        height: $topbar-height-small
+        line-height: $topbar-height-small
 
       img
-        height: 50px
+        height: $topbar-height-small
         width: auto
         position: static
         margin-top: -5px
