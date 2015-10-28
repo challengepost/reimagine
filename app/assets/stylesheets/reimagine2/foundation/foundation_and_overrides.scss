@@ -250,7 +250,7 @@ $small-font-size: 87.5%;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
+$paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
 $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -649,7 +649,7 @@ $button-border-style: solid;
 $form-label-bottom-margin: rem-calc(8px);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: rem-calc(14);
+$input-font-size: $paragraph-font-size;
 $input-placeholder-font-color: $grey-3;
 // $input-bg-color: $white;
 $input-focus-bg-color: white;
@@ -819,7 +819,7 @@ $inline-list-default-float-list-margin: rem-calc(16);
 // $label-radius: $global-radius;
 
 // We use these to style the label text
-// $label-font-sizing: rem-calc(11);
+$label-font-sizing: $paragraph-font-size;
 // $label-font-weight: $font-weight-normal;
 // $label-font-color: $oil;
 // $label-font-color-alt: $white;
