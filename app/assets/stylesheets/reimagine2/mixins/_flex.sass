@@ -3,6 +3,17 @@
   display: -webkit-flex !important
   display: flex !important
 
+=flex-flow($values: (row nowrap))
+  -webkit-flex-flow: $values
+  -moz-flex-flow: $values
+  -ms-flex-flow: $values
+  flex-flow: $values
+
+=justify-content($value: flex-start)
+  -webkit-justify-content: $value
+  -moz-justify-content: $value
+  justify-content: $value
+
 =align-bottom
   +display-flex
   -ms-flex-align: end !important
