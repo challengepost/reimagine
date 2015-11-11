@@ -3,13 +3,17 @@
     <ul class="title-area">
       <li class="name">
         <%= render "reimagine2/devpost/global_nav/logo",
-          path: "reimagine2/devpost-icon.svg"  %>
-
+          path: "reimagine2/devpost-icon.svg",
+          presenter: presenter %>
       </li>
+
+      <%= render "reimagine2/devpost/global_nav/mobile/logged_in_account", presenter: presenter %>
+      <%= render "reimagine2/devpost/global_nav/mobile/world", presenter: presenter %>
+      <%= render "reimagine2/devpost/global_nav/mobile/logged_out_account", presenter: presenter %>
     </ul>
 
     <section class="top-bar-section">
-      <%= render "reimagine2/devpost/global_nav/world", mobile: true %>
+      <%= render 'reimagine2/devpost/global_nav/mobile/logged_in_menu', presenter: presenter %>
     </section>
   </nav>
 </div>

@@ -1,15 +1,14 @@
-<% mobile ||= false %>
 <ul class="left">
   <li>
     <%= link_to reimagine_root_url(path: "/software"), class: "main-link" do %>
-      <%= mobile ? "Projects" : "Explore projects" %>
+      Projects
     <% end %>
   </li>
 
   <li>
     <%= link_to reimagine_root_url(path: "/hackathons"),
         class: "main-link" do %>
-      <%= mobile ? "Hackathons" : "Find a hackathon" %>
+      Hackathons
     <% end %>
   </li>
 </ul>

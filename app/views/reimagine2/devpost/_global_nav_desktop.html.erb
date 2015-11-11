@@ -2,14 +2,13 @@
   <nav class="top-bar" data-options="is_hover:false" data-topbar>
     <ul class="title-area">
       <li class="name">
-        <%= render "reimagine2/devpost/global_nav/logo" %>
-        <%= render "reimagine2/devpost/global_nav/formerly_cp" %>
+        <%= render "reimagine2/devpost/global_nav/logo", presenter: presenter %>
       </li>
     </ul>
 
     <section class="top-bar-section">
-      <%= render 'reimagine2/devpost/global_nav/world' %>
-      <%= render 'reimagine2/devpost/global_nav/account' %>
+      <%= render 'reimagine2/devpost/global_nav/world', presenter: presenter %>
+      <%= render 'reimagine2/devpost/global_nav/account', presenter: presenter %>
     </section>
   </nav>
 </div>
