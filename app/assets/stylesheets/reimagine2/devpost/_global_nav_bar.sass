@@ -43,6 +43,9 @@
       strong
         color: $dark-primary
 
+      .alpha
+        background-color: $grey-2
+
     img.user-avatar
       max-width: 25px
       max-height: 25px
@@ -58,6 +61,13 @@
 
       strong
         display: inline
+
+  .alpha
+    display: none
+    letter-spacing: 1px
+
+    @media #{$medium}
+      display: inline-block
 
   // Back button on mobile
   h5
@@ -82,12 +92,6 @@
         position: absolute
         top: 16px
         left: 15px
-
-  .alpha
-    display: none
-
-    @media #{$medium}
-      display: inline-block
 
   .tiny
     font-size: 0.7em
