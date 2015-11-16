@@ -65,8 +65,9 @@
   .alpha
     display: none
     letter-spacing: 1px
-    background: $grey-1
+    background-color: $grey-1
     color: $topbar-link-color
+    @include single-transition(background-color, 0.2s)
 
     @media #{$medium}
       display: inline-block
