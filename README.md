@@ -1,5 +1,5 @@
-## ChallengePost Style Guide
+## Devpost Style Guide
 
-Check it out at http://styleguide.challengepost.com
+Check it out at http://styleguide.devpost.com
 
-Developer at ChallengePost? Check out our wiki docs for more info.
+Developer at Devpost? Check out our wiki docs for more info.
