@@ -67,6 +67,9 @@ $topbar-height-small: 50px
   .alpha
     display: none
     letter-spacing: 1px
+    background-color: $grey-1
+    color: $topbar-link-color
+    @include single-transition(background-color, 0.2s)
 
     @media #{$medium}
       display: inline-block
@@ -178,10 +181,14 @@ $topbar-height-small: 50px
 
     .name
       height: $topbar-height-small
+      float: left
 
     .top-bar
       height: $topbar-height-small
       line-height: $topbar-height-small
+
+      &.expanded
+        height: auto
 
     #logo
       line-height: $topbar-height-small
@@ -197,6 +204,34 @@ $topbar-height-small: 50px
         position: static
         margin-top: -5px
         padding: 10px 0
+
+    .toggle-topbar
+      float: right !important
+      margin-right: 10px
+
+      a
+        height: 50px
+
+      > a::after
+        border-left-color: transparent
+        border-top-color: #c7c6c5
+        border-top-style: solid
+        margin: 0
+
+    .user-avatar
+      margin-right: 10px
+
+    .title-area
+      width: 100%
+
+      li, ul
+        float: left
+
+      .logged-out
+        width: auto
+
+        li
+          float: right
 
 .ui-autocomplete
   max-width: 300px
