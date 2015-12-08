@@ -642,14 +642,14 @@ $button-border-style: solid;
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
 $form-label-font-size: $paragraph-font-size;
-$form-label-font-weight: $font-weight-bold;
+// $form-label-font-weight: $font-weight-normal;
 // $form-label-line-height: 1.5;
 // $form-label-font-color: scale-color($black, $lightness: 30%);
 // $form-label-small-transform: capitalize;
-$form-label-bottom-margin: rem-calc(4px);
+$form-label-bottom-margin: rem-calc(8px);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-$input-font-size: em-calc(16);
+$input-font-size: $paragraph-font-size;
 $input-placeholder-font-color: $grey-3;
 // $input-bg-color: $white;
 $input-focus-bg-color: white;
@@ -738,7 +738,7 @@ $input-box-shadow: none;
 // We use this to control the margins and padding of the inline list.
 // $inline-list-top-margin: 0;
 // $inline-list-opposite-margin: 0;
-$inline-list-bottom-margin: rem-calc(0);
+// $inline-list-bottom-margin: rem-calc(17);
 $inline-list-default-float-margin: rem-calc(-16);
 $inline-list-default-float-list-margin: rem-calc(16);
 
