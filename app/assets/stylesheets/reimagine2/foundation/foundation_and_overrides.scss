@@ -641,15 +641,15 @@ $button-border-style: solid;
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
-$form-label-font-size: $paragraph-font-size;
-// $form-label-font-weight: $font-weight-normal;
+$form-label-font-size: em-calc(16px);
+$form-label-font-weight: $font-weight-bold;
 // $form-label-line-height: 1.5;
 // $form-label-font-color: scale-color($black, $lightness: 30%);
 // $form-label-small-transform: capitalize;
-$form-label-bottom-margin: rem-calc(8px);
+$form-label-bottom-margin: rem-calc(4px);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-$input-font-size: $paragraph-font-size;
+$input-font-size: em-calc(16px);
 $input-placeholder-font-color: $grey-3;
 // $input-bg-color: $white;
 $input-focus-bg-color: white;
