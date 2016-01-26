@@ -5,7 +5,8 @@ module Reimagine2
       :post_host,
       :help_host,
       :new_user_session_url,
-      :new_user_registration_url
+      :new_user_registration_url,
+      :ssl_enabled
 
     def root_host
       @root_host || 'devpost.com'
@@ -24,11 +25,17 @@ module Reimagine2
     end
 
     def new_user_session_url
-      @new_user_session_url || URI::HTTPS.build(host: secure_root_host, path: "/users/login")
+      @new_user_session_url || uri_class.build(host: secure_root_host, path: "/users/login")
     end
 
     def new_user_registration_url
-      @new_user_session_url || URI::HTTPS.build(host: secure_root_host, path: "/users/register")
+      @new_user_registration_url || uri_class.build(host: secure_root_host, path: "/users/register")
+    end
+
+    private
+
+    def uri_class
+      ssl_enabled ? URI::HTTPS : URI::HTTP
     end
   end
 end
