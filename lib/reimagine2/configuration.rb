@@ -6,6 +6,7 @@ module Reimagine2
       :help_host,
       :new_user_session_url,
       :new_user_registration_url,
+      :destroy_user_session_url,
       :ssl_enabled
 
     def root_host
@@ -30,6 +31,10 @@ module Reimagine2
 
     def new_user_registration_url
       @new_user_registration_url || uri_class.build(host: secure_root_host, path: "/users/register")
+    end
+
+    def destroy_user_session_url
+      @destroy_user_session_url || uri_class.build(host: secure_root_host, path: "/users/logout")
     end
 
     private
