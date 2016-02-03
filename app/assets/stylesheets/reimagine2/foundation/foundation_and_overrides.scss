@@ -1425,7 +1425,7 @@ $topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 $topbar-link-bg-hover: $grey-1;
-// $topbar-link-bg-color-hover: $charcoal;
+$topbar-link-bg-color-hover: $grey-1;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
@@ -1439,9 +1439,9 @@ $topbar-link-padding: rem-calc(22);
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: white;
 $topbar-dropdown-link-color: $primary-color;
-// $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
+$topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 $topbar-dropdown-link-bg: white;
-// $topbar-dropdown-link-bg-hover: $jet;
+$topbar-dropdown-link-bg-hover: $grey-1;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 $topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: $dark-primary;
