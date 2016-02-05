@@ -119,7 +119,7 @@ $font-weight-bold: bold;
 // We use these as default colors throughout
 $primary-color: $primary-1;
 $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
+$alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
@@ -690,11 +690,11 @@ $input-box-shadow: none;
 // We use these to style the error states for inputs and labels
 // $input-error-message-padding: rem-calc(6 9 9);
 // $input-error-message-top: -1px;
-// $input-error-message-font-size: rem-calc(12);
+$input-error-message-font-size: $paragraph-font-size;
 // $input-error-message-font-weight: $font-weight-normal;
 // $input-error-message-font-style: italic;
-// $input-error-message-font-color: $white;
-// $input-error-message-bg-color: $alert-color;
+$input-error-message-font-color: $alert-color;
+$input-error-message-bg-color: transparent;
 // $input-error-message-font-color-alt: $oil;
 
 // We use this to style the glowing effect of inputs when focused
