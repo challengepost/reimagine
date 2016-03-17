@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    reimagine2 (2.0.56)
+    reimagine2 (2.0.58)
       coffee-rails
       compass-rails (= 2.0.4)
       foundation-rails (~> 5.5)
@@ -83,7 +83,6 @@ GEM
       compass (~> 1.0.0)
       sass-rails (<= 5.0.1)
       sprockets (< 2.13)
-    concurrent-ruby (1.0.1)
     daemons (1.2.3)
     debugger (1.6.8)
       columnize (>= 0.3.1)
