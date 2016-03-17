@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    reimagine2 (2.0.58)
+    reimagine2 (2.0.59)
       coffee-rails
       compass-rails (= 2.0.4)
       foundation-rails (~> 5.5)
