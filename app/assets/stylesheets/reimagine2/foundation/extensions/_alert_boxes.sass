@@ -8,13 +8,22 @@
       opacity: 0.7
   &.success
     background-color: $success-color
-    color: white
+    color: $secondary-4
+
+    a.close
+      color: $secondary-4
   &.notice
     background-color: $info-color
-    color: white
+    color: $primary-4
+
+    a.close
+      color: $primary-4
   &.alert
-    background-color: $alert-color
-    color: white
+    background-color: $warning-color
+    color: $error-2
+
+    a.close
+      color: $error-2
 
   &.notice,
   &.success
