@@ -120,9 +120,9 @@ $font-weight-bold: bold;
 $primary-color: $primary-1;
 $secondary-color: #e7e7e7;
 $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$success-color: $secondary-5;
+$warning-color: $error-3;
+$info-color: $primary-5;
 
 // We use these to control various global styles
 // $body-bg: $white;
