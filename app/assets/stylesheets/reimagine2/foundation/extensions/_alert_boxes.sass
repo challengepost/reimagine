@@ -7,14 +7,23 @@
       text-decoration: none
       opacity: 0.7
   &.success
-    background-color: $success-background-color
-    color: $success-font-color
+    background-color: $success-color
+    color: $secondary-4
+
+    a.close
+      color: $secondary-4
   &.notice
-    background-color: $notice-background-color
-    color: $notice-font-color
+    background-color: $info-color
+    color: $primary-4
+
+    a.close
+      color: $primary-4
   &.alert
-    background-color: $alert-background-color
-    color: $alert-font-color
+    background-color: $warning-color
+    color: $error-2
+
+    a.close
+      color: $error-2
 
   &.notice,
   &.success
