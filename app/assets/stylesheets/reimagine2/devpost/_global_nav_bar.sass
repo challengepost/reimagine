@@ -12,19 +12,26 @@ $topbar-height-small: 50px
       border-top-color: transparent
       border-left-color: $grey-3
 
+    .logged-out
+      li.show-for-medium-up
+        margin-right: 1em
+
     ul li > a
       padding:
         top: 0
         bottom: 0
       transition: background-color 0.2s ease
 
+      &.button
+        @extend .button
+
   .name
     float: left
 
   #logo
     img
-      height: 40px
-      width: 206px
+      height: 36px
+      width: 185px
       position: relative
       top: -2px
 
@@ -49,8 +56,8 @@ $topbar-height-small: 50px
         background-color: $grey-2
 
     img.user-avatar
-      max-width: 25px
-      max-height: 25px
+      max-width: 28px
+      max-height: 28px
 
     &.main-link
       font-size: 1em
@@ -73,6 +80,12 @@ $topbar-height-small: 50px
 
     @media #{$medium}
       display: inline-block
+
+  .youtube-icon
+    color: $grey-2
+
+    @media #{$small-only}
+      display: none
 
   // Back button on mobile
   h5
@@ -230,8 +243,8 @@ $topbar-height-small: 50px
       .logged-out
         width: auto
 
-        li
-          float: right
+        ul
+          line-height: 0
 
 .ui-autocomplete
   max-width: 300px
