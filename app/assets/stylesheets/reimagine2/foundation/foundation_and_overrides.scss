@@ -271,7 +271,7 @@ $paragraph-margin-bottom: rem-calc(20);
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
+$anchor-font-color: $primary-color;
 // $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 
 // We use these to style the <hr> element
@@ -969,7 +969,7 @@ $label-font-sizing: $paragraph-font-size;
 
 // We use these for the pagination anchor links
 // $pagination-link-pad: rem-calc(1 10 1);
-// $pagination-link-font-color: $aluminum;
+$pagination-link-font-color: $anchor-font-color;
 // $pagination-link-active-bg: scale-color($white, $lightness: -10%);
 
 // We use these for disabled anchor links
@@ -983,6 +983,7 @@ $label-font-sizing: $paragraph-font-size;
 // $pagination-link-current-font-weight: $font-weight-bold;
 // $pagination-link-current-cursor: default;
 // $pagination-link-current-active-bg: $primary-color;
+
 
 // 21. Panels
 // - - - - - - - - - - - - - - - - - - - - - - - - -
