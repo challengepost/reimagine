@@ -4,28 +4,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Reimagine2</title>
+    <title>Styleguide</title>
 
     <%= stylesheet_link_tag 'reimagine2' %>
     <%= stylesheet_link_tag 'application' %>
   </head>
 <body class="foundation-grid">
-  <section class="row">
-    <ul class="no-bullet inline-list">
-      <li class="button secondary"><a href="/buttons">Buttons</a></li>
-      <li class="button secondary"><a href="/forms">Forms</a></li>
-      <li class="button secondary"><a href="/type">Typography</a></li>
-      <li class="button secondary"><a href="/tabs">Tabs</a></li>
-      <li class="button secondary"><a href="/pagination">Pagination</a></li>
-      <li class="button secondary"><a href="/doc1" target="_blank">SS Standard</a></li>
-      <li class="button secondary"><a href="/doc2" target="_blank">SS Social</a></li>
-      <li class="button secondary"><a href="http://foundation.zurb.com/docs/" target="_blank">Zurb Foundation</a></li>
-    </ul>
+  <section class="large-10 push-2 columns">
+    <%= yield %>
   </section>
 
-  <div class="main">
-    <%= yield %>
-  </div>
+  <%= render 'navigation' %>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="javascripts/main.js"></script>
