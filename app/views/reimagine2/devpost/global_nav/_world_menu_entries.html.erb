@@ -1,8 +1,8 @@
 <li>
-  <%= link_to reimagine_root_url(path: "/software"),
+  <%= link_to reimagine_root_url(path: "/teams"),
         class: "main-link",
-        data: { role: "discover" } do %>
-    Projects
+        data: { role: "teams" } do %>
+    Jobs <span class="label all-caps small alpha">nyc</span>
   <% end %>
 </li>
 
@@ -11,13 +11,5 @@
         class: "main-link",
         data: { role: "discover" } do %>
     Hackathons
-  <% end %>
-</li>
-
-<li>
-  <%= link_to reimagine_root_url(path: "/teams"),
-        class: "main-link",
-        data: { role: "teams" } do %>
-    Jobs <span class="label all-caps small alpha">nyc</span>
   <% end %>
 </li>
