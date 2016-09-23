@@ -11,6 +11,9 @@ gem "jquery-rails"
 gem 'rails', '~> 4.2'
 gem 'foreman'
 gem 'thin'
+# for markdown
+gem 'redcarpet', '~> 3.3'
+
 
 group :development, :test do
   gem 'pry-debugger', :platform => :ruby_19
