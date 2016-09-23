@@ -23,7 +23,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sass-rails"
   spec.add_dependency "compass-rails"
   spec.add_dependency "coffee-rails"
-  spec.add_dependency "zurb-foundation", "~> 4"
+  spec.add_dependency "zurb-foundation", "~> 4.0"
+  spec.add_dependency "addressable", "~> 2.4"
 
   spec.add_development_dependency "rspec-rails", '~> 2.0'
   spec.add_development_dependency "steak"
