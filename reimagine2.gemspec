@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "compass-rails", "2.0.4"
   spec.add_dependency "coffee-rails"
   spec.add_dependency "foundation-rails", "~> 5.5"
+  spec.add_dependency "addressable", "~> 2.4"
 
   spec.add_development_dependency "rspec-rails", '~> 2.0'
   spec.add_development_dependency "steak"
