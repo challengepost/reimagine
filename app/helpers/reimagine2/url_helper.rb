@@ -1,3 +1,5 @@
+require "addressable/uri"
+
 module Reimagine2
   module UrlHelper
 
