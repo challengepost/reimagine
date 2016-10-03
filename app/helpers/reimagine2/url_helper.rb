@@ -22,7 +22,7 @@ module Reimagine2
       reimagine_url(opts.merge(host: Reimagine2.configuration.post_host))
     end
 
-    def secure_new_user_session_url(options)
+    def secure_new_user_session_url(options = {})
       original_url = Addressable::URI.parse(request.original_url)
       original_url.host = Figleaf::Settings.domain.root
       options.reverse_merge!(return_to: original_url.to_s)
