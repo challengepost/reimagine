@@ -22,16 +22,19 @@ module Reimagine2
       reimagine_url(opts.merge(host: Reimagine2.configuration.post_host))
     end
 
-    def secure_new_user_session_url(options)
-      options.reverse_merge!(return_to: request.original_url)
+    def secure_new_user_session_url(options = {})
+      original_url = Addressable::URI.parse(request.original_url)
+      original_url.host = Figleaf::Settings.domain.root
+      options.reverse_merge!(return_to: original_url.to_s)
       "#{Reimagine2.configuration.new_user_session_url}?#{options.to_query}"
     end
 
     def secure_new_user_registration_url(options = {})
       original_url = Addressable::URI.parse(request.original_url)
+      original_url.host = Figleaf::Settings.domain.root
       # letting know from where you're coming from at sign-up/in
       original_utms = (original_url.query_values || {}).slice("ref_content", "ref_medium", "ref_feature")
-      options.reverse_merge!(return_to: request.original_url).reverse_merge!(original_utms)
+      options.reverse_merge!(return_to: original_url.to_s).reverse_merge!(original_utms)
       "#{Reimagine2.configuration.new_user_registration_url}?#{options.to_query}"
     end
 
