@@ -1,2 +1,6 @@
 <% presenter = local_assigns[:presenter] %>
-<header> KJSFLKB???????? <header>
+
+<header id="global-nav">
+  <%= render "reimagine2/devpost/global_nav_mobile", presenter: presenter %>
+  <%= render "reimagine2/devpost/global_nav_desktop", presenter: presenter %>
+</header>
