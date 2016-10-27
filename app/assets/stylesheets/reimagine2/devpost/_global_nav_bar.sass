@@ -72,7 +72,7 @@
   .alpha
     display: none
     letter-spacing: 1px
-    background-color: $grey-1
+    background-color: rgba(199, 198, 197, 0.5)
     color: $topbar-link-color
     @include single-transition(background-color, 0.2s)
 
@@ -81,11 +81,11 @@
 
   .youtube-icon
     color: $grey-3
-    visibility: hidden
+    display: none
     vertical-align: middle
 
     @media #{$medium}
-      visibility: visible
+      display: inline
 
   // Back button on mobile
   h5
