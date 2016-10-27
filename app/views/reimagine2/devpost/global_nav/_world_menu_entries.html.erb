@@ -7,6 +7,14 @@
 </li>
 
 <li>
+  <%= link_to reimagine_root_url(path: "/thecommit"),
+        class: "main-link",
+        data: { role: "thecommit" } do %>
+    The Commit <span class="fa fa-youtube youtube-icon"></span>
+  <% end %>
+</li>
+
+<li>
   <%= link_to reimagine_root_url(path: "/hackathons"),
         class: "main-link",
         data: { role: "discover" } do %>
