@@ -218,11 +218,15 @@
 
     .toggle-topbar
       float: right !important
+      @media (max-width: 329px)
+        margin-right: 5px
       @media (min-width: 330px)
         margin-right: 10px
 
       a
         height: 50px
+        @media (max-width: 329px)
+          padding: 0 0.25em
 
       > a::after
         border-left-color: transparent
