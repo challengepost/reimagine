@@ -1,8 +1,16 @@
 <li>
-  <%= link_to reimagine_root_url(path: "/software"),
+  <%= link_to reimagine_root_url(path: "/teams"),
         class: "main-link",
-        data: { role: "discover" } do %>
-    Projects
+        data: { role: "teams" } do %>
+    Jobs <span class="label all-caps small alpha">nyc</span>
+  <% end %>
+</li>
+
+<li>
+  <%= link_to reimagine_root_url(path: "/thecommit"),
+        class: "main-link",
+        data: { role: "thecommit" } do %>
+    The Commit <span class="ss-icon ss-social-regular ss-youtube youtube-icon"></span>
   <% end %>
 </li>
 
@@ -11,13 +19,5 @@
         class: "main-link",
         data: { role: "discover" } do %>
     Hackathons
-  <% end %>
-</li>
-
-<li>
-  <%= link_to reimagine_root_url(path: "/teams"),
-        class: "main-link",
-        data: { role: "teams" } do %>
-    Jobs <span class="label all-caps small alpha">nyc</span>
   <% end %>
 </li>
