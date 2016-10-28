@@ -54,8 +54,12 @@
         background-color: $grey-2
 
     img.user-avatar
-      max-width: 28px
-      max-height: 28px
+      @media (max-width: 329px)
+        max-width: 25px
+        max-height: 25px
+      @media (min-width: 330px)
+        max-width: 28px
+        max-height: 28px
 
     &.main-link
       font-size: 1em
