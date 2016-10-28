@@ -11,6 +11,10 @@
       border-left-color: $grey-3
 
     .logged-out
+      @media (max-width: 329px)
+        margin-right: 5px
+        a
+          padding: 0
       li.show-for-medium-up
         margin-right: 1em
 
@@ -54,8 +58,12 @@
         background-color: $grey-2
 
     img.user-avatar
-      max-width: 28px
-      max-height: 28px
+      @media (max-width: 329px)
+        max-width: 25px
+        max-height: 25px
+      @media (min-width: 330px)
+        max-width: 28px
+        max-height: 28px
 
     &.main-link
       font-size: 1em
@@ -72,12 +80,20 @@
   .alpha
     display: none
     letter-spacing: 1px
-    background-color: $grey-1
+    background-color: rgba(199, 198, 197, 0.5)
     color: $topbar-link-color
     @include single-transition(background-color, 0.2s)
 
     @media #{$medium}
       display: inline-block
+
+  .youtube-icon
+    color: $grey-3
+    display: none
+    vertical-align: middle
+
+    @media #{$medium}
+      display: inline
 
   // Back button on mobile
   h5
@@ -210,10 +226,15 @@
 
     .toggle-topbar
       float: right !important
-      margin-right: 10px
+      @media (max-width: 329px)
+        margin-right: 5px
+      @media (min-width: 330px)
+        margin-right: 10px
 
       a
         height: 50px
+        @media (max-width: 329px)
+          padding: 0 0.25em
 
       > a::after
         border-left-color: transparent
