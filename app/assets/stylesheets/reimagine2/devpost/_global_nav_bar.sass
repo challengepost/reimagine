@@ -75,12 +75,18 @@ $topbar-height-small: 50px
   .alpha
     display: none
     letter-spacing: 1px
-    background-color: $grey-1
+    background-color: rgba(199, 198, 197, 0.5)
     color: $topbar-link-color
     @include single-transition(background-color, 0.2s)
 
     @media #{$medium}
       display: inline-block
+
+  .youtube-icon
+    color: rgba(199, 198, 197, 0.95)
+
+    @media #{$small-only}
+      display: none
 
   // Back button on mobile
   h5
