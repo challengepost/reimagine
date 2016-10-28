@@ -38,13 +38,16 @@ $topbar-height-small: 50px
     a
       display: inline
       padding-right: $column-gutter / 3
+      max-height: $topbar-height
 
   a
     font-weight: normal
     line-height: $topbar-height * 2/3
+    max-height: $topbar-height * 2/3
 
     @media #{$small}
       line-height: $topbar-height
+      max-height: $topbar-height
 
     &:hover,
     &:active,
