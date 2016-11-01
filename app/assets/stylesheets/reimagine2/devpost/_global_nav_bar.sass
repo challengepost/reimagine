@@ -63,6 +63,11 @@ $topbar-height-small: 50px
       max-height: 28px
       border-radius: 50%
 
+    @media #{$small-only}
+      img.user-avatar
+        max-height: 25px
+        max-width: 25px
+
     &.main-link
       font-size: 1em
       padding: 0 1.5em
@@ -194,7 +199,7 @@ $topbar-height-small: 50px
     a
       font-size: 0.875em
       line-height: $topbar-height-small
-      padding: 0 0.5em
+      padding: 0 0.4em
 
     .name
       height: $topbar-height-small
