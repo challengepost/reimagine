@@ -8,7 +8,7 @@ gemspec
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 5.0.2'
 gem 'foreman'
 gem 'thin'
 # for markdown
