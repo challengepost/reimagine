@@ -4,7 +4,7 @@ PATH
     reimagine2 (2.1.1)
       addressable (~> 2.4)
       coffee-rails
-      compass-rails
+      compass-rails (~> 3.0, >= 3.0.2)
       foundation-rails (~> 6.2)
       rails
       sass-rails
