@@ -7,7 +7,7 @@
     font-size: 1rem
     margin-bottom: 0.5em
 
-    @media #{$medium-up}
+    @include breakpoint(medium up)
       font-size: 1.125rem
 
   a
@@ -16,7 +16,7 @@
     transition: border-bottom-color 0.5s ease
     font-size: .8rem
 
-    @media #{$medium-up}
+    @include breakpoint(medium up)
       font-size: 1rem
 
 
@@ -52,7 +52,7 @@
         text-decoration: none
         opacity: 1
 
-    @media #{$medium-up}
+    @include breakpoint(medium up)
       li
         margin: 0 .4rem
       a
@@ -61,7 +61,7 @@
 #site-footer-legal
   margin-top: 1rem
 
-  @media #{$medium-up}
+  @include breakpoint(medium up)
     margin-top: 2rem
 
     ul

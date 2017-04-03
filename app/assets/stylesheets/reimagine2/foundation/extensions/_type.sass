@@ -9,7 +9,7 @@ ul.no-bullet
   margin-left: 0
 
   &.inline-list
-    margin-#{$default-float}: $inline-list-default-float-margin
+    margin-left: $inline-list-default-float-margin
 
 // do not change font-size line-height etc.
 strong, b, .bold
@@ -28,7 +28,7 @@ h5
 h6
   font-size: $h6-font-size
 
-@media #{$small}
+@include breakpoint(small only)
   h1
     font-size: $h1-font-size
   h2

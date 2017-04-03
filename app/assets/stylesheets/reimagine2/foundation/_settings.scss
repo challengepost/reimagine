@@ -618,3 +618,20 @@ $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
+
+// 38. Devpost
+// -----------
+
+$inline-list-default-float-margin: rem-calc(-16);
+$header-font-color: $dark;
+$header-line-height: 1.4;
+$paragraph-line-height: 1.6;
+$button-function-factor: -20%;
+$input-focus-border-color: $primary-color;
+$column-gutter: rem-calc(30); // use $grid-column-gutter later
+$info-color: $primary-5;
+$progress-bar-border-radius: $global-radius;
+$progress-bar-height: rem-calc(25);
+$topbar-height: rem-calc(62);
+$topbar-link-color: $dark;
+$topbar-link-color-hover: $dark-primary;

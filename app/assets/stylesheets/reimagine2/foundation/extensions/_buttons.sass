@@ -65,22 +65,13 @@ button, .button
       background-color: $grey-5
       border-color: $grey-6
 
-  // custom mix of inline and pre/post fix classes so the button
-  // does not take full width but still has the same height as form elements
-  &.inline-prefix,
-  &.inline-postfix
-    @include button-size
-    @include prefix-postfix-base
-    width: auto
-
   &:disabled,
   &.disabled,
   &[disabled=disabled]
     background-image: none
-    @include button-style(#bfbfbf, $disabled:true)
 
   &.link
-    @include link-colors($anchor-font-color, $hover: $anchor-font-color-hover, $active: $anchor-font-color-hover, $focus: $anchor-font-color-hover)
+    @include link-colors($anchor-color, $hover: $anchor-color-hover, $active: $anchor-color-hover, $focus: $anchor-color-hover)
     @include background(transparent)
     font-weight: inherit
     padding: 0
@@ -112,6 +103,3 @@ button, .button
     margin-bottom: 0
     padding-top: 0.5em
     padding-bottom: 0.5em
-
-.button-size
-  @include button-size

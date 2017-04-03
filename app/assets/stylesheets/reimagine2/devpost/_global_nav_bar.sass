@@ -45,7 +45,7 @@ $topbar-height-small: 50px
     line-height: $topbar-height * 2/3
     max-height: $topbar-height * 2/3
 
-    @media #{$small}
+    @include breakpoint(small only)
       line-height: $topbar-height
       max-height: $topbar-height
 
@@ -87,7 +87,7 @@ $topbar-height-small: 50px
     color: $topbar-link-color
     @include single-transition(background-color, 0.2s)
 
-    @media #{$medium}
+    @include breakpoint(medium up)
       display: inline-block
 
   .youtube-icon
@@ -150,12 +150,12 @@ $topbar-height-small: 50px
     float: left
     margin-right: 1em
 
-  @media #{$medium}
+  @include breakpoint(medium up)
     .top-bar-section
       & > ul > .divider
         border-color: transparent
 
-  @media #{$small}
+  @include breakpoint(small only)
     .top-bar-section
       .has-dropdown
         &.hover .user
