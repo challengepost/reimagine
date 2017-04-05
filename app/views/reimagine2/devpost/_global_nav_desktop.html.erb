@@ -1,4 +1,33 @@
-<div class="contain-to-grid hide-for-small hide-for-medium">
+<div class="top-bar">
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">
+            <%= link_to reimagine_root_url, class: "show-for-large" do %>
+              <%= image_tag "reimagine2/devpost-logo.svg", alt: "Devpost", id: "logo" %>
+            <% end %>
+
+            <%= link_to reimagine_root_url, class: "hide-for-large" do %>
+              <%= image_tag "reimagine2/devpost-icon.svg", alt: "Devpost", id: "logo" %>
+            <% end %>
+          </li>
+          <li>
+            <li><a href="#">Jobs</a></li>
+          </li>
+          <li><a href="#">The Commit <span class="ss-icon ss-social-regular ss-youtube youtube-icon"></span></a></li>
+          <li><a href="#">Hackathons</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <%= render 'reimagine2/devpost/global_nav/account', presenter: presenter %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if false %>
+<div class="contain-to-grid show-for-large">
   <nav class="top-bar" data-topbar>
     <ul class="title-area">
       <li class="name">
@@ -12,3 +41,4 @@
     </section>
   </nav>
 </div>
+<% end %>
