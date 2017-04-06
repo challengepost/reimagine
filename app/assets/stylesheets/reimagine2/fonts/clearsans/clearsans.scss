@@ -15,3 +15,11 @@
   src: font-url('reimagine2/clearsans/ClearSans-BoldItalic.woff') format('woff'),
        font-url('reimagine2/clearsans/ClearSans-BoldItalic.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'ClearSans-Thin';
+    font-style: normal;
+    font-weight: 100;
+    src: font-url('reimagine2/clearsans/ClearSans-Thin.woff') format('woff'),
+         font-url('reimagine2/clearsans/ClearSans-Thin.ttf') format('truetype');
+}
