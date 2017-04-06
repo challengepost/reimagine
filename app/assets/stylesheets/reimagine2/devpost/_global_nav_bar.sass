@@ -38,12 +38,12 @@
 
   .menu:not(.submenu) > li:not(.menu-text) > a
     color: $dark
-    line-height: 50px
+    line-height: rem-calc(50)
     font-size: 0.875rem
 
     @include breakpoint(large up)
       font-size: 1rem
-      line-height: 64px
+      line-height: $topbar-height
       padding: 0 1.5rem
 
     &:hover
@@ -98,4 +98,3 @@
     border-radius: 2px
     color: white
     background: $primary-1
-    font-weight: bold

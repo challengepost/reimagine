@@ -251,7 +251,7 @@ $small-font-size: 87.5%;
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
 $paragraph-font-size: 1rem;
-// $paragraph-line-height: 1.6;
+// $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -283,7 +283,7 @@ $anchor-color: $primary-color;
 // We use these to style lists
 // $list-font-family: $paragraph-font-family;
 // $list-font-size: $paragraph-font-size;
-// $list-line-height: $paragraph-line-height;
+// $list-line-height: $paragraph-lineheight;
 // $list-margin-bottom: $paragraph-margin-bottom;
 // $list-style-position: outside;
 // $list-side-margin: 1.1rem;
@@ -462,23 +462,23 @@ $button-font-family: $custom-font-family-sans-serif;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
-// $button-function-factor: -20%;
+// $button-background-hover-lightness: -20%;
 
 // We use these to control button border styles.
 $button-border-width: 0 0 3px 0;
 $button-border-style: solid;
 // $button-bg-color: $primar  y-color;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-background-hover-lightness);
 // $button-border-color: $button-bg-hover;
-// $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
+// $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-background-hover-lightness);
 // $secondary-button-border-color: $secondary-button-bg-hover;
-// $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
+// $success-button-bg-hover: scale-color($success-color, $lightness: $button-background-hover-lightness);
 // $success-button-border-color: $success-button-bg-hover;
-// $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
+// $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-background-hover-lightness);
 // $alert-button-border-color: $alert-button-bg-hover;
-// $warning-button-bg-hover: scale-color($warning-color, $lightness: $button-function-factor);
+// $warning-button-bg-hover: scale-color($warning-color, $lightness: $button-background-hover-lightness);
 // $warning-button-border-color: $warning-button-bg-hover;
-// $info-button-bg-hover: scale-color($info-color, $lightness: $button-function-factor);
+// $info-button-bg-hover: scale-color($info-color, $lightness: $button-background-hover-lightness);
 // $info-button-border-color: $info-button-bg-hover;
 
 // We use this to set the default radius used throughout the core.
@@ -1070,14 +1070,14 @@ $pagination-link-font-color: $anchor-color;
 // $include-html-media-classes: $include-html-classes;
 
 // We use this to set the progress bar height
-// $progress-bar-height: rem-calc(25);
+// $progress-height: rem-calc(25);
 // $progress-bar-color: $vapor;
 
 // We use these to control the border styles
 // $progress-bar-border-color: scale-color($white, $lightness: 20%);
 // $progress-bar-border-size: 1px;
 // $progress-bar-border-style: solid;
-// $progress-bar-border-radius: $global-radius;
+// $progress-radius: $global-radius;
 
 // We use these to control the margin & padding
 // $progress-bar-margin-bottom: rem-calc(10);
