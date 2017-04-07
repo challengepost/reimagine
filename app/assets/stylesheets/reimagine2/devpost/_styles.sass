@@ -5,3 +5,9 @@
 
 .page-header
   padding: 3rem 0
+
+  &.large-header
+    padding: 5rem 0
+
+.h1-sized
+  font-size: map-get(map-get(map-get($header-styles, medium), h1), "font-size")

@@ -50,8 +50,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: $primary-1,
+  secondary: $secondary-1,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -69,7 +69,7 @@ $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 3px;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
@@ -104,29 +104,29 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: "ClearSans", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
+$header-color: $dark;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 24px),
+    'h2': ('font-size': 20px),
+    'h3': ('font-size': 19px),
+    'h4': ('font-size': 18px),
+    'h5': ('font-size': 17px),
+    'h6': ('font-size': 16px),
   ),
   medium: (
-    'h1': ('font-size': 38),
-    'h2': ('font-size': 32),
-    'h3': ('font-size': 24),
-    'h4': ('font-size': 20),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 38px),
+    'h2': ('font-size': 32px),
+    'h3': ('font-size': 27px),
+    'h4': ('font-size': 20px),
+    'h5': ('font-size': 20px),
+    'h6': ('font-size': 16px),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -391,7 +391,7 @@ $form-button-radius: $global-radius;
 // 20. Label
 // ---------
 
-$label-background: $primary-color;
+$label-background: $grey-1;
 $label-color: $white;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
