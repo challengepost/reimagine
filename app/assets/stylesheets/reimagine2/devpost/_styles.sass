@@ -1,7 +1,20 @@
 // Generic styles applying to all apps
 
+@function header-size($header, $size)
+  @return map-get(map-get(map-get($header-styles, $size), $header), "font-size")
+
 .user-avatar
   border-radius: 50%
 
 .page-header
   padding: 3rem 0
+
+  &.large-header
+    @include breakpoint(medium up)
+      padding: 5rem 0
+
+.h1-sized
+  header-size h1, small
+
+  @include breakpoint(medium up)
+    header-size h1, medium
