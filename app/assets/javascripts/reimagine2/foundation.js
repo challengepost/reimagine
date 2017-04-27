@@ -10,3 +10,7 @@
 //= require foundation/foundation.dropdown
 //= require foundation/foundation.section
 //= require foundation/foundation.clearing
+//= require foundation/foundation.toggler
+//= require foundation/foundation.core
+//= require foundation/foundation.util.motion
+//= require foundation/foundation.util.triggers
