@@ -1,259 +1,99 @@
-$topbar-height-small: 50px
-
-#global-nav
-  background: white
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
+.top-bar
   box-shadow: 0px 1px 3px rgba(0,0,0,0.3)
   position: relative
-  padding: 1px 0
-
-  .top-bar-section
-    .has-dropdown > a:after
-      border-top-color: transparent
-      border-left-color: $grey-3
-
-    .logged-out
-      li.show-for-medium-up
-        margin-right: 1em
-
-    ul li > a
-      padding:
-        top: 0
-        bottom: 0
-      transition: background-color 0.2s ease
-
-      &.button
-        @extend .button
-
-  .name
-    float: left
 
   #logo
-    img
-      height: 36px
+    width: 35px
+    height: 50px
+
+    @include breakpoint(large up)
       width: 185px
+      height: 36px
       position: relative
-      top: -2px
+
+  .menu-text
+    padding: 0
 
     a
-      display: inline
-      padding-right: $column-gutter / 3
-      max-height: $topbar-height
+      padding: 0
 
-  a
-    font-weight: normal
-    line-height: $topbar-height * 2/3
-    max-height: $topbar-height * 2/3
+  .dropdown.menu > li.is-dropdown-submenu-parent
+    @include breakpoint(small only)
+      position: static
 
-    @media #{$small}
+      .is-dropdown-submenu
+        top: 50px
+        width: 100%
+
+    & > a
+      &:after
+        border-top-color: $grey-3
+
+      @include breakpoint(small only)
+        padding-right: 0.6rem
+
+        &:after
+          right: 2px
+          border-width: 5px
+          margin-top: -1px
+
+  .menu:not(.submenu) > li:not(.menu-text) > a
+    color: $dark
+    line-height: rem-calc(50)
+    font-size: 0.875rem
+
+    @include breakpoint(large up)
+      font-size: 1rem
       line-height: $topbar-height
-      max-height: $topbar-height
+      padding: 0 1.5rem
 
-    &:hover,
-    &:active,
-    &:focus
-      strong
-        color: $dark-primary
+    &:hover
+      background: $grey-1
 
-      .alpha
-        background-color: $grey-2
+  .submenu
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
+    border: 0
 
-    img.user-avatar
-      max-width: 28px
-      max-height: 28px
-      border-radius: 50%
-
-    @media #{$small-only}
-      img.user-avatar
-        max-height: 25px
-        max-width: 25px
-
-    &.main-link
-      font-size: 1em
-      padding: 0 1.5em
-
-      &:hover,
-      &:active,
-      &:focus
-        color: $dark-primary
-
-      strong
-        display: inline
-
-  .alpha
-    display: none
-    letter-spacing: 1px
-    background-color: rgba(199, 198, 197, 0.5)
-    color: $topbar-link-color
-    @include single-transition(background-color, 0.2s)
-
-    @media #{$medium}
-      display: inline-block
-
-  .youtube-icon
-    color: rgba(199, 198, 197, 0.95)
-
-    @media #{$small-only}
-      display: none
-
-  // Back button on mobile
-  h5
-    font-size: 0.9em
-    color: $dark-primary
-    text-transform: uppercase
-    letter-spacing: 1px
-    margin-top: 0
-
-    &:hover,
-    &:active,
-    &:focus
-      background-color: $grey-1
-
-    a
-      padding-left: 2.5em
-
-      &:before
-        content: ""
-        border: inset 5px
-        border-color: transparent $grey-3 transparent transparent
-        position: absolute
-        top: 16px
-        left: 15px
-
-  .tiny
-    font-size: 0.7em
-
-  .logged-out,
-  .dropdown
-    a
+    & > li > a
+      line-height: 42px
+      border-bottom: 1px solid $grey-1
       font-size: 0.9em
 
-  .dropdown
-    background: white
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
+  .is-dropdown-submenu-parent.is-active > a
+    background: $grey-1
 
-    li a
-      line-height: $topbar-height * 2/3
+  .is-submenu-item
+    &:hover
+      background: $grey-1
 
-      padding:
-        top: 0
-        bottom: 0
+  .youtube-icon
+    display: none
+    color: $grey-3
 
-    .label
-      margin-left: 0.5em
+    @include breakpoint(medium up)
+      display: inline-block
 
-      &.profile-completion
-        color: white
-        text-shadow: 0 0 1px black
+  .user-avatar
+    height: 25px
+    width: 25px
 
-  .label.mask
-    float: left
-    margin-right: 1em
+    @include breakpoint(medium up)
+      height: 28px
+      width: 28px
 
-  @media #{$medium}
-    .top-bar-section
-      & > ul > .divider
-        border-color: transparent
+  .top-bar-left, .top-bar-right
+    @include breakpoint(small)
+      width: auto
 
-  @media #{$small}
-    .top-bar-section
-      .has-dropdown
-        &.hover .user
-          color: $dark-primary
+  .top-bar-wrapper
+    @include breakpoint(small only)
+      padding-left: 0.4rem
+      padding-right: 0.4rem
 
-        & > a:after
-          border-top-color: $grey-3
-          border-left-color: transparent
-
-      .dropdown
-        li
-          &.has-dropdown > a:after
-            content: ""
-            border: inset 5px
-            border-color: transparent transparent transparent $grey-3
-            border-left-style: solid
-            top: 18px
-            right: 0
-
-    .tiny
-      bottom: -15px
-
-    a
-      img.user-avatar
-        display: inline-block !important
-        position: relative
-        top: -3px
-
-      strong
-        font-size: 1.25em
-        line-height: 1.2em
-
-        &.user
-          font-size: 1.15em
-
-    #masqueradee
-      margin: 12px 0
-      top: 0
-
-  & > .hide-for-large-up
-    a
-      font-size: 0.875em
-      line-height: $topbar-height-small
-      padding: 0 0.4em
-
-    .name
-      height: $topbar-height-small
-      float: left
-
-    .top-bar
-      height: $topbar-height-small
-      line-height: $topbar-height-small
-
-      &.expanded
-        height: auto
-
-    #logo
-      line-height: $topbar-height-small
-
-      a
-        padding: 0 0.4em
-        height: $topbar-height-small
-        line-height: $topbar-height-small
-
-      img
-        height: $topbar-height-small
-        width: auto
-        position: static
-        margin-top: -5px
-        padding: 10px 0
-
-    .toggle-topbar
-      float: right !important
-      margin-right: 10px
-
-      a
-        height: 50px
-
-      > a::after
-        border-left-color: transparent
-        border-top-color: #c7c6c5
-        border-top-style: solid
-        margin: 0
-
-    .user-avatar
-      margin-right: 10px
-
-    .title-area
-      width: 100%
-
-      li, ul
-        float: left
-
-      .logged-out
-        width: auto
-
-        ul
-          line-height: 0
-
-.ui-autocomplete
-  max-width: 300px
+  .inner-button
+    display: inline-block
+    line-height: 26px
+    padding: 0 6px 2px
+    border-radius: 2px
+    color: white
+    background: $primary-1

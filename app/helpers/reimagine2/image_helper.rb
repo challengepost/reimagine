@@ -15,6 +15,24 @@ module Reimagine2
       [filename, double_density_label, extension].join
     end
 
+    def default_avatar_filename
+      "reimagine2/no-avatar-180.png"
+    end
+
+    def default_classes
+      ["user-avatar"]
+    end
+
+    def user_avatar_tag(user, options = {})
+      classes = default_classes + Array(options.delete(:class))
+      classes = classes.join(" ")
+
+      path = user.avatar_url.presence || default_avatar_filename
+      options[:alt] = '' unless options[:alt]
+
+      image_tag path, (options || {}).merge(class: classes)
+    end
+
     private
 
     def responsive_options(image, options = {})

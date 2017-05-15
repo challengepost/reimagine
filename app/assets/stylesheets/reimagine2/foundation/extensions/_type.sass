@@ -9,38 +9,11 @@ ul.no-bullet
   margin-left: 0
 
   &.inline-list
-    margin-#{$default-float}: $inline-list-default-float-margin
+    margin-left: $inline-list-default-float-margin
 
 // do not change font-size line-height etc.
 strong, b, .bold
   +bold
-
-h1
-  font-size: $h2-font-size
-h2
-  font-size: $h3-font-size
-h3
-  font-size: $h4-font-size
-h4
-  font-size: $h4-font-size
-h5
-  font-size: $h4-font-size
-h6
-  font-size: $h6-font-size
-
-@media #{$small}
-  h1
-    font-size: $h1-font-size
-  h2
-    font-size: $h2-font-size
-  h3
-    font-size: $h3-font-size
-  h4
-    font-size: $h4-font-size
-  h5
-    font-size: $h5-font-size
-  h6
-    font-size: $h6-font-size
 
 h1, h2, h3, h4, h5, h6
   line-height: $header-line-height
@@ -51,4 +24,4 @@ h4
   text-transform: uppercase
 
 textarea
-  line-height: $paragraph-line-height
+  line-height: $paragraph-lineheight
