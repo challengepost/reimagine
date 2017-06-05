@@ -62,7 +62,7 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: #48575f;
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: false;
 $global-margin: 1rem;
@@ -104,13 +104,13 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: "ClearSans", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
-$header-font-weight: $global-weight-bold;
+$header-font-family: "ClearSans-Regular", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
+$header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: $dark;
 $header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-margin-bottom: 1.5rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 27px),
@@ -133,7 +133,7 @@ $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.6;
-$paragraph-margin-bottom: 1rem;
+$paragraph-margin-bottom: 1.5rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
@@ -141,7 +141,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+$anchor-color: darken($primary-color, 8%);
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -391,12 +391,12 @@ $form-button-radius: $global-radius;
 // 20. Label
 // ---------
 
-$label-background: $grey-1;
-$label-color: $white;
+$label-background: #ebf5f7;
+$label-color: $body-font-color;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
-$label-font-size: 0.8rem;
-$label-padding: 0.33333rem 0.5rem;
+$label-font-size: 1rem;
+$label-padding: 0.33333rem 0.7rem;
 $label-radius: $global-radius;
 
 // 21. Media Object
@@ -563,9 +563,9 @@ $show-header-for-stacked: false;
 
 $tab-margin: 0;
 $tab-background: transparent;
-$tab-color: $primary-color;
+$tab-color: $anchor-color;
 $tab-background-active: $grey-0;
-$tab-active-color: $primary-color;
+$tab-active-color: $anchor-color;
 $tab-item-font-size: rem-calc(16);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
@@ -631,3 +631,4 @@ $info-color: $primary-5;
 $topbar-height: rem-calc(64);
 $topbar-link-color: $dark;
 $topbar-link-color-hover: $dark-primary;
+$page-bg-color: rgb(244, 248, 251);
