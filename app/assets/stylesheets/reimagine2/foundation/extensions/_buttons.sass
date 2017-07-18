@@ -6,21 +6,12 @@
 @import 'reimagine2/mixins/flex'
 
 button, .button
-  background: $primary-color
+  // background: $primary-color
   box-shadow: none
-  border-width: 0 0 3px 0
-  border-bottom-color: scale-color($primary-color, $lightness: $button-background-hover-lightness)
-
-  &:active, &:focus, &:hover
-    border-color: $primary-4
-
-  &:active
-    border-width: 3px 0 0
 
   &.secondary
     background: $secondary-color
     color: white
-    border-bottom-color: scale-color($secondary-color, $lightness: $button-background-hover-lightness)
 
     &.disabled
       color: #171717
@@ -28,12 +19,10 @@ button, .button
     &:active, &:focus, &:hover
       color: white
       background: $secondary-3
-      border-color: $secondary-4
 
   &.yellow
     background: $highlight-1
     color: $grey-6
-    border-color: #cc9b39
 
     &.disabled
       color: $grey-6
@@ -41,27 +30,15 @@ button, .button
     &:active, &:focus, &:hover
       color: $grey-6
       background: #e5ae40
-      border-color: #b28832
-
-  &.small
-    border-bottom-width: 2px
-
-    &:active
-      border-width: 2px 0 0
-
-  &.tiny, &.tiny &:active
-    border: 0
 
   &.grey
     $lighter-grey-5: scale-color($grey-5, $lightness: $button-background-hover-lightness)
     $lighter-grey-6: scale-color($grey-6, $lightness: $button-background-hover-lightness)
 
     background-color: $lighter-grey-5
-    border-color: $lighter-grey-6
 
     &:active, &:focus, &:hover
       background-color: $grey-5
-      border-color: $grey-6
 
   &:disabled,
   &.disabled,
@@ -74,13 +51,6 @@ button, .button
     font-weight: inherit
     padding: 0
     text-decoration: $anchor-text-decoration
-    border: 0
-
-  &.flat
-    border-bottom: 0
-
-    &:active
-      border-top: 0
 
 .attachable
   width: 100%
