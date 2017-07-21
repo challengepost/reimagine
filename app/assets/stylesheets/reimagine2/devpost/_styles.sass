@@ -1,8 +1,5 @@
 // Generic styles applying to all apps
 
-@function header-size($header, $size)
-  @return map-get(map-get(map-get($header-styles, $size), $header), "font-size")
-
 .user-avatar
   border-radius: 50%
 
@@ -22,9 +19,3 @@
   &.primary, &.secondary
     h1, h2, h3, h4, p
       color: white
-
-.h1-sized
-  header-size h1, small
-
-  @include breakpoint(medium up)
-    header-size h1, medium

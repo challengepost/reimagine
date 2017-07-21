@@ -1,0 +1,2 @@
+@function header-size($header, $size)
+  @return map-get(map-get(map-get($header-styles, $size), $header), "font-size")
