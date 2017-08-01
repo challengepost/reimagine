@@ -319,9 +319,9 @@ $closebutton-color-hover: $black;
 
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
-$drilldown-arrow-color: $primary-color;
+$drilldown-arrow-color: $white;
 $drilldown-arrow-size: 6px;
-$drilldown-background: $white;
+$drilldown-background: $primary-color;
 
 // 17. Dropdown
 // ------------
@@ -410,7 +410,7 @@ $mediaobject-image-width-stacked: 100%;
 // --------
 
 $menu-margin: 0;
-$menu-margin-nested: 1rem;
+$menu-margin-nested: 0;
 $menu-item-padding: 0rem 0.3rem;
 $menu-item-color-active: $white;
 $menu-item-background-active: $grey-1;
@@ -572,7 +572,7 @@ $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
 $tab-content-border: transparent;
-$tab-content-color: $body-font-color;
+$tab-content-color: $blue-grey-3;
 $tab-content-padding: 0rem;
 
 // 34. Thumbnail
@@ -632,3 +632,5 @@ $topbar-height: rem-calc(64);
 $topbar-link-color: $dark;
 $topbar-link-color-hover: $dark-primary;
 $page-bg-color: rgb(244, 248, 251);
+
+@import "settings_additions"
