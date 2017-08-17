@@ -319,9 +319,9 @@ $closebutton-color-hover: $black;
 
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
-$drilldown-arrow-color: $primary-color;
+$drilldown-arrow-color: $white;
 $drilldown-arrow-size: 6px;
-$drilldown-background: $white;
+$drilldown-background: $primary-color;
 
 // 17. Dropdown
 // ------------
@@ -355,31 +355,31 @@ $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
-$form-spacing: rem-calc(16);
+$form-spacing: rem-calc(24);
 $helptext-color: $black;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
-$input-prefix-color: $black;
-$input-prefix-background: $light-gray;
-$input-prefix-border: 1px solid $medium-gray;
-$input-prefix-padding: 1rem;
-//$form-label-color: $black;
+$input-prefix-color: $blue-grey-4;
+$input-prefix-background: $blue-grey-0;
+$input-prefix-border: 1px solid $blue-grey-1;
+$input-prefix-padding: 0.8rem;
+$form-label-color: $blue-grey-6;
 $form-label-font-size: rem-calc(16px);
 $form-label-font-weight: $global-weight-bold;
 $form-label-line-height: 1.8;
 $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
-$input-color: $black;
+$input-color: $blue-grey-6;
 $input-placeholder-color: $medium-gray;
-$input-font-family: inherit;
+$input-font-family: $header-font-family;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 2px solid $grey-2;
-$input-border-focus: 2px solid $primary-1;
+$input-border: 1px solid $blue-grey-2;
+$input-border-focus: 1px solid $primary-1;
 $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
@@ -410,7 +410,7 @@ $mediaobject-image-width-stacked: 100%;
 // --------
 
 $menu-margin: 0;
-$menu-margin-nested: 1rem;
+$menu-margin-nested: 0;
 $menu-item-padding: 0rem 0.3rem;
 $menu-item-color-active: $white;
 $menu-item-background-active: $grey-1;
@@ -563,16 +563,16 @@ $show-header-for-stacked: false;
 
 $tab-margin: 0;
 $tab-background: transparent;
-$tab-color: $anchor-color;
-$tab-background-active: $grey-0;
-$tab-active-color: $anchor-color;
+$tab-color: $blue-grey-3;
+$tab-background-active: transparent;
+$tab-active-color: $blue-grey-5;
 $tab-item-font-size: rem-calc(16);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
-$tab-content-border: $light-gray;
-$tab-content-color: $body-font-color;
+$tab-content-border: transparent;
+$tab-content-color: $blue-grey-4;
 $tab-content-padding: 0rem;
 
 // 34. Thumbnail
@@ -632,3 +632,5 @@ $topbar-height: rem-calc(64);
 $topbar-link-color: $dark;
 $topbar-link-color-hover: $dark-primary;
 $page-bg-color: rgb(244, 248, 251);
+
+@import "settings_additions"
