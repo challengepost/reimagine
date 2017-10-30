@@ -108,7 +108,7 @@ $header-font-family: "ClearSans-Regular", "HelveticaNeue-Bold", "Helvetica Neue 
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: $dark;
+$header-color: $blue-grey-6;
 $header-lineheight: 1.4;
 $header-margin-bottom: 1.5rem;
 $header-styles: (
@@ -263,11 +263,11 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 // 12. Button Group
 // ----------------
 
-$buttongroup-margin: 1rem;
-$buttongroup-spacing: 1px;
+$buttongroup-margin: 0;
+$buttongroup-spacing: 0px;
 $buttongroup-child-selector: '.button';
 $buttongroup-expand-max: 6;
-$buttongroup-radius-on-each: true;
+$buttongroup-radius-on-each: false;
 
 // 13. Callout
 // -----------
