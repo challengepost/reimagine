@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'ClearSans-Thin';
+    font-family: 'ClearSans';
     font-style: normal;
     font-weight: 100;
     src: font-url('reimagine2/clearsans/ClearSans-Thin.woff') format('woff'),
@@ -25,7 +25,9 @@
 }
 
 @font-face {
-  font-family: 'ClearSans-Regular';
+  font-family: 'ClearSans';
+  font-weight: normal;
+  font-style: normal;
   src: font-url('reimagine2/clearsans/ClearSans-Regular.woff') format('woff'),
   font-url('reimagine2/clearsans/ClearSans-Regular.ttf') format('truetype');
 }
