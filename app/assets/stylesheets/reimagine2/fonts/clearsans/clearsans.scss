@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 600;
   src: font-url('reimagine2/clearsans/ClearSans-Bold.woff') format('woff'),
-       font-url('reimagine2/clearsans/ClearSans-Regular.ttf') format('truetype');
+       font-url('reimagine2/clearsans/ClearSans-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -14,4 +14,20 @@
   font-weight: 600;
   src: font-url('reimagine2/clearsans/ClearSans-BoldItalic.woff') format('woff'),
        font-url('reimagine2/clearsans/ClearSans-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ClearSans';
+    font-style: normal;
+    font-weight: 100;
+    src: font-url('reimagine2/clearsans/ClearSans-Thin.woff') format('woff'),
+         font-url('reimagine2/clearsans/ClearSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ClearSans';
+  font-weight: normal;
+  font-style: normal;
+  src: font-url('reimagine2/clearsans/ClearSans-Regular.woff') format('woff'),
+  font-url('reimagine2/clearsans/ClearSans-Regular.ttf') format('truetype');
 }
