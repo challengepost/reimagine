@@ -13,19 +13,19 @@
   +align-stretch
 
 .align-bottom-small
-  @media #{$medium-up}
+  @include breakpoint(medium up)
     +align-bottom
 
 .align-center-small
-  @media #{$medium-up}
+  @include breakpoint(medium up)
     +align-center
 
 .align-baseline-small
-  @media #{$medium-up}
+  @include breakpoint(medium up)
     +align-baseline
 
 .align-stretch-small
-  @media #{$medium-up}
+  @include breakpoint(medium up)
     +align-stretch
 
 .flex-column
@@ -39,7 +39,7 @@
   justify-content: center
 
 .stretch-input
-  @media #{$medium-up}
+  @include breakpoint(medium up)
     +display-flex
 
     label
@@ -63,7 +63,7 @@
   .inline-input
     margin: 0
 
-    @media #{$medium-up}
+    @include breakpoint(medium up)
       -ms-flex: 1
       -webkit-flex: 1
       flex: 1
@@ -71,7 +71,7 @@
       margin: 0 0 0 1em
 
 .right-small
-  @media #{$medium-up}
+  @include breakpoint(medium up)
     float: right
 
 .flex-row

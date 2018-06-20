@@ -1,14 +1,35 @@
-<div class="contain-to-grid hide-for-small hide-for-medium">
-  <nav class="top-bar" data-topbar>
-    <ul class="title-area">
-      <li class="name">
-        <%= render "reimagine2/devpost/global_nav/logo", presenter: presenter %>
-      </li>
-    </ul>
+<div class="top-bar">
+  <div class="row">
+    <div class="small-12 columns top-bar-wrapper">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">
+            <%= link_to reimagine_root_url, class: "show-for-large" do %>
+              <%= image_tag "reimagine2/devpost-logo.svg", alt: "Devpost", id: "logo" %>
+            <% end %>
 
-    <section class="top-bar-section">
-      <%= render 'reimagine2/devpost/global_nav/world', presenter: presenter %>
-      <%= render 'reimagine2/devpost/global_nav/account', presenter: presenter %>
-    </section>
-  </nav>
+            <%= link_to reimagine_root_url, class: "hide-for-large" do %>
+              <%= image_tag "reimagine2/devpost-icon.svg", alt: "Devpost", id: "logo" %>
+            <% end %>
+          </li>
+          <li>
+            <li>
+              <%= link_to "Jobs", reimagine_root_url(path: "/jobs") %>
+            </li>
+          </li>
+          <li>
+            <%= link_to reimagine_root_url(path: "/thecommit") do %>
+              The Commit <span class="fa fa-youtube-play youtube-icon"></span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "Hackathons", reimagine_root_url(path: "/hackathons") %>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <%= render 'reimagine2/devpost/global_nav/account', presenter: presenter %>
+      </div>
+    </div>
+  </div>
 </div>

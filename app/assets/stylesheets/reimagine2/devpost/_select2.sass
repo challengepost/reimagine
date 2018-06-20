@@ -1,0 +1,36 @@
+// gives the same spacing as any input to the select2 container
+.select2-container
+  margin-bottom: $form-spacing
+
+  .select2-search--inline
+    // transparent input located inside the select2 container,
+    // doesn't need the regular input margin
+    .select2-search__field
+      margin-bottom: 0
+      height: 1.6rem
+
+.select2-container--default
+
+  // gives the select2 container the same borders as regular inputs
+  .select2-selection, .select2-selection--multiple
+    border: $input-border
+    padding: 6px
+
+    .select2-selection__choice
+      border: 0
+      color: #555
+
+  &.select2-container--focus
+    .select2-selection, .select2-selection--multiple
+      border: $input-border-focus
+
+  .select2-selection
+    &:hover
+      border: $input-border-focus
+
+  // changes the color of the selected/hovered choices in a select2 dropdown
+  .select2-results__option--highlighted[aria-selected]
+    background-color: $primary-1
+
+.select2-dropdown
+  border: $input-border-focus

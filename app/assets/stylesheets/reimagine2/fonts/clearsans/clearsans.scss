@@ -23,3 +23,9 @@
     src: font-url('reimagine2/clearsans/ClearSans-Thin.woff') format('woff'),
          font-url('reimagine2/clearsans/ClearSans-Thin.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'ClearSans-Regular';
+  src: font-url('reimagine2/clearsans/ClearSans-Regular.woff') format('woff'),
+  font-url('reimagine2/clearsans/ClearSans-Regular.ttf') format('truetype');
+}

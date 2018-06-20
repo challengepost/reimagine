@@ -1,0 +1,21 @@
+// Generic styles applying to all apps
+
+.user-avatar
+  border-radius: 50%
+
+.page-header
+  padding: 3rem 0
+
+  &.large-header
+    @include breakpoint(medium up)
+      padding: 5rem 0
+
+  &.primary
+    background-color: $dark
+
+  &.secondary
+    background-color: $secondary-1
+
+  &.primary, &.secondary
+    h1, h2, h3, h4, p
+      color: white

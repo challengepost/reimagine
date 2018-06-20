@@ -66,11 +66,11 @@ module Reimagine2
       })
     end
 
-    def user_settings_url(path = "")
+    def user_settings_url(path = "", options = {})
       build_url({
         host: Figleaf::Settings.domain.root,
         path: "/settings/#{path}"
-      })
+      }.merge(options))
     end
 
     def register_url

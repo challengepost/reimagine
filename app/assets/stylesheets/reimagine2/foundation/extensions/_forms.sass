@@ -8,7 +8,7 @@
   +form-label()
 
   &.inline
-    +form-label(inline, false)
+    display: inline
     line-height: 1em
 
 input[type="text"],
@@ -40,7 +40,9 @@ textarea
 form
   p
     &.hint
-      font-size: 0.85em
+      font-size: 0.875em
+      color: $blue-grey-4
+      margin-bottom: 0.5rem
 
 // fixes Firefox default opacity set to 0.54 for placeholder
 ::-moz-placeholder, :-moz-placeholder
