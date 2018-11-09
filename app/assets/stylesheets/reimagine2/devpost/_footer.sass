@@ -1,13 +1,27 @@
 #devpost-footer
   background-color: $grey-2
-  text-align: center
   font-size: 1rem
-  text-align: left
-  padding: 2em 0
+  padding: 3em 0
+
+  h4
+    font-size: 1rem
+    margin-bottom: 0.5em
+
+    @media #{$medium-up}
+      font-size: 1.125rem
 
   a
-    +link-colors($dark)
-    display: inline
+    +link-colors($grey-5)
+    border-bottom: 1px solid $grey-2
+    transition: border-bottom-color 0.5s ease
+    font-size: .8rem
+
+    @media #{$medium-up}
+      font-size: 1rem
+
+
+    &:hover
+      border-color: $grey-5
 
   ul
     margin-bottom: 0
@@ -15,56 +29,52 @@
     margin: 0
 
     li
-      margin: 0 2.5em 0 0
+      margin: 0 2.5rem .5rem 0
 
-      @media #{$medium-up}
-        display: inline-block
+  hr
+    border-color: $grey-2
 
   .social-links
-    float: right
-    text-align: right
-
     li
-      margin: 0 0 0 1em
+      margin: 0 .8rem 0 0
       display: inline-block
+      line-height: 1
 
     a
       +link-colors($grey-4)
       opacity: 0.6
+      border: 0
+      padding-left: .1rem
+      font-size: 2rem
       @include single-transition(opacity, 200ms)
 
       &:hover, &:focus
+        text-decoration: none
         opacity: 1
 
-  a.ss-icon
-    font-size: 2.25rem
-
-    &:hover
-      text-decoration: none
-
-  .ss-heart
-    color: $red-1
-
-#site-footer-primary-nav
-  margin-bottom: 0.7em
-
-  a
-    border-bottom: 1px solid transparent
-    transition: border-bottom-color 0.5s ease
-
-    &:hover
-      border-bottom: 1px solid $dark
+    @media #{$medium-up}
+      li
+        margin: 0 .4rem
+      a
+        font-size: 3rem
 
 #site-footer-legal
-  ul
-    li
-      margin-right: 2em
-      color: $grey-4
+  margin-top: 1rem
 
-      a
-        +link-colors($grey-4)
-        border-bottom: 1px solid transparent
-        transition: border-bottom-color 0.5s ease
+  @media #{$medium-up}
+    margin-top: 2rem
 
-        &:hover
-          border-bottom: 1px solid $grey-4
+    ul
+      li
+        color: $grey-4
+        display: inline-block
+        margin-right: 2em
+        margin-bottom: 0
+
+        a
+          +link-colors($grey-4)
+          border-bottom: 1px solid transparent
+          transition: border-bottom-color 0.5s ease
+
+          &:hover
+            border-color: $grey-4
