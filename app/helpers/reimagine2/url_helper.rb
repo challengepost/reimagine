@@ -5,13 +5,13 @@ module Reimagine2
 
     def default_reimagine_url_options
       {
-        scheme: 'http',
+        scheme: 'https',
         path: '/'
       }
     end
 
     def reimagine_url(opts = {})
-      URI::HTTP.build(default_reimagine_url_options.merge(opts)).to_s
+      URI::HTTPS.build(default_reimagine_url_options.merge(opts)).to_s
     end
 
     def reimagine_root_url(opts = {})
