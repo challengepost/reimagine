@@ -4,10 +4,7 @@ module Reimagine2
   module UrlHelper
 
     def default_reimagine_url_options
-      {
-        scheme: 'https',
-        path: '/'
-      }
+      { host: Reimagine2.configuration.root_host }
     end
 
     def reimagine_url(opts = {})
@@ -15,7 +12,7 @@ module Reimagine2
     end
 
     def reimagine_root_url(opts = {})
-      reimagine_url(opts.merge(host: Reimagine2.configuration.root_host))
+      reimagine_url(opts)
     end
 
     def reimagine_post_url(opts = {})
