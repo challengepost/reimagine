@@ -2,18 +2,35 @@
   <nav class="top-bar" data-topbar>
     <ul class="title-area top-bar-section">
       <li class="name">
+        <!-- <a href="#" class="toggle-topbar has-dropdown" data-target-menu='world'><i class="ss-icon ss-rows"></i></a> -->
+
+
         <%= render "reimagine2/devpost/global_nav/logo",
           image_path: "reimagine2/devpost-icon.svg",
           presenter: presenter %>
       </li>
 
       <%= render "reimagine2/devpost/global_nav/mobile/logged_in_account", presenter: presenter %>
-      <%= render "reimagine2/devpost/global_nav/mobile/world", presenter: presenter %>
       <%= render "reimagine2/devpost/global_nav/mobile/logged_out_account", presenter: presenter %>
     </ul>
 
-    <section class="top-bar-section">
+    <section class="top-bar-section" data-top-nav-menu="user">
       <%= render 'reimagine2/devpost/global_nav/mobile/logged_in_menu', presenter: presenter %>
     </section>
+    <% if false %>
+    <section class="top-bar-section" data-top-nav-menu="world">
+      <ul class="right logged-in">
+        <li>
+          Some secret!
+        </li>
+      </ul>
+    </section>
+    <% end %>
   </nav>
+
+  <% if false %>
+  <ul id="drop1" class="f-dropdown" data-dropdown-content>
+    <%= render "reimagine2/devpost/global_nav/world_menu_entries" %>
+  </ul>
+  <% end %>
 </div>

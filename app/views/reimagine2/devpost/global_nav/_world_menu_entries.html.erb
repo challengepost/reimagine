@@ -7,6 +7,14 @@
 </li>
 
 <li>
+  <%= link_to reimagine_root_url(path: "/software"),
+        class: "main-link",
+        data: { role: "projects" } do %>
+    Projects
+  <% end %>
+</li>
+
+<li>
   <%= link_to reimagine_post_url,
         class: "main-link",
         data: { role: "for-orgs" } do %>
