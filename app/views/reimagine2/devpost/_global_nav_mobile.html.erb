@@ -1,19 +1,29 @@
 <div class="contain-to-grid hide-for-large-up">
   <nav class="top-bar" data-topbar>
     <ul class="title-area top-bar-section">
+      <li>
+        <%= link_to "#",
+                    class: "toggle-topbar has-dropdown text-center",
+                    data: { target_menu: "world" },
+                    id: "hamburger" do %>
+          <i class="ss-icon ss-rows"></i>
+        <% end %>
+      </li>
       <li class="name">
-        <%= render "reimagine2/devpost/global_nav/logo",
-          image_path: "reimagine2/devpost-icon.svg",
-          presenter: presenter %>
+
+        <%= render "reimagine2/devpost/global_nav/logo", presenter: presenter %>
       </li>
 
       <%= render "reimagine2/devpost/global_nav/mobile/logged_in_account", presenter: presenter %>
-      <%= render "reimagine2/devpost/global_nav/mobile/world", presenter: presenter %>
       <%= render "reimagine2/devpost/global_nav/mobile/logged_out_account", presenter: presenter %>
     </ul>
 
-    <section class="top-bar-section">
+    <section class="top-bar-section" data-top-nav-menu="user">
       <%= render 'reimagine2/devpost/global_nav/mobile/logged_in_menu', presenter: presenter %>
+    </section>
+
+    <section class="top-bar-section" data-top-nav-menu="world">
+      <%= render "reimagine2/devpost/global_nav/mobile/world" %>
     </section>
   </nav>
 </div>
