@@ -1,5 +1,4 @@
 @Reimagine2.mobileGlobalNav = ->
-  # $(".toggle-topbar").on()
   $(document).on "click.fndtn.topbar", '.top-bar .toggle-topbar, [data-topbar] .toggle-topbar', (e) ->
     e.preventDefault()
 
