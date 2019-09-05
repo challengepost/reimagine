@@ -14,7 +14,7 @@ module Reimagine2
 
     def fontawesome_stylesheet_link_tag
       return if Rails.env.test?
-      stylesheet_link_tag(fontawesome_stylesheet_link_params)
+      stylesheet_link_tag(*fontawesome_stylesheet_link_params)
     end
   end
 end
