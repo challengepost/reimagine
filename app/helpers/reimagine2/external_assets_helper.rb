@@ -8,7 +8,7 @@ module Reimagine2
 
     def fontawesome_javascript_include_tag
       return if Rails.env.test?
-      javascript_include_tag(fontawesome_stylesheet_link_params, crossorigin: 'anonymous')
+      javascript_include_tag(fontawesome_javascript_include_params, crossorigin: 'anonymous')
     end
   end
 end
