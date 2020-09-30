@@ -18,7 +18,7 @@ module Reimagine2
     end
 
     def post_subdomain?
-      request.subdomains.last == "post"
+      request.subdomains.first == "post"
     end
   end
 end
