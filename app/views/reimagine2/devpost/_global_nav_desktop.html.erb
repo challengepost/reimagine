@@ -10,7 +10,7 @@
       <%= render 'reimagine2/devpost/global_nav/world', presenter: presenter %>
 
       <div class="right">
-        <% unless request.subdomain == "post" %>
+        <% unless post_subdomain? %>
           <ul>
             <li>
               <%= link_to reimagine_post_url,
