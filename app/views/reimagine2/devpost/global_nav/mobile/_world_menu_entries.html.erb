@@ -14,3 +14,14 @@
     Projects
   <% end %>
 </li>
+<% unless post_subdomain? %>
+  <li class="divider"></li>
+  <li>
+
+      <%= link_to reimagine_post_url,
+                  class: "main-link",
+                  data: { role: "for-orgs" } do %>
+        Host a hackathon
+      <% end %>
+  </li>
+<% end %>
