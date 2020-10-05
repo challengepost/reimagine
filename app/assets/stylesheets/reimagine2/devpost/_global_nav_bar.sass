@@ -1,9 +1,10 @@
+@import "./global_nav_active_states"
+
 #global-nav
   background: white
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
   box-shadow: 0px 1px 3px rgba(0,0,0,0.3)
   position: relative
-  padding: 1px 0
 
   .top-bar-section
     .has-dropdown > a:after
@@ -263,20 +264,3 @@
 
 .ui-autocomplete
   max-width: 300px
-
-
-body
-  background: red !important
-
-.action-index.controller-softwares
-  #global-nav
-    [data-role='projects']
-      position: relative
-
-      &:after
-        content: ""
-        position: absolute
-        bottom: 0
-        height: 2px
-        width: 100%
-        background: $primary-color
