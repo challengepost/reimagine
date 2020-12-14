@@ -3,6 +3,7 @@
 // Instead of a flag background color, we use a sublte gradient
 // The colors are based on the $primary-color
 
+@import 'reimagine2/mixins/links'
 @import 'reimagine2/mixins/flex'
 
 @media only screen
@@ -80,7 +81,7 @@ button, .button
     @include button-style(#bfbfbf, $disabled:true)
 
   &.link
-    // @include link-colors($anchor-font-color, $hover: $anchor-font-color-hover, $active: $anchor-font-color-hover, $focus: $anchor-font-color-hover)
+    @include link-colors($anchor-font-color, $hover: $anchor-font-color-hover, $active: $anchor-font-color-hover, $focus: $anchor-font-color-hover)
     // @include background(transparent)
     font-weight: inherit
     padding: 0

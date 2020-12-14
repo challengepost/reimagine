@@ -1,3 +1,5 @@
+@import 'reimagine2/mixins/links'
+
 #devpost-footer
   background-color: $grey-2
   font-size: 1rem
@@ -11,7 +13,7 @@
       font-size: 1.125rem
 
   a
-    // +link-colors($grey-5)
+    +link-colors($grey-5)
     border-bottom: 1px solid $grey-2
     transition: border-bottom-color 0.5s ease
     font-size: .8rem
@@ -42,7 +44,7 @@
         margin: 0 .4rem
 
     a
-      // +link-colors($grey-4)
+      +link-colors($grey-4)
       opacity: 0.6
       border: 0
       padding-left: .1rem
@@ -98,7 +100,7 @@
         margin-bottom: 0
 
         a
-          // +link-colors($grey-4)
+          +link-colors($grey-4)
           border-bottom: 1px solid transparent
           transition: border-bottom-color 0.5s ease
 
