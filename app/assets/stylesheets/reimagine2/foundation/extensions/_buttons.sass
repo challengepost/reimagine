@@ -1,6 +1,6 @@
 // Customization of foundation's buttons.
 // They can not be done directly with configuration variables.
-// Instead of a flag background color, we use a sublte gradient
+// Instead of a flag background color, we use a subtle gradient
 // The colors are based on the $primary-color
 
 @import 'reimagine2/mixins/flex'
@@ -14,11 +14,12 @@ button, .button
   box-shadow: none
 
   &:active, &:focus, &:hover
-    background: $primary-3
-    border-color: $primary-4
+    background: rgba($primary-color, $button-hover-opacity)
 
   &:active
-    border-width: 3px 0 0
+    border-width: 0
+    box-shadow: none
+    -webkit-box-shadow: none
 
   &.secondary
     background: $secondary-color
@@ -29,13 +30,11 @@ button, .button
 
     &:active, &:focus, &:hover
       color: white
-      background: $secondary-3
-      border-color: $secondary-4
+      background: rgba($secondary-color, $button-hover-opacity)
 
   &.yellow
     background: $highlight-1
     color: $grey-6
-    border-color: #cc9b39
 
     &.disabled
       color: $grey-6
@@ -43,27 +42,15 @@ button, .button
     &:active, &:focus, &:hover
       color: $grey-6
       background: #e5ae40
-      border-color: #b28832
-
-  &.small
-    border-bottom-width: 2px
-
-    &:active
-      border-width: 2px 0 0
 
   &.tiny, &.tiny &:active
     border: 0
 
   &.grey
-    $lighter-grey-5: lighten($grey-5, $button-function-factor)
-    $lighter-grey-6: lighten($grey-6, $button-function-factor)
-
-    background-color: $lighter-grey-5
-    border-color: $lighter-grey-6
+    background-color: $grey-5
 
     &:active, &:focus, &:hover
-      background-color: $grey-5
-      border-color: $grey-6
+      background-color: rgba($grey-5, $button-hover-opacity)
 
   // custom mix of inline and pre/post fix classes so the button
   // does not take full width but still has the same height as form elements
@@ -86,12 +73,6 @@ button, .button
     padding: 0
     text-decoration: $anchor-text-decoration
     border: 0
-
-  &.flat
-    border-bottom: 0
-
-    &:active
-      border-top: 0
 
 .attachable
   width: 100%
