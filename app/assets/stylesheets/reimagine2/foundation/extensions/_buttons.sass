@@ -17,7 +17,6 @@ button, .button
     background: lighten($primary-color, $button-function-factor)
 
   &:active
-    border-width: 0
     box-shadow: none
     -webkit-box-shadow: none
 
@@ -41,10 +40,7 @@ button, .button
 
     &:active, &:focus, &:hover
       color: $grey-6
-      background: #e5ae40
-
-  &.tiny, &.tiny &:active
-    border: 0
+      background: lighten($highlight-1, $button-function-factor)
 
   &.grey
     background-color: $grey-5
@@ -72,7 +68,6 @@ button, .button
     font-weight: inherit
     padding: 0
     text-decoration: $anchor-text-decoration
-    border: 0
 
 .attachable
   width: 100%
