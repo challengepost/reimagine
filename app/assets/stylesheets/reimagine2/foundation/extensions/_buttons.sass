@@ -14,7 +14,7 @@ button, .button
   box-shadow: none
 
   &:active, &:focus, &:hover
-    background: rgba($primary-color, $button-hover-opacity)
+    background: lighten($primary-color, $button-function-factor)
 
   &:active
     border-width: 0
@@ -30,7 +30,7 @@ button, .button
 
     &:active, &:focus, &:hover
       color: white
-      background: rgba($secondary-color, $button-hover-opacity)
+      background: lighten($secondary-color, $button-function-factor)
 
   &.yellow
     background: $highlight-1
@@ -50,7 +50,7 @@ button, .button
     background-color: $grey-5
 
     &:active, &:focus, &:hover
-      background-color: rgba($grey-5, $button-hover-opacity)
+      background-color: lighten($grey-5, $button-function-factor)
 
   // custom mix of inline and pre/post fix classes so the button
   // does not take full width but still has the same height as form elements
