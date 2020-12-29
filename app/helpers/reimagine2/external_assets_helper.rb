@@ -2,19 +2,13 @@ module Reimagine2
   module ExternalAssetsHelper
     extend self
 
-    def fontawesome_stylesheet_link_params
-      [
-        'https://use.fontawesome.com/releases/v5.8.1/css/all.css',
-        {
-          integrity: 'sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf',
-          crossorigin: 'anonymous'
-        }
-      ]
+    def fontawesome_javascript_include_params
+      'https://kit.fontawesome.com/0c13a9f144.js'
     end
 
-    def fontawesome_stylesheet_link_tag
+    def fontawesome_javascript_include_tag
       return if Rails.env.test?
-      stylesheet_link_tag(*fontawesome_stylesheet_link_params)
+      javascript_include_tag(fontawesome_javascript_include_params, crossorigin: 'anonymous')
     end
   end
 end
