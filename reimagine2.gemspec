@@ -21,7 +21,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails"
   spec.add_dependency "sass-rails"
-  spec.add_dependency "compass-rails"
   spec.add_dependency "coffee-rails"
   spec.add_dependency "zurb-foundation", "~> 4"
 
