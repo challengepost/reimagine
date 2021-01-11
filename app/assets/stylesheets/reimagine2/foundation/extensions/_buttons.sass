@@ -43,6 +43,7 @@ button, .button
 
   &.grey
     background-color: $grey-5
+    color: white
 
     &:active, &:focus, &:hover
       background-color: lighten($grey-5, $button-function-factor)
@@ -59,7 +60,7 @@ button, .button
   &.disabled,
   &[disabled=disabled]
     background-image: none
-    @include button-style(#bfbfbf, $disabled:true)
+    @include button-style($grey-2, $disabled:true)
 
   &.link
     @include link-colors($anchor-font-color, $hover: $anchor-font-color-hover, $active: $anchor-font-color-hover, $focus: $anchor-font-color-hover)
