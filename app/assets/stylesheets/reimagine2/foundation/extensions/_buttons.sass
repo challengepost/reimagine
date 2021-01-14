@@ -13,7 +13,7 @@ button, .button
   box-shadow: none
 
   &:active, &:focus, &:hover
-    background: lighten($primary-color, $button-function-factor)
+    background: darken($primary-color, $button-function-factor)
 
   &:active
     box-shadow: none
@@ -27,7 +27,7 @@ button, .button
 
     &:active, &:focus, &:hover
       color: white
-      background: lighten($secondary-color, $button-function-factor)
+      background: darken($secondary-color, $button-function-factor)
 
   &.yellow
     background: $highlight-1
@@ -38,14 +38,14 @@ button, .button
 
     &:active, &:focus, &:hover
       color: $grey-6
-      background: lighten($highlight-1, $button-function-factor)
+      background: darken($highlight-1, $button-function-factor)
 
   &.grey
     background-color: $grey-5
     color: white
 
     &:active, &:focus, &:hover
-      background-color: lighten($grey-5, $button-function-factor)
+      background-color: darken($grey-5, $button-function-factor)
 
   // custom mix of inline and pre/post fix classes so the button
   // does not take full width but still has the same height as form elements
