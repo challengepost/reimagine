@@ -1,0 +1,8 @@
+@for $i from 1 through length($greys)
+  $grey: nth($greys, $i)
+
+  .has-text-grey-#{$i}
+    color: $grey !important
+
+.faded
+  color: $grey-4

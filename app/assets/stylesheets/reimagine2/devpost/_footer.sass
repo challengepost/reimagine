@@ -1,0 +1,108 @@
+@import 'reimagine2/mixins/links'
+
+#devpost-footer
+  background-color: $grey-2
+  font-size: 1rem
+  padding: 3em 0
+
+  h4
+    font-size: 1rem
+    margin-bottom: 0.5em
+
+    @media #{$small}
+      font-size: 1.125rem
+
+  a
+    +link-colors($grey-5)
+    border-bottom: 1px solid $grey-2
+    transition: border-bottom-color 0.5s ease
+    font-size: .8rem
+
+    @media #{$small}
+      font-size: 1rem
+
+    &:hover
+      border-color: $grey-5
+
+  ul
+    margin-bottom: 0
+    list-style: none
+    margin: 0
+
+    li
+      margin: 0 2.5rem .5rem 0
+
+  hr
+    border-color: $grey-2
+
+  .social-links
+    li
+      margin: 0 .8rem 0 0
+      display: inline-block
+
+      @media #{$small}
+        margin: 0 .4rem
+
+    a
+      color: rgba(0, 0, 0, 0)
+      opacity: 0.6
+      border: 0
+      padding-left: .1rem
+      @include single-transition(opacity, 200ms)
+
+      &:hover, &:focus
+        text-decoration: none
+        opacity: 1
+
+    i
+      &.fa
+        display: inline-block
+        width: 24px
+        height: 25px
+        background: image-url("reimagine2/social_logos.svg") no-repeat
+        background-size: 24px 124px
+
+      &.fa-twitter-square
+        background-position: 0px -1px
+      &.fa-facebook-square
+        background-position: 0px -33px
+      &.fa-youtube-square
+        background-position: 0px -65px
+      &.fa-tumblr-square
+        background-position: 0px -98px
+
+      @media #{$small}
+        &.fa
+          width: 41px
+          height: 42px
+          background-size: 41px 207px
+
+        &.fa-twitter-square
+          background-position: 0px 0px
+        &.fa-facebook-square
+          background-position: 0px -55px
+        &.fa-youtube-square
+          background-position: 0px -110px
+        &.fa-tumblr-square
+          background-position: 0px -165px
+
+#site-footer-legal
+  margin-top: 1rem
+
+  @media #{$small}
+    margin-top: 2rem
+
+    ul
+      li
+        color: $grey-4
+        display: inline-block
+        margin-right: 2em
+        margin-bottom: 0
+
+        a
+          +link-colors($grey-4)
+          border-bottom: 1px solid transparent
+          transition: border-bottom-color 0.5s ease
+
+          &:hover
+            border-color: $grey-4
