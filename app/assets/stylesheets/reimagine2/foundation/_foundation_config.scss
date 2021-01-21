@@ -51,8 +51,8 @@ $em-base: 16 !default;
 
 $default-float: left;
 
-$sans-serif-font-family: "Helvetica Neue", sans-serif;
-$custom-font-family: "ClearSans", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
+$sans-serif-font-family: "Circular" "Helvetica Neue", sans-serif;
+$custom-font-family: "Circular", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
 
 // $body-bg: #fff;
 $body-font-color: $grey-5;
@@ -210,7 +210,7 @@ $small-font-size: emCalc(14);
 
 // Style paragraphs
 
-// $paragraph-font-family: inherit;
+$paragraph-font-family: $custom-font-family;
 $paragraph-font-weight: inherit;
 // $paragraph-font-size: 1em;
 $paragraph-line-height: 1.4;
