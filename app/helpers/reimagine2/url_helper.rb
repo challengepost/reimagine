@@ -22,7 +22,8 @@ module Reimagine2
     end
       
     def platform_url(path, query)
-      URI::HTTPS.build(host: current_env_host, path: path, query: query)
+      return URI::HTTPS.build(host: current_env_host, path: path) if query.empty?
+      return URI::HTTPS.build(host: current_env_host, path: path, query: query)
     end
 
     private
@@ -39,6 +40,6 @@ module Reimagine2
 
       return hosts[environment]
     end
-    
+
   end
 end
