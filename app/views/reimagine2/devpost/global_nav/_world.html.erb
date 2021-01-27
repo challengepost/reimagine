@@ -1,3 +1,19 @@
 <ul class="left">
   <%= render "reimagine2/devpost/global_nav/world_menu_entries" %>
 </ul>
+
+<%= form_tag("https://devpost.dev/hackathons", class: :custom, id: "search-bar-form", data: { search_form: :base }, method: :get) do %>
+  <div>
+    <%= search_field_tag :search,
+                         nil,
+                         id: "challenge-search",
+                         title: "Search",
+                         placeholder: "Search hackathons",
+                         data: { search_form: :query }
+    %>
+    <span><i class="fas fa-search"></i></span>
+    <%= content_tag :button, type: :submit, class: "button postfix", id: "search-button", name: nil, title: "Search" do %>
+      <i class="fas fa-search"></i>
+    <% end %>
+  </div>
+<% end %>
