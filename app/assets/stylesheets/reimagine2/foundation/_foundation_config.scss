@@ -51,8 +51,8 @@ $em-base: 16 !default;
 
 $default-float: left;
 
-$sans-serif-font-family: "Helvetica Neue", sans-serif;
-$custom-font-family: "ClearSans", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
+$sans-serif-font-family: "Circular", "Helvetica Neue", sans-serif;
+$custom-font-family: "Circular", "HelveticaNeue-Bold", "Helvetica Neue Bold", sans-serif;
 
 // $body-bg: #fff;
 $body-font-color: $grey-5;
@@ -178,21 +178,21 @@ $column-gutter: emCalc(30);
 
 $header-font-family: $custom-font-family;
 
-$header-font-weight: bold;
+$header-font-weight: 500;
 // $header-font-style: normal;
-$header-font-color: $dark;
-// $header-line-height: 1.4;
+$header-font-color: $grey-6;
+$header-line-height: 1.25;
 // $header-top-margin: .2em;
-$header-bottom-margin: .4em;
+$header-bottom-margin: .6em;
 $header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
 
-$h1-font-size: emCalc(38);
+$h1-font-size: emCalc(36);
 $h2-font-size: emCalc(30);
-$h3-font-size: emCalc(22);
-$h4-font-size: emCalc(18);
-$h5-font-size: emCalc(18);
+$h3-font-size: emCalc(24);
+$h4-font-size: emCalc(20);
+$h5-font-size: emCalc(17);
 $h6-font-size: 1em;
 
 // Control how subheaders are styled.
@@ -205,15 +205,15 @@ $subheader-font-color: $header-font-color;
 
 // A general <small> styling
 
-$small-font-size: emCalc(14);
+$small-font-size: emCalc(15);
 // $small-font-color: lighten($header-font-color, 30%);
 
 // Style paragraphs
 
-// $paragraph-font-family: inherit;
+$paragraph-font-family: $custom-font-family;
 $paragraph-font-weight: inherit;
 // $paragraph-font-size: 1em;
-$paragraph-line-height: 1.4;
+$paragraph-line-height: 1.6;
 $paragraph-margin-bottom: emCalc(20);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -380,7 +380,7 @@ $button-font-tny: emCalc(12);
 $button-font-sml: emCalc(14);
 $button-font-med: emCalc(16);
 $button-font-lrg: emCalc(18);
-// $button-font-weight: bold;
+$button-font-weight: 500;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
