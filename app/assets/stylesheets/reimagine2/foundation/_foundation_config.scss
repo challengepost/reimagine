@@ -178,12 +178,12 @@ $column-gutter: emCalc(30);
 
 $header-font-family: $custom-font-family;
 
-$header-font-weight: bold;
+$header-font-weight: 500;
 // $header-font-style: normal;
 $header-font-color: $grey-6;
 $header-line-height: 1.25;
 // $header-top-margin: .2em;
-$header-bottom-margin: .4em;
+$header-bottom-margin: .6em;
 $header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
@@ -213,7 +213,7 @@ $small-font-size: emCalc(15);
 $paragraph-font-family: $custom-font-family;
 $paragraph-font-weight: inherit;
 // $paragraph-font-size: 1em;
-$paragraph-line-height: 1.5;
+$paragraph-line-height: 1.6;
 $paragraph-margin-bottom: emCalc(20);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -1283,8 +1283,8 @@ $topbar-dropdown-toggle-alpha: 1;
 $topbar-link-color: $dark;
 $topbar-link-color-hover: $dark-primary;
 $topbar-link-color-active: $dark-primary;
-$topbar-link-weight: 500;
-$topbar-link-font-size: 15px;
+$topbar-link-weight: normal;
+$topbar-link-font-size: 1em;
 $topbar-link-hover-lightness: $dark-primary;
 $topbar-link-bg-hover: $grey-1;
 $topbar-link-bg-active: $grey-1;
