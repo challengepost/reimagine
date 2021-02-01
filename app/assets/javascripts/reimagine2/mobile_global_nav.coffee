@@ -20,3 +20,6 @@
     # Shows the right menu depending on which toggle was clicked.
     $("[data-topbar]").find("[data-top-nav-menu]").hide().
       filter("[data-top-nav-menu='#{menuId}']").show()
+
+  $("[data-toggle-mobile-search='true']").on "click", (e) ->
+    alert("hi")

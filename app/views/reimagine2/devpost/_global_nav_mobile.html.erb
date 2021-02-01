@@ -13,9 +13,29 @@
 
         <%= render "reimagine2/devpost/global_nav/logo", presenter: presenter %>
       </li>
+      <li class="mobile-search-container">
+        <a data-toggle-mobile-search="true"><i class="fas fa-arrow-left"></i></a>
+        <%= form_tag("https://devpost.dev/hackathons", class: "", id: "search-bar-form", data: { search_form: :base }, method: :get) do %>
+          <div>
+            <%= search_field_tag :search,
+                                 nil,
+                                 id: "challenge-search",
+                                 title: "Search",
+                                 placeholder: "Search hackathons",
+                                 data: { search_form: :query }
+            %>
+            <%= content_tag :button, type: :submit, class: "button postfix", id: "search-button", name: nil, title: "Search" do %>
+              <i class="fas fa-search" data-toggle-mobile-search="true"></i>
+            <% end %>
+          </div>
+        <% end %>
+      </li>
 
       <%= render "reimagine2/devpost/global_nav/mobile/logged_in_account", presenter: presenter %>
       <%= render "reimagine2/devpost/global_nav/mobile/logged_out_account", presenter: presenter %>
+      <li>
+        <a data-toggle-mobile-search="true"><i class="fas fa-search"></i></a>
+      </li>
     </ul>
 
     <section class="top-bar-section" data-top-nav-menu="user">
