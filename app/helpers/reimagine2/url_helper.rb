@@ -21,9 +21,8 @@ module Reimagine2
       request.subdomains.first == "post"
     end
       
-    def platform_url(path, query)
-      return URI::HTTPS.build(host: current_env_host, path: path) if query.empty?
-      return URI::HTTPS.build(host: current_env_host, path: path, query: query)
+    def platform_url(**args)
+      URI::HTTPS.build(**args.merge({ host: current_env_host }))
     end
 
     private

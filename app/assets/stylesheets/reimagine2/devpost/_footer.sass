@@ -1,4 +1,5 @@
-$li-margin: 0 2.5rem 0.5rem 0
+$li-margin: 0 2.5rem 0.75rem 0
+$copy-bar-breakpoint: "only screen and (min-width: 930px)"
 
 #devpost-footer
   background-color: $grey-2
@@ -7,13 +8,19 @@ $li-margin: 0 2.5rem 0.5rem 0
   .body
     padding: 3em 0
 
-  h4
-    font-size: 1rem
-    margin-bottom: 1em
-    text-transform: none
+    nav
+      padding-left: 0
+      @media #{$copy-bar-breakpoint}
+        padding-left: 25%
 
-    @media #{$small}
-      font-size: 1.125rem
+      h4
+        font-size: 1rem
+        margin-bottom: .7em
+        text-transform: none
+        font-weight: 500
+        @media #{small}
+          margin-bottom: 1.5em
+          
 
   a
     +link-colors($grey-5)
@@ -114,7 +121,9 @@ $li-margin: 0 2.5rem 0.5rem 0
 
           li
             margin: $li-margin
+            margin-bottom: 0
             line-height: $legal-bar-line-height
 
         .copyright-notice
           margin: $li-margin
+          margin-bottom: 0

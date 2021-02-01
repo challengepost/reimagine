@@ -26,11 +26,11 @@
 
     <div class="small-6 large-3 columns">
       <nav>
-        <h4>Portfolios</h4>
+        <h4>Portfolio</h4>
         <ul>
-          <li><a href="<%= platform_url('/portfolio/redirect', 'page=projects') %>">Your projects</a></li>
-          <li><a href="<%= platform_url('/portfolio/redirect', 'page=hackathons') %>">Your hackathons</a></li>
-          <li><a href="<%= platform_url('/settings', "") %>">Settings</a></li>
+          <li><a href="<%= platform_url(path: '/portfolio/redirect', query: 'page=projects') %>">Your projects</a></li>
+          <li><a href="<%= platform_url(path: '/portfolio/redirect', query: 'page=hackathons') %>">Your hackathons</a></li>
+          <li><a href="<%= platform_url(path: '/settings') %>">Settings</a></li>
         </ul>
       </nav>
     </div>
@@ -83,9 +83,9 @@
           <div class="copyright-notice">&#169; <%= Time.current.year %> Devpost, Inc. All rights reserved.</div>
           
           <ul> 
-            <li><a href="https://info.devpost.com/privacy">Privacy Policy</a></li>
-            <li><a href="https://info.devpost.com/guidelines">Community Guidelines</a></li>
-            <li><a href="https://info.devpost.com/terms">Terms of Service</a>
+            <li><a href="https://info.devpost.com/privacy">Privacy policy</a></li>
+            <li><a href="https://info.devpost.com/guidelines">Community guidelines</a></li>
+            <li><a href="https://info.devpost.com/terms">Terms of service</a>
           </ul>
         </div>
       </div>
