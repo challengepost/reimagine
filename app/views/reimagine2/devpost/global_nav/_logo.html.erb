@@ -1,6 +1,8 @@
-<% image_path ||= "reimagine2/devpost-logo.svg" %>
+<% image_path_desktop ||= "reimagine2/devpost-logo.svg" %>
+<% image_path_mobile ||= "reimagine2/devpost-logo-mobile.svg" %>
 <span id="logo">
   <%= link_to reimagine_root_url do %>
-    <%= image_tag image_path, alt: "Devpost" %>
+    <%= image_tag image_path_mobile, alt: "Devpost", class: "show-for-small" %>
+    <%= image_tag image_path_desktop, alt: "Devpost", class: "show-for-medium-up" %>
   <% end %>
 </span>
