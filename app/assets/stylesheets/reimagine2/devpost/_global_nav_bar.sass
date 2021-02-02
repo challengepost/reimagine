@@ -36,6 +36,8 @@
       z-index: 5
       width: 100%
       padding-right: 1em
+      animation-name: hackathon-search-slide-in
+      animation-duration: .5s
 
       input, button
         margin-top: 8px
@@ -53,8 +55,10 @@
         line-height: 1.6
 
       &.hide
-        display: none
-        animation: slide-in
+        margin-left: -100%
+        display: list-item
+        animation-name: hackathon-search-slide-out
+        animation-duration: .5s
 
 
     .search-bar-form
@@ -311,6 +315,16 @@
   max-width: 300px
 
 
-@keyframes slide-in
-  100%
-    left: 0
+@keyframes hackathon-search-slide-in
+  from
+    margin-left: -100%
+
+  to
+    margin-left: 0
+
+@keyframes hackathon-search-slide-out
+  from
+    margin-left: 0
+
+  to
+    margin-left: -100%
