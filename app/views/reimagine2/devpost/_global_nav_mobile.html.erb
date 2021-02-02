@@ -10,23 +10,13 @@
         <% end %>
       </li>
       <li class="name">
-
         <%= render "reimagine2/devpost/global_nav/logo", presenter: presenter %>
       </li>
       <li id="mobile-search-container" class="hide">
-        <%= form_tag("https://devpost.dev/hackathons", class: "search-bar-form", id: "", data: { search_form: :base }, method: :get) do %>
+        <%= form_tag("https://devpost.dev/hackathons", class: "search-bar-form", data: { search_form: :base }, method: :get) do %>
           <div>
             <a id="collapse-mobile-search" data-toggle-mobile-search="true"><i class="fas fa-arrow-left"></i></a>
-            <%= search_field_tag :search,
-                                 nil,
-                                 id: "challenge-search",
-                                 title: "Search",
-                                 placeholder: "Search hackathons",
-                                 data: { search_form: :query }
-            %>
-            <%= content_tag :button, type: :submit, class: "button postfix" do %>
-              <i class="fas fa-search"></i>
-            <% end %>
+            <%= render "reimagine2/devpost/global_nav/hackathon_search_fields" %>
           </div>
         <% end %>
       </li>
