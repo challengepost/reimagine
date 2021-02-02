@@ -13,7 +13,7 @@
         <%= render "reimagine2/devpost/global_nav/logo", presenter: presenter %>
       </li>
       <li id="mobile-search-container" class="hide">
-        <%= form_tag("https://devpost.dev/hackathons", class: "search-bar-form", data: { search_form: :base }, method: :get) do %>
+        <%= form_tag("https://devpost.dev/hackathons", class: "search-bar-form", method: :get) do %>
           <div>
             <a id="collapse-mobile-search" data-toggle-mobile-search="true"><i class="fas fa-arrow-left"></i></a>
             <%= render "reimagine2/devpost/global_nav/hackathon_search_fields" %>
