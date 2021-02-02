@@ -1,7 +1,7 @@
 <ul class="left">
   <%= render "reimagine2/devpost/global_nav/world_menu_entries" %>
   <li>
-    <%= form_tag("https://devpost.dev/hackathons", class: "hide-for-small", id: "search-bar-form", data: { search_form: :base }, method: :get) do %>
+    <%= form_tag("https://devpost.dev/hackathons", class: "hide-for-small search-bar-form", id: "", data: { search_form: :base }, method: :get) do %>
       <div>
         <%= search_field_tag :search,
                              nil,

@@ -28,6 +28,51 @@
       &.button
         @extend .button
 
+
+    #mobile-search-container
+      font-size: .85em
+      position: absolute
+      background: white
+      z-index: 5
+      width: 100%
+      padding-right: 1em
+
+      input, button
+        margin-top: 8px
+
+      #collapse-mobile-search
+        width: 42px
+
+        .fa-arrow-left
+          font-size: 1.5em
+          line-height: 2.9
+          padding-left: .25em
+
+      button
+        width: 42px
+        line-height: 1.6
+
+      &.hide
+        display: none
+        animation: slide-in
+
+
+    .search-bar-form
+      div
+        display: flex
+
+      &.hide-for-small
+        input
+          width: 200px
+          margin-left: .5em
+
+        button
+          width: 42px
+
+        input, button
+          font-size: 1em
+          margin-top: 7px
+
   .name
     float: left
 
@@ -264,3 +309,8 @@
 
 .ui-autocomplete
   max-width: 300px
+
+
+@keyframes slide-in
+  100%
+    left: 0
