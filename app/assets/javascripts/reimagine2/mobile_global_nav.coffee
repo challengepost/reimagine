@@ -22,4 +22,4 @@
       filter("[data-top-nav-menu='#{menuId}']").show()
 
   $("[data-toggle-mobile-search='true']").on "click", (e) ->
-    $("#mobile-search-container, #mobile-search-expand-container").toggleClass("hide")
+    $("#mobile-search-container").toggleClass("hide")
