@@ -40,15 +40,19 @@
       z-index: 5
       width: 100%
       padding-right: 1em
-      animation-name: hackathon-search-slide-in
-      animation-duration: .5s
+
+      &.slide-in
+        animation-name: hackathon-search-slide-in
+        animation-duration: .5s
 
       &.hide
+        display: none
+
+      &.slide-out
         margin-left: -100%
         display: list-item
         animation-name: hackathon-search-slide-out
         animation-duration: .5s
-
 
     .search-bar-form
       div

@@ -23,3 +23,6 @@
 
   $("[data-toggle-mobile-search='true']").on "click", (e) ->
     $("#mobile-search-container").toggleClass("hide")
+
+    $("#mobile-search-container").toggleClass("slide-out", $("#mobile-search-container").hasClass("hide"))
+    $("#mobile-search-container").toggleClass("slide-in", !$("#mobile-search-container").hasClass("hide"))
