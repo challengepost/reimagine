@@ -14,7 +14,7 @@ module Reimagine2
     end
 
     def reimagine_post_url(opts = {})
-      reimagine_url(opts.merge(host: Reimagine2.configuration.post_host))
+      reimagine_url(opts.merge(host: Reimagine2.configuration.post_host)).to_s
     end
 
     def post_subdomain?
@@ -22,7 +22,7 @@ module Reimagine2
     end
       
     def platform_url(**args)
-      URI::HTTPS.build(**args.merge({ host: current_env_host }))
+      URI::HTTPS.build(**args.merge({ host: current_env_host })).to_s
     end
 
     private

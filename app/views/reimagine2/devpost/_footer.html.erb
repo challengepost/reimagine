@@ -28,9 +28,9 @@
       <nav>
         <h4>Portfolio</h4>
         <ul>
-          <li><a href="<%= platform_url(path: '/portfolio/redirect', query: 'page=projects') %>">Your projects</a></li>
-          <li><a href="<%= platform_url(path: '/portfolio/redirect', query: 'page=hackathons') %>">Your hackathons</a></li>
-          <li><a href="<%= platform_url(path: '/settings') %>">Settings</a></li>
+          <li><%= link_to "Your projects", platform_url(path: '/portfolio/redirect', query: 'page=projects') %></li>
+          <li><%= link_to "Your hackathons", platform_url(path: '/portfolio/redirect', query: 'page=hackathons') %></li>
+          <li><%= link_to "Settings", platform_url(path: '/settings') %></li>
         </ul>
       </nav>
     </div>
