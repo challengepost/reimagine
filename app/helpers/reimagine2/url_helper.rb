@@ -14,7 +14,7 @@ module Reimagine2
     end
 
     def reimagine_post_url(opts = {})
-      reimagine_url(opts.merge(host: Reimagine2.configuration.post_host)).to_s
+      reimagine_url(opts.merge(host: Reimagine2.configuration.post_host))
     end
 
     def post_subdomain?

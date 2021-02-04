@@ -13,18 +13,16 @@
         <%= render "reimagine2/devpost/global_nav/logo", presenter: presenter %>
       </li>
       <li id="mobile-search-container" class="hide">
-        <%= form_tag(platform_url(path: "/hackathons"), class: "search-bar-form", method: :get) do %>
-          <div>
-            <a id="collapse-mobile-search" data-toggle-mobile-search="true"><i class="fas fa-arrow-left"></i></a>
-            <%= render "reimagine2/devpost/global_nav/hackathon_search_fields" %>
-          </div>
+        <%= form_tag(platform_url(path: "/hackathons"), class: "search-bar-form flex-row", method: :get) do %>
+          <a id="collapse-mobile-search" data-toggle-mobile-search><i class="fas fa-arrow-left"></i></a>
+          <%= render "reimagine2/devpost/global_nav/hackathon_search_fields" %>
         <% end %>
       </li>
 
       <%= render "reimagine2/devpost/global_nav/mobile/logged_in_account", presenter: presenter %>
       <%= render "reimagine2/devpost/global_nav/mobile/logged_out_account", presenter: presenter %>
       <li id="mobile-search-expand-container" class="right">
-        <a data-toggle-mobile-search="true"><i class="fas fa-search"></i></a>
+        <a data-toggle-mobile-search><i class="fas fa-search"></i></a>
       </li>
     </ul>
 

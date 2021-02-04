@@ -1,4 +1,6 @@
 @Reimagine2.mobileGlobalNav = ->
+  $mobileSearchContainer = $("#mobile-search-container")
+
   $(document).on "click.fndtn.topbar", '.top-bar .toggle-topbar, [data-topbar] .toggle-topbar', (e) ->
     e.preventDefault()
 
@@ -21,8 +23,8 @@
     $("[data-topbar]").find("[data-top-nav-menu]").hide().
       filter("[data-top-nav-menu='#{menuId}']").show()
 
-  $("[data-toggle-mobile-search='true']").on "click", (e) ->
-    $("#mobile-search-container").toggleClass("hide")
+  $("[data-toggle-mobile-search]").on "click", (e) ->
+    $mobileSearchContainer.toggleClass("hide")
 
-    $("#mobile-search-container").toggleClass("slide-out", $("#mobile-search-container").hasClass("hide"))
-    $("#mobile-search-container").toggleClass("slide-in", !$("#mobile-search-container").hasClass("hide"))
+    $mobileSearchContainer.toggleClass("slide-out", $mobileSearchContainer.hasClass("hide"))
+    $mobileSearchContainer.toggleClass("slide-in", !$mobileSearchContainer.hasClass("hide"))
