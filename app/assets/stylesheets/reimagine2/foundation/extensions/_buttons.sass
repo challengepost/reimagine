@@ -40,6 +40,16 @@ button, .button
       color: $grey-6
       background: darken($highlight-1, $button-function-factor)
 
+  &.dark
+    background: $dark
+
+    &.disabled
+      color: $grey-6
+
+    &:active, &:focus, &:hover
+      background: darken($dark, $button-function-factor)
+
+
   &.grey
     background-color: $blue-grey-6
     color: white

@@ -32,6 +32,7 @@
       a
         padding: 0 1em
         line-height: 56px
+        font-size: 1.25em
 
     #mobile-search-container
       font-size: .85em
@@ -43,7 +44,7 @@
 
       &.slide-in
         animation-name: hackathon-search-slide-in
-        animation-duration: .5s
+        animation-duration: .3s
 
       &.hide
         display: none
@@ -52,7 +53,7 @@
         margin-left: -100%
         display: list-item
         animation-name: hackathon-search-slide-out
-        animation-duration: .5s
+        animation-duration: .3s
 
     .search-bar-form
       div
@@ -66,7 +67,14 @@
         input, button
           margin-top: 8px
 
-        #collapse-mobile-search
+        input
+          border-color: $grey-3
+
+          &:hover, &:focus
+            border-color: $dark
+
+
+      #collapse-mobile-search
           width: 42px
 
           .fa-arrow-left
@@ -76,14 +84,12 @@
 
       &.large
         input
-          width: 200px
-          margin-left: .5em
+          width: 315px
+          margin-left: 1.5em
 
-          @media only screen and (max-width: 1080px)
-            width: 155px
-
-          @media only screen and (max-width: 1040px)
-            width: 142px
+          @for $i from 0 through 7
+            @media only screen and (max-width: #{1180 - $i * 20}px)
+              width: #{295 - $i * 20}px
 
         button
           width: 38px
