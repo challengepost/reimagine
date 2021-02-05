@@ -1,4 +1,6 @@
 @Reimagine2.mobileGlobalNav = ->
+  $mobileSearchContainer = $("#mobile-search-container")
+
   $(document).on "click.fndtn.topbar", '.top-bar .toggle-topbar, [data-topbar] .toggle-topbar', (e) ->
     e.preventDefault()
 
@@ -20,3 +22,9 @@
     # Shows the right menu depending on which toggle was clicked.
     $("[data-topbar]").find("[data-top-nav-menu]").hide().
       filter("[data-top-nav-menu='#{menuId}']").show()
+
+  $("[data-toggle-mobile-search]").on "click", (e) ->
+    $mobileSearchContainer.toggleClass("hide")
+
+    if !$mobileSearchContainer.hasClass("hide")
+      $mobileSearchContainer.find("#challenge-search").focus()

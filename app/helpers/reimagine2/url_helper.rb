@@ -22,7 +22,7 @@ module Reimagine2
     end
       
     def platform_url(**args)
-      URI::HTTPS.build(**args.merge({ host: current_env_host }))
+      URI::HTTPS.build(**args.merge({ host: current_env_host })).to_s
     end
 
     private
