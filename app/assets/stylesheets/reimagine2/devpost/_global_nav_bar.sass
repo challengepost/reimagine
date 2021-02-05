@@ -42,25 +42,20 @@
       width: 100%
       padding-right: 1em
 
-      &.slide-in
-        animation: .3s hackathon-search-slide-in
-
       &.hide
         display: none
-
-      &.slide-out
-        margin-left: -100%
-        display: list-item
-        animation: .3s hackathon-search-slide-out
 
     .search-bar-form
       button
         margin-left: -2px
         width: 42px
         line-height: 1.6
+        border-radius: 0 3px 3px 0
 
       input
-        border-color: $grey-3
+        border-color: $grey-2
+        border-radius: 3px 0 0 3px
+        background: $grey-2
 
         &:hover, &:focus
           border-color: $dark
@@ -76,12 +71,12 @@
 
       &.large
         input
-          width: 315px
+          width: 295px
           margin-left: 1.5em
 
-          @for $i from 0 through 7
-            @media only screen and (max-width: #{1180 - $i * 20}px)
-              width: #{295 - $i * 20}px
+          @for $i from 0 through 8
+            @media only screen and (max-width: #{1200 - $i * 20}px)
+              width: #{275 - $i * 20}px
 
         button
           width: 38px
@@ -326,18 +321,3 @@
 
 .ui-autocomplete
   max-width: 300px
-
-
-@keyframes hackathon-search-slide-in
-  from
-    margin-left: -100%
-
-  to
-    margin-left: 0
-
-@keyframes hackathon-search-slide-out
-  from
-    margin-left: 0
-
-  to
-    margin-left: -100%

@@ -26,5 +26,5 @@
   $("[data-toggle-mobile-search]").on "click", (e) ->
     $mobileSearchContainer.toggleClass("hide")
 
-    $mobileSearchContainer.toggleClass("slide-out", $mobileSearchContainer.hasClass("hide"))
-    $mobileSearchContainer.toggleClass("slide-in", !$mobileSearchContainer.hasClass("hide"))
+    if !$mobileSearchContainer.hasClass("hide")
+      $mobileSearchContainer.find("#challenge-search").focus()
