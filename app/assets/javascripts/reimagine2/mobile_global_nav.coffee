@@ -27,4 +27,4 @@
     $mobileSearchContainer.toggleClass("hide")
 
     if !$mobileSearchContainer.hasClass("hide")
-      $mobileSearchContainer.find("#challenge-search").focus()
+      $mobileSearchContainer.find("#search").focus()
