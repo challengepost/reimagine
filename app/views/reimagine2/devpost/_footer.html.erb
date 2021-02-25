@@ -1,36 +1,36 @@
 <footer id="devpost-footer">
-  <div class="row">
-    <div class="small-6 large-3 columns">
+  <div class="row body">
+    <div class="small-6 large-3 columns with-bottom-margin">
       <nav>
         <h4>Devpost</h4>
         <ul>
           <li><a href="https://info.devpost.com/about">About</a></li>
           <li><a href="https://info.devpost.com/careers">Careers</a></li>
           <li><a href="https://info.devpost.com/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="small-6 large-3 columns">
-      <nav>
-        <h4>Hackathons</h4>
-        <ul>
-          <li><a href="https://devpost.com/hackathons">Browse hackathons</a></li>
-          <li><a href="https://devpost.com/software">Explore projects</a></li>
           <li><a href="https://help.devpost.com/">Help</a></li>
         </ul>
       </nav>
     </div>
 
-    <hr class="clear show-for-small">
+    <div class="small-6 large-3 columns with-bottom-margin">
+      <nav>
+        <h4>Hackathons</h4>
+        <ul>
+          <li><a href="https://devpost.com/hackathons">Browse hackathons</a></li>
+          <li><a href="https://devpost.com/software">Explore projects</a></li>
+          <li><a href="https://post.devpost.com">Host a hackathon</a></li>
+          <li><a href="https://post.devpost.com/app_contest_resources/">Hackathon guides</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="small-6 large-3 columns">
       <nav>
-        <h4>For Organizations</h4>
+        <h4>Portfolio</h4>
         <ul>
-          <li><a href="https://post.devpost.com/hackathons">Host an in-person hackathon</a></li>
-          <li><a href="https://post.devpost.com/online_hackathons">Host an online hackathon</a></li>
-          <li><a href="https://post.devpost.com/app_contest_resources">Hackathon best practices</a></li>
+          <li><%= link_to "Your projects", platform_url(path: '/portfolio/redirect', query: 'page=projects') %></li>
+          <li><%= link_to "Your hackathons", platform_url(path: '/portfolio/redirect', query: 'page=hackathons') %></li>
+          <li><%= link_to "Settings", platform_url(path: '/settings') %></li>
         </ul>
       </nav>
     </div>
@@ -40,33 +40,56 @@
         <h4>Connect</h4>
         <ul class="social-links">
           <li>
-            <a href="https://twitter.com/devpost" target="_blank">
-              <i class="fa fa-twitter-square"></i>
+            <a href="https://twitter.com/devpost">
+              <div class="icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+
+              <span>
+                Twitter
+              </span>
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/devposthacks" target="_blank">
-              <i class="fa fa-facebook-square"></i>
+              <div class="icon">
+                <i class="fab fa-facebook"></i>
+              </div>
+              <span>
+                Facebook
+              </span>
             </a>
           </li>
           <li>
             <a href="https://www.youtube.com/playlist?list=PLmJ41elIxG7bRbhhCUQun3e4XNeyKc_-o" target="_blank">
-              <i class="fa fa-youtube-square"></i>
+              <div class="icon">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <span>
+                YouTube
+              </span>
             </a>
           </li>
         </ul>
       </nav>
     </div>
 
-    <div class="small-6 large-12 columns">
-      <nav id="site-footer-legal">
-        <h4 class="show-for-small">Legal</h4>
-        <ul>
-          <li><a href="https://info.devpost.com/privacy"><small>Privacy policy</small></a></li>
-          <li><a href="https://info.devpost.com/guidelines"><small>Community Guidelines</small></a></li>
-          <li><a href="https://info.devpost.com/terms"><small>Terms of service</small></a></li>
-        </ul>
-      </nav>
-    </div>
   </div>
+
+  <div class="legal-bar-container">
+    <nav class="row">
+      <div class="columns">
+        <div class="legal-bar">
+          <div class="copyright-notice">&#169; <%= Time.current.year %> Devpost, Inc. All rights reserved.</div>
+
+          <ul>
+            <li><a href="https://info.devpost.com/privacy">Privacy policy</a></li>
+            <li><a href="https://info.devpost.com/guidelines">Community guidelines</a></li>
+            <li><a href="https://info.devpost.com/terms">Terms of service</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
 </footer>

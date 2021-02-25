@@ -20,5 +20,25 @@ module Reimagine2
     def post_subdomain?
       request.subdomains.first == "post"
     end
+      
+    def platform_url(**args)
+      URI::HTTPS.build(**args.merge({ host: current_env_host })).to_s
+    end
+
+    private
+
+    def current_env_host
+      hosts = {
+        development: "devpost.dev",
+        staging: "staging.devpost.com",
+        test: "lvh.me",
+        production: "devpost.com"
+      }
+
+      environment = Rails.env.to_sym
+
+      return hosts[environment]
+    end
+
   end
 end

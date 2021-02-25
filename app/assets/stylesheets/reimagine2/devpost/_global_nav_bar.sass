@@ -28,6 +28,63 @@
       &.button
         @extend .button
 
+    #mobile-search-expand-container
+      a
+        padding: 0 1em
+        line-height: 56px
+        font-size: 1.25em
+
+    #mobile-search-container
+      font-size: .85em
+      position: absolute
+      background: white
+      z-index: 5
+      width: 100%
+      padding-right: 1em
+
+      &.hide
+        display: none
+
+    .search-bar-form
+      button
+        margin-left: -2px
+        width: 42px
+        line-height: 1.6
+        border-radius: 0 3px 3px 0
+
+      input
+        border-color: $grey-2
+        border-radius: 3px 0 0 3px
+        background: $grey-2
+
+        &:hover, &:focus
+          border-color: $dark
+
+
+      #collapse-mobile-search
+        width: 42px
+
+        .fa-arrow-left
+          font-size: 1.5em
+          line-height: 2.9
+          padding-left: .25em
+
+      &.large
+        input
+          width: 295px
+          margin-left: 1.5em
+
+          @for $i from 0 through 8
+            @media only screen and (max-width: #{1200 - $i * 20}px)
+              width: #{275 - $i * 20}px
+
+        button
+          width: 38px
+
+        input, button
+          font-size: 1em
+          margin-top: 7px
+
   .name
     float: left
 
@@ -44,7 +101,6 @@
       padding: 0 0.5em 0 1em
 
   a
-    font-weight: normal
     line-height: $topbar-height
     max-height: $topbar-height
 
@@ -66,7 +122,7 @@
         max-height: 28px
 
     &.main-link
-      font-size: 1em
+      color: $dark
       padding: 0 1.5em
 
       &:hover,
@@ -258,9 +314,10 @@
 
   #hamburger
     margin: 0
-    width: 40px
+    margin-top: 2px
+    width: 44px
     color: $grey-3
-    font-size: 1rem
+    font-size: 1.1rem
 
 .ui-autocomplete
   max-width: 300px
