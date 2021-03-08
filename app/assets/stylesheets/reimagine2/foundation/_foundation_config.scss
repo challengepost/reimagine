@@ -230,7 +230,7 @@ $code-font-weight: normal;
 
 $anchor-text-decoration: none;
 $anchor-font-color: $primary-color;
-$anchor-font-color-hover: $primary-2;
+$anchor-font-color-hover: darken($anchor-font-color, 10%);
 
 // Style the <hr> element
 
