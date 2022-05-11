@@ -27,3 +27,4 @@ tmp
 .sass-cache
 build/
 rvm.env
+.idea
