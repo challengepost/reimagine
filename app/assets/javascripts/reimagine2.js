@@ -5,3 +5,11 @@
 //= require reimagine2/mobile_global_nav
 //= require 'responsive-tables'
 //= require 'prism'
+
+function showFloatingMenu() {
+  document.getElementById('floating-menu-wrapper').style.display = 'block';
+}
+
+function hideFloatingMenu() {
+  document.getElementById('floating-menu-wrapper').style.display = 'none';
+}
