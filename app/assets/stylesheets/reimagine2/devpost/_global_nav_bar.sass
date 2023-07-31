@@ -5,6 +5,7 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
   box-shadow: 0px 1px 3px rgba(0,0,0,0.3)
   position: relative
+  z-index: 100
 
   .top-bar-section
     .has-dropdown > a:after
@@ -321,3 +322,55 @@
 
 .ui-autocomplete
   max-width: 300px
+
+#floating-menu-wrapper
+  position: relative
+  height: 0
+  z-index: 12
+
+  .floating-menu
+    position: absolute
+    left: $column-gutter / 2
+    height: 226px
+    width: 768px
+    background-color: white
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.15)
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.12)
+    display: flex
+
+    .panel-container
+      padding: 40px 30px
+      flex: 1
+      font-size: 14px
+
+    p
+      margin: 0
+
+    .panel-product
+      display: flex
+      font-size: 14px
+      grid-column-gap: 12px
+      align-items: flex-start
+      margin-bottom: 12px
+
+      img
+        height: 24px
+
+      .title
+        padding-top: 4px
+        padding-bottom: 4px
+        line-height: 16px
+
+      .subtitle
+        color: $blue-grey-4
+        line-height: 16px
+
+    .panel-content
+      display: flex
+      flex-direction: column
+      grid-row-gap: 10px
+      padding-left: 49px
+
+      a
+        color: $primary-1
+        padding: 4px 0

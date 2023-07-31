@@ -4,3 +4,36 @@
   <%= render "reimagine2/devpost/global_nav_mobile", presenter: presenter %>
   <%= render "reimagine2/devpost/global_nav_desktop", presenter: presenter %>
 </header>
+
+<div id="floating-menu-wrapper" class="row">
+  <div class="floating-menu">
+    <div class="panel-container">
+      <a class="panel-product" href="/product/public-hackathons">
+        <%= image_tag 'reimagine2/devpost-logo-mobile.svg', alt: 'Devpost' %>
+        <div>
+          <p class="title bold">Devpost</p>
+          <p class="subtitle">Grow your developer ecosystem and promote your platform.</p>
+        </div>
+      </a>
+      <div class="panel-content">
+        <a class="bold" href="#">Hackathons</a>
+        <a class="bold" href="#">Projects</a>
+        <a class="bold" href="#">Host a public hackathon</a>
+      </div>
+    </div>
+
+    <div class="panel-container">
+      <a class="panel-product" href="/product/devpost-for-teams">
+        <%= image_tag 'reimagine2/dft-logo-mobile.svg', alt: 'Devpost for Teams' %>
+        <div>
+          <p class="bold">Devpost for Teams</p>
+          <p class="subtitle">Drive innovation, collaboration, and retention within your organization.</p>
+        </div>
+      </a>
+      <div class="panel-content">
+        <a class="bold" href="#">Teams login</a>
+        <a class="bold" href="#">Request a demo</a>
+      </div>
+    </div>
+  </div>
+</div>
