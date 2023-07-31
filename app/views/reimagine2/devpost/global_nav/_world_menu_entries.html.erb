@@ -1,5 +1,11 @@
 <li class="divider"></li>
 <li>
+  <%= link_to "#", class: "main-link" do %>
+    Product
+    <i class="fas fa-angle-down"></i>
+  <% end %>
+</li>
+<li>
   <%= link_to reimagine_root_url(path: "/hackathons"),
         class: "main-link",
         data: { role: "discover" } do %>
@@ -12,5 +18,10 @@
         class: "main-link",
         data: { role: "projects" } do %>
     Projects
+  <% end %>
+</li>
+<li>
+  <%= link_to "#", class: "main-link" do %>
+    Blog
   <% end %>
 </li>
