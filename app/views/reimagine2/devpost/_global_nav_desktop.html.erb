@@ -19,7 +19,7 @@
             <a data-toggle-desktop-search><i class="fas fa-search"></i></a>
           </li>
 
-          <li class="hide-for-smallX hide">
+          <li id="desktop-search-form-container" class="hide">
             <%= form_tag(platform_url(path: "/hackathons"), class: "search-bar-form large flex-row", method: :get) do %>
               <%= render "reimagine2/devpost/global_nav/hackathon_search_fields" %>
             <% end %>
