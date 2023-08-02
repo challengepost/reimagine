@@ -1,5 +1,5 @@
 @Reimagine2.mobileGlobalNav = ->
-  $mobileSearchContainer = $("#mobile-search-container")
+  $mobileSearchContainer = $("#mobile-search-form-container")
 
   $(document).on "click.fndtn.topbar", '.top-bar .toggle-topbar, [data-topbar] .toggle-topbar', (e) ->
     e.preventDefault()
