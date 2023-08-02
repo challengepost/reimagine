@@ -18,6 +18,12 @@
           <li id="desktop-search-expand-container" class="main-link">
             <a data-toggle-mobile-search><i class="fas fa-search"></i></a>
           </li>
+
+          <li class="hide-for-smallX hide">
+            <%= form_tag(platform_url(path: "/hackathons"), class: "search-bar-form large flex-row", method: :get) do %>
+              <%= render "reimagine2/devpost/global_nav/hackathon_search_fields" %>
+            <% end %>
+          </li>
         </ul>
 
         <%= render 'reimagine2/devpost/global_nav/account', presenter: presenter %>
