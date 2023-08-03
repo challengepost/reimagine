@@ -12,10 +12,9 @@
       <li class="name">
         <%= render "reimagine2/devpost/global_nav/logo", presenter: presenter %>
       </li>
-      <li id="mobile-search-form-container" class="hide">
-        <%= form_tag(platform_url(path: "/hackathons"), class: "search-bar-form flex-row align-center", method: :get) do %>
-          <a id="collapse-mobile-search" data-toggle-mobile-search><i class="fas fa-arrow-left"></i></a>
-          <%= render "reimagine2/devpost/global_nav/hackathon_search_fields" %>
+      <li id="mobile-search-form-container" class="search-form-container mobile hide">
+        <%= form_tag(platform_url(path: '/hackathons'), class: 'flex-row align-items-center search-form', method: :get) do %>
+          <%= render 'reimagine2/devpost/global_nav/hackathon_search_fields', data_toggle_attr: 'data-toggle-mobile-search' %>
         <% end %>
       </li>
 

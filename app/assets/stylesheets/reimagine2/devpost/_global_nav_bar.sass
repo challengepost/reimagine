@@ -49,12 +49,10 @@
       left: 0
 
     #mobile-search-form-container
-      font-size: .85em
-      position: absolute
       background: white
-      z-index: 5
+      position: absolute
       width: 100%
-      padding-right: 1em
+      height: 50px
 
     .hide
       display: none
@@ -67,6 +65,9 @@
           flex-grow: 1
           height: 44px
           border-bottom: 1px solid $primary-1
+
+          @media (max-width: 1023px)
+            height: 40px
 
           .search-icon
             color: $primary-1
