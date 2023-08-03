@@ -42,6 +42,7 @@
           line-height: 56px
 
     #desktop-search-form-container
+      background: white
       position: absolute
       width: 100%
       height: 62px
@@ -57,6 +58,33 @@
 
     .hide
       display: none
+
+    .search-form-container
+      form.search-form
+        height: 100%
+
+        .search-field-wrapper
+          flex-grow: 1
+          height: 44px
+          border-bottom: 2px solid $primary-1
+
+          .search-icon
+            color: $primary-1
+
+          input[type='search']
+            border: 0
+            font-size: 16px
+            background: none
+
+            &::placeholder
+              color: $blue-grey-4
+
+          a.close-icon
+            background: none
+            color: $blue-grey-4
+
+            &:hover
+              color: $primary-1
 
     .search-bar-form
       button
