@@ -20,18 +20,8 @@
           </li>
 
           <li id="desktop-search-form-container" class="search-form-container hide">
-            <%= form_tag(platform_url(path: "/hackathons"), class: "flex-row align-items-center search-form", method: :get) do %>
-              <div class="search-field-wrapper flex-row align-items-stretch mx-4">
-                <span class="align-items-center">
-                  <i class="fas fa-search pr-2 search-icon"></i>
-                </span>
-
-                <%= search_field_tag :search, nil, title: "Search", placeholder: "Search hackathons" %>
-
-                <a href="#" class="align-items-center pl-2 pr-0 close-icon" data-toggle-desktop-search>
-                  <i class="fas fa-times"></i>
-                </a>
-              </div>
+            <%= form_tag(platform_url(path: '/hackathons'), class: 'flex-row align-items-center search-form', method: :get) do %>
+              <%= render 'reimagine2/devpost/global_nav/hackathon_search_fields', data_toggle_attr: 'data-toggle-desktop-search' %>
             <% end %>
           </li>
         </ul>

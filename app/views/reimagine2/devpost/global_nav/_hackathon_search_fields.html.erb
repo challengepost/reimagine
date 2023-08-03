@@ -1,4 +1,11 @@
-<%= search_field_tag :search, nil, title: "Search", placeholder: "Search hackathons" %>
-<%= content_tag :button, type: :submit, class: "button postfix dark" do %>
-  <i class="fas fa-search"></i>
-<% end %>
+<div class="search-field-wrapper flex-row align-items-stretch mx-4">
+  <span class="align-items-center">
+    <i class="fas fa-search pr-2 search-icon"></i>
+  </span>
+
+  <%= search_field_tag :search, nil, title: 'Search', placeholder: 'Search hackathons' %>
+
+  <a href="#" class="align-items-center pl-2 pr-0 close-icon" <%= data_toggle_attr %>>
+    <i class="fas fa-times"></i>
+  </a>
+</div>
