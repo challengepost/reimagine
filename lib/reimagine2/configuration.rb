@@ -18,7 +18,7 @@ module Reimagine2
     end
 
     def post_host
-      @post_host || 'post.devpost.com'
+      @post_host || 'info.devpost.com/'
     end
 
     def help_host
