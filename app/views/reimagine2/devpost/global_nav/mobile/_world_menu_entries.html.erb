@@ -1,25 +1,18 @@
 <li class="divider"></li>
 <li>
-  <%= link_to reimagine_root_url(path: "/hackathons"),
-        class: "main-link",
-        data: { role: "discover" } do %>
+  <%= link_to reimagine_root_url(path: '/hackathons'), class: 'main-link', data: { role: 'discover' } do %>
     Hackathons
   <% end %>
 </li>
 <li class="divider"></li>
 <li>
-  <%= link_to reimagine_root_url(path: "/software"),
-        class: "main-link",
-        data: { role: "projects" } do %>
+  <%= link_to reimagine_root_url(path: '/software'), class: 'main-link', data: { role: 'projects' } do %>
     Projects
   <% end %>
 </li>
 <li class="divider"></li>
 <li>
-
-    <%= link_to reimagine_post_url,
-                class: "main-link",
-                data: { role: "for-orgs" } do %>
-      Host a hackathon
-    <% end %>
+  <%= link_to 'https://info.devpost.com', class: 'main-link', data: { role: 'for-orgs' } do %>
+    Host a hackathon
+  <% end %>
 </li>
