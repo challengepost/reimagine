@@ -12,10 +12,16 @@
       <div class="right">
         <ul>
           <li>
-            <%= link_to reimagine_post_url,
-                        class: "main-link",
-                        data: { role: "for-orgs" } do %>
-              Host a hackathon
+            <%= link_to 'Host a hackathon', 'https://info.devpost.com', class: 'main-link', data: { role: 'for-orgs' } %>
+          </li>
+
+          <li class="search-expand-container desktop main-link">
+            <a data-toggle-desktop-search><i class="fas fa-search"></i></a>
+          </li>
+
+          <li id="desktop-search-form-container" class="search-form-container hide">
+            <%= form_tag(platform_url(path: '/hackathons'), class: 'flex-row align-items-center search-form', method: :get) do %>
+              <%= render 'reimagine2/devpost/global_nav/hackathon_search_fields', data_toggle_attr: 'data-toggle-desktop-search' %>
             <% end %>
           </li>
         </ul>

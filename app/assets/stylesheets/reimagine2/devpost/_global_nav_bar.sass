@@ -20,70 +20,113 @@
         margin-right: 1em
 
     ul li > a
-      padding:
-        top: 0
-        bottom: 0
+      font-weight: 500
       transition: background-color 0.2s ease
 
       &.button
         @extend .button
 
-    #mobile-search-expand-container
+    .search-expand-container
       a
         padding: 0 1em
-        line-height: 56px
         font-size: 1.25em
 
-    #mobile-search-container
-      font-size: .85em
+      &.desktop
+        a
+          padding: 0 0.6em
+
+      &.mobile
+        a
+          line-height: 56px
+          color: $dark
+
+    #desktop-search-form-container
+      height: 62px
+      left: 0
+
+    #mobile-search-form-container
+      height: 50px
+
+    .hide
+      display: none
+
+    .search-form-container
       position: absolute
-      background: white
       z-index: 5
       width: 100%
-      padding-right: 1em
+      background: white
 
-      &.hide
-        display: none
+      form.search-form
+        height: 100%
 
-    .search-bar-form
-      button
-        margin-left: -2px
-        width: 42px
-        line-height: 1.6
-        border-radius: 0 3px 3px 0
+        .search-field-wrapper
+          flex-grow: 1
+          height: 44px
+          border-bottom: 1px solid $primary-1
 
-      input
-        border-color: $grey-2
-        border-radius: 3px 0 0 3px
-        background: $grey-2
+          @media (max-width: 1023px)
+            height: 40px
 
-        &:hover, &:focus
-          border-color: $dark
+          .search-icon
+            padding-right: 0.5rem
+            color: $primary-1
 
+          input[type='search']
+            border: 0
+            font-size: 1em
+            background: none
 
-      #collapse-mobile-search
-        width: 42px
+            &::placeholder
+              color: $blue-grey-4
 
-        .fa-arrow-left
-          font-size: 1.5em
-          line-height: 2.9
-          padding-left: .25em
+          a.close-icon
+            padding-left: 0.5rem
+            padding-right: 0
+            background: none
+            color: $blue-grey-4
 
-      &.large
-        input
-          width: 295px
-          margin-left: 1.5em
+            &:hover
+              color: $primary-1
 
-          @for $i from 0 through 8
-            @media only screen and (max-width: #{1200 - $i * 20}px)
-              width: #{275 - $i * 20}px
-
-        button
-          width: 38px
-
-        input, button
-          font-size: 1em
-          margin-top: 7px
+    // .search-bar-form
+    //   button
+    //     margin-left: -2px
+    //     width: 42px
+    //     line-height: 1.6
+    //     border-radius: 0 3px 3px 0
+    //
+    //   input
+    //     border-color: $grey-2
+    //     border-radius: 3px 0 0 3px
+    //     background: $grey-2
+    //
+    //     &:hover, &:focus
+    //       border-color: $dark
+    //
+    //
+    //   #collapse-mobile-search
+    //     width: 42px
+    //
+    //     .fa-arrow-left
+    //       font-size: 1.5em
+    //       line-height: 2.9
+    //       padding-left: .25em
+    //
+    //   &.large
+    //     input
+    //       width: 295px
+    //       margin-left: 1.5em
+    //
+    //       @for $i from 0 through 8
+    //         @media only screen and (max-width: #{1200 - $i * 20}px)
+    //           width: #{275 - $i * 20}px
+    //
+    //     button
+    //       width: 38px
+    //
+    //     input, button
+    //       font-size: 1em
+    //       margin-top: 7px
 
   .name
     float: left
@@ -188,7 +231,6 @@
 
     li a
       line-height: $topbar-height * 2/3
-
       padding:
         top: 0
         bottom: 0

@@ -5,5 +5,6 @@ class Reimagine2
       Reimagine2.responsiveTables()
       Reimagine2.accessibleGlobalNav()
       Reimagine2.mobileGlobalNav()
+      Reimagine2.desktopGlobalNav()
 
 @Reimagine2 = Reimagine2
