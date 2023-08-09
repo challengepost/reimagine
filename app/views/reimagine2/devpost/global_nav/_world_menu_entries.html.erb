@@ -1,4 +1,34 @@
 <li class="divider"></li>
+<li class="has-dropdown not-click" data-options="is_hover:false">
+  <%= link_to '#', class: 'main-link' do %>
+    Product
+  <% end %>
+
+  <ul class="dropdown">
+    <li id="floating-menu-wrapper">
+      <div class="floating-menu">
+        <div class="panel-container p-left">
+          <a class="panel-product" href="/product/public-hackathons">
+            <%= image_tag 'reimagine2/devpost-logo-mobile.svg', alt: 'Devpost' %>
+            <div>
+              <p class="title bold">Devpost</p>
+              <p class="subtitle">Grow your developer ecosystem and promote your platform.</p>
+            </div>
+          </a>
+          <div class="panel-content">
+            <a class="" href="#">Hackathons</a>
+            <a class="" href="#">Projects</a>
+            <a class="" href="#">Host a public hackathon</a>
+          </div>
+        </div>
+
+        <div class="panel-container p-right">
+          Right Panel
+        </div>
+      </div>
+    </li>
+  </ul>
+</li>
 <li>
   <%= link_to reimagine_root_url(path: '/hackathons'), class: 'main-link', data: { role: 'discover' } do %>
     Hackathons

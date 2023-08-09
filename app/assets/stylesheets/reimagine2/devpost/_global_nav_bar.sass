@@ -321,5 +321,62 @@
     color: $grey-3
     font-size: 1.1rem
 
+  #floating-menu-wrapper
+    //background-color: black
+
+    .floating-menu
+      display: flex
+      height: 226px
+      width: 768px
+      //background-color: red
+
+      .panel-container
+        flex: 1
+        padding: 40px 30px
+        font-size: 14px
+
+        &.p-left
+          //background-color: pink
+
+        &.p-right
+          //background-color: khaki
+
+      .panel-product
+        display: flex
+        grid-column-gap: 12px
+        align-items: flex-start
+        padding: 0
+        //margin-bottom: 12px
+        font-size: 14px
+        white-space: normal
+        //max-height: initial
+        //background-color: bisque
+
+        img
+          height: 24px
+
+        p
+          margin-bottom: 0
+          line-height: 16px
+
+        .title
+          padding-top: 4px
+          padding-bottom: 4px
+
+        .subtitle
+          color: $blue-grey-4
+
+      .panel-content
+        display: flex
+        flex-direction: column
+        //grid-row-gap: 10px
+        padding-top: 20px
+        padding-left: 49px
+
+        a
+          padding: 6px 0
+          line-height: 16px
+          color: $primary-1
+
 .ui-autocomplete
   max-width: 300px
