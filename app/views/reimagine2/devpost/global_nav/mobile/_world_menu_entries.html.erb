@@ -1,4 +1,27 @@
 <li class="divider"></li>
+<li class="mobile-product-menu panel-container">
+  <a class="panel-product" href="/product/public-hackathons">
+    <%= image_tag 'reimagine2/devpost-logo-mobile.svg', alt: 'Devpost' %>
+    <p class="title bold">Devpost</p>
+  </a>
+  <div class="panel-content">
+    <a href="#" class="bold">Hackathons</a>
+    <a href="#" class="bold">Projects</a>
+    <a href="#" class="bold">Host a public hackathon</a>
+  </div>
+</li>
+<li class="divider"></li>
+<li class="mobile-product-menu panel-container">
+  <a class="panel-product" href="/product/public-hackathons">
+    <%= image_tag 'reimagine2/dft-logo-mobile.svg', alt: 'Devpost for Teams' %>
+    <p class="title bold">Devpost for Teams</p>
+  </a>
+  <div class="panel-content">
+    <a href="#" class="bold">Teams login</a>
+    <a href="#" class="bold">Request a demo</a>
+  </div>
+</li>
+<li class="divider"></li>
 <li>
   <%= link_to reimagine_root_url(path: '/hackathons'), class: 'main-link', data: { role: 'discover' } do %>
     Hackathons
