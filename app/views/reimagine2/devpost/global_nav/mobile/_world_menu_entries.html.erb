@@ -1,4 +1,27 @@
 <li class="divider"></li>
+<li class="mobile-product-menu panel-container">
+  <a class="panel-product panel-product-content" href="https://info.devpost.com/product/public-hackathons">
+    <%= image_tag 'reimagine2/devpost-logo-mobile.svg', alt: 'Devpost' %>
+    <p class="title bold">Devpost</p>
+  </a>
+  <div class="panel-content">
+    <%= link_to 'Hackathons', reimagine_root_url(path: '/hackathons') %>
+    <%= link_to 'Projects', reimagine_root_url(path: '/software') %>
+    <a href="https://info.devpost.com/product/public-hackathons">Host a public hackathon</a>
+  </div>
+</li>
+<li class="divider"></li>
+<li class="mobile-product-menu panel-container">
+  <a class="panel-product panel-product-content" href="https://info.devpost.com/product/devpost-for-teams">
+    <%= image_tag 'reimagine2/dft-logo-mobile.svg', alt: 'Devpost for Teams' %>
+    <p class="title bold">Devpost for Teams</p>
+  </a>
+  <div class="panel-content">
+    <a href="https://devpost.team">Teams login</a>
+    <a href="https://info.devpost.com/product/devpost-for-teams">Request a demo</a>
+  </div>
+</li>
+<li class="divider"></li>
 <li>
   <%= link_to reimagine_root_url(path: '/hackathons'), class: 'main-link', data: { role: 'discover' } do %>
     Hackathons

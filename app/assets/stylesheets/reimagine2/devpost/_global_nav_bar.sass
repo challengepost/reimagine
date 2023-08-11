@@ -88,6 +88,27 @@
             &:hover
               color: $primary-1
 
+    .mobile-product-menu
+      &.panel-container
+        padding: 20px 0
+
+        .panel-product
+          display: flex
+          grid-column-gap: 12px
+          align-items: center
+          padding: 5px 10px
+
+        .panel-content
+          display: flex
+          flex-direction: column
+          padding-top: 3px
+          padding-left: 53px
+
+          a
+            padding: 6px 6px
+            line-height: 16px
+            color: $primary-1
+
   .name
     float: left
 
@@ -323,3 +344,57 @@
 
 .ui-autocomplete
   max-width: 300px
+
+.dropdown
+  &.float-left
+    position: absolute
+    left: -12.125em
+    z-index: 1001
+
+.panel-product-content
+  img
+    height: 24px
+
+  p
+    margin-bottom: 0
+    line-height: 16px
+
+#floating-menu-wrapper
+  .floating-menu
+    display: flex
+    height: 226px
+    width: 768px
+
+    .panel-container
+      flex: 1
+      padding: 20px 30px 40px
+      font-size: 14px
+
+    .panel-product
+      display: flex
+      grid-column-gap: 12px
+      align-items: flex-start
+      padding: 10px
+      border-radius: 3px
+      font-size: 14px
+      white-space: normal
+      max-height: initial
+
+      .title
+        padding-top: 4px
+        padding-bottom: 4px
+
+      .subtitle
+        color: $blue-grey-4
+
+    .panel-content
+      display: flex
+      flex-direction: column
+      padding-top: 10px
+      padding-left: 53px
+
+      a
+        padding: 6px 6px
+        border-radius: 3px
+        line-height: 16px
+        color: $primary-1
