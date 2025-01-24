@@ -1,0 +1,48 @@
+<% arrow_icon = '<i class="fa-arrow-right fas" data-v-082e107e="" aria-hidden="true"></i>'.html_safe %>
+
+<li class="has-dropdown">
+  <%= link_to 'Join a hackathon', '#', class: 'main-link' %>
+
+  <ul class="dropdown float-left main-menu-dropdown" id="join-a-hackathon-dropdown">
+    <li class="floating-menu-wrapper">
+      <div class="floating-menu display-flex align-stretch">
+        <div class="panel-container bordered">
+          <div class="panel-section">
+            <a class="panel-product panel-product-content" href="https://info.devpost.com/product/public-hackathons">
+              <%= image_tag 'reimagine2/devpost-logo-mobile.svg', alt: 'Devpost' %>
+              <div>
+                <p class="title bold">Devpost</p>
+                <p class="subtitle">Participate in our public hackathons</p>
+              </div>
+            </a>
+            <div class="panel-content with-icon-offset">
+              <%= link_to reimagine_root_url(path: '/hackathons') do %>
+                Hackathons <%= arrow_icon %>
+              <% end %>
+              <%= link_to reimagine_root_url(path: '/software') do %>
+                Projects <%= arrow_icon %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-container bordered">
+          <div class="panel-section">
+            <a class="panel-product panel-product-content" href="https://info.devpost.com/product/devpost-for-teams">
+              <%= image_tag 'reimagine2/dft-logo-mobile.svg', alt: 'Devpost for Teams' %>
+              <div>
+                <p class="title bold">Devpost for Teams</p>
+                <p class="subtitle">Access your company's private hackathons</p>
+              </div>
+            </a>
+            <div class="panel-content with-icon-offset">
+              <a href="https://devpost.team">
+                Login <%= arrow_icon %>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li>

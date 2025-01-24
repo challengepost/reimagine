@@ -1,5 +1,7 @@
 @import "./global_nav_active_states"
 
+$dropdown-links-line-height: 28px
+
 #global-nav
   background: white
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
@@ -7,6 +9,14 @@
   position: relative
 
   .top-bar-section
+    .dropdown.main-menu-dropdown
+      li a
+        padding: 0
+        line-height: $dropdown-links-line-height
+
+        &:hover
+          background: none
+
     .has-dropdown > a:after
       border-top-color: transparent
       border-left-color: $grey-3
@@ -102,12 +112,17 @@
           display: flex
           flex-direction: column
           padding-top: 3px
-          padding-left: 53px
+
+          &.with-icon-offset
+            padding-left: 50px
 
           a
             padding: 6px 6px
             line-height: 16px
             color: $primary-1
+
+    .resource-title
+      font-weight: bold
 
   .name
     float: left
@@ -156,9 +171,6 @@
 
       strong
         display: inline
-
-      @media only screen and (max-width: 1076px)
-        padding: 0 1.18em
 
   .alpha
     display: none
@@ -351,7 +363,6 @@
 .dropdown
   &.float-left
     position: absolute
-    left: -12.125em
     z-index: 1001
 
 .panel-product-content
@@ -362,42 +373,83 @@
     margin-bottom: 0
     line-height: 16px
 
-#floating-menu-wrapper
+.floating-menu-wrapper
   .floating-menu
-    display: flex
-    height: 226px
-    width: 768px
+    padding: 32px
 
     .panel-container
       flex: 1
-      padding: 20px 30px 40px
+      margin-right: 32px
       font-size: 14px
+
+      &:last-child, &.mr-0
+        margin-right: 0
+
+      &.mb-4
+        margin-bottom: 16px
+
+      &.bordered
+        border: 1px solid #DDE3E6
+        border-radius: 8px
+
+        &.bordered-hover:hover
+          border-color: $anchor-font-color-hover
 
     .panel-product
       display: flex
       grid-column-gap: 12px
       align-items: flex-start
-      padding: 10px
       border-radius: 3px
       font-size: 14px
       white-space: normal
-      max-height: initial
+      max-height: initial !important
 
-      .title
-        padding-top: 4px
-        padding-bottom: 4px
+    .title
+      margin: 4px 0 8px
 
-      .subtitle
-        color: $blue-grey-4
+    .subtitle
+      color: $blue-grey-6
 
     .panel-content
       display: flex
       flex-direction: column
-      padding-top: 10px
-      padding-left: 53px
+
+      &.with-icon-offset
+        padding-top: 10px
+        padding-left: 50px
 
       a
         padding: 6px 6px
         border-radius: 3px
         line-height: 16px
         color: $primary-1
+
+  .panel-section
+    padding: 16px
+
+    &.pt-0
+      padding-top: 0
+
+    .fa-arrow-right
+      float: right
+      line-height: $dropdown-links-line-height
+      color: $blue-grey-4
+
+    a:hover
+      .fa-arrow-right
+        color: $anchor-font-color-hover
+
+    p
+      margin-bottom: 0
+
+
+#join-a-hackathon-dropdown
+  left: -194px
+  width: 820px
+
+#host-a-hackathon-dropdown
+  min-width: 1000px
+  left: -384px
+
+#resources-dropdown
+  left: -100px
