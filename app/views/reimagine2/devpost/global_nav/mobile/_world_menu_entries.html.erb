@@ -1,15 +1,44 @@
-<div>
+<div class="mobile">
   <a class="accordion-tab" data-accordion-tab href="#join-a-hackathon">
     Join a hackathon
   </a>
   <div class="accordion-section" data-accordion-section="join-a-hackathon">
-    <p>kiou1</p>
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/join_a_hackathon_devpost_section" %>
+    </div>
+
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/join_a_hackathon_dft_section" %>
+    </div>
   </div>
 
   <a class="accordion-tab" data-accordion-tab href="#host-a-hackathon">
     Host a hackathon
   </a>
   <div class="accordion-section" data-accordion-section="host-a-hackathon">
-    <p>kiou1</p>
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/host_a_hackathon_devpost_section" %>
+    </div>
+
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/host_a_hackathon_dft_section" %>
+    </div>
+
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/host_a_hackathon_by_use_case_section" %>
+    </div>
+  </div>
+
+  <a class="accordion-tab" data-accordion-tab href="#resources">
+    Resources
+  </a>
+  <div class="accordion-section" data-accordion-section="resources">
+    <div class="floating-menu-wrapper">
+      <div class="panel-content">
+        <div class="panel-section">
+          <%= render "reimagine2/devpost/global_nav/resources_section" %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

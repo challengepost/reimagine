@@ -6,51 +6,7 @@
   <ul class="dropdown float-left main-menu-dropdown" id="resources-dropdown">
     <li class="floating-menu-wrapper">
       <div class="floating-menu">
-
-        <%
-          entries = [
-            {
-              title: "Blog",
-              subtitle: "Insights into hackathon planning and participation",
-              url: "https://info.devpost.com/blog"
-            },
-            {
-              title: "Customer stories",
-              subtitle: "Inspiration from peers and other industry leaders",
-              url: "https://info.devpost.com/customer-stories"
-            },
-            {
-              title: "Planning guides",
-              subtitle: "Best practices for planning online and in-person hackathons",
-              url: "https://info.devpost.com/guides"
-            },
-            {
-              title: "Webinars & events",
-              subtitle: "Upcoming events and on-demand recordings",
-              url: "https://info.devpost.com/webinar-events"
-            },
-            {
-              title: "Help desk",
-              subtitle: "How to use Devpost and Devpost for Teams",
-              url: "https://help.devpost.com/"
-            }
-          ]
-        %>
-
-        <% entries.each do |entry| %>
-          <div class="panel-container mr-0 bordered bordered-hover is-flex-grow-1 mb-4">
-            <div class="panel-section">
-              <%= link_to entry[:url] do %>
-                <p class="resource-title">
-                  <%= entry[:title] %>
-                </p>
-                <p class="subtitle">
-                  <%= entry[:subtitle] %>
-                </p>
-              <% end %>
-            </div>
-          </div>
-        <% end %>
+        <%= render "reimagine2/devpost/global_nav/resources_section" %>
       </div>
     </li>
   </ul>

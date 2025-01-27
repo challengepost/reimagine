@@ -1,0 +1,23 @@
+<% arrow_icon = '<i class="fa-arrow-right fas" data-v-082e107e="" aria-hidden="true"></i>'.html_safe %>
+
+<%= content_tag :div, class: ["panel-section", local_assigns[:panel_classes]] do %>
+  <div class="panel-content">
+    <p class="title bold">By use case</p>
+
+    <%
+      entries = [
+        ['AI hackathons', 'https://info.devpost.com/product/ai-hackathons'],
+        ['Customer hackathons', 'https://info.devpost.com/product/customer-hackathons'],
+        ['Employee hackathons', 'https://info.devpost.com/product/devpost-for-teams'],
+        ['Public hackathons', 'https://info.devpost.com/product/public-hackathons'],
+      ]
+    %>
+
+    <% entries.each do |entry| %>
+      <% link_copy, link_url = entry %>
+      <%= link_to link_url do %>
+        <%= link_copy %> <%= arrow_icon %>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>

@@ -367,6 +367,10 @@ $dropdown-links-line-height: 28px
 
   .accordion-section
     display: none
+    background: $grey-1
+
+    .panel-section
+      border-bottom: 1px solid #DDE3E6
 
 .ui-autocomplete
   max-width: 300px
@@ -385,55 +389,61 @@ $dropdown-links-line-height: 28px
     line-height: 16px
 
 .floating-menu-wrapper
-  .floating-menu
-    padding: 32px
+  padding: 32px
 
-    .panel-container
-      flex: 1
-      margin-right: 32px
-      font-size: 14px
+  .mobile &
+    padding: 0
 
-      &:last-child, &.mr-0
-        margin-right: 0
+  .panel-container
+    flex: 1
+    margin-right: 32px
+    font-size: 14px
 
-      &.mb-4
-        margin-bottom: 16px
+    &:last-child, &.mr-0
+      margin-right: 0
 
-      &.bordered
-        border: 1px solid #DDE3E6
-        border-radius: 8px
+    &.mb-4
+      margin-bottom: 16px
 
-        &.bordered-hover:hover
-          border-color: $anchor-font-color-hover
+    &.bordered
+      border: 1px solid #DDE3E6
+      border-radius: 8px
 
-    .panel-product
-      display: flex
-      grid-column-gap: 12px
-      align-items: flex-start
-      border-radius: 3px
-      font-size: 14px
+      &.bordered-hover:hover
+        border-color: $anchor-font-color-hover
+
+  .panel-product
+    display: flex
+    grid-column-gap: 12px
+    align-items: flex-start
+    border-radius: 3px
+    font-size: 14px
+    white-space: normal
+    max-height: initial !important
+    padding: 0 !important
+
+    > *
       white-space: normal
-      max-height: initial !important
 
-    .title
-      margin: 4px 0 8px
+  .title
+    margin: 4px 0 6px
 
-    .subtitle
-      color: $blue-grey-6
+  .subtitle
+    color: $blue-grey-6
 
-    .panel-content
-      display: flex
-      flex-direction: column
+  .panel-content
+    display: flex
+    flex-direction: column
 
-      &.with-icon-offset
-        padding-top: 10px
-        padding-left: 50px
+    &.with-icon-offset
+      padding-top: 10px
+      padding-left: 50px
 
-      a
-        padding: 6px 6px
-        border-radius: 3px
-        line-height: 16px
-        color: $primary-1
+    a
+      line-height: $dropdown-links-line-height !important
+      padding: 0 !important
+      border-radius: 3px
+      color: $primary-1
 
   .panel-section
     padding: 16px
@@ -450,7 +460,7 @@ $dropdown-links-line-height: 28px
       .fa-arrow-right
         color: $anchor-font-color-hover
 
-    p
+    p:not(.title)
       margin-bottom: 0
 
 #join-a-hackathon-dropdown
