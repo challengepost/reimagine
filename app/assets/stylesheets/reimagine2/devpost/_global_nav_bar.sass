@@ -172,6 +172,14 @@ $dropdown-links-line-height: 28px
       strong
         display: inline
 
+      &:after
+        border: 0 !important
+
+      i
+        margin-left: 4px
+        position: relative
+        top: 1px
+
   .alpha
     display: none
     letter-spacing: 1px
@@ -359,11 +367,16 @@ $dropdown-links-line-height: 28px
 
   .accordion-tab
     color: $dark
+    font-weight: 500
     display: block
     padding: 24px 16px !important
     max-height: none
     line-height: $dropdown-links-line-height !important
     border-bottom: 1px solid $grey-2
+    font-size: 16px !important
+    display: flex
+    align-items: center
+    justify-content: space-between
 
   .accordion-section
     display: none
@@ -469,7 +482,7 @@ $dropdown-links-line-height: 28px
 
 #host-a-hackathon-dropdown
   min-width: 1000px
-  left: -384px
+  left: -402px
 
 #resources-dropdown
   left: -100px

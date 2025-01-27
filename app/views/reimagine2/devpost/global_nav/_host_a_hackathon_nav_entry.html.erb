@@ -1,7 +1,9 @@
-<% arrow_icon = '<i class="fa-arrow-right fas" data-v-082e107e="" aria-hidden="true"></i>'.html_safe %>
+<% arrow_icon = '<i class="fa-arrow-right fas" aria-hidden="true"></i>'.html_safe %>
 
 <li class="has-dropdown">
-  <%= link_to 'Host a hackathon', '#', class: 'main-link' %>
+  <%= link_to '#', class: 'main-link' do %>
+    Host a hackathon <i class="fa-angle-down fas" aria-hidden="true"></i>
+  <% end %>
 
   <ul class="dropdown float-left main-menu-dropdown" id="host-a-hackathon-dropdown">
     <li class="floating-menu-wrapper">
