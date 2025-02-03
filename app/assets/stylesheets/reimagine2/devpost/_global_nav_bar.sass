@@ -17,9 +17,20 @@ $dropdown-links-line-height: 28px
         &:hover
           background: none
 
-    .has-dropdown > a:after
-      border-top-color: transparent
-      border-left-color: $grey-3
+    .has-dropdown
+      & > a:after
+        border-top-color: transparent
+        border-left-color: $grey-3
+
+      .fa-angle-up
+        display: none
+
+      &:hover, &.hover
+        .fa-angle-up
+          display: inline-block
+
+        .fa-angle-down
+          display: none
 
     .logged-out
       @media (max-width: 329px)
@@ -378,6 +389,16 @@ $dropdown-links-line-height: 28px
     align-items: center
     justify-content: space-between
 
+    .fa-angle-up
+      display: none
+
+    &.expanded
+      .fa-angle-down
+        display: none
+
+      .fa-angle-up
+        display: block
+
   .accordion-section
     display: none
     background: $grey-1
@@ -422,9 +443,6 @@ $dropdown-links-line-height: 28px
       border: 1px solid #DDE3E6
       border-radius: 8px
 
-      &.bordered-hover:hover
-        border-color: $anchor-font-color-hover
-
   .panel-product
     display: flex
     grid-column-gap: 12px
@@ -459,7 +477,17 @@ $dropdown-links-line-height: 28px
       color: $primary-1
 
   .panel-section
-    padding: 16px
+    display: block
+    padding: 16px !important
+    max-height: none !important
+
+    &.bordered
+      border-radius: 8px
+      border: 1px solid #DDE3E6
+
+      &.bordered-hover
+        &:hover, &:focus
+          border-color: $anchor-font-color-hover
 
     &.pt-0
       padding-top: 0
@@ -469,7 +497,7 @@ $dropdown-links-line-height: 28px
       line-height: $dropdown-links-line-height
       color: $blue-grey-4
 
-    a:hover
+    a:hover, a:focus
       .fa-arrow-right
         color: $anchor-font-color-hover
 

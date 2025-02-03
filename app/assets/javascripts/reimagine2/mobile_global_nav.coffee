@@ -32,8 +32,11 @@
   $("[data-accordion-tab]").on "click", (e) =>
     e.preventDefault()
 
-    targetId = $(e.currentTarget).attr('href').substring(1)
-    $targetSection = $("[data-accordion-section='#{targetId}']")
+    $link = $(e.currentTarget)
+    $link.toggleClass('expanded')
 
+    targetId = $link.attr('href').substring(1)
+
+    $targetSection = $("[data-accordion-section='#{targetId}']")
     $targetSection.slideToggle()
     $('[data-accordion-section').not($targetSection).slideUp();
