@@ -29,14 +29,18 @@
     if !$mobileSearchContainer.hasClass("hide")
       $mobileSearchContainer.find("#search").focus()
 
-  $("[data-accordion-tab]").on "click", (e) =>
+  $accordionTabs = $("[data-accordion-tab]")
+  $accordionTabs.on "click", (e) =>
     e.preventDefault()
 
-    $link = $(e.currentTarget)
-    $link.toggleClass('expanded')
+    $tab = $(e.currentTarget)
+    $tab.toggleClass('expanded')
 
-    targetId = $link.attr('href').substring(1)
+    targetId = $tab.attr('href').substring(1)
 
     $targetSection = $("[data-accordion-section='#{targetId}']")
     $targetSection.slideToggle()
+
+    # closes other tabs that could be opened
+    $accordionTabs.not($tab).removeClass('expanded')
     $('[data-accordion-section').not($targetSection).slideUp();
