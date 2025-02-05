@@ -472,9 +472,11 @@ $dropdown-links-line-height: 28px
 
     a
       line-height: $dropdown-links-line-height !important
-      padding: 0 !important
       border-radius: 3px
       color: $primary-1
+
+      &:not(.padded)
+        padding: 0 !important
 
   .panel-section
     display: block
@@ -487,7 +489,7 @@ $dropdown-links-line-height: 28px
 
       &.bordered-hover
         &:hover, &:focus
-          border-color: $anchor-font-color-hover
+          border-color: $anchor-font-color-hover !important
 
     &.pt-0
       padding-top: 0
