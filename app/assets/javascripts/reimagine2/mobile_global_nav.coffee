@@ -42,6 +42,5 @@
     $targetSection.slideToggle()
 
     # closes other tabs that could be opened
-    console.log("close")
     $accordionTabs.not($tab).removeClass('expanded')
     $('[data-accordion-section').not($targetSection).slideUp();
