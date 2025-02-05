@@ -1,5 +1,7 @@
 @import "./global_nav_active_states"
 
+$dropdown-links-line-height: 28px
+
 #global-nav
   background: white
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px
@@ -7,9 +9,28 @@
   position: relative
 
   .top-bar-section
-    .has-dropdown > a:after
-      border-top-color: transparent
-      border-left-color: $grey-3
+    .dropdown.main-menu-dropdown
+      li a
+        padding: 0
+        line-height: $dropdown-links-line-height
+
+        &:hover
+          background: none
+
+    .has-dropdown
+      & > a:after
+        border-top-color: transparent
+        border-left-color: $grey-3
+
+      .fa-angle-up
+        display: none
+
+      &:hover, &.hover
+        .fa-angle-up
+          display: inline-block
+
+        .fa-angle-down
+          display: none
 
     .logged-out
       @media (max-width: 329px)
@@ -102,12 +123,17 @@
           display: flex
           flex-direction: column
           padding-top: 3px
-          padding-left: 53px
+
+          &.with-icon-offset
+            padding-left: 50px
 
           a
             padding: 6px 6px
             line-height: 16px
             color: $primary-1
+
+    .resource-title
+      font-weight: bold
 
   .name
     float: left
@@ -157,8 +183,13 @@
       strong
         display: inline
 
-      @media only screen and (max-width: 1076px)
-        padding: 0 1.18em
+      &:after
+        border: 0 !important
+
+      i
+        margin-left: 4px
+        position: relative
+        top: 1px
 
   .alpha
     display: none
@@ -345,13 +376,42 @@
     color: $grey-3
     font-size: 1.1rem
 
+  .accordion-tab
+    color: $dark
+    font-weight: 500
+    display: block
+    padding: 24px 16px !important
+    max-height: none
+    line-height: $dropdown-links-line-height !important
+    border-bottom: 1px solid $grey-2
+    font-size: 16px !important
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .fa-angle-up
+      display: none
+
+    &.expanded
+      .fa-angle-down
+        display: none
+
+      .fa-angle-up
+        display: block
+
+  .accordion-section
+    display: none
+    background: $grey-1
+
+    .panel-section
+      border-bottom: 1px solid #DDE3E6
+
 .ui-autocomplete
   max-width: 300px
 
 .dropdown
   &.float-left
     position: absolute
-    left: -12.125em
     z-index: 1001
 
 .panel-product-content
@@ -362,42 +422,99 @@
     margin-bottom: 0
     line-height: 16px
 
-#floating-menu-wrapper
-  .floating-menu
+.floating-menu-wrapper
+  padding: 32px
+
+  .mobile &
+    padding: 0
+
+  .panel-container
+    flex: 1
+    margin-right: 32px
+    font-size: 14px
+
+    &:last-child, &.mr-0
+      margin-right: 0
+
+    &.mb-4
+      margin-bottom: 16px
+
+    &.bordered
+      border: 1px solid #DDE3E6
+      border-radius: 8px
+
+  .panel-product
     display: flex
-    height: 226px
-    width: 768px
+    grid-column-gap: 12px
+    align-items: flex-start
+    border-radius: 3px
+    font-size: 14px
+    white-space: normal
+    max-height: initial !important
+    padding: 0 !important
 
-    .panel-container
-      flex: 1
-      padding: 20px 30px 40px
-      font-size: 14px
-
-    .panel-product
-      display: flex
-      grid-column-gap: 12px
-      align-items: flex-start
-      padding: 10px
-      border-radius: 3px
-      font-size: 14px
+    > *
       white-space: normal
-      max-height: initial
 
-      .title
-        padding-top: 4px
-        padding-bottom: 4px
+  .title
+    margin: 4px 0 6px
 
-      .subtitle
-        color: $blue-grey-4
+  .subtitle
+    color: $blue-grey-6
 
-    .panel-content
-      display: flex
-      flex-direction: column
+  .panel-content
+    display: flex
+    flex-direction: column
+
+    &.with-icon-offset
       padding-top: 10px
-      padding-left: 53px
+      padding-left: 50px
 
-      a
-        padding: 6px 6px
-        border-radius: 3px
-        line-height: 16px
-        color: $primary-1
+    a
+      line-height: $dropdown-links-line-height !important
+      padding: 0 !important
+      border-radius: 3px
+      color: $primary-1
+
+  .panel-section
+    display: block
+    padding: 16px !important
+    max-height: none !important
+
+    &.bordered
+      border-radius: 8px
+      border: 1px solid #DDE3E6
+
+      &.bordered-hover
+        &:hover, &:focus
+          border-color: $anchor-font-color-hover
+
+    &.pt-0
+      padding-top: 0
+
+    .fa-arrow-right
+      float: right
+      line-height: $dropdown-links-line-height
+      color: $blue-grey-4
+
+    a:hover, a:focus
+      .fa-arrow-right
+        color: $anchor-font-color-hover
+
+    p:not(.title)
+      margin-bottom: 0
+
+#join-a-hackathon-dropdown
+  left: -194px
+  width: 820px
+
+#host-a-hackathon-dropdown
+  min-width: 1000px
+
+  @media #{$large}
+    min-width: 1100px
+
+  left: -402px
+
+#resources-dropdown
+  left: -100px

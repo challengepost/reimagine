@@ -1,0 +1,19 @@
+<% arrow_icon = '<i class="fa-arrow-right fas" aria-hidden="true" aria-label="Arrow icon"></i>'.html_safe %>
+
+<div class="panel-section">
+  <%= link_to reimagine_root_url(path: '/hackathons'), class: "panel-product panel-product-content" do %>
+    <%= image_tag 'reimagine2/devpost-logo-mobile.svg', alt: 'Devpost logo' %>
+    <div>
+      <p class="title bold">Devpost</p>
+      <p class="subtitle">Participate in our public hackathons</p>
+    </div>
+  <% end %>
+  <div class="panel-content with-icon-offset">
+    <%= link_to reimagine_root_url(path: '/hackathons') do %>
+      Hackathons <%= arrow_icon %>
+    <% end %>
+    <%= link_to reimagine_root_url(path: '/software') do %>
+      Projects <%= arrow_icon %>
+    <% end %>
+  </div>
+</div>

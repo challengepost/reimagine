@@ -1,0 +1,17 @@
+<% arrow_icon = '<i class="fa-arrow-right fas" aria-hidden="true" aria-label="Arrow icon"></i>'.html_safe %>
+
+<div class="panel-section">
+  <a class="panel-product panel-product-content" href="https://info.devpost.com/product/devpost-for-teams">
+    <%= image_tag 'reimagine2/dft-logo-mobile.svg', alt: 'Devpost for Teams logo' %>
+    <div>
+      <p class="title bold">Devpost for Teams</p>
+      <p class="subtitle">Drive innovation, collaboration, and retention within your organization</p>
+    </div>
+  </a>
+
+  <div class="panel-content with-icon-offset">
+    <%= link_to "https://info.devpost.com/product/devpost-for-teams" do %>
+      Host an internal hackathon <%= arrow_icon %>
+    <% end %>
+  </div>
+</div>

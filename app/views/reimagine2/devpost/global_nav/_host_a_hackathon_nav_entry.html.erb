@@ -1,0 +1,27 @@
+<% arrow_icon = '<i class="fa-arrow-right fas" aria-hidden="true" aria-label="Arrow icon"></i>'.html_safe %>
+
+<li class="has-dropdown">
+  <%= link_to '#', class: 'main-link' do %>
+    Host a hackathon
+    <i class="fa-angle-down fas" aria-hidden="true"></i>
+    <i class="fa-angle-up fas" aria-hidden="true"></i>
+  <% end %>
+
+  <ul class="dropdown float-left main-menu-dropdown" id="host-a-hackathon-dropdown">
+    <li class="floating-menu-wrapper">
+      <div class="floating-menu flex-row align-start">
+        <div class="panel-container bordered">
+          <%= render "reimagine2/devpost/global_nav/host_a_hackathon_devpost_section" %>
+        </div>
+
+        <div class="panel-container bordered">
+          <%= render "reimagine2/devpost/global_nav/host_a_hackathon_dft_section" %>
+        </div>
+
+        <div class="panel-container">
+          <%= render "reimagine2/devpost/global_nav/host_a_hackathon_by_use_case_section", panel_classes: "pt-0" %>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li>

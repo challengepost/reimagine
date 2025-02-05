@@ -1,0 +1,17 @@
+<% arrow_icon = '<i class="fa-arrow-right fas" aria-hidden="true" aria-label="Arrow icon"></i>'.html_safe %>
+
+<li class="has-dropdown">
+  <%= link_to '#', class: 'main-link' do %>
+    Resources
+    <i class="fa-angle-down fas" aria-hidden="true"></i>
+    <i class="fa-angle-up fas" aria-hidden="true"></i>
+  <% end %>
+
+  <ul class="dropdown float-left main-menu-dropdown" id="resources-dropdown">
+    <li class="floating-menu-wrapper">
+      <div class="floating-menu">
+        <%= render "reimagine2/devpost/global_nav/resources_section" %>
+      </div>
+    </li>
+  </ul>
+</li>

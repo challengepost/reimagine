@@ -1,45 +1,50 @@
-<li class="divider"></li>
-<li class="mobile-product-menu panel-container">
-  <a class="panel-product panel-product-content" href="https://info.devpost.com/product/public-hackathons">
-    <%= image_tag 'reimagine2/devpost-logo-mobile.svg', alt: 'Devpost' %>
-    <p class="title bold">Devpost</p>
+<div class="mobile">
+  <a class="accordion-tab" data-accordion-tab href="#join-a-hackathon">
+    <span>Join a hackathon</span>
+    <i class="fa-angle-down fas" aria-hidden="true"></i>
+    <i class="fa-angle-up fas" aria-hidden="true"></i>
   </a>
-  <div class="panel-content">
-    <%= link_to 'Hackathons', reimagine_root_url(path: '/hackathons') %>
-    <%= link_to 'Projects', reimagine_root_url(path: '/software') %>
-    <a href="https://info.devpost.com/product/public-hackathons">Host a public hackathon</a>
+  <div class="accordion-section" data-accordion-section="join-a-hackathon">
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/join_a_hackathon_devpost_section" %>
+    </div>
+
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/join_a_hackathon_dft_section" %>
+    </div>
   </div>
-</li>
-<li class="divider"></li>
-<li class="mobile-product-menu panel-container">
-  <a class="panel-product panel-product-content" href="https://info.devpost.com/product/devpost-for-teams">
-    <%= image_tag 'reimagine2/dft-logo-mobile.svg', alt: 'Devpost for Teams' %>
-    <p class="title bold">Devpost for Teams</p>
-  </a>
-  <div class="panel-content">
-    <a href="https://devpost.team">Teams login</a>
-    <a href="https://info.devpost.com/product/devpost-for-teams">Request a demo</a>
-  </div>
-</li>
-<li class="divider"></li>
-<li>
-  <%= link_to reimagine_root_url(path: '/hackathons'), class: 'main-link', data: { role: 'discover' } do %>
-    Hackathons
-  <% end %>
-</li>
-<li class="divider"></li>
-<li>
-  <%= link_to reimagine_root_url(path: '/software'), class: 'main-link', data: { role: 'projects' } do %>
-    Projects
-  <% end %>
-</li>
-<li class="divider"></li>
-<li>
-  <%= link_to 'Blog', 'https://info.devpost.com/blog', class: 'main-link' %>
-</li>
-<li class="divider"></li>
-<li>
-  <%= link_to 'https://info.devpost.com', class: 'main-link', data: { role: 'for-orgs' } do %>
+
+  <a class="accordion-tab" data-accordion-tab href="#host-a-hackathon">
     Host a hackathon
-  <% end %>
-</li>
+    <i class="fa-angle-down fas" aria-hidden="true"></i>
+    <i class="fa-angle-up fas" aria-hidden="true"></i>
+  </a>
+  <div class="accordion-section" data-accordion-section="host-a-hackathon">
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/host_a_hackathon_devpost_section" %>
+    </div>
+
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/host_a_hackathon_dft_section" %>
+    </div>
+
+    <div class="floating-menu-wrapper">
+      <%= render "reimagine2/devpost/global_nav/host_a_hackathon_by_use_case_section" %>
+    </div>
+  </div>
+
+  <a class="accordion-tab" data-accordion-tab href="#resources">
+    Resources
+    <i class="fa-angle-down fas" aria-hidden="true"></i>
+    <i class="fa-angle-up fas" aria-hidden="true"></i>
+  </a>
+  <div class="accordion-section" data-accordion-section="resources">
+    <div class="floating-menu-wrapper">
+      <div class="panel-content">
+        <div class="panel-section">
+          <%= render "reimagine2/devpost/global_nav/resources_section" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
