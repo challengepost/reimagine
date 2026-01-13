@@ -18,22 +18,7 @@ module Reimagine2
     end
 
     def platform_url(**args)
-      URI::HTTPS.build(**args.merge({ host: current_env_host })).to_s
-    end
-
-    private
-
-    def current_env_host
-      hosts = {
-        development: "devpost.dev",
-        staging: "staging.devpost.com",
-        test: "lvh.me",
-        production: "devpost.com"
-      }
-
-      environment = Rails.env.to_sym
-
-      return hosts[environment]
+      URI::HTTPS.build(**args.merge({ host: Reimagine2.configuration.root_host })).to_s
     end
 
   end
